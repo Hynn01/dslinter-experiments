@@ -7,7 +7,7 @@ import shutil
 # create projects from jupyter notebooks and get requirement.txt file
 def create_projects_from_notebooks():
     with concurrent.futures.ProcessPoolExecutor() as executor:
-        path = "/Users/zhanghaiyin/Desktop/notebooks/convert_copy"
+        path = "/Users/zhanghaiyin/Desktop/notebooks/notebooks"
         for _, dirs, files in os.walk(path):
             # for f in files:
             #     unit_operation(path, f)
@@ -148,5 +148,15 @@ def add_url():
         f2.write(url)
 
 
+def collect_all_the_notebook_project_names():
+    root_path = "/Users/zhanghaiyin/Desktop/datasets/notebooks/notebooks"
+    dirs = os.listdir(root_path)
+    f = open("notebook_dataset.txt", "a")
+    for d in dirs:
+        string = "- folder: " + d + "\n"
+        f.writelines(string)
+    f.close()
+
+
 if __name__ == '__main__':
-    count_libraries()
+    collect_all_the_notebook_project_names()
