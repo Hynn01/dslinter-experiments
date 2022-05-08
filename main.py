@@ -149,14 +149,37 @@ def add_url():
 
 
 def collect_all_the_notebook_project_names():
-    root_path = "/Users/zhanghaiyin/Desktop/datasets/notebooks/notebooks"
-    dirs = os.listdir(root_path)
-    f = open("notebook_dataset.txt", "a")
-    for d in dirs:
-        string = "- folder: " + d + "\n"
-        f.writelines(string)
-    f.close()
+    root_path = "/Users/zhanghaiyin/Desktop/datasets/notebooks/convert_subset100"
+    # dirs = os.listdir(root_path)
+    f_txt = open("notebook_dataset_100.txt", "a")
+    # for d in dirs:
+    #     string = "- folder: " + d + "\n"
+    #     f.writelines(string)
+    for _, _, files in os.walk(root_path):
+        for f in files:
+            string = "- folder: " + f.split(",")[0] + "\n"
+            f_txt.writelines(string)
+    f_txt.close()
 
+def retrive_kernels():
+    with open("/Users/zhanghaiyin/Desktop/硕士毕设/mark's paper/kernels_hotness_010520.txt", "r") as f:
+        lines = f.readlines()
+        for line in lines:
+            os.system("kaggle kernels pull "+ line)
+
+def convert_ipynb_to_py():
+    for _,_,files in os.walk("/Users/zhanghaiyin/Desktop/test/dslinter_experiments/ipynb"):
+        for file in files:
+            os.system("jupyter nbconvert --to script ./ipynb/" + file)
+
+def make_dataset():
+    f_txt = open("./kernels_hotness_0805222.txt", "a")
+    with open("./kernels_hotness_080522.txt", "r") as f:
+        lines = f.readlines()
+        for line in lines:
+            kernel = line.split(",")[0][5:] + "\n"
+            print(kernel)
+            f_txt.write(kernel)
 
 if __name__ == '__main__':
     collect_all_the_notebook_project_names()
