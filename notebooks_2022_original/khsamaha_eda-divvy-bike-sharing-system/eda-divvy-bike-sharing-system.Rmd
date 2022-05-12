@@ -1,0 +1,1352 @@
+---
+title: "Divvy Chicago Bike Sharing EDA"
+author: "kheirallah Samaha"
+date: "26/Apr/2022"
+output:
+  html_document:
+    toc: yes
+    toc_depth: 5
+    code_folding: hide
+    theme: cosmo
+    highlight: tango
+editor_options: 
+  chunk_output_type: console
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(
+  echo = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  fig.align = "center",
+  fig.height = 4,
+  fig.width = 6
+)
+
+```
+
+## Introduction
+
+Public bike share (PBS).
+
+A PBS is an extension of the existing transit system with a network of
+short-term, self-service bicycle posts in which:
+
+-   Users can use bikes by purchasing casual day use or annual
+    memberships,
+
+-   Users can ride bikes for a short distance for one-way trips within a
+    defined service area and Station locations can change overtime based
+    on ridership practices or operation needs.
+
+Bike share technology continues to evolve quickly along with other
+wireless and digital changes. Other recent advancements include systems
+that do not require docking stations i.e. "smart lock" systems and
+electric‐assist bikes.
+
+### About this dataset
+
+I used 1 year (12 Months) of Divvy Chicago Bike Sharing Data from Mar
+2021 to Feb 2022, obtained from Kaggle.com dataset .
+
+This dataset included 5,667,986 trips, of which 3,127,293 / 55.2% were
+made by annual or monthly members, and 2,540,693 / 44.8% by casual
+users.
+
+#### Missing features
+
+Although this dataset is not a result of a survey, The following missing
+features could make this analysis more interesting and stronger if were
+exist.
+
+-   Bike ID,
+-   User ID,
+-   User Gender,
+-   User Age,
+-   Purpose of trip,
+-   Trip distance and
+-   Weather conditions.
+
+I believe some of them are connected to the agreed privacy policy!
+
+Anyway, let's load the packages we need for this brief analysis
+
+## Load libraries
+
+```{r Load-libraries, include=FALSE}
+
+library("tidyverse")
+library("fs")
+library("magrittr")
+library("igraph")
+library("lubridate")
+library("vroom")
+library("networkD3")
+library("skimr")
+library("janitor")
+library("naniar")
+library("scales")
+library("glue")
+library("patchwork")
+library("knitr")
+library("gghighlight")
+
+theme_set(theme_light())
+
+```
+
+## Import data using map_dfr function from purrr package
+
+```{r Import-data}
+
+files_dir <- "../input/divvy-chicago-bikesharing-data/"
+csv_files <- dir_ls(files_dir, regexp = "\\.csv$")
+ divvy_trip_full_data <- csv_files %>% 
+   map_dfr(read_csv) %>% # Import multiple files from the path 
+  clean_names() # Clean the names and change them to Title case
+
+dimentions <- dim(divvy_trip_full_data)
+
+```
+
+-   Number of observations = 5,667,986 and
+
+-   Number of variables = 13.
+
+To have a low computation; I will use 10% stratified sample of the
+entire data, so The Findings may not be as they should be if I used the
+full data.
+
+## Take a stratified sample
+
+```{r stratified-sample}
+
+set.seed(27031967)
+divvy_trip_full_data_sample <- divvy_trip_full_data %>%
+  group_by(member_casual, rideable_type) %>%
+  slice_sample(prop = 0.1) %>%
+  ungroup()
+
+rm(divvy_trip_full_data)
+gc()
+
+
+```
+
+## Tidy data and create new features
+
+```{r Tidy-data}
+
+
+
+divvy_trip_full_data_sample <- divvy_trip_full_data_sample %>%
+  mutate(across(.cols = c("member_casual", "rideable_type"), as.factor)) %>%
+  mutate(
+    trip_duration_sec = case_when(
+      started_at < ended_at ~ interval(started_at, ended_at) %/% seconds(1),
+      TRUE ~ interval(ended_at, started_at) %/% seconds(1)),
+    trip_duration_details = duration(trip_duration_sec, "seconds")) %>%
+  filter(trip_duration_sec > 30) # remove > 30 second duration
+
+summary(divvy_trip_full_data_sample$trip_duration_sec)
+
+glimpse(divvy_trip_full_data_sample)
+
+```
+
+***Observations:***
+
+-   There are a lot of negative (-) duration! as the ended_at time was
+    lower than the started_at in high numbers of observations, so I used
+    if statement to calculate them! I do not know if I miss something
+    obvious here!
+
+-   I create a new variable (trip_duration_sec) and remove duration
+    those less than 30 seconds!
+
+-   The summary trip_duration_sec was as following:
+
+    -   Min = 31 sec
+    -   1st Qu. = 408 sec
+    -   Median = 719 sec
+    -   Mean = 1,294 sec
+    -   3rd Qu. = 1,302 sec
+    -   Max = 1,900,964 sec (\~3.14 weeks) !!! From 2021-06-02 20:19:45
+        TO 2021-06-24 20:22:29
+
+I think you can rent a bike for 3 weeks and then will be registered as
+one record in the database, from point A to point B.
+
+let us check how many records are more than 1 day (24 hours)
+
+### Records are more than 1 day (24 hours) and more than 7 days (one week)
+
+```{r Records-more-than-1-7-day}
+
+# Records are more than 1 day (24 hours)
+
+divvy_trip_full_data_sample %>% 
+  select(trip_duration_sec) %>% 
+  filter(trip_duration_sec > 86400) %>% 
+  nrow()
+
+# Records are more than 7 days (one week)
+
+divvy_trip_full_data_sample %>% 
+  select(trip_duration_sec) %>% 
+  filter(trip_duration_sec > 604800) %>% 
+  nrow()
+
+```
+
+***Observations:***
+
+-   Records are more than one(1) day (24 hours) = 398 records
+
+-   Records are more than seven(7) days (one week) = 35 records
+
+### Trips duration Boxplot
+
+```{r Trips-duration-Boxplot}
+
+# I will use boxplot() function from base R
+
+divvy_trip_full_data_sample %>% 
+  pull(trip_duration_sec) %>% 
+  log() %>% 
+  boxplot(main = "Log of Trips duration",
+          xlab = "log",medlty = 2,
+          medlwd = 2,
+          medpch = 22,
+          medcex = 2,
+          medcol = 2,
+          medbg = 1,
+          border = "darkred",
+          horizontal = TRUE,
+          frame = FALSE)
+
+```
+
+Better not to go deep into this issue especially, since I have no valid
+information about Bike ID and User ID; I will consider them outliers!
+
+OK, let's check the missing data.
+
+### List of missing data
+
+```{r missing-data}
+
+skim(divvy_trip_full_data_sample) %>% 
+  select(skim_variable, complete_rate) %>% 
+  mutate(perct_missing = str_c(round(abs(complete_rate - 1),2),"%")) %>% 
+  filter(perct_missing != "0%") %>% 
+  kable()
+
+```
+
+#### Missing data intersections
+
+```{r Missing-data-intersections}
+
+
+missing_data_uoset_tbl <- divvy_trip_full_data_sample %>% 
+  select( start_station_id,
+         end_station_id)
+
+gg_miss_upset(
+  missing_data_uoset_tbl,
+  main.bar.color = "#4c8c08",
+  show.numbers = "yes",
+  sets.bar.color = "#4c8c08",
+  matrix.color = "#a00000",
+  shade.color = "#4c8c08",
+  order.by = "freq",
+  point.size = 3,
+  line.size = 0.75,
+  shade.alpha = 0.2,
+  text.scale = c(1.6, 1.3, 1, 1, 1.3, 1.3)
+)
+
+
+```
+
+***Observations:***
+
+We observed the following:
+
+-   start_station_id, end_station_id intersected with 42472 records,
+
+-   start_station_id has 27519 records and
+
+-   end_station_name has 31850 records,
+
+In some cases, we know the trip's start location and do not know the end
+trip's end location or vice versa.
+
+Once more, Bike ID and User ID can help to know better what is going on!
+
+I think I will not stay here too long. I will handle that whenever I
+need to!
+
+## Key Findings
+
+### Stations Number
+
+```{r Stations-Number}
+
+start_station_id <- divvy_trip_full_data_sample %>% 
+  select(start_station_id) %>% 
+  unique() %>% 
+  pull()
+
+end_station_id <- divvy_trip_full_data_sample %>% 
+  select(end_station_id) %>% 
+  unique() %>% 
+  pull()
+
+
+stations_id <- c(start_station_id, end_station_id) %>% 
+  unique()
+
+length(stations_id)
+
+```
+
+***Observations:***
+
+-   In "divvy_trip_full_data_sample", We have 825 stations, however, in
+    the full data "divvy_trip_full_data" we have 848 stations serving
+    the area of the bike sharing system.
+
+Let us find the Top 10 stations
+
+### Top 10 start station id, start station name And Top 10 end station id, end station name
+
+```{r Top-10-start-end-station}
+
+top_10_start_station <- divvy_trip_full_data_sample %>%
+  mutate(start_station_name = fct_lump(start_station_name, 10)) %>% 
+  count(start_station_id, start_station_name, name = "counts", sort = T) %>% 
+  filter(!is.na(start_station_name),
+         !is.na(start_station_id),
+         start_station_name != "Other") %>%
+  mutate(start_station_name = fct_reorder(start_station_name, counts))
+
+# plot
+
+  top_10_start_plt <- ggplot(top_10_start_station) +
+  geom_col(aes(start_station_name, counts, fill = start_station_name),
+           width = 0.8,
+           show.legend = FALSE) +
+  coord_flip() +
+  scale_y_continuous(labels = unit_format(unit = "K", scale = 1e-3)) +
+  scale_fill_viridis_d(option = "E", direction = -1) +
+  labs(title = "Top 10 start station id and start station name",
+       x = NULL,
+       y = NULL)
+
+
+
+top_10_end_station <- divvy_trip_full_data_sample %>%
+  mutate(end_station_name = fct_lump(end_station_name, 10)) %>% 
+  count(end_station_id, end_station_name, name = "counts", sort = T) %>% 
+  filter(!is.na(end_station_name),
+         !is.na(end_station_id),
+         end_station_name != "Other") %>%
+  mutate(end_station_name = fct_reorder(end_station_name, counts))
+
+# plot
+
+  top_10_end_plt <- ggplot(top_10_end_station) +
+  geom_col(aes(end_station_name, counts, fill = end_station_name),
+           width = 0.8,
+           show.legend = FALSE) +
+  coord_flip() +
+  scale_y_continuous(labels = unit_format(unit = "K", scale = 1e-3)) +
+  scale_fill_viridis_d(option = "E", direction = -1) +
+  labs(title = "Top 10 end station id and end station name",
+       caption = "Data Source: Kaggle | Divvy Chicago Bike Sharing Data",
+       x = NULL,
+       y = NULL)
+
+top_10_start_plt / top_10_end_plt
+
+
+# setdiff(top_10_start_station$start_station_name, top_10_end_station$end_station_name) 
+
+# setdiff(top_10_end_station$end_station_name, top_10_start_station$start_station_name) 
+
+```
+
+***Observations:***
+
+Top 3 start_station_name:
+
+-   1st: "Streeter Dr & Grand Ave" is the most targeted station in both
+    start_station_name and end_station_name.
+
+-   2nd: "Michigan Ave & Oak St",
+
+-   3rd: "Wells St & Concord Ln".
+
+
+Top 3 end_station_name:
+
+-   1st: "Streeter Dr & Grand Ave" is the most targeted station in both
+    start_station_name and end_station_name.
+
+-   2nd: "Michigan Ave & Oak St",
+
+-   3rd: "Millennium Park".
+
+### Trips distribution during Holidays
+
+#### Create holiday_not_holiday featuer
+
+```{r holiday-not-holiday-featuer}
+
+holidays <- tibble(
+  holiday = c(
+    "New Year’s Day",
+    "Abraham Lincoln Day",
+    "St. Patrick's Day",
+    "Flag Day",
+    "Independence Day",
+    "Patriot Day",
+    "Constitution Day",
+    "Halloween",
+    "Veterans Day",
+    "Bill of Rights Day",
+    "Christmas Day",
+    "New Years Eve"
+  ),
+  date = c(
+    "01-01",
+    "02-12",
+    "03-17",
+    "06-14",
+    "07-04",
+    "09-11",
+    "09-17",
+    "10-31",
+    "11-11",
+    "12-15",
+    "12-25",
+    "12-31"
+  )
+)
+
+
+
+holiday_not_holiday_df <- divvy_trip_full_data_sample %>%
+  filter(trip_duration_sec <= 86400) %>%
+  mutate(
+    started_at_h = as.character(format(date(started_at), "%m-%d")),
+    holiday_not_holiday = case_when(started_at_h %in% holidays$date ~ "Holiday",
+                                    TRUE ~ "Not a Holiday")
+  )
+
+```
+
+#### 4th July
+
+```{r 4th-July}
+######## 4th July
+
+
+fourth_july <- holiday_not_holiday_df %>% select(holiday_not_holiday,
+                                  member_casual,
+                                  started_at_h) %>%
+  filter(
+    started_at_h %in% c(
+      "06-30",
+      "07-01",
+      "07-02",
+      "07-03",
+      "07-04",
+      "07-05",
+      "07-06",
+      "07-07",
+      "07-08"
+    )
+  ) %>%
+  count(started_at_h, holiday_not_holiday, member_casual, name = "counts") %>%
+  ggplot(aes(x = started_at_h,
+             y = counts,
+             fill = member_casual)) +
+  geom_col(width = 0.5) +
+  gghighlight(started_at_h == "07-04",
+              unhighlighted_params = list(alpha = 0.7)) +
+  scale_x_discrete(
+    labels = c(
+      "06-30",
+      "07-01",
+      "07-02",
+      "07-03",
+      "04-Jul",
+      "07-05",
+      "07-06",
+      "07-07",
+      "07-08"
+    )
+  ) +
+  scale_fill_manual(
+    name = NULL,
+    values = c("casual" = "#cc181e", "member" = "#559900"),
+    labels = c("Casual", "Member"
+    )
+  ) +
+  theme(legend.position = "top") +
+  scale_y_continuous(labels = unit_format(unit = "K", scale = 1e-3)) +
+  labs(x = "04-Jul",
+       y = NULL)
+ 
+```
+
+#### New year
+
+```{r New-year}
+ 
+######## New year
+
+
+New_year <- holiday_not_holiday_df %>% select(holiday_not_holiday,
+                                  member_casual,
+                                  started_at_h) %>%
+  filter(
+    started_at_h %in% c(
+      "12-28",
+      "12-29",
+      "12-30",
+      "12-31",
+      "01-01",
+      "01-02",
+      "01-03",
+      "01-04",
+      "01-05"
+    )
+  ) %>%
+  count(started_at_h, holiday_not_holiday, member_casual, name = "counts") %>%
+  ggplot(aes(x = started_at_h,
+             y = counts,
+             fill = member_casual)) +
+  geom_col(width = 0.5, 
+           show.legend = FALSE) +
+  scale_x_discrete(
+    labels = c(
+      "12-28",
+      "12-29",
+      "12-30",
+      "12-31",
+      "New Year",
+      "01-02",
+      "01-03",
+      "01-04",
+      "01-05"
+    )
+  ) +
+  gghighlight(started_at_h == "01-05") +
+  scale_fill_manual(
+    name = NULL,
+    values = c("casual" = "#cc181e", "member" = "#559900"),
+    labels = c("Casual", "Member"
+    )) +
+  scale_y_continuous(labels = unit_format(unit = "K", scale = 1e-3)) +
+  labs(x = "New Year",
+       y = NULL)
+  
+```
+
+#### Halloween
+
+```{r Halloween}
+
+######## Halloween
+
+
+Halloween <- holiday_not_holiday_df %>% select(holiday_not_holiday,
+                                  member_casual,
+                                  started_at_h) %>%
+  filter(
+    started_at_h %in% c(
+      "10-26",
+      "10-27",
+      "10-28",
+      "10-29",
+      "10-31",
+      "11-01",
+      "11-02",
+      "11-03",
+      "11-04"
+    )
+  ) %>%
+  count(started_at_h, holiday_not_holiday, member_casual, name = "counts") %>%
+  ggplot(aes(x = started_at_h,
+             y = counts,
+             fill = member_casual)) +
+  geom_col(width = 0.5, 
+           show.legend = FALSE) +
+  scale_x_discrete(
+    labels = c(
+      "10-26",
+      "10-27",
+      "10-28",
+      "10-29",
+      "Halloween",
+      "11-01",
+      "11-02",
+      "11-03",
+      "11-04"
+    )
+  )+
+  gghighlight(started_at_h == "10-31") +
+  scale_fill_manual(
+    name = NULL,
+    values = c("casual" = "#cc181e", "member" = "#559900"),
+    labels = c("Casual", "Member"
+    )
+  ) +
+  scale_y_continuous(labels = unit_format(unit = "K", scale = 1e-3)) +
+  labs(x = "Halloween",
+       y = NULL)
+
+```
+
+#### Christmas Day
+
+```{r Christmas-Day}
+
+######## Christmas Day
+
+
+christmas_day <- holiday_not_holiday_df %>% select(holiday_not_holiday,
+                                  member_casual,
+                                  started_at_h) %>%
+  filter(
+    started_at_h %in% c(
+      "12-22",
+      "12-23",
+      "12-24",
+      "12-25",
+      "12-26",
+      "12-27",
+      "12-28"
+    )
+  ) %>%
+  count(started_at_h, holiday_not_holiday, member_casual, name = "counts") %>%
+  ggplot(aes(x = started_at_h,
+             y = counts,
+             fill = member_casual)) +
+  geom_col(width = 0.5, 
+           show.legend = FALSE) +
+  scale_x_discrete(
+    labels = c(
+      "12-22",
+      "12-23",
+      "12-24",
+      "Christmas Day",
+      "12-26",
+      "12-27",
+      "12-28"
+    )
+  )+
+  gghighlight(started_at_h == "12-25") +
+  scale_fill_manual(
+    name = NULL,
+    values = c("casual" = "#cc181e", "member" = "#559900"),
+    labels = c("Casual", "Member"
+    )
+  ) +
+  scale_y_continuous(labels = unit_format(unit = "K", scale = 1e-3)) +
+  labs(x = "Christmas day",
+       caption = "Data Source: Kaggle | Divvy Chicago Bike Sharing Data",
+       y = NULL)
+
+```
+
+#### 4th July, New year, Halloween and Christmas day plots
+
+```{r 4th-July-New-year-Halloween-and-Christmas-day-plots, fig.height = 6, fig.width = 8}
+
+fourth_july / New_year / Halloween / christmas_day +
+  plot_annotation(title = "4th July, New year, Halloween and Christmas bikes usage plots") & 
+  theme(plot.title = element_text(hjust = 0.5))
+
+```
+
+***Observations:***
+
+-   Low bike usage during the holidays that majority of customers
+    celebrate with families or friends (indoor) like New year and
+    Christmas
+
+-   High usage during the holidays the customers celebrate outdoor like
+    4th July and Halloween.
+
+Although there are always exceptions to the figures above, like the day
+or night activities, these figures are realistic somehow, so companies
+can think about how to benefit from them.
+
+### Types of customers distribution and the Rides per day of week
+
+```{r customers-Rides-per-day-of-week , fig.height = 6, fig.width = 8}
+
+
+member_casual_col <- divvy_trip_full_data_sample %>%
+  select(member_casual, started_at) %>%
+  drop_na(started_at, member_casual) %>%
+  mutate(weekday = wday(started_at)) %>%
+  group_by(weekday, member_casual) %>%
+  summarise(counts = n(),
+            .groups = "drop") %>%
+  ungroup() %>%
+  arrange(desc(counts)) %>%
+  ggplot() +
+  geom_line(aes(weekday, counts, color = member_casual),
+            size = 2) +
+  scale_x_continuous(breaks = c(1,2,3,4,5,6,7),
+    labels = c("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat")) +
+  scale_y_continuous(labels = unit_format(unit = "K", scale = 1e-3)) +
+  scale_color_manual(
+    name = NULL,
+    values = c("casual" = "#cc181e", "member" = "#559900"),
+    labels = c("Casual", "Member")
+  ) +
+  theme(legend.position = "bottom") +
+  labs(title = "Rides by day of week and type of customers",
+       x = NULL,
+       y = NULL)
+
+member_casual_pie <- divvy_trip_full_data_sample %>%
+  count(member_casual, name = "counts", sort = T) %>%
+  mutate(prop = (counts / sum(counts)) * 100) %>%
+  arrange(desc(prop)) %>%
+  ggplot(aes("", counts)) +
+  geom_col(
+    aes(fill = factor(member_casual)),
+    show.legend = FALSE,
+    position = "fill",
+    color = "white",
+    size = 2
+  ) +
+  geom_text(
+    aes(
+      label = str_c(round(prop), "%"),
+      group = factor(member_casual)
+    ),
+    position = position_fill(vjust = 0.5),
+    color = "white",
+    size = 4,
+    show.legend = FALSE,
+    fontface = "bold"
+  ) +
+  coord_polar(theta = "y") +
+  theme_void() +
+  scale_fill_manual(values = c("casual" = "#cc181e", "member" = "#559900")) +
+  theme_void() +
+  labs(caption = "Data Source: Kaggle IBM HR Employee Attrition",
+       fill = "")
+
+
+member_casual_col / member_casual_pie 
+
+```
+
+***Observations:***
+
+-   Members and casual users show different usage patterns,
+
+-   Casual users tend to use bikes during weekends more than during
+    weekdays,
+
+-   Members Users keep a realistic pattern that every member gets a
+    membership for. that is to say, they already know their daily needs
+    and plan.
+
+### Types of Rideables distribution and the Rides per day of week
+
+```{r rideables-Rides-per-day-of-week , fig.height = 6, fig.width = 8}
+
+rideable_type_col <- divvy_trip_full_data_sample %>%
+  select(rideable_type, started_at) %>%
+  drop_na(started_at, rideable_type) %>%
+  mutate(weekday = wday(started_at)) %>%
+  group_by(weekday, rideable_type) %>%
+  summarise(counts = n(),
+            .groups = "drop") %>%
+  ungroup() %>%
+  arrange(desc(counts)) %>%
+  ggplot() +
+  geom_line(aes(weekday, counts, color = rideable_type),
+            size = 2) +
+  scale_x_continuous(breaks = c(1,2,3,4,5,6,7),
+    labels = c("Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat")) +
+  scale_y_continuous(labels = unit_format(unit = "K", scale = 1e-3)) +
+  scale_color_manual(
+    name = NULL,
+    values = c(
+      "classic_bike" = "#4B6337",
+      "docked_bike" = "#9B0B16",
+      "electric_bike" = "#0c457d"
+    ),
+    labels = c("Classic bike", "Docked bike", "Electric bike")
+  ) +
+  theme(legend.position = "bottom") +
+  labs(title = "Rides by day of week and rideables types",
+       x = NULL,
+       y = NULL)
+
+rideable_type_pie <- divvy_trip_full_data_sample %>%
+  count(rideable_type, name = "counts", sort = T) %>%
+  mutate(prop = (counts / sum(counts)) * 100) %>%
+  arrange(desc(prop)) %>%
+  ggplot(aes("", counts)) +
+  geom_col(
+    aes(fill = factor(rideable_type)),
+    position = "fill",
+    color = "white",
+    size = 1 ,
+    show.legend = FALSE
+  ) +
+  geom_text(
+    aes(
+      label = str_c(round(prop), "%"),
+      group = factor(rideable_type)
+    ),
+    position = position_fill(vjust = 0.3),
+    color = "white",
+    size = 3.5,
+    show.legend = FALSE,
+    fontface = "bold"
+  ) +
+  coord_polar(theta = "y") +
+  theme_void() +
+  scale_fill_manual(
+    name = NULL,
+    values = c(
+      "classic_bike" = "#4B6337",
+      "docked_bike" = "#9B0B16",
+      "electric_bike" = "#0c457d"
+    ),
+    labels = c("Classic bike", "Docked bike", "Electric bike")
+  ) +
+  theme_void() +
+  labs(title = NULL,
+       caption = "Data Source: Kaggle | Divvy Chicago Bike Sharing Data",
+       fill = "")
+
+rideable_type_col / rideable_type_pie
+
+```
+
+***Observations:***
+
+-   Classic bike: The most used bikes are 58%. I believe most people
+    feel comfortable with this kind of bike, and it seems designed for
+    easy riding regardless of riding ability.
+
+-   Electric bike: Second in the list with 37%.
+
+-   Docked bike: 6%, YOY will phase out.
+
+### Weekly Rides distribution by Types of rideables
+
+```{r Weekly-Rides-distribution-by-Types-of-rideables , fig.height = 6, fig.width = 8}
+
+divvy_trip_full_data_sample %>%
+  count(week = floor_date(started_at, "week"),
+        rideable_type,
+        name = "counts") %>%
+  ggplot() +
+  geom_line(aes(x = week, y = counts, color = rideable_type), size = 1) +
+  theme_minimal() +
+  gghighlight(label_key = rideable_type) +
+  facet_wrap(vars(rideable_type)) +
+  scale_color_manual(
+    values = c(
+      "classic_bike" = "#7c0d0e",
+      "docked_bike" = "#26453e",
+      "electric_bike" = "#ffa500"
+    )
+  ) +
+  scale_y_continuous(labels = unit_format(unit = "K", scale = 1e-3)) +
+  theme(strip.text = element_blank())+
+  labs(title = "Weekly Rides distribution by Types of rideables",
+       caption = "Data Source: Kaggle | Divvy Chicago Bike Sharing Data",
+       x = "",
+       y = "Counts")
+
+```
+
+***Recommendations:***
+
+-   It is recommended to add more classic Bike to the operation as well
+    as Electric bike.
+
+-   Make an effective and gradual plan to phase out the docked bike.
+
+### Weekday weekend rides by types of customers
+
+```{r weekday-weekend-by-types-of-customers}
+
+
+weekday_weekend_member <- divvy_trip_full_data_sample %>%
+  filter(member_casual == "member") %>%
+  select(member_casual, started_at) %>%
+  drop_na(started_at, member_casual) %>%
+  mutate(
+    weekday = wday(started_at, label = TRUE),
+    weekday_weekend = if_else(weekday %in% c("Sat", "Sun"), "Weekend", "Weekday")
+  ) %>%
+  group_by(weekday_weekend) %>%
+  summarise(counts = n()) %>%
+  mutate(prop = (counts / sum(counts)) * 100) %>%
+  arrange(desc(prop)) %>%
+  ggplot(aes("", counts)) +
+  geom_col(
+    aes(fill = weekday_weekend),
+    show.legend = FALSE,
+    position = "fill",
+    color = "white",
+    size = 2,
+    width = 1,
+    alpha = 0.7
+  ) +
+  geom_text(
+    aes(
+      label = str_c(round(prop), "%", "\n", weekday_weekend),
+      group = weekday_weekend
+    ),
+    position = position_fill(vjust = 0.5),
+    color = "white",
+    size = 4.5,
+    show.legend = FALSE,
+    fontface = "bold"
+  ) +
+  scale_fill_manual(values = c("Weekday" = "#4C8C08", "Weekend" = "#1e4d04")) +
+  coord_polar(theta = "y") +
+  theme_void() +
+  theme(plot.title = element_text(
+    hjust = 0.5,
+    colour = "#559900",
+    size = 15
+  )) +
+  labs(title = "Member Rides",
+       fill = "")
+
+weekday_weekend_casual <- divvy_trip_full_data_sample %>%
+  filter(member_casual == "casual") %>%
+  select(member_casual, started_at) %>%
+  drop_na(started_at, member_casual) %>%
+  mutate(
+    weekday = wday(started_at, label = TRUE),
+    weekday_weekend = if_else(weekday %in% c("Sat", "Sun"), "Weekend", "Weekday")
+  ) %>%
+  group_by(weekday_weekend) %>%
+  summarise(counts = n()) %>%
+  mutate(prop = (counts / sum(counts)) * 100) %>%
+  arrange(desc(prop)) %>%
+  ggplot(aes("", counts)) +
+  geom_col(
+    aes(fill = weekday_weekend),
+    show.legend = FALSE,
+    position = "fill",
+    color = "white",
+    size = 2,
+    width = 1,
+    alpha = 0.7
+  ) +
+  geom_text(
+    aes(
+      label = str_c(round(prop), "%", "\n", weekday_weekend),
+      group = weekday_weekend
+    ),
+    position = position_fill(vjust = 0.5),
+    color = "white",
+    size = 4.5,
+    show.legend = FALSE,
+    fontface = "bold"
+  ) +
+  scale_fill_manual(values = c("Weekday" = "#bf161c", "Weekend" = "#800e13")) +
+  coord_polar(theta = "y") +
+  theme_void() +
+  theme(plot.title = element_text(
+    hjust = 0.5,
+    colour = "#cc181e",
+    size = 15
+  )) +
+  labs(title = "Casual Rides",
+       caption = "Data Source: Kaggle | Divvy Chicago Bike Sharing Data",
+       fill = "")
+
+weekday_weekend_member + weekday_weekend_casual
+
+```
+
+***Observations:***
+
+Member Rides:
+
+-   Weekday Rides = 74%
+
+-   Weekend Rides = 26%
+
+Casual Rides:
+
+-   Weekday Rides = 59%
+
+-   Weekend Rides = 41%
+
+As we already know, Casual users rent bikes during the Weekends more
+than members' users do!
+
+***Recommendation:***
+
+-   I would like to advise the company to have a particular membership
+    plan for weekends if they do not have one already!
+
+### Weekday VS Weekend Trips By Time Of Day
+
+```{r Weekday-VS-Weekend-Trips-By-Time-Of-Day}
+
+divvy_trip_full_data_sample %>%
+  select(member_casual, started_at) %>%
+  drop_na(started_at, member_casual) %>%
+  mutate(
+    weekday = wday(started_at, label = TRUE),
+    weekday_weekend = if_else(weekday %in% c("Sat", "Sun"), "Weekend", "Weekday"),
+    started_at_hour = hour(started_at)
+  )  %>%
+  count(started_at_hour, member_casual, weekday_weekend, name = "counts") %>%
+  ggplot(aes(started_at_hour, y = counts, color = member_casual)) +
+  geom_line(size = 1.3) +
+  facet_wrap(vars(weekday_weekend), ncol = 1) +
+  scale_color_manual(values = c("casual" = "#cc181e", "member" = "#559900"),
+                                labels = c("Casual", "Member")) +
+  scale_y_continuous(labels = unit_format(unit = "K", scale = 1e-3)) +
+  theme(axis.text.x = element_text(angle = 90)) +
+  theme(strip.background = element_rect(fill = "#263e25")) +
+  theme(strip.text = element_text(
+    colour = 'white',
+    size = 11,
+    face = "bold"
+  )) +
+  labs(
+    title = "Weekday VS Weekend Trips By Time Of Day",
+    caption = "Data Source: Kaggle | Divvy Chicago Bike Sharing Data",
+    x = "Time",
+    y = "Counts",
+    color = NULL
+  )
+
+```
+
+***Observations:***
+
+-   Bike usage fluctuates throughout the day, and
+-   The majority of trips occurred between 6 am and 9 pm.
+
+On weekdays, - Members and casual users show different travel patterns.
+Members show commute activity (spikes in usage from 7:00 -- 9:00 and
+17:00 -- 19:00), and constant usage throughout the day. - Casual usage
+increased throughout the day with a constant peak from noon-7pm.
+
+On the weekends, - Members and casual users exhibit similar behavior
+with the daytime peak occurring between 2-4pm. - Casual users made a
+higher proportion of mid-day trips.
+
+### Daily rides (number of trips)
+
+```{r Daily-rides-number-of-trips }
+
+day_year <- divvy_trip_full_data_sample %>%
+  select(started_at) %>%
+  mutate(day_m_y = date(started_at)) %>%
+  group_by(day_m_y) %>%
+  summarise(counts = n(), .groups = "drop") %>%
+  mutate(sun_sat = wday(day_m_y, label = TRUE),
+         avg = mean(counts)) %>%
+  ungroup() %>%
+  arrange(desc(counts))
+  
+
+sun_sat_df <- day_year %>% 
+  filter(sun_sat %in% c("Sun", "Sat"))
+
+
+ggplot(day_year) +
+  geom_line(aes(day_m_y, counts), color = "gray80") +
+  geom_hline(
+    aes(yintercept = avg),
+    color = "limegreen",
+    size = 1.5,
+    linetype = "dashed"
+  ) +
+  geom_point(data = sun_sat_df,
+             aes(day_m_y, counts, color = sun_sat),
+             size = 2) +
+  scale_color_manual(values = c("Sat" = "orange",
+                                "Sun" = "#030056")) +
+  theme_classic() +
+  theme(legend.position = "top") +
+  labs(
+    title = "Daily rides (number of trips)",
+    x = "DaysYear",
+    y = "Counts",
+    caption = "Data Source: Kaggle | Divvy Chicago Bike Sharing Data",
+    color = NULL
+  )
+
+```
+
+***Observations:***
+
+-   The line spikes are the high usage of bikes, mainly on Sat and Sun, and
+    on some weekends the bike usage dropped; I think it is the Holidays.
+
+-   The usage in summer time is above the average (the green dashed
+    line)
+
+### Rides seasonal distribution
+
+```{r Rides-seasonal-distribution}
+
+trips_by_month <- divvy_trip_full_data_sample %>%
+  select(started_at) %>%
+  mutate(month = month(started_at, label = TRUE),
+         year = year(started_at)) %>%
+  group_by(month) %>%
+  summarise(counts = n(), .groups = "drop") %>%
+  ungroup() %>%
+  arrange(month)
+
+
+plot_trips_by_month <- ggplot(trips_by_month) +
+  geom_line(aes(
+    x = month,
+    y = counts,
+    group = nrow(trips_by_month)
+  ),
+  color = "limegreen",
+  size = 1.2) +
+  annotate(
+    geom = "text",
+    x = "Feb",
+    y = 50000,
+    label = "Winter",
+    color = "black",
+    size = 4,
+    hjust = 0.9) +
+  annotate(
+    geom = "segment",
+    x = 2.5,
+    xend = 6.5,
+    y = 50000,
+    yend = 50000,
+    color = "gray",
+    size = 1,
+    arrow = arrow(ends = "both", angle = 90, length = unit(.2,"cm"))
+  ) +
+  annotate(
+    geom = "segment",
+    x = 8.5,
+    xend = 12,
+    y = 50000,
+    yend = 50000,
+    color = "gray",
+    size = 1,
+    arrow = arrow(ends = "both", angle = 90, length = unit(.2,"cm"))
+  ) +
+  annotate(
+    geom = "text",
+    x = "Jul",
+    y = 50000,
+    label = "Summer",
+    color = "black",
+    size = 4,
+    hjust = 0.2) +
+  scale_y_continuous(labels = unit_format(unit = "K", scale = 1e-3)) +
+  labs(title = "Rides seasonal distribution",
+       caption = "Data Source: Kaggle | Divvy Chicago Bike Sharing Data",
+       x = NULL,
+       y = "Counts",
+       fill = NULL) +
+  theme_classic()
+
+plot_trips_by_month
+         
+         
+```
+
+***Observations:***
+
+This image does not need explanations:
+
+-   Weather conditions factor,
+
+-   Tourists,
+
+-   Outing,
+
+-   Enjoying Summertime and
+
+-   Of course, Routine WORK
+
+## Network analysis
+
+### Sankey Network
+
+```{r Sankey-Network , fig.height = 6, fig.width = 8}
+
+
+stations_link <- divvy_trip_full_data_sample %>%
+  drop_na() %>%
+  select(start_station_id,
+         start_station_name,
+         end_station_id,
+         end_station_name) %>%
+  mutate(same_direction = ifelse(start_station_id == end_station_id, TRUE, FALSE)) %>%
+  filter(ifelse(start_station_id == end_station_id, TRUE, FALSE) == FALSE) %>%
+  count(start_station_name,
+        end_station_name,
+        sort = T,
+        name = "counts") %>%
+  filter(counts > 135) %>%
+  as.data.frame()
+
+
+nodes_df <-
+  data.frame(
+    station_name = c(
+      stations_link$start_station_name,
+      stations_link$end_station_name
+    ) %>%
+      unique()
+  ) 
+
+
+stations_link <- stations_link %>%
+  mutate(
+    source_id = match(start_station_name, nodes_df$station_name) - 1,
+    target_id = match(end_station_name, nodes_df$station_name) - 1
+  )
+
+
+my_color <- 'd3.scaleOrdinal().range(["#555511","#002164","#ffff00","#6b3500","#80b700","#ffbf00","#f0ad00","#fa8400","#002164","#ea4c89","#1f4a53"])'
+
+sankeyNetwork(
+  Links = stations_link,
+  Nodes = nodes_df,
+  Source = "source_id",
+  Target = "target_id",
+  Value = "counts",
+  NodeID = "station_name",
+  sinksRight = T,
+  nodeWidth = 20,
+  fontSize = 12,
+  colourScale = my_color,
+  nodePadding = 3
+)
+
+
+```
+
+***Observations:***
+
+-   "Streeter Dr & Grand Ave" is the most targeted station in both
+    start_station_name and end_station_name.
+
+-   Ellis Ave & 60th St is the 2nd
+
+-   "Michigan Ave & Oak St" is the 3nd.
+
+For example, and according to this data sample, if your destination is
+"Theater on the Lake" coming from "Lake Shore Dr & Monroe St" you can go
+through three(3) Stations:
+
+-   "Lake Shore Dr & Monroe St" --\> "Streeter Dr & Grand Ave" --\>
+    "Michigan Ave & Oak St" --\> "Theater on the Lake"
+
+OR Two(2) stations:
+
+-   Lake Shore Dr & Monroe St" --\> "Streeter Dr & Grand Ave" --\>
+    "Theater on the Lake"
+
+### Vertex Network
+
+```{r Vertex-Network, fig.height=20, fig.width=30}
+
+net <- stations_link %>%
+  as.data.frame() %>% 
+  filter(counts > 100) %>%
+  graph.data.frame(directed = T)
+
+set.seed(0)
+plot(
+  net,
+  edge.arrow.size = 2,
+  edge.color = "darkred",
+  edge.width = 1,
+  edge.curved = .1,
+  vertex.shape = "circle",
+  vertex.size = 7,
+  vertex.color = "darkgreen",
+  vertex.frame.color = "black",
+  vertex.label = V(net)$names,
+  vertex.label.color = "black",
+  vertex.label.dist	= -1,
+  vertex.label.cex	= 1.7
+)
+
+ 
+```
+
+It is crowded somehow and needs more adjustment, we may play with
+set.seed to have a proper one or subset the data according to the
+analysis we need.
+
+These Sankey Network and Vertex Network can explain a lot of more things
+like:
+
+-   One(1) way Trips,
+
+-   Round Trips,
+
+-   Congested streets Or stations
+
+## Further analysis we may do:
+
+-   Arrival and Departure,
+
+-   Members and casual locations on Map,
+
+-   Number of Trips moving average,
+
+-   More...
+
+## Final Note
+
+As I mentioned in the introduction, Missing features such as Bike ID,
+USER ID, Gender, and age, else, could definitely make this analysis
+more interesting and stronger if were exist.
+
+### Good to Know
+
+Using a bike for transport is highly recommended, on top of everything
+else,
+
+-   Saving transport costs,
+
+-   Burning thousands of calories,
+
+-   Reducing the probability of having Heart and vesicular disease and
+
+-   Road traffic stress leading to depression while seating in
+    wheel-metallic-box we proudly call it CAR!
+
+Your comments are highly appreciated.
+
+Thank you for reading and Supporting and LET'S HAVE A BIKE!.

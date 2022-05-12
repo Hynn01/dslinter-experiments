@@ -1,0 +1,499 @@
+---
+title: "Netflix"
+author: "Karat Sidhu"
+output:
+  html_document:
+    toc: true
+    theme: united
+---
+
+# Netflix Movies
+
+![netflix-intro-netflix.gif (498×278) (tenor.com](https://c.tenor.com/QJNoPeq9WmUAAAAC/netflix-intro-netflix.gif)
+
+## Loading libraries
+
+```{r}
+
+suppressPackageStartupMessages(library(tidyverse))
+suppressPackageStartupMessages(library(lubridate))
+suppressPackageStartupMessages(library(showtext))
+showtext.auto()
+font_add_google("Bebas Neue", "Bebas Neue")
+```
+
+## Loading data
+
+```{r}
+
+netflix <- read.csv("../input/netflix-original-films-imdb-scores/NetflixOriginals.csv")
+```
+
+## Looking at the data in brief
+
+```{r}
+
+head(netflix, 4)
+
+```
+
+### Type of datatype in each column
+
+```{r}
+
+as.tibble(sapply(netflix, class))
+```
+
+### Does the data contain any N/A values?
+
+```{r}
+
+any(is.na(netflix))
+```
+
+## Converting the \`premier\` from chr to datetime
+
+```{r}
+
+netflix <- netflix %>% 
+  mutate(Released = mdy(Premiere))
+
+```
+
+## Getting each year, month and date separated
+
+### Also adding the corresponding day of the week for each release
+
+```{r}
+
+netflix <- netflix %>% 
+  mutate(Year = year(Released)) %>% 
+  mutate(Month = month(Released, label = TRUE)) %>% 
+  mutate(Date = day(Released)) %>% 
+  mutate(Day = wday(Released, label = TRUE, abbr = FALSE))
+
+```
+
+## When the movies were released
+
+### Number of Movies released each year
+
+```{r fig.height= 3, fig.width= 6}
+
+netflix %>%
+  group_by(Year) %>%
+  summarise(total = n()) %>%
+  ggplot(aes(
+    x = Year,
+    y = total,
+    fill = ifelse(total == max(total), "red","grey"))) +
+  geom_col() +
+  labs(title = "Netflix Movies released each year") +
+  theme_minimal() +
+  scale_fill_manual(values = c("#2d2d2d", "#E50914")) +
+  theme(
+    legend.position = "none",
+    plot.title = element_text(
+      family = "Bebas Neue",
+      size = 35,
+      colour = "#E50914"
+    ),
+    axis.title.x = element_blank(),
+    axis.title.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor  = element_blank(),
+    text = element_text(size = 20))
+```
+
+### Number of Movies released each month
+
+```{r fig.height= 3, fig.width= 6}
+
+
+netflix %>%
+  group_by(Month) %>%
+  summarise(total = n()) %>%
+  ggplot(aes(
+    x = Month,
+    y = total,
+    fill = ifelse(total == max(total), "red","grey"))) +
+  geom_col() +
+    labs(title = "Netflix Movies released each month") +
+  theme_minimal() +
+  scale_fill_manual(values = c( "#2d2d2d", "#E50914")) +
+  theme(
+    legend.position = "none",
+    plot.title = element_text(
+      family = "Bebas Neue",
+      size = 30,
+      colour = "#E50914"
+    ),
+    axis.title.x = element_blank(),
+    axis.title.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    text = element_text(size = 20))
+
+```
+
+### Number of Movies released by date of the month
+
+```{r fig.height= 3, fig.width= 6}
+
+
+netflix %>%
+  group_by(Date) %>%
+  summarise(total = n()) %>%
+  ggplot(aes(
+    x = Date,
+    y = total,
+    fill = ifelse(total == max(total), "red","grey")))  +
+  geom_col() +
+    labs(title = "Netflix Movies released by Date of each month") +
+  theme_minimal() +
+  scale_fill_manual(values = c( "#2d2d2d", "#E50914")) +
+  theme(
+    legend.position = "none",
+    plot.title = element_text(
+      family = "Bebas Neue",
+      size = 30,
+      colour = "#E50914"
+    ),
+    axis.title.x = element_blank(),
+    axis.title.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor = element_blank(),
+    text = element_text(size = 20))
+
+
+```
+
+### Number of Movies released each day of the week
+
+```{r fig.height= 3, fig.width= 6}
+
+netflix %>%
+  group_by(Day) %>%
+  summarise(total = n()) %>%
+  ggplot(aes(
+    x = Day,
+    y = total,
+    fill = ifelse(total == max(total), "red","black"))) +
+  geom_col() +
+  labs(title = "Netflix Movies released by day of the week") +
+  theme_minimal() +
+  scale_fill_manual(values = c( "#2d2d2d", "#E50914")) +
+  theme(
+    legend.position = "none",
+    plot.title = element_text(
+      family = "Bebas Neue",
+      size = 30,
+      colour = "#E50914"
+    ),
+    axis.title.x = element_blank(),
+    axis.title.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    text = element_text(size = 20))
+  
+```
+
+## Most Popular Genres
+
+### 5 Most Popular Genres
+
+```{r}
+
+netflix %>% 
+  group_by(Genre) %>% 
+  summarise(Movies = n()) %>% 
+  arrange(desc(Movies)) %>% 
+  head(5) %>% 
+   ggplot(aes(
+    x = reorder(Genre, -Movies),
+    y = Movies,
+    fill = ifelse(Movies == max(Movies), "red", "black"))) +
+  geom_col() +
+  labs(title = "Most Popular Genres") +
+  theme_minimal() +
+  scale_fill_manual(values = c( "#2d2d2d", "#E50914")) +
+  theme(
+    legend.position = "none",
+    plot.title = element_text(
+      family = "Bebas Neue",
+      size = 30,
+      colour = "#E50914"
+    ),
+    axis.title.x = element_blank(),
+    axis.title.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    text = element_text(size = 20))
+  
+```
+
+## Most Popular Languages
+
+### 5 Most Popular Languages
+
+```{r fig.height= 3, fig.width= 6}
+
+
+netflix %>% 
+  group_by(Language) %>% 
+  summarise(Movies = n()) %>% 
+  arrange(desc(Movies)) %>% 
+  head(5) %>% 
+   ggplot(aes(
+    x = reorder(Language, -Movies),
+    y = Movies,
+    fill = ifelse(Movies == max(Movies), "red", "black"))) +
+  geom_col() +
+  labs(title = "Most Popular Languages") +
+  theme_minimal() +
+  scale_fill_manual(values = c( "#2d2d2d", "#E50914")) +
+  theme(
+    legend.position = "none",
+    plot.title = element_text(
+      family = "Bebas Neue",
+      size = 30,
+      colour = "#E50914"
+    ),
+    axis.title.x = element_blank(),
+    axis.title.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    text = element_text(size = 20))
+
+```
+
+## IMDB Scores
+
+### How were most movies rated?
+
+```{r}
+
+
+netflix %>%
+  ggplot(aes(x = `IMDB.Score`)) +
+  geom_dotplot(binwidth = 0.1,
+               fill = "#2d2d2d",
+               color = "#e9ecef") +
+  labs(title = "IMDB Score Distribution") +
+  theme_minimal() +
+  theme(
+    legend.position = "none",
+    plot.title = element_text(
+      family = "Bebas Neue",
+      size = 25,
+      colour = "#E50914"
+    ),
+    axis.title.x = element_blank(),
+    axis.title.y = element_blank(),
+    panel.grid.major.x = element_blank()
+  ) 
+```
+
+### Highest Rated Movies
+
+```{r fig.height= 3, fig.width= 6}
+
+netflix %>% 
+  arrange(desc(`IMDB.Score`)) %>% 
+  head(5) %>% 
+   ggplot(aes(
+    x = reorder(`Title`, `IMDB.Score`),
+    y = `IMDB.Score`,
+    fill = ifelse(`IMDB.Score` == max(`IMDB.Score`), "red", "black"))) +
+  geom_col() +
+  labs(title = "Highest Rated Movies") +
+  theme_minimal() +
+  scale_fill_manual(values = c( "#2d2d2d", "#E50914")) +
+  coord_flip() +
+  theme(
+    legend.position = "none",
+    plot.title = element_text(
+      family = "Bebas Neue",
+      size = 25,
+      colour = "#E50914"
+    ),
+    axis.title.x = element_blank(),
+    axis.title.y = element_blank(),
+    panel.grid.major.x = element_blank())
+
+```
+
+### Lowest Rated Movies
+
+```{r fig.height= 3, fig.width= 6}
+
+
+netflix %>% 
+  arrange(desc(-`IMDB.Score`)) %>% 
+  head(5) %>% 
+  ggplot(aes(
+    x = reorder(`Title`, -`IMDB.Score`),
+    y = `IMDB.Score`,
+    fill = ifelse(`IMDB.Score` == min(`IMDB.Score`), "red", "black"))) +
+  geom_col() +
+  labs(title = "Lowest Rated Movies") +
+  theme_minimal() +
+  scale_fill_manual(values = c( "#2d2d2d", "#E50914")) +
+  coord_flip() +
+  theme(
+    legend.position = "none",
+    plot.title = element_text(
+      family = "Bebas Neue",
+      size = 25,
+      colour = "#E50914"
+    ),
+    axis.title.x = element_blank(),
+    axis.title.y = element_blank(),
+    panel.grid.major.x = element_blank())
+
+```
+
+## Runtime
+
+### How long are the movies?
+
+```{r fig.height= 3, fig.width= 6}
+
+netflix %>%
+  ggplot(aes(x = Runtime)) +
+  geom_dotplot(binwidth = 2.25,
+               fill = "#2d2d2d",
+               color = "#e9ecef") +
+  labs(title = "Movie Runtime") +
+  theme_minimal() +
+  theme(
+    legend.position = "none",
+    plot.title = element_text(
+      family = "Bebas Neue",
+      size = 25,
+      colour = "#E50914"
+    ),
+    axis.title.x = element_blank(),
+    axis.title.y = element_blank(),
+    panel.grid.major.x = element_blank()
+  ) 
+
+```
+
+### Longest Movies
+
+```{r fig.height= 3, fig.width= 6}
+
+netflix %>% 
+  arrange(desc(Runtime)) %>% 
+  head(5) %>% 
+  ggplot(aes(
+    x = reorder(`Title`, `Runtime`),
+    y = `Runtime`,
+    fill = ifelse(Runtime == max(`Runtime`), "red", "black"))) +
+  geom_col() +
+  labs(title = "Longest Movies") +
+  theme_minimal() +
+  scale_fill_manual(values = c( "#2d2d2d", "#E50914")) +
+  coord_flip() +
+  theme(
+    legend.position = "none",
+    plot.title = element_text(
+      family = "Bebas Neue",
+      size = 25,
+      colour = "#E50914"
+    ),
+    axis.title.x = element_blank(),
+    axis.title.y = element_blank(),
+    panel.grid.major.x = element_blank())
+  
+  
+```
+
+### Shortest Movies
+
+```{r fig.height= 3, fig.width= 6}
+netflix %>% 
+  arrange(desc(-Runtime)) %>% 
+  head(5) %>% 
+  ggplot(aes(
+    x = reorder(`Title`, `Runtime`),
+    y = `Runtime`,
+    fill = ifelse(Runtime == min(`Runtime`), "red", "black"))) +
+  geom_col() +
+  labs(title = "Shortest Movies") +
+  theme_minimal() +
+  scale_fill_manual(values = c( "#2d2d2d", "#E50914")) +
+  coord_flip() +
+  theme(
+    legend.position = "none",
+    plot.title = element_text(
+      family = "Bebas Neue",
+      size = 25,
+      colour = "#E50914"
+    ),
+    axis.title.x = element_blank(),
+    axis.title.y = element_blank(),
+    panel.grid.major.x = element_blank(),
+    text = element_text(size = 20))
+  
+```
+
+## Runtime vs IMDB-Score
+
+```{r fig.height= 3, fig.width= 6}
+
+netflix %>% 
+  ggplot(aes(x=`IMDB.Score`, y= Runtime)) +
+  geom_point() +
+  geom_smooth(method = lm,colour = "#E50914") +
+  labs(title = "Runtime vs IMDB Rating") +
+  theme_minimal() +
+  scale_fill_manual(values = c( "#2d2d2d", "#E50914")) +
+  theme(
+    legend.position = "none",
+    plot.title = element_text(
+      family = "Bebas Neue",
+      size = 25,
+      colour = "#E50914"
+    ),
+    axis.title.x = element_blank(),
+    axis.title.y = element_blank(),
+    panel.grid.major.x = element_blank())
+  
+  
+```
+
+## Basic Statistical Analysis
+
+### Linear Models
+
+```{r}
+
+model <- lm(data = netflix, formula = Runtime ~ `IMDB.Score`)
+summary(model)
+```
+
+### Correlation Test
+
+```{r}
+
+res <- cor.test(netflix$Runtime, netflix$IMDB.Score, 
+                    method = "pearson")
+res
+```
+
+### P-value
+
+```{r}
+
+res$p.value
+
+```
+
+### Correlation Coefficient
+
+```{r}
+res$estimate
+
+```
+
+## Thank you!
+
+![end](https://c.tenor.com/07cmziHz9hQAAAAC/curb-your-enthusiasm-curb-your-enthusiasm-outro.gif)
