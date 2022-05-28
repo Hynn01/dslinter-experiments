@@ -46,7 +46,7 @@ def remove_empty_dir(dir_path):
                 os.rmdir(file)
 
 
-# collect_all_notebook_project_names("./notebooks_2020_original", "notebook_dataset_010520.txt")
+# collect_all_notebook_project_names("./notebooks_2020_original", "notebook_dataset_010520.yml")
 def collect_all_notebook_project_names(root_path, filename):
     dirs = os.listdir(root_path)
     f_txt = open(filename, "a")
@@ -80,6 +80,15 @@ def convert_ipynb_to_py(path):
             if file[-6:] == ".ipynb":
                 os.system("jupyter nbconvert --to script " + file_name)
                 os.remove(file_name)
+
+
+def add_url():
+    f = open("projects1.txt", "r")
+    repos = f.readlines()
+    f2 = open("projects1.yml", "a")
+    for url in repos:
+        url = "- url: " + url
+        f2.write(url)
 
 ############################
 # clone projects into project folder
@@ -217,14 +226,16 @@ def delete_old_projects():
                 print("not work2")
 
 
-def add_url():
-    f = open("dataset2.txt", "r")
-    repos = f.readlines()
-    f2 = open("dataset3.txt", "a")
-    for url in repos:
-        url = "- url: " + url
-        f2.write(url)
+def replace_comma():
+    f = open("results_20200513.csv", "r")
+    lines = f.readlines()
+    f2 = open("results_20200513.txt", "a")
+    for l in lines:
+        l = l.replace(",", " & ")
+        l = l[:-1] + r" \\" + l[-1]
+        print(l)
+        f2.write(l)
 
 
 if __name__ == '__main__':
-     convert_ipynb_to_py("./notebooks_2020")
+     replace_comma()
