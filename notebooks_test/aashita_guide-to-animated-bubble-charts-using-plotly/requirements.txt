@@ -1,4 +1,0 @@
-numpy==1.19.5
-pandas==1.2.4
-bubbly==1.0.2
-plotly==5.8.0
