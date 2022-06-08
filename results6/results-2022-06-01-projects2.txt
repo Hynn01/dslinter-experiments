@@ -1,0 +1,1781 @@
+Starting: /Users/zhanghaiyin/go/bin/dlv dap --check-go-version=false --listen=127.0.0.1:55765 --log-dest=3 from /Users/zhanghaiyin/Desktop/python-ml-analysis/analyser/main
+DAP server listening at: 127.0.0.1:55765
+2022/06/01 22:25:27 --> Found 74 projects in dataset time: 5.407411ms
+2022/06/01 22:25:27 --> Starting analysis of each selected project time: 5.518629ms
+2022/06/01 22:25:27 Already contains a virtualenv!
+2022/06/01 22:25:27 --> Project  1 - DL-unet                          - Already cloned! time: 5.663441ms
+2022/06/01 22:25:27 --> Project  2 - pix2pix-model                    - Already cloned! time: 5.755256ms
+2022/06/01 22:25:27 --> Project  3 - Group28                          - Already cloned! time: 5.798329ms
+2022/06/01 22:25:27 --> Project  2 - pix2pix-model                    - requirements.txt file found in repo! time: 5.800672ms
+2022/06/01 22:25:27 --> Project  2 - pix2pix-model                    - Starting analysis... time: 5.835005ms
+2022/06/01 22:25:27 --> Project  2 - pix2pix-model                    - Analysing Git stats & counting files... time: 5.84498ms
+2022/06/01 22:25:27 --> Project  4 - pytorch-CycleGAN-and-pix2pix     - Already cloned! time: 5.844865ms
+2022/06/01 22:25:27 --> Project  4 - pytorch-CycleGAN-and-pix2pix     - requirements.txt file found in repo! time: 5.877564ms
+2022/06/01 22:25:27 --> Project  4 - pytorch-CycleGAN-and-pix2pix     - Starting analysis... time: 5.901278ms
+2022/06/01 22:25:27 --> Project  4 - pytorch-CycleGAN-and-pix2pix     - Analysing Git stats & counting files... time: 5.907241ms
+2022/06/01 22:25:27 --> Project  5 - navigan                          - Already cloned! time: 5.916377ms
+2022/06/01 22:25:27 --> Project  5 - navigan                          - Custom requirements.txt contents defined! time: 5.960806ms
+2022/06/01 22:25:27 --> Project  6 - PanopticFCN                      - Already cloned! time: 5.972518ms
+2022/06/01 22:25:27 --> Project  6 - PanopticFCN                      - Custom requirements.txt contents defined! time: 6.005441ms
+2022/06/01 22:25:27 --> Project  7 - stylegan2-ada                    - Already cloned! time: 6.173995ms
+2022/06/01 22:25:27 --> Project  7 - stylegan2-ada                    - Custom requirements.txt contents defined! time: 6.202486ms
+2022/06/01 22:25:27 --> Project  8 - BackgroundMattingV2              - Already cloned! time: 6.253953ms
+2022/06/01 22:25:27 --> Project  8 - BackgroundMattingV2              - requirements.txt file found in repo! time: 6.29435ms
+2022/06/01 22:25:27 --> Project  8 - BackgroundMattingV2              - Starting analysis... time: 6.325508ms
+2022/06/01 22:25:27 --> Project  8 - BackgroundMattingV2              - Analysing Git stats & counting files... time: 6.339162ms
+2022/06/01 22:25:27 --> Project  9 - deit                             - Already cloned! time: 6.398772ms
+2022/06/01 22:25:27 --> Project  9 - deit                             - requirements.txt file found in repo! time: 6.443451ms
+2022/06/01 22:25:27 --> Project  9 - deit                             - Starting analysis... time: 6.458843ms
+2022/06/01 22:25:27 --> Project  9 - deit                             - Analysing Git stats & counting files... time: 6.467879ms
+2022/06/01 22:25:27 --> Project 10 - yolact_edge                      - Already cloned! time: 6.469343ms
+2022/06/01 22:25:27 --> Project 12 - VoV3D                            - Already cloned! time: 6.565179ms
+2022/06/01 22:25:27 --> Project 12 - VoV3D                            - Custom requirements.txt contents defined! time: 6.591432ms
+2022/06/01 22:25:27 --> Project 11 - svoice                           - Already cloned! time: 6.597665ms
+2022/06/01 22:25:27 --> Project 11 - svoice                           - requirements.txt file found in repo! time: 6.626327ms
+2022/06/01 22:25:27 --> Project 11 - svoice                           - Starting analysis... time: 6.63854ms
+2022/06/01 22:25:27 --> Project 11 - svoice                           - Analysing Git stats & counting files... time: 6.644202ms
+2022/06/01 22:25:27 --> Project  1 - DL-unet                          - Starting analysis... time: 7.201673ms
+2022/06/01 22:25:27 --> Project 10 - yolact_edge                      - Found a setup.py file! time: 7.213158ms
+2022/06/01 22:25:27 --> Project  1 - DL-unet                          - Analysing Git stats & counting files... time: 7.223769ms
+2022/06/01 22:25:27 --> Project 10 - yolact_edge                      - Starting analysis... time: 7.232921ms
+2022/06/01 22:25:27 --> Project 10 - yolact_edge                      - Analysing Git stats & counting files... time: 7.2477ms
+2022/06/01 22:25:27 --> Project  3 - Group28                          - Starting analysis... time: 7.209633ms
+2022/06/01 22:25:27 --> Project  3 - Group28                          - Analysing Git stats & counting files... time: 7.287173ms
+2022/06/01 22:25:27 --> Project  7 - stylegan2-ada                    - Starting analysis... time: 9.276052ms
+2022/06/01 22:25:27 --> Project 12 - VoV3D                            - Starting analysis... time: 9.36889ms
+2022/06/01 22:25:27 --> Project  6 - PanopticFCN                      - Starting analysis... time: 9.350119ms
+2022/06/01 22:25:27 --> Project  7 - stylegan2-ada                    - Analysing Git stats & counting files... time: 9.412297ms
+2022/06/01 22:25:27 --> Project  6 - PanopticFCN                      - Analysing Git stats & counting files... time: 9.472862ms
+2022/06/01 22:25:27 --> Project 12 - VoV3D                            - Analysing Git stats & counting files... time: 9.478343ms
+2022/06/01 22:25:27 --> Project  5 - navigan                          - Starting analysis... time: 9.319515ms
+2022/06/01 22:25:27 --> Project  5 - navigan                          - Analysing Git stats & counting files... time: 10.947661ms
+2022/06/01 22:25:27 --> Project  6 - PanopticFCN                      - Found 11 .py files (1786 lines) and 0 .ipynb files (0 lines) time: 113.602734ms
+2022/06/01 22:25:27 --> Project  6 - PanopticFCN                      - Running pylint... time: 113.639832ms
+2022/06/01 22:25:27 --> Project  8 - BackgroundMattingV2              - Found 23 .py files (2463 lines) and 0 .ipynb files (0 lines) time: 114.81059ms
+2022/06/01 22:25:27 --> Project  8 - BackgroundMattingV2              - Running pylint... time: 114.832711ms
+2022/06/01 22:25:27 --> Project 11 - svoice                           - Found 17 .py files (2341 lines) and 0 .ipynb files (0 lines) time: 116.120231ms
+2022/06/01 22:25:27 --> Project 11 - svoice                           - Running pylint... time: 116.157745ms
+2022/06/01 22:25:27 --> Project  9 - deit                             - Found 14 .py files (3190 lines) and 0 .ipynb files (0 lines) time: 133.218425ms
+2022/06/01 22:25:27 --> Project  9 - deit                             - Running pylint... time: 133.253006ms
+2022/06/01 22:25:27 --> Project  2 - pix2pix-model                    - Found 7 .py files (453 lines) and 2 .ipynb files (257 lines) time: 144.583488ms
+2022/06/01 22:25:27 --> Project  2 - pix2pix-model                    - Running pylint... time: 144.616902ms
+2022/06/01 22:25:27 --> Project  7 - stylegan2-ada                    - Found 32 .py files (8245 lines) and 0 .ipynb files (0 lines) time: 145.760809ms
+2022/06/01 22:25:27 --> Project  7 - stylegan2-ada                    - Running pylint... time: 145.790604ms
+2022/06/01 22:25:27 --> Project 10 - yolact_edge                      - Found 46 .py files (11063 lines) and 0 .ipynb files (0 lines) time: 157.078236ms
+2022/06/01 22:25:27 --> Project 10 - yolact_edge                      - Running pylint... time: 157.127526ms
+2022/06/01 22:25:27 --> Project 12 - VoV3D                            - Found 80 .py files (19115 lines) and 0 .ipynb files (0 lines) time: 170.513366ms
+2022/06/01 22:25:27 --> Project 12 - VoV3D                            - Running pylint... time: 170.913556ms
+2022/06/01 22:25:27 --> Project  4 - pytorch-CycleGAN-and-pix2pix     - Found 46 .py files (4559 lines) and 3 .ipynb files (323 lines) time: 182.794346ms
+2022/06/01 22:25:27 --> Project  4 - pytorch-CycleGAN-and-pix2pix     - Running pylint... time: 182.858053ms
+2022/06/01 22:25:27 --> Project  5 - navigan                          - Found 58 .py files (6191 lines) and 2 .ipynb files (109 lines) time: 217.764798ms
+2022/06/01 22:25:27 --> Project  5 - navigan                          - Running pylint... time: 217.805186ms
+2022/06/01 22:25:27 --> Project  3 - Group28                          - Found 10 .py files (851 lines) and 1 .ipynb files (16 lines) time: 300.945452ms
+2022/06/01 22:25:27 --> Project  3 - Group28                          - Running pylint... time: 301.115109ms
+2022/06/01 22:25:28 --> Project  1 - DL-unet                          - Found 6 .py files (1435 lines) and 1 .ipynb files (639 lines) time: 544.044713ms
+2022/06/01 22:25:28 --> Project  1 - DL-unet                          - Running pylint... time: 544.084675ms
+2022/06/01 22:25:47 --> Project 3 - Done! Results: time: 20.209895131s
+  Name: Group28
+  CommitHash: cfb680b9fd0bd26b60abbf96c666a3bfcfeff1b4
+  Number of commits: 542
+  Number of contributors: 58
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 10 - 851
+  Jupyter Notebook files and total lines of code: 1 - 16
+  Total messages: 1
+  Pylint messages per path: map[Group28/data/__init__.py:1]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 1, map[randomness-control-dataloader-pytorch:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:25:47 --> Completed: 1/74 projects time: 20.210111141s
+2022/06/01 22:25:47 --> Project 13 - muzero-general                   - Already cloned! time: 20.210204778s
+2022/06/01 22:25:47 --> Project 13 - muzero-general                   - requirements.txt file found in repo! time: 20.210260299s
+2022/06/01 22:25:47 --> Project 13 - muzero-general                   - Starting analysis... time: 20.210283433s
+2022/06/01 22:25:47 --> Project 13 - muzero-general                   - Analysing Git stats & counting files... time: 20.210295308s
+2022/06/01 22:25:48 --> Project 13 - muzero-general                   - Found 19 .py files (6481 lines) and 1 .ipynb files (16 lines) time: 20.694778412s
+2022/06/01 22:25:48 --> Project 13 - muzero-general                   - Running pylint... time: 20.69482229s
+2022/06/01 22:25:49 --> Project 2 - Done! Results: time: 22.437987223s
+  Name: pix2pix-model
+  CommitHash: e863b34f149d449ee653267442f5a9a46c4433fe
+  Number of commits: 98
+  Number of contributors: 11
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 7 - 453
+  Jupyter Notebook files and total lines of code: 2 - 257
+  Total messages: 3
+  Pylint messages per path: map[pix2pix-model/unet/sigurd_model.py:3]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 3, map[forward-pytorch:3]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:25:49 --> Completed: 2/74 projects time: 22.438565853s
+2022/06/01 22:25:49 --> Project 14 - swa_object_detection             - Already cloned! time: 22.438628209s
+2022/06/01 22:25:49 --> Project 14 - swa_object_detection             - Custom requirements.txt file found in repo! time: 22.438655422s
+2022/06/01 22:25:49 --> Project 14 - swa_object_detection             - Starting analysis... time: 22.438668211s
+2022/06/01 22:25:49 --> Project 14 - swa_object_detection             - Analysing Git stats & counting files... time: 22.438676847s
+2022/06/01 22:25:50 --> Project 14 - swa_object_detection             - Found 809 .py files (75908 lines) and 2 .ipynb files (215 lines) time: 23.147891768s
+2022/06/01 22:25:50 --> Project 14 - swa_object_detection             - Running pylint... time: 23.148120294s
+2022/06/01 22:25:55 --> Project 7 - stylegan2-ada                    - Analysis Error: error parsing Pylint output: invalid character 'E' looking for beginning of value
+2022/06/01 22:25:55 --> Completed: 3/74 projects, 1 had errors time: 28.377982524s
+2022/06/01 22:25:55 --> Project 15 - self-attention-gan               - Already cloned! time: 28.378052377s
+2022/06/01 22:25:55 --> Project 15 - self-attention-gan               - Custom requirements.txt contents defined! time: 28.378068496s
+2022/06/01 22:25:55 --> Project 15 - self-attention-gan               - Starting analysis... time: 28.379397759s
+2022/06/01 22:25:55 --> Project 15 - self-attention-gan               - Analysing Git stats & counting files... time: 28.379426816s
+2022/06/01 22:25:55 --> Project 15 - self-attention-gan               - Found 9 .py files (2239 lines) and 0 .ipynb files (0 lines) time: 28.475235589s
+2022/06/01 22:25:55 --> Project 15 - self-attention-gan               - Running pylint... time: 28.475911837s
+2022/06/01 22:25:56 --> Project 6 - Done! Results: time: 29.097916982s
+  Name: PanopticFCN
+  CommitHash: f4141c3ac9162f8f9ca1927e240f4758b6aad24b
+  Number of commits: 11
+  Number of contributors: 1
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 11 - 1786
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:25:56 --> Completed: 4/74 projects, 1 had errors time: 29.098583761s
+2022/06/01 22:25:56 --> Project 16 - DeOldify                         - Already cloned! time: 29.098654026s
+2022/06/01 22:25:56 --> Project 16 - DeOldify                         - requirements.txt file found in repo! time: 29.098681572s
+2022/06/01 22:25:56 --> Project 16 - DeOldify                         - Starting analysis... time: 29.098696516s
+2022/06/01 22:25:56 --> Project 16 - DeOldify                         - Analysing Git stats & counting files... time: 29.098706853s
+2022/06/01 22:25:56 --> Project 16 - DeOldify                         - Found 18 .py files (2356 lines) and 13 .ipynb files (1920 lines) time: 29.265456441s
+2022/06/01 22:25:56 --> Project 16 - DeOldify                         - Running pylint... time: 29.265488862s
+2022/06/01 22:25:57 --> Project 9 - Done! Results: time: 29.874407941s
+  Name: deit
+  CommitHash: a2ffd162edc49b30f6ed8044cd10444bf2ae1299
+  Number of commits: 104
+  Number of contributors: 14
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 14 - 3190
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 3
+  Pylint messages per path: map[deit/main.py:3]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 3, map[deterministic-pytorch:1 randomness-control-dataloader-pytorch:2]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:25:57 --> Completed: 5/74 projects, 1 had errors time: 29.875107388s
+2022/06/01 22:25:57 --> Project 17 - faceswap-GAN                     - Already cloned! time: 29.875190008s
+2022/06/01 22:25:57 --> Project 17 - faceswap-GAN                     - Starting analysis... time: 29.876234678s
+2022/06/01 22:25:57 --> Project 17 - faceswap-GAN                     - Analysing Git stats & counting files... time: 29.876261545s
+2022/06/01 22:25:57 --> Project 17 - faceswap-GAN                     - WARNING! - one or more Jupyter Notebooks could not be counted: [projects/faceswap-GAN/colab_demo/faceswap-GAN_colab_demo.ipynb]
+2022/06/01 22:25:57 --> Project 17 - faceswap-GAN                     - Found 30 .py files (4323 lines) and 13 .ipynb files (6576 lines) time: 30.0421503s
+2022/06/01 22:25:57 --> Project 17 - faceswap-GAN                     - Running pylint... time: 30.042165577s
+2022/06/01 22:26:02 --> Project 15 - Done! Results: time: 35.303273147s
+  Name: self-attention-gan
+  CommitHash: ad9612e60f6ba2b5ad3d3340ebae60f724636d75
+  Number of commits: 8
+  Number of contributors: 3
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 9 - 2239
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 2
+  Pylint messages per path: map[self-attention-gan/eval_imagenet.py:1 self-attention-gan/train_imagenet.py:1]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 2, map[randomness-control-tensorflow:2]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:26:02 --> Completed: 6/74 projects, 1 had errors time: 35.303893849s
+2022/06/01 22:26:02 --> Project 18 - alphafold_casp13 (deepmind-resea - Already cloned! time: 35.303966169s
+2022/06/01 22:26:02 --> Project 18 - alphafold_casp13 (deepmind-resea - requirements.txt file found in repo! time: 35.304002314s
+2022/06/01 22:26:02 --> Project 18 - alphafold_casp13 (deepmind-resea - Starting analysis... time: 35.304013455s
+2022/06/01 22:26:02 --> Project 18 - alphafold_casp13 (deepmind-resea - Analysing Git stats & counting files... time: 35.304022168s
+2022/06/01 22:26:02 --> Project 18 - alphafold_casp13 (deepmind-resea - Found 13 .py files (2503 lines) and 0 .ipynb files (0 lines) time: 35.415168502s
+2022/06/01 22:26:02 --> Project 18 - alphafold_casp13 (deepmind-resea - Running pylint... time: 35.415204509s
+2022/06/01 22:26:12 --> Project 18 - Done! Results: time: 44.632923817s
+  Name: alphafold_casp13 (deepmind-research)
+  CommitHash: 1642ae3499c8d1135ec6fe620a68911091dd25ef
+  Number of commits: 320
+  Number of contributors: 89
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 13 - 2503
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 5
+  Pylint messages per path: map[deepmind-research/alphafold_casp13/contacts.py:2 deepmind-research/alphafold_casp13/ensemble_contact_maps.py:1 deepmind-research/alphafold_casp13/paste_contact_maps.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 5, map[randomness-control-numpy:2 randomness-control-tensorflow:3]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:26:12 --> Completed: 7/74 projects, 1 had errors time: 44.633176318s
+2022/06/01 22:26:12 --> Project 19 - byol (deepmind-research)         - Already cloned! time: 44.633248913s
+2022/06/01 22:26:12 --> Project 19 - byol (deepmind-research)         - Custom requirements.txt contents defined! time: 44.633272207s
+2022/06/01 22:26:12 --> Project 19 - byol (deepmind-research)         - Starting analysis... time: 44.634706761s
+2022/06/01 22:26:12 --> Project 19 - byol (deepmind-research)         - Analysing Git stats & counting files... time: 44.634740533s
+2022/06/01 22:26:12 --> Project 19 - byol (deepmind-research)         - Found 16 .py files (3037 lines) and 0 .ipynb files (0 lines) time: 44.746662397s
+2022/06/01 22:26:12 --> Project 19 - byol (deepmind-research)         - Running pylint... time: 44.746705806s
+2022/06/01 22:26:13 --> Project 11 - Done! Results: time: 45.558475672s
+  Name: svoice
+  CommitHash: 1e381907afeb85fe89e9f0b44af6c3bc96b3693f
+  Number of commits: 20
+  Number of contributors: 7
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 17 - 2341
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 13
+  Pylint messages per path: map[svoice/svoice/data/audio.py:3 svoice/svoice/evaluate.py:3 svoice/svoice/evaluate_auto_select.py:4 svoice/svoice/executor.py:1 svoice/svoice/separate.py:2]
+  Number of Pylint messages: 
+    convention: 2, map[import-pytorch:2]
+    refactor: 0, map[]
+    warning: 11, map[deterministic-pytorch:4 mode-toggling-pytorch:1 randomness-control-numpy:2 randomness-control-pytorch:4]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:26:13 --> Completed: 8/74 projects, 1 had errors time: 45.55867143s
+2022/06/01 22:26:13 --> Project 20 - catch_carry (deepmind-research)  - Already cloned! time: 45.558733837s
+2022/06/01 22:26:13 --> Project 20 - catch_carry (deepmind-research)  - Found a setup.py file! time: 45.559280726s
+2022/06/01 22:26:13 --> Project 20 - catch_carry (deepmind-research)  - Starting analysis... time: 45.559304832s
+2022/06/01 22:26:13 --> Project 20 - catch_carry (deepmind-research)  - Analysing Git stats & counting files... time: 45.559316693s
+2022/06/01 22:26:13 --> Project 20 - catch_carry (deepmind-research)  - Found 10 .py files (1836 lines) and 0 .ipynb files (0 lines) time: 45.651918161s
+2022/06/01 22:26:13 --> Project 20 - catch_carry (deepmind-research)  - Running pylint... time: 45.651963311s
+2022/06/01 22:26:23 --> Project 20 - Done! Results: time: 55.694251113s
+  Name: catch_carry (deepmind-research)
+  CommitHash: 1642ae3499c8d1135ec6fe620a68911091dd25ef
+  Number of commits: 320
+  Number of contributors: 89
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 10 - 1836
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+2022/06/01 22:26:23 --> Completed: 9/74 projects, 1 had errors time: 55.694438871s
+2022/06/01 22:26:23 --> Project 21 - cs_gan (deepmind-research)       - Already cloned! time: 55.69451108s
+2022/06/01 22:26:23 --> Project 21 - cs_gan (deepmind-research)       - requirements.txt file found in repo! time: 55.694541978s
+2022/06/01 22:26:23 --> Project 21 - cs_gan (deepmind-research)       - Starting analysis... time: 55.694556888s
+2022/06/01 22:26:23 --> Project 21 - cs_gan (deepmind-research)       - Analysing Git stats & counting files... time: 55.69456697s
+2022/06/01 22:26:23 --> Project 21 - cs_gan (deepmind-research)       - Found 10 .py files (1562 lines) and 0 .ipynb files (0 lines) time: 55.808337766s
+2022/06/01 22:26:23 --> Project 21 - cs_gan (deepmind-research)       - Running pylint... time: 55.808394449s
+2022/06/01 22:26:24 --> Project 1 - Done! Results: time: 56.642959655s
+  Name: DL-unet
+  CommitHash: 8f437f0b327caee692d4a9c3b4e41e2914560dd3
+  Number of commits: 90
+  Number of contributors: 6
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 6 - 1435
+  Jupyter Notebook files and total lines of code: 1 - 639
+  Total messages: 11
+  Pylint messages per path: map[DL-unet/data.py:3 DL-unet/main_main.py:5 DL-unet/tester.py:1 DL-unet/trainer.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 11, map[deterministic-pytorch:1 inplace-numpy:3 randomness-control-dataloader-pytorch:5 randomness-control-numpy:1 randomness-control-pytorch:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:26:24 --> Completed: 10/74 projects, 1 had errors time: 56.643110083s
+2022/06/01 22:26:24 --> Project 22 - curl (deepmind-research)         - Already cloned! time: 56.643176359s
+2022/06/01 22:26:24 --> Project 22 - curl (deepmind-research)         - requirements.txt file found in repo! time: 56.643209188s
+2022/06/01 22:26:24 --> Project 22 - curl (deepmind-research)         - Starting analysis... time: 56.643225622s
+2022/06/01 22:26:24 --> Project 22 - curl (deepmind-research)         - Analysing Git stats & counting files... time: 56.643235277s
+2022/06/01 22:26:24 --> Project 22 - curl (deepmind-research)         - Found 8 .py files (2468 lines) and 0 .ipynb files (0 lines) time: 56.727661809s
+2022/06/01 22:26:24 --> Project 22 - curl (deepmind-research)         - Running pylint... time: 56.727706193s
+2022/06/01 22:26:28 --> Project 16 - Done! Results: time: 1m0.817439397s
+  Name: DeOldify
+  CommitHash: 726fcc0776c828a00558e3a73a32ca202b66a593
+  Number of commits: 478
+  Number of contributors: 40
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 18 - 2356
+  Jupyter Notebook files and total lines of code: 13 - 1920
+  Total messages: 7
+  Pylint messages per path: map[DeOldify/app-video.py:2 DeOldify/app.py:2 DeOldify/fid/fid_score.py:3]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 7, map[deterministic-pytorch:3 randomness-control-numpy:1 randomness-control-pytorch:3]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:26:28 --> Completed: 11/74 projects, 1 had errors time: 1m0.818793866s
+2022/06/01 22:26:28 --> Project 23 - gated_linear_networks (deepmind- - Already cloned! time: 1m0.818850858s
+2022/06/01 22:26:28 --> Project 23 - gated_linear_networks (deepmind- - requirements.txt file found in repo! time: 1m0.818898478s
+2022/06/01 22:26:28 --> Project 23 - gated_linear_networks (deepmind- - Starting analysis... time: 1m0.818913003s
+2022/06/01 22:26:28 --> Project 23 - gated_linear_networks (deepmind- - Analysing Git stats & counting files... time: 1m0.81892297s
+2022/06/01 22:26:28 --> Project 23 - gated_linear_networks (deepmind- - Found 8 .py files (1427 lines) and 1 .ipynb files (156 lines) time: 1m0.951479681s
+2022/06/01 22:26:28 --> Project 23 - gated_linear_networks (deepmind- - Running pylint... time: 1m0.951527448s
+2022/06/01 22:26:28 --> Project 19 - Done! Results: time: 1m1.238484746s
+  Name: byol (deepmind-research)
+  CommitHash: 1642ae3499c8d1135ec6fe620a68911091dd25ef
+  Number of commits: 320
+  Number of contributors: 89
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 16 - 3037
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 1
+  Pylint messages per path: map[deepmind-research/byol/main_loop_test.py:1]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 1, map[randomness-control-tensorflow:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:26:28 --> Completed: 12/74 projects, 1 had errors time: 1m1.238664423s
+2022/06/01 22:26:28 --> Project 24 - geomancer (deepmind-research)    - Already cloned! time: 1m1.238727181s
+2022/06/01 22:26:28 --> Project 24 - geomancer (deepmind-research)    - Found a setup.py file! time: 1m1.238789523s
+2022/06/01 22:26:28 --> Project 24 - geomancer (deepmind-research)    - Starting analysis... time: 1m1.238804964s
+2022/06/01 22:26:28 --> Project 24 - geomancer (deepmind-research)    - Analysing Git stats & counting files... time: 1m1.238814666s
+2022/06/01 22:26:28 --> Project 24 - geomancer (deepmind-research)    - Found 4 .py files (636 lines) and 0 .ipynb files (0 lines) time: 1m1.331373588s
+2022/06/01 22:26:28 --> Project 24 - geomancer (deepmind-research)    - Running pylint... time: 1m1.331439502s
+2022/06/01 22:26:31 --> Project 22 - Done! Results: time: 1m4.221236915s
+  Name: curl (deepmind-research)
+  CommitHash: 1642ae3499c8d1135ec6fe620a68911091dd25ef
+  Number of commits: 320
+  Number of contributors: 89
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 8 - 2468
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:26:31 --> Completed: 13/74 projects, 1 had errors time: 1m4.2213824s
+2022/06/01 22:26:31 --> Project 25 - glassy_dynamics (deepmind-resear - Already cloned! time: 1m4.221441721s
+2022/06/01 22:26:31 --> Project 25 - glassy_dynamics (deepmind-resear - requirements.txt file found in repo! time: 1m4.221469868s
+2022/06/01 22:26:31 --> Project 25 - glassy_dynamics (deepmind-resear - Starting analysis... time: 1m4.221481338s
+2022/06/01 22:26:31 --> Project 25 - glassy_dynamics (deepmind-resear - Analysing Git stats & counting files... time: 1m4.221490726s
+2022/06/01 22:26:31 --> Project 25 - glassy_dynamics (deepmind-resear - Found 7 .py files (1236 lines) and 0 .ipynb files (0 lines) time: 1m4.318328699s
+2022/06/01 22:26:31 --> Project 25 - glassy_dynamics (deepmind-resear - Running pylint... time: 1m4.318367575s
+2022/06/01 22:26:33 --> Project 21 - Done! Results: time: 1m5.731924057s
+  Name: cs_gan (deepmind-research)
+  CommitHash: 1642ae3499c8d1135ec6fe620a68911091dd25ef
+  Number of commits: 320
+  Number of contributors: 89
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 10 - 1562
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 4
+  Pylint messages per path: map[deepmind-research/cs_gan/main.py:1 deepmind-research/cs_gan/main_cs.py:1 deepmind-research/cs_gan/main_ode.py:1 deepmind-research/cs_gan/tests/gan_test.py:1]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 4, map[randomness-control-tensorflow:4]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:26:33 --> Completed: 14/74 projects, 1 had errors time: 1m5.732092054s
+2022/06/01 22:26:33 --> Project 26 - hierarchical_probabilistic_unet  - Already cloned! time: 1m5.732160543s
+2022/06/01 22:26:33 --> Project 26 - hierarchical_probabilistic_unet  - Found a setup.py file! time: 1m5.732831322s
+2022/06/01 22:26:33 --> Project 26 - hierarchical_probabilistic_unet  - Starting analysis... time: 1m5.732854886s
+2022/06/01 22:26:33 --> Project 26 - hierarchical_probabilistic_unet  - Analysing Git stats & counting files... time: 1m5.732872752s
+2022/06/01 22:26:33 --> Project 26 - hierarchical_probabilistic_unet  - Found 5 .py files (993 lines) and 1 .ipynb files (214 lines) time: 1m5.868563651s
+2022/06/01 22:26:33 --> Project 26 - hierarchical_probabilistic_unet  - Running pylint... time: 1m5.86860585s
+2022/06/01 22:26:36 --> Project 24 - Done! Results: time: 1m9.390103124s
+  Name: geomancer (deepmind-research)
+  CommitHash: 1642ae3499c8d1135ec6fe620a68911091dd25ef
+  Number of commits: 320
+  Number of contributors: 89
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 4 - 636
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:26:36 --> Completed: 15/74 projects, 1 had errors time: 1m9.390268956s
+2022/06/01 22:26:36 --> Project 27 - iodine (deepmind-research)       - Already cloned! time: 1m9.390331427s
+2022/06/01 22:26:36 --> Project 27 - iodine (deepmind-research)       - requirements.txt file found in repo! time: 1m9.390360599s
+2022/06/01 22:26:36 --> Project 27 - iodine (deepmind-research)       - Starting analysis... time: 1m9.390373853s
+2022/06/01 22:26:36 --> Project 27 - iodine (deepmind-research)       - Analysing Git stats & counting files... time: 1m9.390383283s
+2022/06/01 22:26:37 --> Project 27 - iodine (deepmind-research)       - Found 12 .py files (3171 lines) and 1 .ipynb files (129 lines) time: 1m9.614896672s
+2022/06/01 22:26:37 --> Project 27 - iodine (deepmind-research)       - Running pylint... time: 1m9.614938408s
+2022/06/01 22:26:38 --> Project 26 - Done! Results: time: 1m10.687131183s
+  Name: hierarchical_probabilistic_unet (deepmind-research)
+  CommitHash: 1642ae3499c8d1135ec6fe620a68911091dd25ef
+  Number of commits: 320
+  Number of contributors: 89
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 5 - 993
+  Jupyter Notebook files and total lines of code: 1 - 214
+  Total messages: 7
+  Pylint messages per path: map[deepmind-research/hierarchical_probabilistic_unet/geco_utils.py:5 deepmind-research/hierarchical_probabilistic_unet/model.py:1 deepmind-research/hierarchical_probabilistic_unet/model_test.py:1]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 7, map[missing-mask-tensorflow:5 randomness-control-tensorflow:2]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:26:38 --> Completed: 16/74 projects, 1 had errors time: 1m10.687348205s
+2022/06/01 22:26:38 --> Project 28 - learning_to_simulate (deepmind-r - Already cloned! time: 1m10.687415909s
+2022/06/01 22:26:38 --> Project 28 - learning_to_simulate (deepmind-r - requirements.txt file found in repo! time: 1m10.68745505s
+2022/06/01 22:26:38 --> Project 28 - learning_to_simulate (deepmind-r - Starting analysis... time: 1m10.687479654s
+2022/06/01 22:26:38 --> Project 28 - learning_to_simulate (deepmind-r - Analysing Git stats & counting files... time: 1m10.68748864s
+2022/06/01 22:26:38 --> Project 28 - learning_to_simulate (deepmind-r - Found 8 .py files (1488 lines) and 0 .ipynb files (0 lines) time: 1m10.783897413s
+2022/06/01 22:26:38 --> Project 28 - learning_to_simulate (deepmind-r - Running pylint... time: 1m10.783934814s
+2022/06/01 22:26:39 --> Project 12 - VoV3D                            - Analysis Error: error parsing Pylint output: invalid character 'E' looking for beginning of value
+2022/06/01 22:26:39 --> Completed: 17/74 projects, 2 had errors time: 1m11.940315149s
+2022/06/01 22:26:39 --> Project 29 - mmv (deepmind-research)          - Already cloned! time: 1m11.940385233s
+2022/06/01 22:26:39 --> Project 29 - mmv (deepmind-research)          - requirements.txt file found in repo! time: 1m11.940420474s
+2022/06/01 22:26:39 --> Project 29 - mmv (deepmind-research)          - Starting analysis... time: 1m11.940443104s
+2022/06/01 22:26:39 --> Project 29 - mmv (deepmind-research)          - Analysing Git stats & counting files... time: 1m11.940452389s
+2022/06/01 22:26:39 --> Project 29 - mmv (deepmind-research)          - Found 14 .py files (2922 lines) and 0 .ipynb files (0 lines) time: 1m12.042182947s
+2022/06/01 22:26:39 --> Project 29 - mmv (deepmind-research)          - Running pylint... time: 1m12.042230962s
+2022/06/01 22:26:40 --> Project 23 - Done! Results: time: 1m12.955647702s
+  Name: gated_linear_networks (deepmind-research)
+  CommitHash: 1642ae3499c8d1135ec6fe620a68911091dd25ef
+  Number of commits: 320
+  Number of contributors: 89
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 8 - 1427
+  Jupyter Notebook files and total lines of code: 1 - 156
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:26:40 --> Completed: 18/74 projects, 2 had errors time: 1m12.955813124s
+2022/06/01 22:26:40 --> Project 30 - option_keyboard (deepmind-resear - Already cloned! time: 1m12.9558758s
+2022/06/01 22:26:40 --> Project 30 - option_keyboard (deepmind-resear - requirements.txt file found in repo! time: 1m12.955901394s
+2022/06/01 22:26:40 --> Project 30 - option_keyboard (deepmind-resear - Starting analysis... time: 1m12.955911351s
+2022/06/01 22:26:40 --> Project 30 - option_keyboard (deepmind-resear - Analysing Git stats & counting files... time: 1m12.955919712s
+2022/06/01 22:26:40 --> Project 30 - option_keyboard (deepmind-resear - Found 25 .py files (3143 lines) and 1 .ipynb files (262 lines) time: 1m13.089899382s
+2022/06/01 22:26:40 --> Project 30 - option_keyboard (deepmind-resear - Running pylint... time: 1m13.089933496s
+2022/06/01 22:26:42 --> Project 25 - Done! Results: time: 1m15.245327939s
+  Name: glassy_dynamics (deepmind-research)
+  CommitHash: 1642ae3499c8d1135ec6fe620a68911091dd25ef
+  Number of commits: 320
+  Number of contributors: 89
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 7 - 1236
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 4
+  Pylint messages per path: map[deepmind-research/glassy_dynamics/graph_model_test.py:2 deepmind-research/glassy_dynamics/train_test.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 4, map[randomness-control-numpy:2 randomness-control-tensorflow:2]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:26:42 --> Completed: 19/74 projects, 2 had errors time: 1m15.245467992s
+2022/06/01 22:26:42 --> Project 31 - physics_planning_games (deepmind - Already cloned! time: 1m15.245526797s
+2022/06/01 22:26:42 --> Project 31 - physics_planning_games (deepmind - requirements.txt file found in repo! time: 1m15.24555897s
+2022/06/01 22:26:42 --> Project 31 - physics_planning_games (deepmind - Starting analysis... time: 1m15.245575881s
+2022/06/01 22:26:42 --> Project 31 - physics_planning_games (deepmind - Analysing Git stats & counting files... time: 1m15.245585069s
+2022/06/01 22:26:42 --> Project 31 - physics_planning_games (deepmind - Found 26 .py files (3731 lines) and 0 .ipynb files (0 lines) time: 1m15.3783112s
+2022/06/01 22:26:42 --> Project 31 - physics_planning_games (deepmind - Running pylint... time: 1m15.378348361s
+2022/06/01 22:26:43 --> Project 28 - Done! Results: time: 1m16.015492766s
+  Name: learning_to_simulate (deepmind-research)
+  CommitHash: 1642ae3499c8d1135ec6fe620a68911091dd25ef
+  Number of commits: 320
+  Number of contributors: 89
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 8 - 1488
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 4
+  Pylint messages per path: map[deepmind-research/learning_to_simulate/model_demo.py:2 deepmind-research/learning_to_simulate/train.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 4, map[randomness-control-numpy:2 randomness-control-tensorflow:2]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:26:43 --> Completed: 20/74 projects, 2 had errors time: 1m16.015725308s
+2022/06/01 22:26:43 --> Project 32 - polygen (deepmind-research)      - Already cloned! time: 1m16.015799101s
+2022/06/01 22:26:43 --> Project 32 - polygen (deepmind-research)      - Found a setup.py file! time: 1m16.015871982s
+2022/06/01 22:26:43 --> Project 32 - polygen (deepmind-research)      - Starting analysis... time: 1m16.015900462s
+2022/06/01 22:26:43 --> Project 32 - polygen (deepmind-research)      - Analysing Git stats & counting files... time: 1m16.015910945s
+2022/06/01 22:26:43 --> Project 32 - polygen (deepmind-research)      - Found 4 .py files (2132 lines) and 2 .ipynb files (278 lines) time: 1m16.136397228s
+2022/06/01 22:26:43 --> Project 32 - polygen (deepmind-research)      - Running pylint... time: 1m16.136451864s
+2022/06/01 22:26:46 --> Project 13 - Done! Results: time: 1m19.004879952s
+  Name: muzero-general
+  CommitHash: 0c4c335d0492d48f7cb8979d479b2761b5d267fb
+  Number of commits: 130
+  Number of contributors: 18
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 19 - 6481
+  Jupyter Notebook files and total lines of code: 1 - 16
+  Total messages: 21
+  Pylint messages per path: map[muzero-general/diagnose_model.py:1 muzero-general/games/atari.py:1 muzero-general/games/breakout.py:1 muzero-general/games/cartpole.py:1 muzero-general/games/connect4.py:1 muzero-general/games/gomoku.py:1 muzero-general/games/gridworld.py:1 muzero-general/games/lunarlander.py:1 muzero-general/games/simple_grid.py:1 muzero-general/games/spiel.py:1 muzero-general/games/tictactoe.py:1 muzero-general/games/twentyone.py:1 muzero-general/models.py:2 muzero-general/muzero.py:4 muzero-general/replay_buffer.py:1 muzero-general/self_play.py:1 muzero-general/trainer.py:1]
+  Number of Pylint messages: 
+    convention: 16, map[import-numpy:16]
+    refactor: 0, map[]
+    warning: 5, map[deterministic-pytorch:1 missing-mask-pytorch:2 randomness-control-numpy:1 randomness-control-pytorch:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:26:46 --> Completed: 21/74 projects, 2 had errors time: 1m19.005159475s
+2022/06/01 22:26:46 --> Project 33 - rl_unplugged (deepmind-research) - Already cloned! time: 1m19.005237875s
+2022/06/01 22:26:46 --> Project 33 - rl_unplugged (deepmind-research) - Custom requirements.txt contents defined! time: 1m19.005263498s
+2022/06/01 22:26:46 --> Project 33 - rl_unplugged (deepmind-research) - Starting analysis... time: 1m19.006847754s
+2022/06/01 22:26:46 --> Project 33 - rl_unplugged (deepmind-research) - Analysing Git stats & counting files... time: 1m19.006878814s
+2022/06/01 22:26:46 --> Project 33 - rl_unplugged (deepmind-research) - Found 7 .py files (1539 lines) and 6 .ipynb files (1199 lines) time: 1m19.122606017s
+2022/06/01 22:26:46 --> Project 33 - rl_unplugged (deepmind-research) - Running pylint... time: 1m19.122710533s
+2022/06/01 22:26:47 --> Project 17 - Done! Results: time: 1m19.812080708s
+  Name: faceswap-GAN
+  CommitHash: 17219d082e1071963afb5ee13393a4bd79715b6c
+  Number of commits: 279
+  Number of contributors: 5
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 30 - 4323
+  Jupyter Notebook files and total lines of code: 13 - 6576
+  Total messages: 3
+  Pylint messages per path: map[faceswap-GAN/image_augmentation.py:1 faceswap-GAN/legacy/image_augmentation.py:1 faceswap-GAN/legacy/training_data.py:1]
+  Number of Pylint messages: 
+    convention: 3, map[import-numpy:3]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:26:47 --> Completed: 22/74 projects, 2 had errors time: 1m19.81228051s
+2022/06/01 22:26:47 --> Project 34 - scratchgan (deepmind-research)   - Already cloned! time: 1m19.81238952s
+2022/06/01 22:26:47 --> Project 34 - scratchgan (deepmind-research)   - requirements.txt file found in repo! time: 1m19.812428715s
+2022/06/01 22:26:47 --> Project 34 - scratchgan (deepmind-research)   - Starting analysis... time: 1m19.812444503s
+2022/06/01 22:26:47 --> Project 34 - scratchgan (deepmind-research)   - Analysing Git stats & counting files... time: 1m19.812453433s
+2022/06/01 22:26:47 --> Project 34 - scratchgan (deepmind-research)   - Found 8 .py files (1383 lines) and 0 .ipynb files (0 lines) time: 1m19.909616075s
+2022/06/01 22:26:47 --> Project 34 - scratchgan (deepmind-research)   - Running pylint... time: 1m19.909660067s
+2022/06/01 22:26:47 --> Project 27 - Done! Results: time: 1m20.320505073s
+  Name: iodine (deepmind-research)
+  CommitHash: 1642ae3499c8d1135ec6fe620a68911091dd25ef
+  Number of commits: 320
+  Number of contributors: 89
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 12 - 3171
+  Jupyter Notebook files and total lines of code: 1 - 129
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:26:47 --> Completed: 23/74 projects, 2 had errors time: 1m20.320671224s
+2022/06/01 22:26:47 --> Project 35 - side_effects_penalties (deepmind - Already cloned! time: 1m20.320745671s
+2022/06/01 22:26:47 --> Project 35 - side_effects_penalties (deepmind - Custom requirements.txt contents defined! time: 1m20.320763204s
+2022/06/01 22:26:47 --> Project 35 - side_effects_penalties (deepmind - Starting analysis... time: 1m20.321894222s
+2022/06/01 22:26:47 --> Project 35 - side_effects_penalties (deepmind - Analysing Git stats & counting files... time: 1m20.321919147s
+2022/06/01 22:26:47 --> Project 35 - side_effects_penalties (deepmind - Found 9 .py files (1753 lines) and 1 .ipynb files (63 lines) time: 1m20.419081311s
+2022/06/01 22:26:47 --> Project 35 - side_effects_penalties (deepmind - Running pylint... time: 1m20.419119276s
+2022/06/01 22:26:48 --> Project 4 - Done! Results: time: 1m20.94637527s
+  Name: pytorch-CycleGAN-and-pix2pix
+  CommitHash: a600a2363472a5aad660727a538f96b3042cec13
+  Number of commits: 445
+  Number of contributors: 55
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 46 - 4559
+  Jupyter Notebook files and total lines of code: 3 - 323
+  Total messages: 2
+  Pylint messages per path: map[pytorch-CycleGAN-and-pix2pix/data/__init__.py:1 pytorch-CycleGAN-and-pix2pix/models/base_model.py:1]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 2, map[mode-toggling-pytorch:1 randomness-control-dataloader-pytorch:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:26:48 --> Completed: 24/74 projects, 2 had errors time: 1m20.946497531s
+2022/06/01 22:26:48 --> Project 36 - sketchy (deepmind-research)      - Already cloned! time: 1m20.946560217s
+2022/06/01 22:26:48 --> Project 36 - sketchy (deepmind-research)      - requirements.txt file found in repo! time: 1m20.946587164s
+2022/06/01 22:26:48 --> Project 36 - sketchy (deepmind-research)      - Starting analysis... time: 1m20.946600512s
+2022/06/01 22:26:48 --> Project 36 - sketchy (deepmind-research)      - Analysing Git stats & counting files... time: 1m20.946608572s
+2022/06/01 22:26:48 --> Project 10 - Done! Results: time: 1m20.990814404s
+  Name: yolact_edge
+  CommitHash: a42c2b65248e8da29b7943ed43573be50ba2d17f
+  Number of commits: 74
+  Number of contributors: 7
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 46 - 11063
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 23
+  Pylint messages per path: map[yolact_edge/eval.py:4 yolact_edge/train.py:1 yolact_edge/yolact_edge/layers/box_utils.py:3 yolact_edge/yolact_edge/scripts/augment_bbox.py:3 yolact_edge/yolact_edge/scripts/bbox_recall.py:3 yolact_edge/yolact_edge/scripts/cluster_bbox_sizes.py:1 yolact_edge/yolact_edge/scripts/optimize_bboxes.py:3 yolact_edge/yolact_edge/yolact.py:5]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 23, map[deterministic-pytorch:6 missing-mask-pytorch:3 mode-toggling-pytorch:2 randomness-control-dataloader-pytorch:1 randomness-control-numpy:6 randomness-control-pytorch:5]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:26:48 --> Completed: 25/74 projects, 2 had errors time: 1m20.990996297s
+2022/06/01 22:26:48 --> Project 37 - transporter (deepmind-research)  - Already cloned! time: 1m20.991066764s
+2022/06/01 22:26:48 --> Project 37 - transporter (deepmind-research)  - requirements.txt file found in repo! time: 1m20.991101752s
+2022/06/01 22:26:48 --> Project 37 - transporter (deepmind-research)  - Starting analysis... time: 1m20.991119181s
+2022/06/01 22:26:48 --> Project 37 - transporter (deepmind-research)  - Analysing Git stats & counting files... time: 1m20.991132223s
+2022/06/01 22:26:48 --> Project 36 - sketchy (deepmind-research)      - Found 5 .py files (338 lines) and 0 .ipynb files (0 lines) time: 1m21.040756293s
+2022/06/01 22:26:48 --> Project 36 - sketchy (deepmind-research)      - Running pylint... time: 1m21.040794071s
+2022/06/01 22:26:48 --> Project 37 - transporter (deepmind-research)  - Found 2 .py files (654 lines) and 1 .ipynb files (154 lines) time: 1m21.104035178s
+2022/06/01 22:26:48 --> Project 37 - transporter (deepmind-research)  - Running pylint... time: 1m21.104077522s
+2022/06/01 22:26:52 --> Project 33 - Done! Results: time: 1m24.795119016s
+  Name: rl_unplugged (deepmind-research)
+  CommitHash: 1642ae3499c8d1135ec6fe620a68911091dd25ef
+  Number of commits: 320
+  Number of contributors: 89
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 7 - 1539
+  Jupyter Notebook files and total lines of code: 6 - 1199
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+2022/06/01 22:26:52 --> Completed: 26/74 projects, 2 had errors time: 1m24.795325008s
+2022/06/01 22:26:52 --> Project 38 - tvt (deepmind-research)          - Already cloned! time: 1m24.795392939s
+2022/06/01 22:26:52 --> Project 38 - tvt (deepmind-research)          - requirements.txt file found in repo! time: 1m24.795425236s
+2022/06/01 22:26:52 --> Project 38 - tvt (deepmind-research)          - Starting analysis... time: 1m24.795437352s
+2022/06/01 22:26:52 --> Project 38 - tvt (deepmind-research)          - Analysing Git stats & counting files... time: 1m24.795447758s
+2022/06/01 22:26:52 --> Project 38 - tvt (deepmind-research)          - Found 14 .py files (2775 lines) and 0 .ipynb files (0 lines) time: 1m24.924846151s
+2022/06/01 22:26:52 --> Project 38 - tvt (deepmind-research)          - Running pylint... time: 1m24.924899295s
+2022/06/01 22:26:53 --> Project 29 - Done! Results: time: 1m25.633217509s
+  Name: mmv (deepmind-research)
+  CommitHash: 1642ae3499c8d1135ec6fe620a68911091dd25ef
+  Number of commits: 320
+  Number of contributors: 89
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 14 - 2922
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 2
+  Pylint messages per path: map[deepmind-research/mmv/eval_ucf101.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 2, map[randomness-control-numpy:1 randomness-control-tensorflow:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:26:53 --> Completed: 27/74 projects, 2 had errors time: 1m25.633464963s
+2022/06/01 22:26:53 --> Project 39 - unrestricted_advx (deepmind-rese - Already cloned! time: 1m25.63355713s
+2022/06/01 22:26:53 --> Project 39 - unrestricted_advx (deepmind-rese - requirements.txt file found in repo! time: 1m25.633592268s
+2022/06/01 22:26:53 --> Project 39 - unrestricted_advx (deepmind-rese - Starting analysis... time: 1m25.633607989s
+2022/06/01 22:26:53 --> Project 39 - unrestricted_advx (deepmind-rese - Analysing Git stats & counting files... time: 1m25.63361777s
+2022/06/01 22:26:53 --> Project 39 - unrestricted_advx (deepmind-rese - Found 1 .py files (58 lines) and 0 .ipynb files (0 lines) time: 1m25.728493694s
+2022/06/01 22:26:53 --> Project 39 - unrestricted_advx (deepmind-rese - Running pylint... time: 1m25.728530831s
+2022/06/01 22:26:53 --> Project 8 - Done! Results: time: 1m26.002856502s
+  Name: BackgroundMattingV2
+  CommitHash: 220003663d72b9bab207398217680ea1d22db0fe
+  Number of commits: 39
+  Number of contributors: 6
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 23 - 2463
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 12
+  Pylint messages per path: map[BackgroundMattingV2/inference_images.py:1 BackgroundMattingV2/inference_video.py:1 BackgroundMattingV2/train_base.py:5 BackgroundMattingV2/train_refine.py:5]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 2, map[hyperparameters-pytorch:2]
+    warning: 10, map[deterministic-pytorch:2 randomness-control-dataloader-pytorch:6 randomness-control-pytorch:2]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:26:53 --> Completed: 28/74 projects, 2 had errors time: 1m26.003067549s
+2022/06/01 22:26:53 --> Project 40 - unsupervised_adversarial_trainin - Already cloned! time: 1m26.003131947s
+2022/06/01 22:26:53 --> Project 40 - unsupervised_adversarial_trainin - requirements.txt file found in repo! time: 1m26.003174125s
+2022/06/01 22:26:53 --> Project 40 - unsupervised_adversarial_trainin - Starting analysis... time: 1m26.003196473s
+2022/06/01 22:26:53 --> Project 40 - unsupervised_adversarial_trainin - Analysing Git stats & counting files... time: 1m26.003205263s
+2022/06/01 22:26:53 --> Project 40 - unsupervised_adversarial_trainin - Found 2 .py files (240 lines) and 0 .ipynb files (0 lines) time: 1m26.098282243s
+2022/06/01 22:26:53 --> Project 40 - unsupervised_adversarial_trainin - Running pylint... time: 1m26.098318557s
+2022/06/01 22:26:55 --> Project 37 - Done! Results: time: 1m27.95405788s
+  Name: transporter (deepmind-research)
+  CommitHash: 1642ae3499c8d1135ec6fe620a68911091dd25ef
+  Number of commits: 320
+  Number of contributors: 89
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 2 - 654
+  Jupyter Notebook files and total lines of code: 1 - 154
+  Total messages: 1
+  Pylint messages per path: map[deepmind-research/transporter/transporter_test.py:1]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 1, map[randomness-control-tensorflow:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:26:55 --> Completed: 29/74 projects, 2 had errors time: 1m27.954177433s
+2022/06/01 22:26:55 --> Project 41 - optax                            - Already cloned! time: 1m27.954237535s
+2022/06/01 22:26:55 --> Project 41 - optax                            - Found a setup.py file! time: 1m27.954297981s
+2022/06/01 22:26:55 --> Project 41 - optax                            - Starting analysis... time: 1m27.954311698s
+2022/06/01 22:26:55 --> Project 41 - optax                            - Analysing Git stats & counting files... time: 1m27.954322677s
+2022/06/01 22:26:55 --> Project 41 - optax                            - Found 56 .py files (11580 lines) and 3 .ipynb files (223 lines) time: 1m28.082982405s
+2022/06/01 22:26:55 --> Project 41 - optax                            - Running pylint... time: 1m28.08301896s
+2022/06/01 22:26:55 --> Project 34 - Done! Results: time: 1m28.217715324s
+  Name: scratchgan (deepmind-research)
+  CommitHash: 1642ae3499c8d1135ec6fe620a68911091dd25ef
+  Number of commits: 320
+  Number of contributors: 89
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 8 - 1383
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 4
+  Pylint messages per path: map[deepmind-research/scratchgan/experiment.py:2 deepmind-research/scratchgan/utils.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 4, map[missing-mask-tensorflow:2 randomness-control-numpy:1 randomness-control-tensorflow:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:26:55 --> Completed: 30/74 projects, 2 had errors time: 1m28.217951624s
+2022/06/01 22:26:55 --> Project 42 - multi_object_datasets            - Already cloned! time: 1m28.218022753s
+2022/06/01 22:26:55 --> Project 42 - multi_object_datasets            - Found a setup.py file! time: 1m28.218672736s
+2022/06/01 22:26:55 --> Project 42 - multi_object_datasets            - Starting analysis... time: 1m28.218699869s
+2022/06/01 22:26:55 --> Project 42 - multi_object_datasets            - Analysing Git stats & counting files... time: 1m28.218711682s
+2022/06/01 22:26:55 --> Project 42 - multi_object_datasets            - Found 7 .py files (577 lines) and 0 .ipynb files (0 lines) time: 1m28.330739362s
+2022/06/01 22:26:55 --> Project 42 - multi_object_datasets            - Running pylint... time: 1m28.330786961s
+2022/06/01 22:26:56 --> Project 39 - Done! Results: time: 1m29.38301146s
+  Name: unrestricted_advx (deepmind-research)
+  CommitHash: 1642ae3499c8d1135ec6fe620a68911091dd25ef
+  Number of commits: 320
+  Number of contributors: 89
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 1 - 58
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 1
+  Pylint messages per path: map[deepmind-research/unrestricted_advx/main.py:1]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 1, map[randomness-control-tensorflow:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:26:56 --> Completed: 31/74 projects, 2 had errors time: 1m29.383167163s
+2022/06/01 22:26:56 --> Project 43 - Interview                        - Already cloned! time: 1m29.38323103s
+2022/06/01 22:26:56 --> Project 43 - Interview                        - Starting analysis... time: 1m29.38393489s
+2022/06/01 22:26:56 --> Project 43 - Interview                        - Analysing Git stats & counting files... time: 1m29.383960535s
+2022/06/01 22:26:57 --> Project 43 - Interview                        - Found 39 .py files (5951 lines) and 7 .ipynb files (2279 lines) time: 1m30.021053376s
+2022/06/01 22:26:57 --> Project 43 - Interview                        - Running pylint... time: 1m30.021098834s
+2022/06/01 22:26:58 --> Project 40 - Done! Results: time: 1m30.613245631s
+  Name: unsupervised_adversarial_training (deepmind-research)
+  CommitHash: 1642ae3499c8d1135ec6fe620a68911091dd25ef
+  Number of commits: 320
+  Number of contributors: 89
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 2 - 240
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 2
+  Pylint messages per path: map[deepmind-research/unsupervised_adversarial_training/quick_eval_cifar.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 2, map[randomness-control-numpy:1 randomness-control-tensorflow:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:26:58 --> Completed: 32/74 projects, 2 had errors time: 1m30.61351499s
+2022/06/01 22:26:58 --> Project 44 - kaggle-understanding-clouds      - Already cloned! time: 1m30.613582601s
+2022/06/01 22:26:58 --> Project 44 - kaggle-understanding-clouds      - requirements.txt file found in repo! time: 1m30.613622739s
+2022/06/01 22:26:58 --> Project 44 - kaggle-understanding-clouds      - Starting analysis... time: 1m30.6136378s
+2022/06/01 22:26:58 --> Project 44 - kaggle-understanding-clouds      - Analysing Git stats & counting files... time: 1m30.613646984s
+2022/06/01 22:26:58 --> Project 44 - kaggle-understanding-clouds      - Found 59 .py files (4744 lines) and 0 .ipynb files (0 lines) time: 1m30.72506986s
+2022/06/01 22:26:58 --> Project 44 - kaggle-understanding-clouds      - Running pylint... time: 1m30.725112349s
+2022/06/01 22:27:01 --> Project 42 - Done! Results: time: 1m33.664132494s
+  Name: multi_object_datasets
+  CommitHash: 9c670cd630940b9f8f5b0e9728472201a50a3370
+  Number of commits: 12
+  Number of contributors: 1
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 7 - 577
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:27:01 --> Completed: 33/74 projects, 2 had errors time: 1m33.664368302s
+2022/06/01 22:27:01 --> Project 45 - kaggle-cloud-organization        - Already cloned! time: 1m33.664445714s
+2022/06/01 22:27:01 --> Project 45 - kaggle-cloud-organization        - Custom requirements.txt contents defined! time: 1m33.664463782s
+2022/06/01 22:27:01 --> Project 45 - kaggle-cloud-organization        - Starting analysis... time: 1m33.665905481s
+2022/06/01 22:27:01 --> Project 45 - kaggle-cloud-organization        - Analysing Git stats & counting files... time: 1m33.665934322s
+2022/06/01 22:27:01 --> Project 45 - kaggle-cloud-organization        - Found 45 .py files (8322 lines) and 0 .ipynb files (0 lines) time: 1m33.786248686s
+2022/06/01 22:27:01 --> Project 45 - kaggle-cloud-organization        - Running pylint... time: 1m33.786299545s
+2022/06/01 22:27:01 --> Project 36 - Done! Results: time: 1m33.809964685s
+  Name: sketchy (deepmind-research)
+  CommitHash: 1642ae3499c8d1135ec6fe620a68911091dd25ef
+  Number of commits: 320
+  Number of contributors: 89
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 5 - 338
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 1
+  Pylint messages per path: map[deepmind-research/sketchy/dataset_example.py:1]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 1, map[randomness-control-tensorflow:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:27:01 --> Completed: 34/74 projects, 2 had errors time: 1m33.810168112s
+2022/06/01 22:27:01 --> Project 46 - understanding-cloud-organization - Already cloned! time: 1m33.810240358s
+2022/06/01 22:27:01 --> Project 46 - understanding-cloud-organization - Found a setup.py file! time: 1m33.810678584s
+2022/06/01 22:27:01 --> Project 46 - understanding-cloud-organization - Starting analysis... time: 1m33.810704715s
+2022/06/01 22:27:01 --> Project 46 - understanding-cloud-organization - Analysing Git stats & counting files... time: 1m33.810717405s
+2022/06/01 22:27:01 --> Project 46 - understanding-cloud-organization - Found 38 .py files (4427 lines) and 24 .ipynb files (1668 lines) time: 1m34.424392763s
+2022/06/01 22:27:01 --> Project 46 - understanding-cloud-organization - Running pylint... time: 1m34.424445447s
+2022/06/01 22:27:02 --> Project 30 - Done! Results: time: 1m35.488155447s
+  Name: option_keyboard (deepmind-research)
+  CommitHash: 1642ae3499c8d1135ec6fe620a68911091dd25ef
+  Number of commits: 320
+  Number of contributors: 89
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 25 - 3143
+  Jupyter Notebook files and total lines of code: 1 - 262
+  Total messages: 24
+  Pylint messages per path: map[deepmind-research/option_keyboard/gpe_gpi_experiments/eval_keyboard_fig5.py:2 deepmind-research/option_keyboard/gpe_gpi_experiments/run_dqn_fig4b.py:1 deepmind-research/option_keyboard/gpe_gpi_experiments/run_dqn_fig5.py:1 deepmind-research/option_keyboard/gpe_gpi_experiments/run_regressed_w_fig4b.py:2 deepmind-research/option_keyboard/gpe_gpi_experiments/run_regressed_w_fig4c.py:2 deepmind-research/option_keyboard/gpe_gpi_experiments/run_regressed_w_with_phi_fig4c.py:2 deepmind-research/option_keyboard/gpe_gpi_experiments/run_true_w_fig4.py:2 deepmind-research/option_keyboard/gpe_gpi_experiments/run_true_w_fig6.py:2 deepmind-research/option_keyboard/gpe_gpi_experiments/train_keyboard.py:2 deepmind-research/option_keyboard/gpe_gpi_experiments/train_keyboard_with_phi.py:2 deepmind-research/option_keyboard/gpe_gpi_experiments/train_phi_model.py:2 deepmind-research/option_keyboard/run_dqn.py:1 deepmind-research/option_keyboard/run_dqn_test.py:1 deepmind-research/option_keyboard/run_ok.py:1 deepmind-research/option_keyboard/run_ok_test.py:1]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 24, map[randomness-control-numpy:9 randomness-control-tensorflow:15]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:27:02 --> Completed: 35/74 projects, 2 had errors time: 1m35.488388472s
+2022/06/01 22:27:02 --> Project 47 - RSNA2019_Intracranial-Hemorrhage - Already cloned! time: 1m35.488446129s
+2022/06/01 22:27:02 --> Project 47 - RSNA2019_Intracranial-Hemorrhage - requirements.txt file found in repo! time: 1m35.488474783s
+2022/06/01 22:27:02 --> Project 47 - RSNA2019_Intracranial-Hemorrhage - Starting analysis... time: 1m35.488496156s
+2022/06/01 22:27:02 --> Project 47 - RSNA2019_Intracranial-Hemorrhage - Analysing Git stats & counting files... time: 1m35.488505688s
+2022/06/01 22:27:03 --> Project 47 - RSNA2019_Intracranial-Hemorrhage - Found 27 .py files (5775 lines) and 0 .ipynb files (0 lines) time: 1m35.629837915s
+2022/06/01 22:27:03 --> Project 47 - RSNA2019_Intracranial-Hemorrhage - Running pylint... time: 1m35.629878974s
+2022/06/01 22:27:03 --> Project 35 - Done! Results: time: 1m35.643153799s
+  Name: side_effects_penalties (deepmind-research)
+  CommitHash: 1642ae3499c8d1135ec6fe620a68911091dd25ef
+  Number of commits: 320
+  Number of contributors: 89
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 9 - 1753
+  Jupyter Notebook files and total lines of code: 1 - 63
+  Total messages: 1
+  Pylint messages per path: map[deepmind-research/side_effects_penalties/file_loading.py:1]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 1, map[datatype-pandas:1]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:27:03 --> Completed: 36/74 projects, 2 had errors time: 1m35.64335677s
+2022/06/01 22:27:03 --> Project 48 - kaggle_rsna2019_3rd_solution     - Already cloned! time: 1m35.643427376s
+2022/06/01 22:27:03 --> Project 48 - kaggle_rsna2019_3rd_solution     - requirements.txt file found in repo! time: 1m35.643459376s
+2022/06/01 22:27:03 --> Project 48 - kaggle_rsna2019_3rd_solution     - Starting analysis... time: 1m35.643477295s
+2022/06/01 22:27:03 --> Project 48 - kaggle_rsna2019_3rd_solution     - Analysing Git stats & counting files... time: 1m35.643486596s
+2022/06/01 22:27:03 --> Project 48 - kaggle_rsna2019_3rd_solution     - Found 71 .py files (9079 lines) and 0 .ipynb files (0 lines) time: 1m35.76699485s
+2022/06/01 22:27:03 --> Project 48 - kaggle_rsna2019_3rd_solution     - Running pylint... time: 1m35.767040964s
+2022/06/01 22:27:03 --> Project 38 - Done! Results: time: 1m35.783715285s
+  Name: tvt (deepmind-research)
+  CommitHash: 1642ae3499c8d1135ec6fe620a68911091dd25ef
+  Number of commits: 320
+  Number of contributors: 89
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 14 - 2775
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 2
+  Pylint messages per path: map[deepmind-research/tvt/main.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 2, map[randomness-control-numpy:1 randomness-control-tensorflow:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:27:03 --> Completed: 37/74 projects, 2 had errors time: 1m35.784593332s
+2022/06/01 22:27:03 --> Project 49 - Kaggle-RSNA                      - Already cloned! time: 1m35.784656864s
+2022/06/01 22:27:03 --> Project 49 - Kaggle-RSNA                      - Custom requirements.txt contents defined! time: 1m35.784680484s
+2022/06/01 22:27:03 --> Project 49 - Kaggle-RSNA                      - Starting analysis... time: 1m35.785738211s
+2022/06/01 22:27:03 --> Project 49 - Kaggle-RSNA                      - Analysing Git stats & counting files... time: 1m35.785765218s
+2022/06/01 22:27:03 --> Project 49 - Kaggle-RSNA                      - Found 19 .py files (1974 lines) and 0 .ipynb files (0 lines) time: 1m35.892354704s
+2022/06/01 22:27:03 --> Project 49 - Kaggle-RSNA                      - Running pylint... time: 1m35.892397416s
+2022/06/01 22:27:05 --> Project 31 - Done! Results: time: 1m38.449071145s
+  Name: physics_planning_games (deepmind-research)
+  CommitHash: 1642ae3499c8d1135ec6fe620a68911091dd25ef
+  Number of commits: 320
+  Number of contributors: 89
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 26 - 3731
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:27:05 --> Completed: 38/74 projects, 2 had errors time: 1m38.449273955s
+2022/06/01 22:27:05 --> Project 50 - kaggle-rsna-intracranial-hemorrh - Already cloned! time: 1m38.44932845s
+2022/06/01 22:27:05 --> Project 50 - kaggle-rsna-intracranial-hemorrh - Custom requirements.txt contents defined! time: 1m38.44934436s
+2022/06/01 22:27:05 --> Project 50 - kaggle-rsna-intracranial-hemorrh - Starting analysis... time: 1m38.450480368s
+2022/06/01 22:27:05 --> Project 50 - kaggle-rsna-intracranial-hemorrh - Analysing Git stats & counting files... time: 1m38.450511276s
+2022/06/01 22:27:06 --> Project 50 - kaggle-rsna-intracranial-hemorrh - Found 18 .py files (1792 lines) and 1 .ipynb files (60 lines) time: 1m38.606061385s
+2022/06/01 22:27:06 --> Project 50 - kaggle-rsna-intracranial-hemorrh - Running pylint... time: 1m38.606102473s
+2022/06/01 22:27:08 --> Project 32 - Done! Results: time: 1m41.45552011s
+  Name: polygen (deepmind-research)
+  CommitHash: 1642ae3499c8d1135ec6fe620a68911091dd25ef
+  Number of commits: 320
+  Number of contributors: 89
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 4 - 2132
+  Jupyter Notebook files and total lines of code: 2 - 278
+  Total messages: 2
+  Pylint messages per path: map[deepmind-research/polygen/model_test.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 2, map[randomness-control-numpy:1 randomness-control-tensorflow:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:27:08 --> Completed: 39/74 projects, 2 had errors time: 1m41.455668801s
+2022/06/01 22:27:08 --> Project 51 - severstal-steel-defect-detection - Already cloned! time: 1m41.455766829s
+2022/06/01 22:27:08 --> Project 51 - severstal-steel-defect-detection - Found a setup.py file! time: 1m41.456180784s
+2022/06/01 22:27:08 --> Project 51 - severstal-steel-defect-detection - Starting analysis... time: 1m41.456208125s
+2022/06/01 22:27:08 --> Project 51 - severstal-steel-defect-detection - Analysing Git stats & counting files... time: 1m41.456220284s
+2022/06/01 22:27:09 --> Project 51 - severstal-steel-defect-detection - Found 29 .py files (2924 lines) and 17 .ipynb files (1298 lines) time: 1m41.779389813s
+2022/06/01 22:27:09 --> Project 51 - severstal-steel-defect-detection - Running pylint... time: 1m41.779432384s
+2022/06/01 22:27:30 --> Project 41 - Done! Results: time: 2m2.821397035s
+  Name: optax
+  CommitHash: a124552d0fc9f81812cd82da0d22528b7a17a847
+  Number of commits: 410
+  Number of contributors: 51
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 56 - 11580
+  Jupyter Notebook files and total lines of code: 3 - 223
+  Total messages: 4
+  Pylint messages per path: map[optax/examples/datasets_test.py:2 optax/examples/lookahead_mnist_test.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 4, map[randomness-control-numpy:2 randomness-control-tensorflow:2]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:27:30 --> Completed: 40/74 projects, 2 had errors time: 2m2.821629563s
+2022/06/01 22:27:30 --> Project 52 - kaggle-kuzushiji-recognition     - Already cloned! time: 2m2.821697331s
+2022/06/01 22:27:30 --> Project 52 - kaggle-kuzushiji-recognition     - Custom requirements.txt contents defined! time: 2m2.821723166s
+2022/06/01 22:27:30 --> Project 52 - kaggle-kuzushiji-recognition     - Starting analysis... time: 2m2.823437789s
+2022/06/01 22:27:30 --> Project 52 - kaggle-kuzushiji-recognition     - Analysing Git stats & counting files... time: 2m2.823465297s
+2022/06/01 22:27:30 --> Project 52 - kaggle-kuzushiji-recognition     - Found 322 .py files (46026 lines) and 1 .ipynb files (12 lines) time: 2m3.17660582s
+2022/06/01 22:27:30 --> Project 52 - kaggle-kuzushiji-recognition     - Running pylint... time: 2m3.176656847s
+2022/06/01 22:27:33 --> Project 5 - Done! Results: time: 2m6.279199889s
+  Name: navigan
+  CommitHash: 6631ce66a77c8d7ac5fcdddbaedc6e899ddfd0dd
+  Number of commits: 22
+  Number of contributors: 2
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 58 - 6191
+  Jupyter Notebook files and total lines of code: 2 - 109
+  Total messages: 13
+  Pylint messages per path: map[navigan/hessian_power_iteration.py:2 navigan/models/StyleGAN2/convert_weight.py:3 navigan/ortho_utils.py:1 navigan/pseudo_label/train.py:2 navigan/run_train.py:1 navigan/segmentation/train_segmentation.py:2 navigan/torch_tools/visualization.py:1 navigan/train_log.py:1]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 13, map[dataframe-conversion-pandas:1 deterministic-pytorch:4 missing-mask-pytorch:1 randomness-control-dataloader-pytorch:4 randomness-control-numpy:1 randomness-control-pytorch:2]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:27:33 --> Completed: 41/74 projects, 2 had errors time: 2m6.27936636s
+2022/06/01 22:27:33 --> Project 53 - kaggle-kuzushiji-2019            - Already cloned! time: 2m6.279438897s
+2022/06/01 22:27:33 --> Project 53 - kaggle-kuzushiji-2019            - requirements.txt file found in repo! time: 2m6.279474306s
+2022/06/01 22:27:33 --> Project 53 - kaggle-kuzushiji-2019            - Starting analysis... time: 2m6.279493475s
+2022/06/01 22:27:33 --> Project 53 - kaggle-kuzushiji-2019            - Analysing Git stats & counting files... time: 2m6.279503978s
+2022/06/01 22:27:33 --> Project 53 - kaggle-kuzushiji-2019            - Found 35 .py files (5886 lines) and 1 .ipynb files (82 lines) time: 2m6.450171218s
+2022/06/01 22:27:33 --> Project 53 - kaggle-kuzushiji-2019            - Running pylint... time: 2m6.450216209s
+2022/06/01 22:27:34 --> Project 50 - Done! Results: time: 2m6.877271496s
+  Name: kaggle-rsna-intracranial-hemorrhage
+  CommitHash: 54ea4cc228a03d8a2d7e3e10aa71dde6673c9a3d
+  Number of commits: 4
+  Number of contributors: 2
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 18 - 1792
+  Jupyter Notebook files and total lines of code: 1 - 60
+  Total messages: 9
+  Pylint messages per path: map[kaggle-rsna-intracranial-hemorrhage/src/cnn/factory.py:2 kaggle-rsna-intracranial-hemorrhage/src/cnn/main.py:3 kaggle-rsna-intracranial-hemorrhage/src/postprocess/make_submission.py:2 kaggle-rsna-intracranial-hemorrhage/src/preprocess/dicom_to_dataframe.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 5, map[column-selection-pandas:2 datatype-pandas:2 hyperparameters-pytorch:1]
+    warning: 4, map[deterministic-pytorch:1 randomness-control-dataloader-pytorch:1 randomness-control-numpy:1 randomness-control-pytorch:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:27:34 --> Completed: 42/74 projects, 2 had errors time: 2m6.877455844s
+2022/06/01 22:27:34 --> Project 54 - kaggle-kuzushiji-recognition-201 - Already cloned! time: 2m6.877527998s
+2022/06/01 22:27:34 --> Project 54 - kaggle-kuzushiji-recognition-201 - requirements.txt file found in repo! time: 2m6.877558659s
+2022/06/01 22:27:34 --> Project 54 - kaggle-kuzushiji-recognition-201 - Starting analysis... time: 2m6.877574427s
+2022/06/01 22:27:34 --> Project 54 - kaggle-kuzushiji-recognition-201 - Analysing Git stats & counting files... time: 2m6.877583909s
+2022/06/01 22:27:34 --> Project 54 - kaggle-kuzushiji-recognition-201 - Found 168 .py files (21402 lines) and 0 .ipynb files (0 lines) time: 2m7.056594588s
+2022/06/01 22:27:34 --> Project 54 - kaggle-kuzushiji-recognition-201 - Running pylint... time: 2m7.056635929s
+2022/06/01 22:27:50 --> Project 49 - Done! Results: time: 2m22.712724515s
+  Name: Kaggle-RSNA
+  CommitHash: 9d21698944fa15a57ba2065d217912e30d7b6701
+  Number of commits: 30
+  Number of contributors: 1
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 19 - 1974
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 22
+  Pylint messages per path: map[Kaggle-RSNA/src/dataset.py:4 Kaggle-RSNA/src/ensemble.py:1 Kaggle-RSNA/src/inference.py:6 Kaggle-RSNA/src/preprocessing.py:3 Kaggle-RSNA/src/preprocessing2.py:2 Kaggle-RSNA/src/preprocessing_3w.py:3 Kaggle-RSNA/src/swa.py:3]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 15, map[column-selection-pandas:3 datatype-pandas:12]
+    warning: 7, map[deterministic-pytorch:2 randomness-control-dataloader-pytorch:3 randomness-control-pytorch:2]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:27:50 --> Completed: 43/74 projects, 2 had errors time: 2m22.71293209s
+2022/06/01 22:27:50 --> Project 55 - kuzushiji-recognition            - Already cloned! time: 2m22.71300152s
+2022/06/01 22:27:50 --> Project 55 - kuzushiji-recognition            - Custom requirements.txt contents defined! time: 2m22.713018864s
+2022/06/01 22:27:50 --> Project 55 - kuzushiji-recognition            - Starting analysis... time: 2m22.714287139s
+2022/06/01 22:27:50 --> Project 55 - kuzushiji-recognition            - Analysing Git stats & counting files... time: 2m22.714317565s
+2022/06/01 22:27:52 --> Project 55 - kuzushiji-recognition            - Found 17 .py files (1530 lines) and 11 .ipynb files (2555 lines) time: 2m25.424787812s
+2022/06/01 22:27:52 --> Project 55 - kuzushiji-recognition            - Running pylint... time: 2m25.42483395s
+2022/06/01 22:27:59 --> Project 43 - Done! Results: time: 2m32.356235023s
+  Name: Interview
+  CommitHash: f3ed16d3c8a4fcf754e5e0538c908530b403b87e
+  Number of commits: 13
+  Number of contributors: 2
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 39 - 5951
+  Jupyter Notebook files and total lines of code: 7 - 2279
+  Total messages: 89
+  Pylint messages per path: map[Interview/src/py3.x/kaggle/featured/mercari-price-suggestion-challenge/script.py:5 Interview/src/py3.x/kaggle/getting-started/digit-recognizer/cnn_keras-python3.6.py:4 Interview/src/py3.x/kaggle/getting-started/digit-recognizer/cnn_pytorch-python3.6.py:4 Interview/src/py3.x/kaggle/getting-started/digit-recognizer/knn-python3.6.py:5 Interview/src/py3.x/kaggle/getting-started/digit-recognizer/nn-python3.6.py:6 Interview/src/py3.x/kaggle/getting-started/digit-recognizer/rf-python3.6.py:6 Interview/src/py3.x/kaggle/getting-started/digit-recognizer/svm-python3.6.py:7 Interview/src/py3.x/kaggle/getting-started/house-prices/base-model_lasso_python3.6.py:4 Interview/src/py3.x/kaggle/getting-started/house-prices/deeplearning_method.py:4 Interview/src/py3.x/kaggle/getting-started/house-prices/housePredice_335.py:4 Interview/src/py3.x/kaggle/getting-started/house-prices/jiangheng_houseprice.py:4 Interview/src/py3.x/kaggle/getting-started/titanic/introduction-to-ensemblingStacking-in-python.py:8 Interview/src/py3.x/kaggle/getting-started/titanic/titanic-python3.6.py:10 Interview/src/py3.x/kaggle/getting-started/titanic/titanic.py:9 Interview/src/py3.x/kaggle/getting-started/word2vec-nlp-tutorial/test.py:4 Interview/src/py3.x/kaggle/playground/dogs-vs-cats/main的副本.py:4 Interview/src/py3.x/kaggle/playground/dogs-vs-cats/models/BasicModule.py:1]
+  Number of Pylint messages: 
+    convention: 1, map[import-pytorch:1]
+    refactor: 71, map[column-selection-pandas:28 datatype-pandas:32 hyperparameters-scikitlearn:11]
+    warning: 17, map[dataframe-conversion-pandas:3 deterministic-pytorch:1 randomness-control-dataloader-pytorch:4 randomness-control-numpy:5 randomness-control-pytorch:1 randomness-control-scikitlearn:1 scaler-missing-scikitlearn:2]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:27:59 --> Completed: 44/74 projects, 2 had errors time: 2m32.356539278s
+2022/06/01 22:27:59 --> Project 56 - kaggle-rcic-1st                  - Already cloned! time: 2m32.356608768s
+2022/06/01 22:27:59 --> Project 56 - kaggle-rcic-1st                  - Starting analysis... time: 2m32.356674918s
+2022/06/01 22:27:59 --> Project 56 - kaggle-rcic-1st                  - Analysing Git stats & counting files... time: 2m32.356688034s
+2022/06/01 22:27:59 --> Project 56 - kaggle-rcic-1st                  - Found 5 .py files (1493 lines) and 0 .ipynb files (0 lines) time: 2m32.453394989s
+2022/06/01 22:27:59 --> Project 56 - kaggle-rcic-1st                  - Running pylint... time: 2m32.453438312s
+2022/06/01 22:28:13 --> Project 56 - Done! Results: time: 2m45.890333287s
+  Name: kaggle-rcic-1st
+  CommitHash: fcc1622b2a6051c0f390eac39ecb3cdb2ad2178e
+  Number of commits: 1
+  Number of contributors: 1
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 5 - 1493
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 13
+  Pylint messages per path: map[kaggle-rcic-1st/dataset.py:10 kaggle-rcic-1st/main.py:1 kaggle-rcic-1st/make_submission.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 9, map[column-selection-pandas:2 datatype-pandas:7]
+    warning: 4, map[deterministic-pytorch:1 randomness-control-dataloader-pytorch:3]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:28:13 --> Completed: 45/74 projects, 2 had errors time: 2m45.890580959s
+2022/06/01 22:28:13 --> Project 57 - CellSignal-Cell-Image-Analysis   - Already cloned! time: 2m45.890651604s
+2022/06/01 22:28:13 --> Project 57 - CellSignal-Cell-Image-Analysis   - Custom requirements.txt contents defined! time: 2m45.890668381s
+2022/06/01 22:28:13 --> Project 57 - CellSignal-Cell-Image-Analysis   - Starting analysis... time: 2m45.892153154s
+2022/06/01 22:28:13 --> Project 57 - CellSignal-Cell-Image-Analysis   - Analysing Git stats & counting files... time: 2m45.892178207s
+2022/06/01 22:28:13 --> Project 57 - CellSignal-Cell-Image-Analysis   - Found 20 .py files (3696 lines) and 0 .ipynb files (0 lines) time: 2m45.999902564s
+2022/06/01 22:28:13 --> Project 57 - CellSignal-Cell-Image-Analysis   - Running pylint... time: 2m45.999946856s
+2022/06/01 22:28:22 --> Project 55 - Done! Results: time: 2m54.610138122s
+  Name: kuzushiji-recognition
+  CommitHash: 08caaeaf40a00e1264b27e0f2157515b8ba8bc95
+  Number of commits: 8
+  Number of contributors: 5
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 17 - 1530
+  Jupyter Notebook files and total lines of code: 11 - 2555
+  Total messages: 10
+  Pylint messages per path: map[kuzushiji-recognition/stable/utils.py:6 kuzushiji-recognition/tom_functions/run.py:4]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 6, map[column-selection-pandas:3 datatype-pandas:3]
+    warning: 4, map[randomness-control-dataloader-pytorch:4]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:28:22 --> Completed: 46/74 projects, 2 had errors time: 2m54.610374003s
+2022/06/01 22:28:22 --> Project 58 - Kaggle-Recursion-Cellular        - Already cloned! time: 2m54.610438458s
+2022/06/01 22:28:22 --> Project 58 - Kaggle-Recursion-Cellular        - Custom requirements.txt contents defined! time: 2m54.610452383s
+2022/06/01 22:28:22 --> Project 58 - Kaggle-Recursion-Cellular        - Starting analysis... time: 2m54.611428058s
+2022/06/01 22:28:22 --> Project 58 - Kaggle-Recursion-Cellular        - Analysing Git stats & counting files... time: 2m54.611460182s
+2022/06/01 22:28:22 --> Project 58 - Kaggle-Recursion-Cellular        - Found 15 .py files (1644 lines) and 0 .ipynb files (0 lines) time: 2m54.761599699s
+2022/06/01 22:28:22 --> Project 58 - Kaggle-Recursion-Cellular        - Running pylint... time: 2m54.761671938s
+2022/06/01 22:28:25 --> Project 47 - Done! Results: time: 2m58.201365738s
+  Name: RSNA2019_Intracranial-Hemorrhage-Detection
+  CommitHash: ca449fb3d947e86f99e6f2f153f20248ebb9faaf
+  Number of commits: 34
+  Number of contributors: 5
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 27 - 5775
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 86
+  Pylint messages per path: map[RSNA2019_Intracranial-Hemorrhage-Detection/2DNet/src/dataset/dataset.py:2 RSNA2019_Intracranial-Hemorrhage-Detection/2DNet/src/train.py:6 RSNA2019_Intracranial-Hemorrhage-Detection/2DNet/src/tuils/loss_function.py:1 RSNA2019_Intracranial-Hemorrhage-Detection/3DNet/datasets/TReNDs.py:13 RSNA2019_Intracranial-Hemorrhage-Detection/3DNet/train_MRBrainS18.py:4 RSNA2019_Intracranial-Hemorrhage-Detection/3DNet/train_RSNA19.py:4 RSNA2019_Intracranial-Hemorrhage-Detection/3DNet/train_TReNDs.py:6 RSNA2019_Intracranial-Hemorrhage-Detection/SequenceModel/check_feature.py:10 RSNA2019_Intracranial-Hemorrhage-Detection/SequenceModel/check_oof.py:14 RSNA2019_Intracranial-Hemorrhage-Detection/SequenceModel/main.py:16 RSNA2019_Intracranial-Hemorrhage-Detection/SequenceModel/seq_dataset.py:8 RSNA2019_Intracranial-Hemorrhage-Detection/SequenceModel/seq_model.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 47, map[column-selection-pandas:16 datatype-pandas:31]
+    warning: 39, map[deterministic-pytorch:8 missing-mask-pytorch:1 mode-toggling-pytorch:4 randomness-control-dataloader-pytorch:14 randomness-control-numpy:5 randomness-control-pytorch:7]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:28:25 --> Completed: 47/74 projects, 2 had errors time: 2m58.201961425s
+2022/06/01 22:28:25 --> Project 59 - RSNA-STR-Pulmonary-Embolism-Dete - Already cloned! time: 2m58.20203819s
+2022/06/01 22:28:25 --> Project 59 - RSNA-STR-Pulmonary-Embolism-Dete - Custom requirements.txt contents defined! time: 2m58.202058736s
+2022/06/01 22:28:25 --> Project 59 - RSNA-STR-Pulmonary-Embolism-Dete - Starting analysis... time: 2m58.20329004s
+2022/06/01 22:28:25 --> Project 59 - RSNA-STR-Pulmonary-Embolism-Dete - Analysing Git stats & counting files... time: 2m58.203317432s
+2022/06/01 22:28:25 --> Project 59 - RSNA-STR-Pulmonary-Embolism-Dete - Found 229 .py files (78572 lines) and 0 .ipynb files (0 lines) time: 2m58.434694422s
+2022/06/01 22:28:25 --> Project 59 - RSNA-STR-Pulmonary-Embolism-Dete - Running pylint... time: 2m58.434737141s
+2022/06/01 22:28:34 --> Project 53 - Done! Results: time: 3m6.993382211s
+  Name: kaggle-kuzushiji-2019
+  CommitHash: 218308c046628da121b067933af40cf0420211a3
+  Number of commits: 221
+  Number of contributors: 1
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 35 - 5886
+  Jupyter Notebook files and total lines of code: 1 - 82
+  Total messages: 48
+  Pylint messages per path: map[kaggle-kuzushiji-2019/detection/_utils.py:2 kaggle-kuzushiji-2019/kuzushiji/classify/blend.py:6 kaggle-kuzushiji-2019/kuzushiji/classify/knn.py:5 kaggle-kuzushiji-2019/kuzushiji/classify/level2.py:2 kaggle-kuzushiji-2019/kuzushiji/classify/level2_features.py:1 kaggle-kuzushiji-2019/kuzushiji/classify/main.py:6 kaggle-kuzushiji-2019/kuzushiji/classify/models.py:1 kaggle-kuzushiji-2019/kuzushiji/classify/pseudolabel.py:1 kaggle-kuzushiji-2019/kuzushiji/data_utils.py:3 kaggle-kuzushiji-2019/kuzushiji/lm/dataset.py:3 kaggle-kuzushiji-2019/kuzushiji/lm/main.py:9 kaggle-kuzushiji-2019/kuzushiji/metric.py:4 kaggle-kuzushiji-2019/kuzushiji/segment/main.py:5]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 22, map[column-selection-pandas:5 datatype-pandas:15 hyperparameters-pytorch:2]
+    warning: 26, map[deterministic-pytorch:6 missing-mask-pytorch:2 mode-toggling-pytorch:1 randomness-control-dataloader-pytorch:6 randomness-control-numpy:5 randomness-control-pytorch:6]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:28:34 --> Completed: 48/74 projects, 2 had errors time: 3m6.993594035s
+2022/06/01 22:28:34 --> Project 60 - kaggle-rsna-pe                   - Already cloned! time: 3m6.993675256s
+2022/06/01 22:28:34 --> Project 60 - kaggle-rsna-pe                   - Custom requirements.txt contents defined! time: 3m6.993696375s
+2022/06/01 22:28:34 --> Project 60 - kaggle-rsna-pe                   - Starting analysis... time: 3m6.994795899s
+2022/06/01 22:28:34 --> Project 60 - kaggle-rsna-pe                   - Analysing Git stats & counting files... time: 3m6.994824456s
+2022/06/01 22:28:34 --> Project 60 - kaggle-rsna-pe                   - Found 54 .py files (6875 lines) and 0 .ipynb files (0 lines) time: 3m7.116583651s
+2022/06/01 22:28:34 --> Project 60 - kaggle-rsna-pe                   - Running pylint... time: 3m7.116631111s
+2022/06/01 22:28:43 --> Project 46 - Done! Results: time: 3m15.989776266s
+  Name: understanding-cloud-organization
+  CommitHash: 134683aa1d33fb782790c2c9b4487f2470eea9f3
+  Number of commits: 52
+  Number of contributors: 1
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 38 - 4427
+  Jupyter Notebook files and total lines of code: 24 - 1668
+  Total messages: 21
+  Pylint messages per path: map[understanding-cloud-organization/uco/data_loader/data_loaders.py:16 understanding-cloud-organization/uco/data_loader/pseudo.py:2 understanding-cloud-organization/uco/h5.py:2 understanding-cloud-organization/uco/utils/index.py:1]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 15, map[column-selection-pandas:7 datatype-pandas:8]
+    warning: 6, map[randomness-control-dataloader-pytorch:3 randomness-control-scikitlearn:3]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:28:43 --> Completed: 49/74 projects, 2 had errors time: 3m15.989982852s
+2022/06/01 22:28:43 --> Project 61 - RSNA-Pulmonary-Embolism-Detectio - Already cloned! time: 3m15.990048277s
+2022/06/01 22:28:43 --> Project 61 - RSNA-Pulmonary-Embolism-Detectio - Custom requirements.txt contents defined! time: 3m15.990066317s
+2022/06/01 22:28:43 --> Project 61 - RSNA-Pulmonary-Embolism-Detectio - Starting analysis... time: 3m15.992582864s
+2022/06/01 22:28:43 --> Project 61 - RSNA-Pulmonary-Embolism-Detectio - Analysing Git stats & counting files... time: 3m15.992609846s
+2022/06/01 22:28:43 --> Project 61 - RSNA-Pulmonary-Embolism-Detectio - Found 17 .py files (4164 lines) and 0 .ipynb files (0 lines) time: 3m16.16790283s
+2022/06/01 22:28:43 --> Project 61 - RSNA-Pulmonary-Embolism-Detectio - Running pylint... time: 3m16.167944658s
+2022/06/01 22:29:00 --> Project 58 - Done! Results: time: 3m32.705197868s
+  Name: Kaggle-Recursion-Cellular
+  CommitHash: a91740a4ad984588c28a9369f303eba2e6b0bea0
+  Number of commits: 57
+  Number of contributors: 3
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 15 - 1644
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 18
+  Pylint messages per path: map[Kaggle-Recursion-Cellular/src/dataset.py:10 Kaggle-Recursion-Cellular/src/ensemble.py:2 Kaggle-Recursion-Cellular/src/inference.py:4 Kaggle-Recursion-Cellular/src/models/densenet.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 12, map[column-selection-pandas:4 datatype-pandas:8]
+    warning: 6, map[deterministic-pytorch:2 randomness-control-dataloader-pytorch:1 randomness-control-numpy:1 randomness-control-pytorch:2]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:29:00 --> Completed: 50/74 projects, 2 had errors time: 3m32.705397724s
+2022/06/01 22:29:00 --> Project 62 - kaggle_moa_winner_hungry_for_gol - Already cloned! time: 3m32.705465197s
+2022/06/01 22:29:00 --> Project 62 - kaggle_moa_winner_hungry_for_gol - Custom requirements.txt contents defined! time: 3m32.705481464s
+2022/06/01 22:29:00 --> Project 62 - kaggle_moa_winner_hungry_for_gol - Starting analysis... time: 3m32.707451395s
+2022/06/01 22:29:00 --> Project 62 - kaggle_moa_winner_hungry_for_gol - Analysing Git stats & counting files... time: 3m32.707481629s
+2022/06/01 22:29:01 --> Project 62 - kaggle_moa_winner_hungry_for_gol - Found 37 .py files (42575 lines) and 52 .ipynb files (43387 lines) time: 3m33.899144934s
+2022/06/01 22:29:01 --> Project 62 - kaggle_moa_winner_hungry_for_gol - Running pylint... time: 3m33.899180566s
+2022/06/01 22:29:13 --> Project 57 - Done! Results: time: 3m46.451670739s
+  Name: CellSignal-Cell-Image-Analysis
+  CommitHash: 58471b228ca9a88e4c52edef295be4f60d1af1db
+  Number of commits: 2
+  Number of contributors: 1
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 20 - 3696
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 29
+  Pylint messages per path: map[CellSignal-Cell-Image-Analysis/ensemble.py:16 CellSignal-Cell-Image-Analysis/main.py:5 CellSignal-Cell-Image-Analysis/net/model_xception_6channel.py:1 CellSignal-Cell-Image-Analysis/net/model_xception_large_6channel.py:1 CellSignal-Cell-Image-Analysis/process/data.py:6]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 18, map[column-selection-pandas:8 datatype-pandas:10]
+    warning: 11, map[deterministic-pytorch:2 mode-toggling-pytorch:2 randomness-control-dataloader-pytorch:3 randomness-control-numpy:2 randomness-control-pytorch:2]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:29:13 --> Completed: 51/74 projects, 2 had errors time: 3m46.451852025s
+2022/06/01 22:29:13 --> Project 63 - 3rd-kaggle-moa-2020-solution     - Already cloned! time: 3m46.451906436s
+2022/06/01 22:29:13 --> Project 63 - 3rd-kaggle-moa-2020-solution     - Custom requirements.txt contents defined! time: 3m46.45203454s
+2022/06/01 22:29:13 --> Project 63 - 3rd-kaggle-moa-2020-solution     - Starting analysis... time: 3m46.453093323s
+2022/06/01 22:29:13 --> Project 63 - 3rd-kaggle-moa-2020-solution     - Analysing Git stats & counting files... time: 3m46.453124907s
+2022/06/01 22:29:14 --> Project 63 - 3rd-kaggle-moa-2020-solution     - Found 6 .py files (3703 lines) and 0 .ipynb files (0 lines) time: 3m46.563179419s
+2022/06/01 22:29:14 --> Project 63 - 3rd-kaggle-moa-2020-solution     - Running pylint... time: 3m46.563229408s
+2022/06/01 22:29:29 --> Project 63 - Done! Results: time: 4m1.90224887s
+  Name: 3rd-kaggle-moa-2020-solution
+  CommitHash: 7956ac36cef73c1f6392323c799e1ec309ab43f7
+  Number of commits: 6
+  Number of contributors: 2
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 6 - 3703
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 176
+  Pylint messages per path: map[3rd-kaggle-moa-2020-solution/blend.py:8 3rd-kaggle-moa-2020-solution/daishu_solution.py:25 3rd-kaggle-moa-2020-solution/predict.py:64 3rd-kaggle-moa-2020-solution/shiji_solution1.py:27 3rd-kaggle-moa-2020-solution/shiji_solution2.py:25 3rd-kaggle-moa-2020-solution/shiji_solution3.py:27]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 94, map[column-selection-pandas:38 datatype-pandas:56]
+    warning: 82, map[dataframe-conversion-pandas:31 missing-mask-pytorch:2 mode-toggling-pytorch:8 randomness-control-dataloader-pytorch:25 scaler-missing-scikitlearn:16]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:29:29 --> Completed: 52/74 projects, 2 had errors time: 4m1.902488057s
+2022/06/01 22:29:29 --> Project 64 - kaggle-lyft-motion-prediction-av - Already cloned! time: 4m1.902542958s
+2022/06/01 22:29:29 --> Project 64 - kaggle-lyft-motion-prediction-av - Custom requirements.txt contents defined! time: 4m1.902556943s
+2022/06/01 22:29:29 --> Project 64 - kaggle-lyft-motion-prediction-av - Starting analysis... time: 4m1.904022379s
+2022/06/01 22:29:29 --> Project 64 - kaggle-lyft-motion-prediction-av - Analysing Git stats & counting files... time: 4m1.904050954s
+2022/06/01 22:29:29 --> Project 64 - kaggle-lyft-motion-prediction-av - Found 21 .py files (3433 lines) and 0 .ipynb files (0 lines) time: 4m2.011685984s
+2022/06/01 22:29:29 --> Project 64 - kaggle-lyft-motion-prediction-av - Running pylint... time: 4m2.011731859s
+2022/06/01 22:29:35 --> Project 61 - Done! Results: time: 4m7.687600137s
+  Name: RSNA-Pulmonary-Embolism-Detection
+  CommitHash: e3849d5bf0c9c3afa47738f674f0ff694688aeaf
+  Number of commits: 55
+  Number of contributors: 1
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 17 - 4164
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 55
+  Pylint messages per path: map[RSNA-Pulmonary-Embolism-Detection/cnn2d/predict_feature.py:5 RSNA-Pulmonary-Embolism-Detection/cnn2d/preprocessing.py:3 RSNA-Pulmonary-Embolism-Detection/cnn2d/train.py:3 RSNA-Pulmonary-Embolism-Detection/cnn2d/utils.py:5 RSNA-Pulmonary-Embolism-Detection/cnn3d/negative_exam_for_pe.py:6 RSNA-Pulmonary-Embolism-Detection/cnn3d/rv_lv_ratio.py:9 RSNA-Pulmonary-Embolism-Detection/cnn3d/sided_pe.py:6 RSNA-Pulmonary-Embolism-Detection/lstm/train_lstm.py:2 RSNA-Pulmonary-Embolism-Detection/lstm/train_lstm_old.py:2 RSNA-Pulmonary-Embolism-Detection/lstm/utils.py:5 RSNA-Pulmonary-Embolism-Detection/submission.py:9]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 23, map[column-selection-pandas:9 datatype-pandas:14]
+    warning: 32, map[dataframe-conversion-pandas:2 deterministic-pytorch:2 mode-toggling-pytorch:6 randomness-control-dataloader-pytorch:20 randomness-control-numpy:1 randomness-control-pytorch:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:29:35 --> Completed: 53/74 projects, 2 had errors time: 4m7.687809601s
+2022/06/01 22:29:35 --> Project 65 - kaggle-lyft-motion-pred          - Already cloned! time: 4m7.687864657s
+2022/06/01 22:29:35 --> Project 65 - kaggle-lyft-motion-pred          - requirements.txt file found in repo! time: 4m7.687890778s
+2022/06/01 22:29:35 --> Project 65 - kaggle-lyft-motion-pred          - Starting analysis... time: 4m7.68790655s
+2022/06/01 22:29:35 --> Project 65 - kaggle-lyft-motion-pred          - Analysing Git stats & counting files... time: 4m7.687916441s
+2022/06/01 22:29:35 --> Project 65 - kaggle-lyft-motion-pred          - Found 5 .py files (1020 lines) and 0 .ipynb files (0 lines) time: 4m7.825451791s
+2022/06/01 22:29:35 --> Project 65 - kaggle-lyft-motion-pred          - Running pylint... time: 4m7.825493315s
+2022/06/01 22:29:37 --> Project 45 - Done! Results: time: 4m9.945334729s
+  Name: kaggle-cloud-organization
+  CommitHash: 08750c89d56235eee68c8827afb075610e53569d
+  Number of commits: 20
+  Number of contributors: 4
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 45 - 8322
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 96
+  Pylint messages per path: map[kaggle-cloud-organization/2-stage-ensemble-5fold.py:24 kaggle-cloud-organization/main_cls.py:15 kaggle-cloud-organization/main_seg.py:16 kaggle-cloud-organization/make_folds.py:5 kaggle-cloud-organization/mask-ensemble-5fold.py:8 kaggle-cloud-organization/models/lib/RoIAlign/build/lib/roi_align/build.py:2 kaggle-cloud-organization/models/lib/RoIAlign/roi_align/build.py:2 kaggle-cloud-organization/models/lib/RoIAlign/tests/test.py:3 kaggle-cloud-organization/models/modelzoo/convert_from_mxnet.py:2 kaggle-cloud-organization/models/modelzoo/dpn.py:2 kaggle-cloud-organization/models/modelzoo/dpnv2.py:2 kaggle-cloud-organization/models/modelzoo/inceptionV4.py:2 kaggle-cloud-organization/models/modelzoo/inceptionresnetv2.py:2 kaggle-cloud-organization/models/modelzoo/senet.py:2 kaggle-cloud-organization/models/modelzoo/xception.py:2 kaggle-cloud-organization/models/utils.py:3 kaggle-cloud-organization/preprocessing_images.py:4]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 51, map[column-selection-pandas:15 datatype-pandas:36]
+    warning: 45, map[dataframe-conversion-pandas:2 deterministic-pytorch:13 missing-mask-pytorch:1 mode-toggling-pytorch:1 randomness-control-dataloader-pytorch:12 randomness-control-numpy:3 randomness-control-pytorch:13]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:29:37 --> Completed: 54/74 projects, 2 had errors time: 4m9.945611809s
+2022/06/01 22:29:37 --> Project 66 - kaggle-lyft-motion-prediction-4t - Already cloned! time: 4m9.945669185s
+2022/06/01 22:29:37 --> Project 66 - kaggle-lyft-motion-prediction-4t - Custom requirements.txt contents defined! time: 4m9.945686508s
+2022/06/01 22:29:37 --> Project 66 - kaggle-lyft-motion-prediction-4t - Starting analysis... time: 4m9.947079646s
+2022/06/01 22:29:37 --> Project 66 - kaggle-lyft-motion-prediction-4t - Analysing Git stats & counting files... time: 4m9.947100847s
+2022/06/01 22:29:37 --> Project 66 - kaggle-lyft-motion-prediction-4t - Found 106 .py files (8665 lines) and 0 .ipynb files (0 lines) time: 4m10.109105205s
+2022/06/01 22:29:37 --> Project 66 - kaggle-lyft-motion-prediction-4t - Running pylint... time: 4m10.109144226s
+2022/06/01 22:29:39 --> Project 51 - Done! Results: time: 4m11.844330081s
+  Name: severstal-steel-defect-detection
+  CommitHash: ea62aa7badc89c06d21f6495f8420c2fcda7f7c0
+  Number of commits: 79
+  Number of contributors: 1
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 29 - 2924
+  Jupyter Notebook files and total lines of code: 17 - 1298
+  Total messages: 14
+  Pylint messages per path: map[severstal-steel-defect-detection/sever/data_loader/data_loaders.py:14]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 8, map[column-selection-pandas:4 datatype-pandas:4]
+    warning: 6, map[randomness-control-dataloader-pytorch:3 randomness-control-scikitlearn:3]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:29:39 --> Completed: 55/74 projects, 2 had errors time: 4m11.84455054s
+2022/06/01 22:29:39 --> Project 67 - Kaggle_Lyft                      - Already cloned! time: 4m11.84461162s
+2022/06/01 22:29:39 --> Project 67 - Kaggle_Lyft                      - Starting analysis... time: 4m11.845251265s
+2022/06/01 22:29:39 --> Project 67 - Kaggle_Lyft                      - Analysing Git stats & counting files... time: 4m11.845276331s
+2022/06/01 22:29:39 --> Project 67 - Kaggle_Lyft                      - Found 8 .py files (4713 lines) and 0 .ipynb files (0 lines) time: 4m11.939881692s
+2022/06/01 22:29:39 --> Project 67 - Kaggle_Lyft                      - Running pylint... time: 4m11.939952969s
+2022/06/01 22:29:45 --> Project 65 - Done! Results: time: 4m18.360424373s
+  Name: kaggle-lyft-motion-pred
+  CommitHash: 05c940c4783ee7773ef251ea0b21603030bf1023
+  Number of commits: 9
+  Number of contributors: 1
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 5 - 1020
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 9
+  Pylint messages per path: map[kaggle-lyft-motion-pred/lyft_loss.py:2 kaggle-lyft-motion-pred/run_lyft_mpred.py:5 kaggle-lyft-motion-pred/visualize_prediction.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 9, map[deterministic-pytorch:2 missing-mask-pytorch:2 randomness-control-dataloader-pytorch:3 randomness-control-pytorch:2]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:29:45 --> Completed: 56/74 projects, 2 had errors time: 4m18.360632477s
+2022/06/01 22:29:45 --> Project 68 - kaggle-landmark-recognition-2020 - Already cloned! time: 4m18.36069835s
+2022/06/01 22:29:45 --> Project 68 - kaggle-landmark-recognition-2020 - requirements.txt file found in repo! time: 4m18.360730598s
+2022/06/01 22:29:45 --> Project 68 - kaggle-landmark-recognition-2020 - Starting analysis... time: 4m18.360764367s
+2022/06/01 22:29:45 --> Project 68 - kaggle-landmark-recognition-2020 - Analysing Git stats & counting files... time: 4m18.36077365s
+2022/06/01 22:29:45 --> Project 68 - kaggle-landmark-recognition-2020 - Found 13 .py files (1429 lines) and 2 .ipynb files (254 lines) time: 4m18.469179378s
+2022/06/01 22:29:45 --> Project 68 - kaggle-landmark-recognition-2020 - Running pylint... time: 4m18.469219912s
+2022/06/01 22:29:57 --> Project 62 - Done! Results: time: 4m29.584741505s
+  Name: kaggle_moa_winner_hungry_for_gold
+  CommitHash: eeba59fe3285938721dc4f47791e1154e3334b06
+  Number of commits: 216
+  Number of contributors: 3
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 37 - 42575
+  Jupyter Notebook files and total lines of code: 52 - 43387
+  Total messages: 702
+  Pylint messages per path: map[kaggle_moa_winner_hungry_for_gold/final/Best CV/Inference/2heads-resnest-inference.py:10 kaggle_moa_winner_hungry_for_gold/final/Best CV/Inference/3stagenn-10folds-inference.py:29 kaggle_moa_winner_hungry_for_gold/final/Best CV/Inference/deepinsight-efficientnet-lightning-v7-b3-inference.py:13 kaggle_moa_winner_hungry_for_gold/final/Best CV/Inference/deepinsight-resnest-lightning-v1-inference.py:13 kaggle_moa_winner_hungry_for_gold/final/Best CV/Inference/deepinsight-resnest-lightning-v2-inference.py:13 kaggle_moa_winner_hungry_for_gold/final/Best LB/Inference/2heads-ResNest-inference.py:10 kaggle_moa_winner_hungry_for_gold/final/Best LB/Inference/3stage-nn-inference.py:29 kaggle_moa_winner_hungry_for_gold/final/Best LB/Inference/Local/2heads-ResNest-inference.py:10 kaggle_moa_winner_hungry_for_gold/final/Best LB/Inference/Local/2stage-nn-tabnet-inference.py:40 kaggle_moa_winner_hungry_for_gold/final/Best LB/Inference/Local/3stage-nn-inference.py:29 kaggle_moa_winner_hungry_for_gold/final/Best LB/Inference/Local/deepinsight-efficientnet-lightning-v7-b3-inference.py:13 kaggle_moa_winner_hungry_for_gold/final/Best LB/Inference/Local/deepinsight-resnest-lightning-v2-inference.py:13 kaggle_moa_winner_hungry_for_gold/final/Best LB/Inference/Local/simple-nn-new-split-inference.py:20 kaggle_moa_winner_hungry_for_gold/final/Best LB/Inference/Local/simple-nn-old-split-inference.py:18 kaggle_moa_winner_hungry_for_gold/final/Best LB/Inference/deepinsight-efficientnet-lightning-v7-b3-inference.py:13 kaggle_moa_winner_hungry_for_gold/final/Best LB/Inference/deepinsight-resnest-lightning-v2-inference.py:13 kaggle_moa_winner_hungry_for_gold/final/Best LB/Inference/simple-nn-new-split-inference.py:20 kaggle_moa_winner_hungry_for_gold/final/Best LB/Inference/simple-nn-old-split-inference.py:18 kaggle_moa_winner_hungry_for_gold/final/Best LB/Training/Local/2heads-ResNest-train.py:10 kaggle_moa_winner_hungry_for_gold/final/Best LB/Training/Local/2stage-nn-tabnet-train.py:40 kaggle_moa_winner_hungry_for_gold/final/Best LB/Training/Local/3stage-nn-train.py:29 kaggle_moa_winner_hungry_for_gold/final/Best LB/Training/Local/deepinsight-efficientnet-lightning-v7-b3-train.py:13 kaggle_moa_winner_hungry_for_gold/final/Best LB/Training/Local/deepinsight-resnest-lightning-v2-train.py:13 kaggle_moa_winner_hungry_for_gold/final/Best LB/Training/Local/simple-nn-new-split-train.py:20 kaggle_moa_winner_hungry_for_gold/final/Best LB/Training/Local/simple-nn-old-split-train.py:18 kaggle_moa_winner_hungry_for_gold/final/blend.py:16 kaggle_moa_winner_hungry_for_gold/scripts/2stageNN_with_ns_oldcv.py:29 kaggle_moa_winner_hungry_for_gold/scripts/2stageNN_with_ns_oldcv_10folds.py:29 kaggle_moa_winner_hungry_for_gold/scripts/deepinsight_efficientnet_lightning_v7_b3_infer.py:13 kaggle_moa_winner_hungry_for_gold/scripts/deepinsight_resnest_lightning_v1_infer.py:13 kaggle_moa_winner_hungry_for_gold/scripts/deepinsight_resnest_lightning_v2_infer.py:13 kaggle_moa_winner_hungry_for_gold/scripts/fork-of-2heads-looper-super-puper-markpeng-infer.py:10 kaggle_moa_winner_hungry_for_gold/scripts/improving-mark-s-2-heads-model-infer.py:10 kaggle_moa_winner_hungry_for_gold/scripts/script_simpleNN_oldcv.py:18 kaggle_moa_winner_hungry_for_gold/scripts/script_simpleNN_oldcv_10folds.py:18 kaggle_moa_winner_hungry_for_gold/scripts/script_tabnet_ns_oldcv.py:40 kaggle_moa_winner_hungry_for_gold/scripts/supervised_tabnet_v2_seeds_infer.py:26]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 417, map[column-selection-pandas:191 datatype-pandas:226]
+    warning: 285, map[dataframe-conversion-pandas:139 missing-mask-pytorch:7 randomness-control-dataloader-pytorch:133 scaler-missing-scikitlearn:6]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:29:57 --> Completed: 57/74 projects, 2 had errors time: 4m29.585114445s
+2022/06/01 22:29:57 --> Project 69 - instance_level_recognition       - Already cloned! time: 4m29.58518025s
+2022/06/01 22:29:57 --> Project 69 - instance_level_recognition       - Custom requirements.txt contents defined! time: 4m29.585198498s
+2022/06/01 22:29:57 --> Project 69 - instance_level_recognition       - Starting analysis... time: 4m29.587451354s
+2022/06/01 22:29:57 --> Project 69 - instance_level_recognition       - Analysing Git stats & counting files... time: 4m29.587480306s
+2022/06/01 22:29:57 --> Project 69 - instance_level_recognition       - Found 35 .py files (3085 lines) and 1 .ipynb files (1610 lines) time: 4m29.76261945s
+2022/06/01 22:29:57 --> Project 69 - instance_level_recognition       - Running pylint... time: 4m29.762661433s
+2022/06/01 22:29:59 --> Project 44 - Done! Results: time: 4m32.417488485s
+  Name: kaggle-understanding-clouds
+  CommitHash: 898319b564deab02b4267cc658bbebdbb15c49de
+  Number of commits: 17
+  Number of contributors: 1
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 59 - 4744
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 15
+  Pylint messages per path: map[kaggle-understanding-clouds/custom/datasets/cloud.py:2 kaggle-understanding-clouds/kvt/builder.py:1 kaggle-understanding-clouds/run.py:2 kaggle-understanding-clouds/tools/evaluate.py:4 kaggle-understanding-clouds/tools/make_submission.py:1 kaggle-understanding-clouds/tools/resize_labels.py:3 kaggle-understanding-clouds/tools/split.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 12, map[column-selection-pandas:4 datatype-pandas:8]
+    warning: 3, map[deterministic-pytorch:1 randomness-control-dataloader-pytorch:1 randomness-control-pytorch:1]
+    error: 0, map[]
+    fatal: 0, map[]
+2022/06/01 22:29:59 --> Completed: 58/74 projects, 2 had errors time: 4m32.419471306s
+2022/06/01 22:29:59 --> Project 70 - Google-Landmark-Recognition-2020 - Already cloned! time: 4m32.419587132s
+2022/06/01 22:29:59 --> Project 70 - Google-Landmark-Recognition-2020 - Custom requirements.txt contents defined! time: 4m32.419609467s
+2022/06/01 22:29:59 --> Project 70 - Google-Landmark-Recognition-2020 - Starting analysis... time: 4m32.421431008s
+2022/06/01 22:29:59 --> Project 70 - Google-Landmark-Recognition-2020 - Analysing Git stats & counting files... time: 4m32.421471934s
+2022/06/01 22:30:00 --> Project 70 - Google-Landmark-Recognition-2020 - Found 6 .py files (734 lines) and 1 .ipynb files (349 lines) time: 4m32.525855473s
+2022/06/01 22:30:00 --> Project 70 - Google-Landmark-Recognition-2020 - Running pylint... time: 4m32.525901181s
+2022/06/01 22:30:02 --> Project 67 - Done! Results: time: 4m35.221545123s
+  Name: Kaggle_Lyft
+  CommitHash: 1a1637b26758f2bd4fcf431cb0d62846f49bf84d
+  Number of commits: 58
+  Number of contributors: 1
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 8 - 4713
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 27
+  Pylint messages per path: map[Kaggle_Lyft/run_ensemble.py:9 Kaggle_Lyft/run_prep.py:3 Kaggle_Lyft/run_submit.py:9 Kaggle_Lyft/run_train.py:5 Kaggle_Lyft/settings.py:1]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 8, map[column-selection-pandas:3 datatype-pandas:5]
+    warning: 19, map[dataframe-conversion-pandas:10 deterministic-pytorch:3 missing-mask-pytorch:2 randomness-control-dataloader-pytorch:2 randomness-control-numpy:1 randomness-control-pytorch:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:30:02 --> Completed: 59/74 projects, 2 had errors time: 4m35.221758551s
+2022/06/01 22:30:02 --> Project 71 - python (google-landmarks-2020)   - Already cloned! time: 4m35.221829012s
+2022/06/01 22:30:02 --> Project 71 - python (google-landmarks-2020)   - Found a setup.py file! time: 4m35.222641563s
+2022/06/01 22:30:02 --> Project 71 - python (google-landmarks-2020)   - Starting analysis... time: 4m35.22269157s
+2022/06/01 22:30:02 --> Project 71 - python (google-landmarks-2020)   - Analysing Git stats & counting files... time: 4m35.222705512s
+2022/06/01 22:30:02 --> Project 71 - python (google-landmarks-2020)   - Found 23 .py files (1911 lines) and 0 .ipynb files (0 lines) time: 4m35.327566552s
+2022/06/01 22:30:02 --> Project 71 - python (google-landmarks-2020)   - Running pylint... time: 4m35.327607125s
+2022/06/01 22:30:06 --> Project 68 - Done! Results: time: 4m38.710589054s
+  Name: kaggle-landmark-recognition-2020-1st-place
+  CommitHash: 4e39676daf8b8d06f3a0586388fa78c370becb51
+  Number of commits: 8
+  Number of contributors: 1
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 13 - 1429
+  Jupyter Notebook files and total lines of code: 2 - 254
+  Total messages: 11
+  Pylint messages per path: map[kaggle-landmark-recognition-2020-1st-place/src/train.py:11]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 5, map[column-selection-pandas:2 datatype-pandas:3]
+    warning: 6, map[deterministic-pytorch:1 randomness-control-dataloader-pytorch:3 randomness-control-numpy:1 randomness-control-pytorch:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:30:06 --> Completed: 60/74 projects, 2 had errors time: 4m38.710743955s
+2022/06/01 22:30:06 --> Project 72 - SIIM-ISIC-Melanoma-Classificatio - Already cloned! time: 4m38.710800213s
+2022/06/01 22:30:06 --> Project 72 - SIIM-ISIC-Melanoma-Classificatio - Custom requirements.txt contents defined! time: 4m38.710817847s
+2022/06/01 22:30:06 --> Project 72 - SIIM-ISIC-Melanoma-Classificatio - Starting analysis... time: 4m38.712651664s
+2022/06/01 22:30:06 --> Project 72 - SIIM-ISIC-Melanoma-Classificatio - Analysing Git stats & counting files... time: 4m38.712679129s
+2022/06/01 22:30:06 --> Project 72 - SIIM-ISIC-Melanoma-Classificatio - Found 7 .py files (1044 lines) and 0 .ipynb files (0 lines) time: 4m38.843669412s
+2022/06/01 22:30:06 --> Project 72 - SIIM-ISIC-Melanoma-Classificatio - Running pylint... time: 4m38.84371107s
+2022/06/01 22:30:28 --> Project 70 - Done! Results: time: 5m1.250026347s
+  Name: Google-Landmark-Recognition-2020-3rd-Place-Solution
+  CommitHash: a7947ff091662909ac32aa7fad1b4be5f4185122
+  Number of commits: 16
+  Number of contributors: 4
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 6 - 734
+  Jupyter Notebook files and total lines of code: 1 - 349
+  Total messages: 9
+  Pylint messages per path: map[Google-Landmark-Recognition-2020-3rd-Place-Solution/dataset.py:4 Google-Landmark-Recognition-2020-3rd-Place-Solution/preprocess.py:2 Google-Landmark-Recognition-2020-3rd-Place-Solution/train.py:3]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 6, map[column-selection-pandas:2 datatype-pandas:4]
+    warning: 3, map[deterministic-pytorch:1 randomness-control-dataloader-pytorch:2]
+    error: 0, map[]
+    fatal: 0, map[]
+2022/06/01 22:30:28 --> Completed: 61/74 projects, 2 had errors time: 5m1.250415161s
+2022/06/01 22:30:28 --> Project 73 - TransferDet                      - Already cloned! time: 5m1.250472571s
+2022/06/01 22:30:28 --> Project 73 - TransferDet                      - Custom requirements.txt contents defined! time: 5m1.250490238s
+2022/06/01 22:30:28 --> Project 73 - TransferDet                      - Starting analysis... time: 5m1.251842954s
+2022/06/01 22:30:28 --> Project 73 - TransferDet                      - Analysing Git stats & counting files... time: 5m1.252010021s
+2022/06/01 22:30:29 --> Project 72 - Done! Results: time: 5m2.197971008s
+  Name: SIIM-ISIC-Melanoma-Classification-1st-Place-Solution
+  CommitHash: 2c4a5428c6d410e97d2a74aacd5f86b3750d32cf
+  Number of commits: 10
+  Number of contributors: 2
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 7 - 1044
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 15
+  Pylint messages per path: map[SIIM-ISIC-Melanoma-Classification-1st-Place-Solution/dataset.py:6 SIIM-ISIC-Melanoma-Classification-1st-Place-Solution/ensemble.py:1 SIIM-ISIC-Melanoma-Classification-1st-Place-Solution/evaluate.py:5 SIIM-ISIC-Melanoma-Classification-1st-Place-Solution/train.py:3]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 7, map[column-selection-pandas:3 datatype-pandas:4]
+    warning: 8, map[deterministic-pytorch:2 mode-toggling-pytorch:1 randomness-control-dataloader-pytorch:3 randomness-control-numpy:1 randomness-control-pytorch:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:30:29 --> Completed: 62/74 projects, 2 had errors time: 5m2.198122871s
+2022/06/01 22:30:29 --> Project 74 - Kaggle-2020-Alaska2              - Already cloned! time: 5m2.198179716s
+2022/06/01 22:30:29 --> Project 74 - Kaggle-2020-Alaska2              - Custom requirements.txt contents defined! time: 5m2.198197211s
+2022/06/01 22:30:29 --> Project 74 - Kaggle-2020-Alaska2              - Starting analysis... time: 5m2.199688575s
+2022/06/01 22:30:29 --> Project 74 - Kaggle-2020-Alaska2              - Analysing Git stats & counting files... time: 5m2.199713658s
+2022/06/01 22:30:29 --> Project 74 - Kaggle-2020-Alaska2              - Found 136 .py files (20917 lines) and 1 .ipynb files (179 lines) time: 5m2.400942899s
+2022/06/01 22:30:29 --> Project 74 - Kaggle-2020-Alaska2              - Running pylint... time: 5m2.400988176s
+2022/06/01 22:30:34 --> Project 73 - TransferDet                      - WARNING! - one or more Jupyter Notebooks could not be counted: [projects/TransferDet/jigsaw/jigsaw_2.ipynb]
+2022/06/01 22:30:34 --> Project 73 - TransferDet                      - Found 49 .py files (9985 lines) and 8 .ipynb files (5816 lines) time: 5m7.071480456s
+2022/06/01 22:30:34 --> Project 73 - TransferDet                      - Running pylint... time: 5m7.071497007s
+2022/06/01 22:30:37 --> Project 64 - Done! Results: time: 5m10.161640938s
+  Name: kaggle-lyft-motion-prediction-av
+  CommitHash: 3c7290dafec92f7186e843cefe96a06d03cba880
+  Number of commits: 27
+  Number of contributors: 4
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 21 - 3433
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 37
+  Pylint messages per path: map[kaggle-lyft-motion-prediction-av/src/1st_level/dataset.py:3 kaggle-lyft-motion-prediction-av/src/1st_level/models_common.py:2 kaggle-lyft-motion-prediction-av/src/1st_level/predict.py:4 kaggle-lyft-motion-prediction-av/src/1st_level/train.py:5 kaggle-lyft-motion-prediction-av/src/1st_level/train_distributed.py:6 kaggle-lyft-motion-prediction-av/src/1st_level/utils.py:5 kaggle-lyft-motion-prediction-av/src/2nd_level/engine.py:1 kaggle-lyft-motion-prediction-av/src/2nd_level/infer.py:6 kaggle-lyft-motion-prediction-av/src/2nd_level/models.py:1 kaggle-lyft-motion-prediction-av/src/2nd_level/train.py:4]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 2, map[column-selection-pandas:1 datatype-pandas:1]
+    warning: 35, map[deterministic-pytorch:8 missing-mask-pytorch:4 randomness-control-dataloader-pytorch:8 randomness-control-numpy:7 randomness-control-pytorch:8]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:30:37 --> Completed: 63/74 projects, 2 had errors time: 5m10.161849184s
+2022/06/01 22:30:49 --> Project 71 - Done! Results: time: 5m21.877723129s
+  Name: python (google-landmarks-2020)
+  CommitHash: 7fddf53c7cd32fe9d62b2ab20db97cc72d1bb4ab
+  Number of commits: 69
+  Number of contributors: 2
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 23 - 1911
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:30:49 --> Completed: 64/74 projects, 2 had errors time: 5m21.877896524s
+2022/06/01 22:31:09 --> Project 60 - Done! Results: time: 5m42.480858834s
+  Name: kaggle-rsna-pe
+  CommitHash: 81ca9ee45014b7ef1647000492a4ef5fbad7126f
+  Number of commits: 5
+  Number of contributors: 1
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 54 - 6875
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 66
+  Pylint messages per path: map[kaggle-rsna-pe/src/beehive/builder.py:2 kaggle-rsna-pe/src/beehive/controls/datamaker.py:10 kaggle-rsna-pe/src/beehive/controls/inference.py:7 kaggle-rsna-pe/src/beehive/models/engine.py:1 kaggle-rsna-pe/src/check_consistency.py:4 kaggle-rsna-pe/src/etl/00_extract_metadata.py:3 kaggle-rsna-pe/src/etl/01_create_cv_splits.py:2 kaggle-rsna-pe/src/etl/01b_create_cv_splits.py:2 kaggle-rsna-pe/src/etl/02_explore_targets.py:3 kaggle-rsna-pe/src/etl/03_segment_lungs_and_find_lung_slices.py:2 kaggle-rsna-pe/src/etl/03_segment_lungs_and_find_lung_slices_modified.py:3 kaggle-rsna-pe/src/etl/04_write_sample_to_jpeg.py:2 kaggle-rsna-pe/src/etl/05_write_estimated_bottom_top_heart_slices.py:2 kaggle-rsna-pe/src/etl/07_make_heart_df.py:2 kaggle-rsna-pe/src/etl/08_create_train_df_with_pe_and_heart_probas.py:4 kaggle-rsna-pe/src/etl/09_create_proba_dataset.py:3 kaggle-rsna-pe/src/etl/convert_to_jpeg_for_kaggle.py:3 kaggle-rsna-pe/src/etl/verify_no_cv_leak.py:2 kaggle-rsna-pe/src/run.py:2 kaggle-rsna-pe/src/verify_predictions.py:7]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 57, map[column-selection-pandas:24 datatype-pandas:32 hyperparameters-pytorch:1]
+    warning: 9, map[deterministic-pytorch:1 inplace-numpy:2 mode-toggling-pytorch:1 randomness-control-dataloader-pytorch:4 randomness-control-pytorch:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:31:09 --> Completed: 65/74 projects, 2 had errors time: 5m42.481046023s
+2022/06/01 22:31:47 --> Project 69 - Done! Results: time: 6m19.610433326s
+  Name: instance_level_recognition
+  CommitHash: 683f021b4e65876835f028797ec28b0d1071bb45
+  Number of commits: 6
+  Number of contributors: 1
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 35 - 3085
+  Jupyter Notebook files and total lines of code: 1 - 1610
+  Total messages: 20
+  Pylint messages per path: map[instance_level_recognition/src/data_process/create_split.py:9 instance_level_recognition/src/dataset/landmark_dataset.py:2 instance_level_recognition/src/layers/loss.py:2 instance_level_recognition/src/networks/superpointglue/superglue.py:1 instance_level_recognition/src/train.py:3 instance_level_recognition/src/utilities/metric_util.py:3]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 13, map[column-selection-pandas:6 datatype-pandas:7]
+    warning: 7, map[dataframe-conversion-pandas:1 deterministic-pytorch:2 randomness-control-dataloader-pytorch:3 randomness-control-pytorch:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:31:47 --> Completed: 66/74 projects, 2 had errors time: 6m19.610672077s
+2022/06/01 22:33:06 --> Project 73 - TransferDet                      - Analysis Error: error parsing Pylint output: invalid character 'E' looking for beginning of value
+2022/06/01 22:33:06 --> Completed: 67/74 projects, 3 had errors time: 7m38.889190046s
+2022/06/01 22:33:09 --> Project 54 - kaggle-kuzushiji-recognition-201 - Analysis Error: error parsing Pylint output: invalid character 'E' looking for beginning of value
+2022/06/01 22:33:09 --> Completed: 68/74 projects, 4 had errors time: 7m42.005895196s
+2022/06/01 22:33:46 --> Project 74 - Done! Results: time: 8m19.164736839s
+  Name: Kaggle-2020-Alaska2
+  CommitHash: 3c1f5e8e564c9f04423beef69244fc74168f88ca
+  Number of commits: 616
+  Number of contributors: 3
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 136 - 20917
+  Jupyter Notebook files and total lines of code: 1 - 179
+  Total messages: 262
+  Pylint messages per path: map[Kaggle-2020-Alaska2/abba/predict/generate_submission_catboost.py:1 Kaggle-2020-Alaska2/abba/predict/group_experiments.py:3 Kaggle-2020-Alaska2/abba/predict/predict_folder_pytorch.py:4 Kaggle-2020-Alaska2/abba/train/stacking/skopt_catboost.py:3 Kaggle-2020-Alaska2/abba/train/tools/fitter.py:1 Kaggle-2020-Alaska2/abba/train/train_pytorch.py:2 Kaggle-2020-Alaska2/abba/train/train_tf.py:2 Kaggle-2020-Alaska2/alaska2/config.py:2 Kaggle-2020-Alaska2/alaska2/dataset.py:32 Kaggle-2020-Alaska2/alaska2/loss.py:1 Kaggle-2020-Alaska2/alaska2/metric.py:1 Kaggle-2020-Alaska2/alaska2/optim.py:4 Kaggle-2020-Alaska2/alaska2/submissions.py:20 Kaggle-2020-Alaska2/analyze_errors.py:3 Kaggle-2020-Alaska2/blend.py:1 Kaggle-2020-Alaska2/blends/blend1/blend1.py:3 Kaggle-2020-Alaska2/blends/blend10/blend10.py:12 Kaggle-2020-Alaska2/blends/blend3/blend3.py:3 Kaggle-2020-Alaska2/blends/blend4/blend4.py:7 Kaggle-2020-Alaska2/blends/blend6/blend6.py:6 Kaggle-2020-Alaska2/blends/blend7/blend7.py:7 Kaggle-2020-Alaska2/blends/blend8/blend8.py:3 Kaggle-2020-Alaska2/blends/blend9/blend9.py:7 Kaggle-2020-Alaska2/changed_bits.py:2 Kaggle-2020-Alaska2/dataset_mean_std_dct.py:3 Kaggle-2020-Alaska2/dataset_mean_std_ela.py:3 Kaggle-2020-Alaska2/dataset_mean_std_res.py:3 Kaggle-2020-Alaska2/dataset_save_qf_qt.py:3 Kaggle-2020-Alaska2/make_folds_v2.py:3 Kaggle-2020-Alaska2/make_submissions_xgb_gs.py:5 Kaggle-2020-Alaska2/oof_predictions.py:4 Kaggle-2020-Alaska2/oof_predictions_istego.py:2 Kaggle-2020-Alaska2/predict_2nd.py:2 Kaggle-2020-Alaska2/predict_train_embeddings.py:1 Kaggle-2020-Alaska2/submissions/best_checkpoints_for_ensemble.py:2 Kaggle-2020-Alaska2/submissions/estimate_class_distribution.py:1 Kaggle-2020-Alaska2/submissions/eval_tta.py:3 Kaggle-2020-Alaska2/submissions/make_submissions_catboost_gs.py:4 Kaggle-2020-Alaska2/submissions/make_submissions_lazypredict.py:3 Kaggle-2020-Alaska2/submissions/make_submissions_lazypredict_2.py:2 Kaggle-2020-Alaska2/submissions/make_submissions_lda.py:4 Kaggle-2020-Alaska2/submissions/make_submissions_lgbm_gs.py:4 Kaggle-2020-Alaska2/submissions/make_submissions_lr.py:4 Kaggle-2020-Alaska2/submissions/make_submissions_stacking.py:6 Kaggle-2020-Alaska2/submissions/make_submissions_weighted.py:3 Kaggle-2020-Alaska2/submissions/make_submissions_xgb.py:4 Kaggle-2020-Alaska2/submissions/make_submissions_xgb_cls.py:4 Kaggle-2020-Alaska2/submissions/make_submissions_xgb_cls_2.py:3 Kaggle-2020-Alaska2/submissions/make_submissions_xgb_emb_gs.py:4 Kaggle-2020-Alaska2/submissions/make_submissions_xgb_gs.py:5 Kaggle-2020-Alaska2/submissions/make_submissions_xgb_gs_2.py:3 Kaggle-2020-Alaska2/submissions/make_submissions_xgb_ranking_gs.py:4 Kaggle-2020-Alaska2/submissions/plot_correlations.py:1 Kaggle-2020-Alaska2/summarize_models.py:11 Kaggle-2020-Alaska2/summarize_models_plot.py:3 Kaggle-2020-Alaska2/tests/test_calibration.py:4 Kaggle-2020-Alaska2/tests/test_models.py:1 Kaggle-2020-Alaska2/train.py:6 Kaggle-2020-Alaska2/train2.py:2 Kaggle-2020-Alaska2/train_2nd.py:2 Kaggle-2020-Alaska2/train_d.py:2 Kaggle-2020-Alaska2/train_d_extra_data.py:2 Kaggle-2020-Alaska2/train_d_paired.py:2 Kaggle-2020-Alaska2/train_extra.py:2 Kaggle-2020-Alaska2/train_tpu.py:2]
+  Number of Pylint messages: 
+    convention: 3, map[import-sklearn:3]
+    refactor: 143, map[column-selection-pandas:38 datatype-pandas:100 hyperparameters-pytorch:5]
+    warning: 116, map[chain-indexing-pandas:8 dataframe-conversion-pandas:13 deterministic-pytorch:18 missing-mask-pytorch:2 mode-toggling-pytorch:1 randomness-control-dataloader-pytorch:30 randomness-control-numpy:24 randomness-control-pytorch:18 randomness-control-scikitlearn:1 randomness-control-tensorflow:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:33:46 --> Completed: 69/74 projects, 4 had errors time: 8m19.166954391s
+2022/06/01 22:33:46 --> Project 66 - Done! Results: time: 8m19.357011224s
+  Name: kaggle-lyft-motion-prediction-4th-place-solution
+  CommitHash: 0bc51075db31a747eeebb7f4775a3cd26ad5f870
+  Number of commits: 1
+  Number of contributors: 1
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 106 - 8665
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 66
+  Pylint messages per path: map[kaggle-lyft-motion-prediction-4th-place-solution/src/ensemble/ensemble_batch.py:4 kaggle-lyft-motion-prediction-4th-place-solution/src/ensemble/ensemble_test.py:1 kaggle-lyft-motion-prediction-4th-place-solution/src/ensemble/ensemble_val.py:2 kaggle-lyft-motion-prediction-4th-place-solution/src/lib/functions/nll.py:9 kaggle-lyft-motion-prediction-4th-place-solution/src/lib/mixture/batch_spherical_gmm.py:5 kaggle-lyft-motion-prediction-4th-place-solution/src/lib/nn/models/multi/efficientnet_multi.py:2 kaggle-lyft-motion-prediction-4th-place-solution/src/lib/nn/models/multi/pretrained_cnn_multi.py:2 kaggle-lyft-motion-prediction-4th-place-solution/src/lib/nn/models/multi/resnest_multi.py:2 kaggle-lyft-motion-prediction-4th-place-solution/src/lib/nn/models/multi_agent/smp_multi_agent_model.py:2 kaggle-lyft-motion-prediction-4th-place-solution/src/modeling/calc_history_avail.py:5 kaggle-lyft-motion-prediction-4th-place-solution/src/modeling/calc_num_history.py:5 kaggle-lyft-motion-prediction-4th-place-solution/src/modeling/calc_num_history_vs_loss.py:3 kaggle-lyft-motion-prediction-4th-place-solution/src/modeling/calc_target_scale.py:3 kaggle-lyft-motion-prediction-4th-place-solution/src/modeling/check_history_avail.py:3 kaggle-lyft-motion-prediction-4th-place-solution/src/modeling/check_rasterizer.py:5 kaggle-lyft-motion-prediction-4th-place-solution/src/modeling/eval_lyft.py:4 kaggle-lyft-motion-prediction-4th-place-solution/src/modeling/predict_lyft.py:4 kaggle-lyft-motion-prediction-4th-place-solution/src/modeling/train_lyft.py:5]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 3, map[datatype-pandas:3]
+    warning: 63, map[deterministic-pytorch:17 missing-mask-pytorch:8 randomness-control-dataloader-pytorch:10 randomness-control-numpy:11 randomness-control-pytorch:17]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:33:46 --> Completed: 70/74 projects, 4 had errors time: 8m19.357197042s
+2022/06/01 22:34:22 --> Project 48 - Done! Results: time: 8m55.440764654s
+  Name: kaggle_rsna2019_3rd_solution
+  CommitHash: 87ca0c61dcb86e18f4ef3283347c9f7bebff2841
+  Number of commits: 22
+  Number of contributors: 3
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 71 - 9079
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 341
+  Pylint messages per path: map[kaggle_rsna2019_3rd_solution/exp/exp10_seres_threecenter_rescale_512.py:5 kaggle_rsna2019_3rd_solution/exp/exp16_seres_concat.py:5 kaggle_rsna2019_3rd_solution/exp/exp17_7_external.py:6 kaggle_rsna2019_3rd_solution/exp/exp18_seres_concat_three.py:5 kaggle_rsna2019_3rd_solution/exp/exp19_seres_doubleconcat.py:5 kaggle_rsna2019_3rd_solution/exp/exp21_seres_doublepre.py:5 kaggle_rsna2019_3rd_solution/exp/exp22_seres_doublepost.py:5 kaggle_rsna2019_3rd_solution/exp/exp23_seres_doublepre_three.py:5 kaggle_rsna2019_3rd_solution/exp/exp24_seres_doublepost_three.py:5 kaggle_rsna2019_3rd_solution/exp/exp25_seres_conc3.py:5 kaggle_rsna2019_3rd_solution/exp/exp26_seres_concall_prepost.py:5 kaggle_rsna2019_3rd_solution/exp/exp27_seres_conc5.py:5 kaggle_rsna2019_3rd_solution/exp/exp28_seres101_16.py:5 kaggle_rsna2019_3rd_solution/exp/exp32_seres_conc_any.py:5 kaggle_rsna2019_3rd_solution/exp/exp34_seres_threetarget.py:5 kaggle_rsna2019_3rd_solution/exp/exp36_seres_double_threetarget.py:5 kaggle_rsna2019_3rd_solution/exp/exp7_seres_precenter_512.py:5 kaggle_rsna2019_3rd_solution/make_concat_images/all_concat.py:2 kaggle_rsna2019_3rd_solution/make_concat_images/all_concat_test.py:2 kaggle_rsna2019_3rd_solution/make_concat_images/concat3.py:4 kaggle_rsna2019_3rd_solution/make_concat_images/concat3_test.py:4 kaggle_rsna2019_3rd_solution/make_concat_images/concat5.py:4 kaggle_rsna2019_3rd_solution/make_concat_images/concat5_test.py:4 kaggle_rsna2019_3rd_solution/make_concat_images/concat_prepost.py:3 kaggle_rsna2019_3rd_solution/make_concat_images/concat_prepost_test.py:3 kaggle_rsna2019_3rd_solution/prediction/exp10.py:5 kaggle_rsna2019_3rd_solution/prediction/exp10_for_train.py:5 kaggle_rsna2019_3rd_solution/prediction/exp16.py:5 kaggle_rsna2019_3rd_solution/prediction/exp16_for_train.py:5 kaggle_rsna2019_3rd_solution/prediction/exp17.py:5 kaggle_rsna2019_3rd_solution/prediction/exp17_for_train.py:5 kaggle_rsna2019_3rd_solution/prediction/exp18.py:5 kaggle_rsna2019_3rd_solution/prediction/exp18_for_train.py:5 kaggle_rsna2019_3rd_solution/prediction/exp19.py:5 kaggle_rsna2019_3rd_solution/prediction/exp19_for_train.py:5 kaggle_rsna2019_3rd_solution/prediction/exp21.py:5 kaggle_rsna2019_3rd_solution/prediction/exp21_for_train.py:5 kaggle_rsna2019_3rd_solution/prediction/exp22.py:5 kaggle_rsna2019_3rd_solution/prediction/exp22_for_train.py:5 kaggle_rsna2019_3rd_solution/prediction/exp23.py:5 kaggle_rsna2019_3rd_solution/prediction/exp23_for_train.py:5 kaggle_rsna2019_3rd_solution/prediction/exp24.py:5 kaggle_rsna2019_3rd_solution/prediction/exp24_fot_train.py:5 kaggle_rsna2019_3rd_solution/prediction/exp25.py:5 kaggle_rsna2019_3rd_solution/prediction/exp25_fot_train.py:5 kaggle_rsna2019_3rd_solution/prediction/exp26.py:5 kaggle_rsna2019_3rd_solution/prediction/exp26_for_train.py:5 kaggle_rsna2019_3rd_solution/prediction/exp27.py:5 kaggle_rsna2019_3rd_solution/prediction/exp27_for_train.py:5 kaggle_rsna2019_3rd_solution/prediction/exp28.py:5 kaggle_rsna2019_3rd_solution/prediction/exp32.py:5 kaggle_rsna2019_3rd_solution/prediction/exp34.py:5 kaggle_rsna2019_3rd_solution/prediction/exp36.py:5 kaggle_rsna2019_3rd_solution/prediction/exp7_externalv2.py:4 kaggle_rsna2019_3rd_solution/preprocess/creating-a-metadata-dataframe-fastai.py:2 kaggle_rsna2019_3rd_solution/preprocess/make_user_df.py:1 kaggle_rsna2019_3rd_solution/preprocess/preprocess_csv.py:1 kaggle_rsna2019_3rd_solution/stack/averaging.py:48 kaggle_rsna2019_3rd_solution/stack/make_user_stackingdata.py:20 kaggle_rsna2019_3rd_solution/stack/make_user_stackingdata_demo.py:10 kaggle_rsna2019_3rd_solution/stack/user_stacking.py:2 kaggle_rsna2019_3rd_solution/stack/user_stacking_demo.py:1]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 139, map[column-selection-pandas:25 datatype-pandas:114]
+    warning: 202, map[dataframe-conversion-pandas:10 deterministic-pytorch:46 randomness-control-dataloader-pytorch:54 randomness-control-numpy:46 randomness-control-pytorch:46]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:34:22 --> Completed: 71/74 projects, 4 had errors time: 8m55.443209468s
+2022/06/01 22:35:00 --> Project 52 - Done! Results: time: 9m33.274950891s
+  Name: kaggle-kuzushiji-recognition
+  CommitHash: 169c400afae4bbff36d68eec3e675a2be638d2e0
+  Number of commits: 11
+  Number of contributors: 1
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 322 - 46026
+  Jupyter Notebook files and total lines of code: 1 - 12
+  Total messages: 40
+  Pylint messages per path: map[kaggle-kuzushiji-recognition/crop_det.py:2 kaggle-kuzushiji-recognition/make_submission.py:4 kaggle-kuzushiji-recognition/mmdetection/demo/webcam_demo.py:2 kaggle-kuzushiji-recognition/mmdetection/mmdet/core/bbox/transforms.py:2 kaggle-kuzushiji-recognition/mmdetection/mmdet/datasets/loader/build_loader.py:1 kaggle-kuzushiji-recognition/mmdetection/mmdet/models/anchor_heads/fovea_head.py:2 kaggle-kuzushiji-recognition/mmdetection/mmdet/models/backbones/hrnet.py:1 kaggle-kuzushiji-recognition/mmdetection/mmdet/models/backbones/resnet.py:2 kaggle-kuzushiji-recognition/mmdetection/mmdet/models/losses/balanced_l1_loss.py:1 kaggle-kuzushiji-recognition/mmdetection/mmdet/models/shared_heads/res_layer.py:1 kaggle-kuzushiji-recognition/mmdetection/mmdet/ops/roi_align/roi_align.py:1 kaggle-kuzushiji-recognition/mmdetection/mmdet/ops/roi_pool/roi_pool.py:1 kaggle-kuzushiji-recognition/mmdetection/mmdet/ops/sigmoid_focal_loss/sigmoid_focal_loss.py:1 kaggle-kuzushiji-recognition/mmdetection/tools/detectron2pytorch.py:2 kaggle-kuzushiji-recognition/mmdetection/tools/publish_model.py:2 kaggle-kuzushiji-recognition/mmdetection/tools/test.py:2 kaggle-kuzushiji-recognition/mmdetection/tools/test_robustness.py:3 kaggle-kuzushiji-recognition/mmdetection/tools/train.py:2 kaggle-kuzushiji-recognition/mmdetection/tools/upgrade_model_version.py:2 kaggle-kuzushiji-recognition/prepare_det.py:6]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 10, map[column-selection-pandas:5 datatype-pandas:5]
+    warning: 30, map[deterministic-pytorch:8 forward-pytorch:3 missing-mask-pytorch:5 mode-toggling-pytorch:4 randomness-control-dataloader-pytorch:1 randomness-control-numpy:1 randomness-control-pytorch:8]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:35:00 --> Completed: 72/74 projects, 4 had errors time: 9m33.275095578s
+2022/06/01 22:35:03 --> Project 59 - Done! Results: time: 9m36.388783951s
+  Name: RSNA-STR-Pulmonary-Embolism-Detection
+  CommitHash: f5552d40ba9c32e7c16f36e1d2a03ed883ca7858
+  Number of commits: 4
+  Number of contributors: 2
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 229 - 78572
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 175
+  Pylint messages per path: map[RSNA-STR-Pulmonary-Embolism-Detection/trainall/2nd_level/seresnext101_192.py:1 RSNA-STR-Pulmonary-Embolism-Detection/trainall/2nd_level/seresnext50_192.py:1 RSNA-STR-Pulmonary-Embolism-Detection/trainall/lung_localization/splitall/save_bbox_train.py:6 RSNA-STR-Pulmonary-Embolism-Detection/trainall/lung_localization/splitall/train0.py:4 RSNA-STR-Pulmonary-Embolism-Detection/trainall/lung_localization/splitall/train1.py:4 RSNA-STR-Pulmonary-Embolism-Detection/trainall/lung_localization/splitall/train2.py:4 RSNA-STR-Pulmonary-Embolism-Detection/trainall/process_input/process_input_splitall.py:2 RSNA-STR-Pulmonary-Embolism-Detection/trainall/seresnext101/pretrainedmodels/bninception.py:2 RSNA-STR-Pulmonary-Embolism-Detection/trainall/seresnext101/pretrainedmodels/fbresnet/resnet152_load.py:1 RSNA-STR-Pulmonary-Embolism-Detection/trainall/seresnext101/pretrainedmodels/inceptionresnetv2.py:2 RSNA-STR-Pulmonary-Embolism-Detection/trainall/seresnext101/pretrainedmodels/inceptionv4.py:2 RSNA-STR-Pulmonary-Embolism-Detection/trainall/seresnext101/pretrainedmodels/nasnet.py:2 RSNA-STR-Pulmonary-Embolism-Detection/trainall/seresnext101/pretrainedmodels/nasnet_mobile.py:3 RSNA-STR-Pulmonary-Embolism-Detection/trainall/seresnext101/save_train_features0.py:5 RSNA-STR-Pulmonary-Embolism-Detection/trainall/seresnext101/train0.py:2 RSNA-STR-Pulmonary-Embolism-Detection/trainall/seresnext50/pretrainedmodels/bninception.py:2 RSNA-STR-Pulmonary-Embolism-Detection/trainall/seresnext50/pretrainedmodels/fbresnet/resnet152_load.py:1 RSNA-STR-Pulmonary-Embolism-Detection/trainall/seresnext50/pretrainedmodels/inceptionresnetv2.py:2 RSNA-STR-Pulmonary-Embolism-Detection/trainall/seresnext50/pretrainedmodels/inceptionv4.py:2 RSNA-STR-Pulmonary-Embolism-Detection/trainall/seresnext50/pretrainedmodels/nasnet.py:2 RSNA-STR-Pulmonary-Embolism-Detection/trainall/seresnext50/pretrainedmodels/nasnet_mobile.py:3 RSNA-STR-Pulmonary-Embolism-Detection/trainall/seresnext50/save_train_features0.py:5 RSNA-STR-Pulmonary-Embolism-Detection/trainall/seresnext50/train0.py:2 RSNA-STR-Pulmonary-Embolism-Detection/trainval/2nd_level/prediction_correction.py:2 RSNA-STR-Pulmonary-Embolism-Detection/trainval/2nd_level/seresnext101_128.py:2 RSNA-STR-Pulmonary-Embolism-Detection/trainval/2nd_level/seresnext101_192.py:2 RSNA-STR-Pulmonary-Embolism-Detection/trainval/2nd_level/seresnext50_128.py:2 RSNA-STR-Pulmonary-Embolism-Detection/trainval/2nd_level/seresnext50_192.py:2 RSNA-STR-Pulmonary-Embolism-Detection/trainval/lung_localization/split2/save_bbox_train.py:6 RSNA-STR-Pulmonary-Embolism-Detection/trainval/lung_localization/split2/save_bbox_valid.py:6 RSNA-STR-Pulmonary-Embolism-Detection/trainval/lung_localization/split2/train0.py:4 RSNA-STR-Pulmonary-Embolism-Detection/trainval/lung_localization/split2/train1.py:4 RSNA-STR-Pulmonary-Embolism-Detection/trainval/lung_localization/split2/train2.py:4 RSNA-STR-Pulmonary-Embolism-Detection/trainval/lung_localization/split2/valid0.py:7 RSNA-STR-Pulmonary-Embolism-Detection/trainval/lung_localization/split2/valid1.py:7 RSNA-STR-Pulmonary-Embolism-Detection/trainval/lung_localization/split2/valid2.py:7 RSNA-STR-Pulmonary-Embolism-Detection/trainval/process_input/process_input_split2.py:2 RSNA-STR-Pulmonary-Embolism-Detection/trainval/seresnext101/pretrainedmodels/bninception.py:2 RSNA-STR-Pulmonary-Embolism-Detection/trainval/seresnext101/pretrainedmodels/fbresnet/resnet152_load.py:1 RSNA-STR-Pulmonary-Embolism-Detection/trainval/seresnext101/pretrainedmodels/inceptionresnetv2.py:2 RSNA-STR-Pulmonary-Embolism-Detection/trainval/seresnext101/pretrainedmodels/inceptionv4.py:2 RSNA-STR-Pulmonary-Embolism-Detection/trainval/seresnext101/pretrainedmodels/nasnet.py:2 RSNA-STR-Pulmonary-Embolism-Detection/trainval/seresnext101/pretrainedmodels/nasnet_mobile.py:3 RSNA-STR-Pulmonary-Embolism-Detection/trainval/seresnext101/save_train_features0.py:5 RSNA-STR-Pulmonary-Embolism-Detection/trainval/seresnext101/save_valid_features0.py:5 RSNA-STR-Pulmonary-Embolism-Detection/trainval/seresnext101/train0.py:2 RSNA-STR-Pulmonary-Embolism-Detection/trainval/seresnext101/valid0.py:5 RSNA-STR-Pulmonary-Embolism-Detection/trainval/seresnext50/pretrainedmodels/bninception.py:2 RSNA-STR-Pulmonary-Embolism-Detection/trainval/seresnext50/pretrainedmodels/fbresnet/resnet152_load.py:1 RSNA-STR-Pulmonary-Embolism-Detection/trainval/seresnext50/pretrainedmodels/inceptionresnetv2.py:2 RSNA-STR-Pulmonary-Embolism-Detection/trainval/seresnext50/pretrainedmodels/inceptionv4.py:2 RSNA-STR-Pulmonary-Embolism-Detection/trainval/seresnext50/pretrainedmodels/nasnet.py:2 RSNA-STR-Pulmonary-Embolism-Detection/trainval/seresnext50/pretrainedmodels/nasnet_mobile.py:3 RSNA-STR-Pulmonary-Embolism-Detection/trainval/seresnext50/save_train_features0.py:5 RSNA-STR-Pulmonary-Embolism-Detection/trainval/seresnext50/save_valid_features0.py:5 RSNA-STR-Pulmonary-Embolism-Detection/trainval/seresnext50/train0.py:2 RSNA-STR-Pulmonary-Embolism-Detection/trainval/seresnext50/valid0.py:5]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 30, map[column-selection-pandas:15 datatype-pandas:15]
+    warning: 145, map[deterministic-pytorch:44 forward-pytorch:4 mode-toggling-pytorch:11 randomness-control-dataloader-pytorch:34 randomness-control-numpy:18 randomness-control-pytorch:34]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:35:03 --> Completed: 73/74 projects, 4 had errors time: 9m36.38903519s
+2022/06/01 22:36:06 --> Project 14 - Done! Results: time: 10m38.875758762s
+  Name: swa_object_detection
+  CommitHash: ebc7a08a9bbc49b6854f3a46592bfaa47ae01fb3
+  Number of commits: 1482
+  Number of contributors: 206
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 809 - 75908
+  Jupyter Notebook files and total lines of code: 2 - 215
+  Total messages: 86
+  Pylint messages per path: map[swa_object_detection/demo/webcam_demo.py:2 swa_object_detection/mmdet/core/bbox/coder/delta_xywh_bbox_coder.py:2 swa_object_detection/mmdet/core/bbox/coder/legacy_delta_xywh_bbox_coder.py:2 swa_object_detection/mmdet/datasets/builder.py:1 swa_object_detection/mmdet/models/backbones/darknet.py:2 swa_object_detection/mmdet/models/backbones/hrnet.py:1 swa_object_detection/mmdet/models/backbones/resnet.py:2 swa_object_detection/mmdet/models/dense_heads/fovea_head.py:2 swa_object_detection/mmdet/models/dense_heads/free_anchor_retina_head.py:1 swa_object_detection/mmdet/models/losses/balanced_l1_loss.py:1 swa_object_detection/mmdet/models/roi_heads/mask_heads/fcn_mask_head.py:1 swa_object_detection/mmdet/models/roi_heads/shared_heads/res_layer.py:1 swa_object_detection/setup.py:2 swa_object_detection/swa/get_swa_model.py:2 swa_object_detection/tests/test_data/test_datasets/test_common.py:2 swa_object_detection/tests/test_models/test_dense_heads/test_fsaf_head.py:1 swa_object_detection/tests/test_models/test_dense_heads/test_ga_anchor_head.py:1 swa_object_detection/tests/test_models/test_dense_heads/test_sabl_retina_head.py:1 swa_object_detection/tests/test_models/test_dense_heads/test_yolact_head.py:1 swa_object_detection/tests/test_models/test_forward.py:19 swa_object_detection/tests/test_runtime/async_benchmark.py:2 swa_object_detection/tests/test_runtime/test_eval_hook.py:13 swa_object_detection/tools/analysis_tools/benchmark.py:2 swa_object_detection/tools/analysis_tools/get_flops.py:2 swa_object_detection/tools/analysis_tools/test_robustness.py:2 swa_object_detection/tools/deployment/onnx2tensorrt.py:3 swa_object_detection/tools/deployment/pytorch2onnx.py:3 swa_object_detection/tools/model_converters/detectron2pytorch.py:2 swa_object_detection/tools/model_converters/publish_model.py:2 swa_object_detection/tools/model_converters/regnet2mmdet.py:2 swa_object_detection/tools/model_converters/upgrade_model_version.py:2 swa_object_detection/tools/test.py:2 swa_object_detection/tools/train.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 1, map[hyperparameters-pytorch:1]
+    warning: 85, map[dataframe-conversion-pandas:2 deterministic-pytorch:15 forward-pytorch:23 missing-mask-pytorch:7 mode-toggling-pytorch:6 randomness-control-dataloader-pytorch:15 randomness-control-numpy:2 randomness-control-pytorch:15]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 22:36:06 --> Completed: 74/74 projects, 4 had errors time: 10m38.875883755s
+2022/06/01 22:36:06 --> Finished analysis of all projects! Collecting all results... time: 10m38.87591405s
+2022/06/01 22:36:06 --> YAML results saved to ./results/results-2022-06-01.22:25.CEST.yml time: 10m38.951194146s
+2022/06/01 22:36:06 --> CSV results saved to ./results/results-2022-06-01.22:25.CEST.csv time: 10m38.953365883s
+2022/06/01 22:36:06 Done! time: 10m38.953377535s
+Process 70509 has exited with status 0
+dlv dap (70487) exited with code: 0

@@ -1,0 +1,2350 @@
+Starting: /Users/zhanghaiyin/go/bin/dlv dap --check-go-version=false --listen=127.0.0.1:55508 --log-dest=3 from /Users/zhanghaiyin/Desktop/python-ml-analysis/analyser/main
+DAP server listening at: 127.0.0.1:55508
+2022/06/01 21:38:49 --> Found 100 projects in dataset time: 1.541001ms
+2022/06/01 21:38:49 --> Starting analysis of each selected project time: 1.693428ms
+2022/06/01 21:38:49 Already contains a virtualenv!
+2022/06/01 21:38:49 --> Project  1 - BEGAN                            - Already cloned! time: 1.845719ms
+2022/06/01 21:38:49 --> Project  1 - BEGAN                            - Starting analysis... time: 1.890565ms
+2022/06/01 21:38:49 --> Project  1 - BEGAN                            - Analysing Git stats & counting files... time: 1.902064ms
+2022/06/01 21:38:49 --> Project  2 - bat-country                      - Already cloned! time: 1.919563ms
+2022/06/01 21:38:49 --> Project  2 - bat-country                      - requirements.txt file found in repo! time: 1.960405ms
+2022/06/01 21:38:49 --> Project  2 - bat-country                      - Starting analysis... time: 1.978596ms
+2022/06/01 21:38:49 --> Project  2 - bat-country                      - Analysing Git stats & counting files... time: 1.98583ms
+2022/06/01 21:38:49 --> Project  3 - chatbot-rnn                      - Already cloned! time: 2.002745ms
+2022/06/01 21:38:49 --> Project  4 - poeai                            - Already cloned! time: 2.028723ms
+2022/06/01 21:38:49 --> Project  3 - chatbot-rnn                      - Starting analysis... time: 2.07483ms
+2022/06/01 21:38:49 --> Project  4 - poeai                            - Starting analysis... time: 2.085227ms
+2022/06/01 21:38:49 --> Project  3 - chatbot-rnn                      - Analysing Git stats & counting files... time: 2.084312ms
+2022/06/01 21:38:49 --> Project  4 - poeai                            - Analysing Git stats & counting files... time: 2.111855ms
+2022/06/01 21:38:49 --> Project  5 - open-solution-data-science-bowl- - Already cloned! time: 2.187186ms
+2022/06/01 21:38:49 --> Project  5 - open-solution-data-science-bowl- - requirements.txt file found in repo! time: 2.22858ms
+2022/06/01 21:38:49 --> Project  5 - open-solution-data-science-bowl- - Starting analysis... time: 2.260763ms
+2022/06/01 21:38:49 --> Project  7 - YOLOv3-tensorflow                - Already cloned! time: 2.268751ms
+2022/06/01 21:38:49 --> Project  6 - neural-network-genetic-algorithm - Already cloned! time: 2.26298ms
+2022/06/01 21:38:49 --> Project 10 - image-compression-cnn            - Already cloned! time: 3.016646ms
+2022/06/01 21:38:49 --> Project 10 - image-compression-cnn            - requirements.txt file found in repo! time: 3.327339ms
+2022/06/01 21:38:49 --> Project  7 - YOLOv3-tensorflow                - Starting analysis... time: 3.118554ms
+2022/06/01 21:38:49 --> Project  9 - deep-learning-benchmark          - Already cloned! time: 3.37743ms
+2022/06/01 21:38:49 --> Project  8 - loss-landscape                   - Already cloned! time: 3.415463ms
+2022/06/01 21:38:49 --> Project  9 - deep-learning-benchmark          - Starting analysis... time: 3.535117ms
+2022/06/01 21:38:49 --> Project  8 - loss-landscape                   - Starting analysis... time: 3.556137ms
+2022/06/01 21:38:49 --> Project  9 - deep-learning-benchmark          - Analysing Git stats & counting files... time: 3.559169ms
+2022/06/01 21:38:49 --> Project 12 - datamining                       - Already cloned! time: 3.623484ms
+2022/06/01 21:38:49 --> Project  8 - loss-landscape                   - Analysing Git stats & counting files... time: 3.57516ms
+2022/06/01 21:38:49 --> Project 11 - encore.ai                        - Already cloned! time: 3.638616ms
+2022/06/01 21:38:49 --> Project  6 - neural-network-genetic-algorithm - Starting analysis... time: 3.325103ms
+2022/06/01 21:38:49 --> Project 12 - datamining                       - Starting analysis... time: 3.726981ms
+2022/06/01 21:38:49 --> Project 11 - encore.ai                        - Starting analysis... time: 3.746391ms
+2022/06/01 21:38:49 --> Project  7 - YOLOv3-tensorflow                - Analysing Git stats & counting files... time: 3.562271ms
+2022/06/01 21:38:49 --> Project 11 - encore.ai                        - Analysing Git stats & counting files... time: 3.762663ms
+2022/06/01 21:38:49 --> Project 12 - datamining                       - Analysing Git stats & counting files... time: 3.749263ms
+2022/06/01 21:38:49 --> Project  6 - neural-network-genetic-algorithm - Analysing Git stats & counting files... time: 3.748852ms
+2022/06/01 21:38:49 --> Project  5 - open-solution-data-science-bowl- - Analysing Git stats & counting files... time: 2.270552ms
+2022/06/01 21:38:49 --> Project 10 - image-compression-cnn            - Starting analysis... time: 3.364694ms
+2022/06/01 21:38:49 --> Project 10 - image-compression-cnn            - Analysing Git stats & counting files... time: 5.757457ms
+2022/06/01 21:38:49 --> Project  4 - poeai                            - Found 8 .py files (1435 lines) and 0 .ipynb files (0 lines) time: 93.724409ms
+2022/06/01 21:38:49 --> Project  4 - poeai                            - Running pylint... time: 93.758069ms
+2022/06/01 21:38:49 --> Project  1 - BEGAN                            - Found 8 .py files (689 lines) and 0 .ipynb files (0 lines) time: 99.796252ms
+2022/06/01 21:38:49 --> Project  1 - BEGAN                            - Running pylint... time: 99.842164ms
+2022/06/01 21:38:49 --> Project  3 - chatbot-rnn                      - Found 5 .py files (1246 lines) and 0 .ipynb files (0 lines) time: 100.141761ms
+2022/06/01 21:38:49 --> Project  3 - chatbot-rnn                      - Running pylint... time: 100.171799ms
+2022/06/01 21:38:49 --> Project 11 - encore.ai                        - Found 14 .py files (745 lines) and 0 .ipynb files (0 lines) time: 109.088735ms
+2022/06/01 21:38:49 --> Project 11 - encore.ai                        - Running pylint... time: 109.129024ms
+2022/06/01 21:38:49 --> Project  8 - loss-landscape                   - Found 23 .py files (3262 lines) and 0 .ipynb files (0 lines) time: 109.35973ms
+2022/06/01 21:38:49 --> Project  6 - neural-network-genetic-algorithm - Found 5 .py files (570 lines) and 0 .ipynb files (0 lines) time: 109.373663ms
+2022/06/01 21:38:49 --> Project  8 - loss-landscape                   - Running pylint... time: 109.378492ms
+2022/06/01 21:38:49 --> Project  6 - neural-network-genetic-algorithm - Running pylint... time: 110.186326ms
+2022/06/01 21:38:49 --> Project  9 - deep-learning-benchmark          - Found 14 .py files (1426 lines) and 0 .ipynb files (0 lines) time: 110.732315ms
+2022/06/01 21:38:49 --> Project  9 - deep-learning-benchmark          - Running pylint... time: 110.758185ms
+2022/06/01 21:38:49 --> Project 10 - image-compression-cnn            - Found 9 .py files (906 lines) and 0 .ipynb files (0 lines) time: 120.319114ms
+2022/06/01 21:38:49 --> Project 10 - image-compression-cnn            - Running pylint... time: 120.421927ms
+2022/06/01 21:38:49 --> Project 12 - datamining                       - Found 9 .py files (583 lines) and 0 .ipynb files (0 lines) time: 128.842469ms
+2022/06/01 21:38:49 --> Project 12 - datamining                       - Running pylint... time: 128.900724ms
+2022/06/01 21:38:49 --> Project  2 - bat-country                      - Found 7 .py files (378 lines) and 0 .ipynb files (0 lines) time: 129.613344ms
+2022/06/01 21:38:49 --> Project  2 - bat-country                      - Running pylint... time: 129.729778ms
+2022/06/01 21:38:49 --> Project  5 - open-solution-data-science-bowl- - Found 33 .py files (6236 lines) and 0 .ipynb files (0 lines) time: 141.336973ms
+2022/06/01 21:38:49 --> Project  5 - open-solution-data-science-bowl- - Running pylint... time: 141.49296ms
+2022/06/01 21:38:49 --> Project  7 - YOLOv3-tensorflow                - Found 21 .py files (2435 lines) and 0 .ipynb files (0 lines) time: 142.174876ms
+2022/06/01 21:38:49 --> Project  7 - YOLOv3-tensorflow                - Running pylint... time: 142.198683ms
+2022/06/01 21:38:55 --> Project 6 - Done! Results: time: 5.895687048s
+  Name: neural-network-genetic-algorithm
+  CommitHash: 66ce11abbf5b3d9bac0d39723db8eb1ae856373f
+  Number of commits: 25
+  Number of contributors: 3
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 5 - 570
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:38:55 --> Completed: 1/100 projects time: 5.895907568s
+2022/06/01 21:38:55 --> Project 13 - GraphGAN                         - Already cloned! time: 5.895968826s
+2022/06/01 21:38:55 --> Project 13 - GraphGAN                         - Starting analysis... time: 5.896030094s
+2022/06/01 21:38:55 --> Project 13 - GraphGAN                         - Analysing Git stats & counting files... time: 5.896043681s
+2022/06/01 21:38:55 --> Project 13 - GraphGAN                         - Found 8 .py files (601 lines) and 0 .ipynb files (0 lines) time: 5.993218495s
+2022/06/01 21:38:55 --> Project 13 - GraphGAN                         - Running pylint... time: 5.993247377s
+2022/06/01 21:38:57 --> Project 11 - Done! Results: time: 8.548405659s
+  Name: encore.ai
+  CommitHash: 32c1732e314583ac1488c5d219c3ba89e6e16d20
+  Number of commits: 135
+  Number of contributors: 5
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 14 - 745
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:38:57 --> Completed: 2/100 projects time: 8.548555719s
+2022/06/01 21:38:57 --> Project 14 - skorch                           - Already cloned! time: 8.54862344s
+2022/06/01 21:38:57 --> Project 14 - skorch                           - requirements.txt file found in repo! time: 8.548650075s
+2022/06/01 21:38:57 --> Project 14 - skorch                           - Starting analysis... time: 8.548660893s
+2022/06/01 21:38:57 --> Project 14 - skorch                           - Analysing Git stats & counting files... time: 8.548668969s
+2022/06/01 21:38:58 --> Project 14 - skorch                           - Found 61 .py files (25146 lines) and 9 .ipynb files (1627 lines) time: 8.87290779s
+2022/06/01 21:38:58 --> Project 14 - skorch                           - Running pylint... time: 8.872947912s
+2022/06/01 21:38:58 --> Project 2 - Done! Results: time: 9.043653487s
+  Name: bat-country
+  CommitHash: 894af13bd777ab8aa989baf520db074b97cfad9a
+  Number of commits: 27
+  Number of contributors: 2
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 7 - 378
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:38:58 --> Completed: 3/100 projects time: 9.043806966s
+2022/06/01 21:38:58 --> Project 15 - self_drive                       - Already cloned! time: 9.043866131s
+2022/06/01 21:38:58 --> Project 15 - self_drive                       - Starting analysis... time: 9.043927091s
+2022/06/01 21:38:58 --> Project 15 - self_drive                       - Analysing Git stats & counting files... time: 9.043939731s
+2022/06/01 21:38:59 --> Project 12 - datamining                       - Analysis Error: error parsing Pylint output: invalid character 'E' looking for beginning of value
+2022/06/01 21:38:59 --> Completed: 4/100 projects, 1 had errors time: 9.631943455s
+2022/06/01 21:38:59 --> Project 16 - scalable_agent                   - Already cloned! time: 9.632002983s
+2022/06/01 21:38:59 --> Project 16 - scalable_agent                   - Starting analysis... time: 9.632062975s
+2022/06/01 21:38:59 --> Project 16 - scalable_agent                   - Analysing Git stats & counting files... time: 9.632076524s
+2022/06/01 21:38:59 --> Project 16 - scalable_agent                   - Found 9 .py files (2779 lines) and 0 .ipynb files (0 lines) time: 9.72471717s
+2022/06/01 21:38:59 --> Project 16 - scalable_agent                   - Running pylint... time: 9.724753447s
+2022/06/01 21:38:59 --> Project 15 - self_drive                       - Found 8 .py files (1002 lines) and 0 .ipynb files (0 lines) time: 9.789658144s
+2022/06/01 21:38:59 --> Project 15 - self_drive                       - Running pylint... time: 9.789701534s
+2022/06/01 21:38:59 --> Project 10 - Done! Results: time: 10.016447768s
+  Name: image-compression-cnn
+  CommitHash: 6928dc0f409448ca6c063197bbed365c44e0e7bb
+  Number of commits: 31
+  Number of contributors: 3
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 9 - 906
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:38:59 --> Completed: 5/100 projects, 1 had errors time: 10.016556734s
+2022/06/01 21:38:59 --> Project 17 - attention-over-attention         - Already cloned! time: 10.016613991s
+2022/06/01 21:38:59 --> Project 17 - attention-over-attention         - Starting analysis... time: 10.01667584s
+2022/06/01 21:38:59 --> Project 17 - attention-over-attention         - Analysing Git stats & counting files... time: 10.016689121s
+2022/06/01 21:38:59 --> Project 17 - attention-over-attention         - Found 3 .py files (287 lines) and 0 .ipynb files (0 lines) time: 10.086325248s
+2022/06/01 21:38:59 --> Project 17 - attention-over-attention         - Running pylint... time: 10.086356624s
+2022/06/01 21:39:00 --> Project 4 - Done! Results: time: 11.038850958s
+  Name: poeai
+  CommitHash: e95add37348f402b7e42f0e978b6af466dc0b055
+  Number of commits: 7
+  Number of contributors: 1
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 8 - 1435
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 3
+  Pylint messages per path: map[poeai/BotDebugger.py:1 poeai/TargetingSystem.py:2]
+  Number of Pylint messages: 
+    convention: 1, map[import-pyplot:1]
+    refactor: 0, map[]
+    warning: 2, map[randomness-control-numpy:1 randomness-control-tensorflow:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:39:00 --> Completed: 6/100 projects, 1 had errors time: 11.038999689s
+2022/06/01 21:39:00 --> Project 18 - deep-ctr                         - Already cloned! time: 11.039063968s
+2022/06/01 21:39:00 --> Project 18 - deep-ctr                         - Starting analysis... time: 11.039127965s
+2022/06/01 21:39:00 --> Project 18 - deep-ctr                         - Analysing Git stats & counting files... time: 11.039141585s
+2022/06/01 21:39:00 --> Project 18 - deep-ctr                         - Found 8 .py files (2341 lines) and 0 .ipynb files (0 lines) time: 11.123104298s
+2022/06/01 21:39:00 --> Project 18 - deep-ctr                         - Running pylint... time: 11.123146407s
+2022/06/01 21:39:01 --> Project 1 - Done! Results: time: 11.999454976s
+  Name: BEGAN
+  CommitHash: d6992dabca55f1d4c92161f9cd4dcc7722a8bbf5
+  Number of commits: 52
+  Number of contributors: 3
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 8 - 689
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 2
+  Pylint messages per path: map[BEGAN/main.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 2, map[randomness-control-numpy:1 randomness-control-tensorflow:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:39:01 --> Completed: 7/100 projects, 1 had errors time: 12.000665875s
+2022/06/01 21:39:01 --> Project 19 - product-nets                     - Already cloned! time: 12.000733763s
+2022/06/01 21:39:01 --> Project 19 - product-nets                     - Starting analysis... time: 12.000799587s
+2022/06/01 21:39:01 --> Project 19 - product-nets                     - Analysing Git stats & counting files... time: 12.000811385s
+2022/06/01 21:39:01 --> Project 19 - product-nets                     - Found 3 .py files (993 lines) and 0 .ipynb files (0 lines) time: 12.070501287s
+2022/06/01 21:39:01 --> Project 19 - product-nets                     - Running pylint... time: 12.070535235s
+2022/06/01 21:39:02 --> Project 13 - Done! Results: time: 12.769998131s
+  Name: GraphGAN
+  CommitHash: 3f1c3f7db6b8b5102eea899659d4c52f64c4288c
+  Number of commits: 120
+  Number of contributors: 9
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 8 - 601
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 4
+  Pylint messages per path: map[GraphGAN/src/GraphGAN/discriminator.py:1 GraphGAN/src/GraphGAN/generator.py:1 GraphGAN/src/GraphGAN/graph_gan.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 4, map[missing-mask-tensorflow:2 randomness-control-numpy:1 randomness-control-tensorflow:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:39:02 --> Completed: 8/100 projects, 1 had errors time: 12.770187754s
+2022/06/01 21:39:02 --> Project 20 - milk                             - Already cloned! time: 12.770246423s
+2022/06/01 21:39:02 --> Project 20 - milk                             - Found a setup.py file! time: 12.770302927s
+2022/06/01 21:39:02 --> Project 20 - milk                             - Starting analysis... time: 12.770315987s
+2022/06/01 21:39:02 --> Project 20 - milk                             - Analysing Git stats & counting files... time: 12.77032578s
+2022/06/01 21:39:02 --> Project 20 - milk                             - Found 108 .py files (8887 lines) and 0 .ipynb files (0 lines) time: 12.912658582s
+2022/06/01 21:39:02 --> Project 20 - milk                             - Running pylint... time: 12.912697392s
+2022/06/01 21:39:03 --> Project 18 - Done! Results: time: 13.601773855s
+  Name: deep-ctr
+  CommitHash: 229ad52cb97bc213012ba596b451990dcca6b897
+  Number of commits: 13
+  Number of contributors: 3
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 8 - 2341
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 1
+  Pylint messages per path: map[deep-ctr/python/data_fm.py:1]
+  Number of Pylint messages: 
+    convention: 1, map[import-numpy:1]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:39:03 --> Completed: 9/100 projects, 1 had errors time: 13.601930067s
+2022/06/01 21:39:03 --> Project 21 - R-net                            - Already cloned! time: 13.601996221s
+2022/06/01 21:39:03 --> Project 21 - R-net                            - requirements.txt file found in repo! time: 13.602024358s
+2022/06/01 21:39:03 --> Project 21 - R-net                            - Starting analysis... time: 13.602036707s
+2022/06/01 21:39:03 --> Project 21 - R-net                            - Analysing Git stats & counting files... time: 13.602045868s
+2022/06/01 21:39:03 --> Project 21 - R-net                            - Found 9 .py files (1646 lines) and 0 .ipynb files (0 lines) time: 13.688781359s
+2022/06/01 21:39:03 --> Project 21 - R-net                            - Running pylint... time: 13.688819568s
+2022/06/01 21:39:04 --> Project 17 - Done! Results: time: 15.0255443s
+  Name: attention-over-attention
+  CommitHash: dc7694e2816b30b9588da433a53838cbf0378b84
+  Number of commits: 4
+  Number of contributors: 1
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 3 - 287
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 4
+  Pylint messages per path: map[attention-over-attention/model.py:3 attention-over-attention/reader.py:1]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 4, map[missing-mask-tensorflow:1 randomness-control-numpy:1 randomness-control-tensorflow:2]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:39:04 --> Completed: 10/100 projects, 1 had errors time: 15.025744062s
+2022/06/01 21:39:04 --> Project 22 - handwriting-generation           - Already cloned! time: 15.025815689s
+2022/06/01 21:39:04 --> Project 22 - handwriting-generation           - Starting analysis... time: 15.025887983s
+2022/06/01 21:39:04 --> Project 22 - handwriting-generation           - Analysing Git stats & counting files... time: 15.025899824s
+2022/06/01 21:39:04 --> Project 22 - handwriting-generation           - Found 5 .py files (750 lines) and 0 .ipynb files (0 lines) time: 15.107497894s
+2022/06/01 21:39:04 --> Project 22 - handwriting-generation           - Running pylint... time: 15.107533106s
+2022/06/01 21:39:04 --> Project 19 - Done! Results: time: 15.473769264s
+  Name: product-nets
+  CommitHash: f0ba27444c89ed745fad27db1aa866e7b2ccabd8
+  Number of commits: 40
+  Number of contributors: 4
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 3 - 993
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:39:04 --> Completed: 11/100 projects, 1 had errors time: 15.473947765s
+2022/06/01 21:39:04 --> Project 23 - tensorflow_end2end_speech_recogn - Already cloned! time: 15.474006425s
+2022/06/01 21:39:04 --> Project 23 - tensorflow_end2end_speech_recogn - requirements.txt file found in repo! time: 15.474036023s
+2022/06/01 21:39:04 --> Project 23 - tensorflow_end2end_speech_recogn - Starting analysis... time: 15.474050642s
+2022/06/01 21:39:04 --> Project 23 - tensorflow_end2end_speech_recogn - Analysing Git stats & counting files... time: 15.474059868s
+2022/06/01 21:39:05 --> Project 23 - tensorflow_end2end_speech_recogn - Found 207 .py files (33335 lines) and 0 .ipynb files (0 lines) time: 15.653395828s
+2022/06/01 21:39:05 --> Project 23 - tensorflow_end2end_speech_recogn - Running pylint... time: 15.653428787s
+2022/06/01 21:39:08 --> Project 15 - Done! Results: time: 19.43369954s
+  Name: self_drive
+  CommitHash: c0fc65fd3df70dc099a1fdff6d538283525b247a
+  Number of commits: 39
+  Number of contributors: 2
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 8 - 1002
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 8
+  Pylint messages per path: map[self_drive/zth_drive.py:2 self_drive/zth_process2.py:2 self_drive/zth_train.py:2 self_drive/zth_train2.py:2]
+  Number of Pylint messages: 
+    convention: 1, map[import-tensorflow:1]
+    refactor: 0, map[]
+    warning: 7, map[randomness-control-numpy:3 randomness-control-tensorflow:4]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:39:08 --> Completed: 12/100 projects, 1 had errors time: 19.434155589s
+2022/06/01 21:39:08 --> Project 24 - pytorch-caffe-darknet-convert    - Cloning... time: 19.434212457s
+2022/06/01 21:39:09 --> Project 24 - pytorch-caffe-darknet-convert    - Setup Error: failed to clone Git repo: exit code 128 - Cloning into 'projects/pytorch-caffe-darknet-convert'...
+remote: Repository not found.
+fatal: repository 'https://github.com/marvis/pytorch-caffe-darknet-convert/' not found
+
+2022/06/01 21:39:09 --> Completed: 13/100 projects, 2 had errors time: 19.920609596s
+2022/06/01 21:39:09 --> Project 25 - Adversarial_Video_Generation     - Already cloned! time: 19.92066494s
+2022/06/01 21:39:09 --> Project 25 - Adversarial_Video_Generation     - Starting analysis... time: 19.920732567s
+2022/06/01 21:39:09 --> Project 25 - Adversarial_Video_Generation     - Analysing Git stats & counting files... time: 19.920744288s
+2022/06/01 21:39:09 --> Project 25 - Adversarial_Video_Generation     - Found 11 .py files (2108 lines) and 0 .ipynb files (0 lines) time: 20.048742437s
+2022/06/01 21:39:09 --> Project 25 - Adversarial_Video_Generation     - Running pylint... time: 20.048776393s
+2022/06/01 21:39:09 --> Project 22 - Done! Results: time: 20.073332914s
+  Name: handwriting-generation
+  CommitHash: 26a618b647e3a0ae195f9bf84370e9d091caf5ad
+  Number of commits: 13
+  Number of contributors: 2
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 5 - 750
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 6
+  Pylint messages per path: map[handwriting-generation/generate.py:2 handwriting-generation/train.py:4]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 6, map[missing-mask-tensorflow:2 randomness-control-numpy:2 randomness-control-tensorflow:2]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:39:09 --> Completed: 14/100 projects, 2 had errors time: 20.073523785s
+2022/06/01 21:39:09 --> Project 26 - nnabla                           - Already cloned! time: 20.07358874s
+2022/06/01 21:39:09 --> Project 26 - nnabla                           - Starting analysis... time: 20.073651214s
+2022/06/01 21:39:09 --> Project 26 - nnabla                           - Analysing Git stats & counting files... time: 20.073663449s
+2022/06/01 21:39:09 --> Project 26 - nnabla                           - Found 752 .py files (154422 lines) and 13 .ipynb files (2639 lines) time: 20.530460091s
+2022/06/01 21:39:09 --> Project 26 - nnabla                           - Running pylint... time: 20.530499336s
+2022/06/01 21:39:13 --> Project 21 - Done! Results: time: 24.359807945s
+  Name: R-net
+  CommitHash: a5721684dc0ae088ae806f12d8d5a974a1fc0b90
+  Number of commits: 21
+  Number of contributors: 7
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 9 - 1646
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 3
+  Pylint messages per path: map[R-net/layers.py:1 R-net/model.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 3, map[missing-mask-tensorflow:1 randomness-control-numpy:1 randomness-control-tensorflow:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:39:13 --> Completed: 15/100 projects, 2 had errors time: 24.360079871s
+2022/06/01 21:39:13 --> Project 27 - pcam                             - Already cloned! time: 24.36014032s
+2022/06/01 21:39:13 --> Project 27 - pcam                             - Starting analysis... time: 24.360214432s
+2022/06/01 21:39:13 --> Project 27 - pcam                             - Analysing Git stats & counting files... time: 24.360227351s
+2022/06/01 21:39:13 --> Project 27 - pcam                             - Found 3 .py files (69 lines) and 0 .ipynb files (0 lines) time: 24.452711055s
+2022/06/01 21:39:13 --> Project 27 - pcam                             - Running pylint... time: 24.452759653s
+2022/06/01 21:39:18 --> Project 27 - Done! Results: time: 29.106914226s
+  Name: pcam
+  CommitHash: 6370e489b10c5f0f7e389e9bfc9772a36db2a5a0
+  Number of commits: 12
+  Number of contributors: 3
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 3 - 69
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 3
+  Pylint messages per path: map[pcam/keras_pcam/dataset/pcam.py:3]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 3, map[datatype-pandas:3]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:39:18 --> Completed: 16/100 projects, 2 had errors time: 29.107100603s
+2022/06/01 21:39:18 --> Project 28 - words2map                        - Already cloned! time: 29.107208046s
+2022/06/01 21:39:18 --> Project 28 - words2map                        - Starting analysis... time: 29.107283554s
+2022/06/01 21:39:18 --> Project 28 - words2map                        - Analysing Git stats & counting files... time: 29.107297178s
+2022/06/01 21:39:18 --> Project 28 - words2map                        - Found 1 .py files (305 lines) and 0 .ipynb files (0 lines) time: 29.205853896s
+2022/06/01 21:39:18 --> Project 28 - words2map                        - Running pylint... time: 29.205891486s
+2022/06/01 21:39:19 --> Project 9 - Done! Results: time: 30.269257114s
+  Name: deep-learning-benchmark
+  CommitHash: 9dc3e36e6f97e0edf270a813f350fca1fb0e014e
+  Number of commits: 31
+  Number of contributors: 5
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 14 - 1426
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:39:19 --> Completed: 17/100 projects, 2 had errors time: 30.269438521s
+2022/06/01 21:39:19 --> Project 29 - hyperface                        - Already cloned! time: 30.269512142s
+2022/06/01 21:39:19 --> Project 29 - hyperface                        - Starting analysis... time: 30.269593825s
+2022/06/01 21:39:19 --> Project 29 - hyperface                        - Analysing Git stats & counting files... time: 30.269610361s
+2022/06/01 21:39:19 --> Project 29 - hyperface                        - Found 21 .py files (2716 lines) and 0 .ipynb files (0 lines) time: 30.378821586s
+2022/06/01 21:39:19 --> Project 29 - hyperface                        - Running pylint... time: 30.37886217s
+2022/06/01 21:39:20 --> Project 7 - Done! Results: time: 31.459369433s
+  Name: YOLOv3-tensorflow
+  CommitHash: f8c197295afa3ec8006ed01e62cb708fe1a14d87
+  Number of commits: 121
+  Number of contributors: 3
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 21 - 2435
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 2
+  Pylint messages per path: map[YOLOv3-tensorflow/src/propagation.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 2, map[randomness-control-numpy:1 randomness-control-tensorflow:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:39:20 --> Completed: 18/100 projects, 2 had errors time: 31.459600324s
+2022/06/01 21:39:20 --> Project 30 - seq2seq                          - Already cloned! time: 31.459671431s
+2022/06/01 21:39:20 --> Project 30 - seq2seq                          - Starting analysis... time: 31.459742888s
+2022/06/01 21:39:20 --> Project 30 - seq2seq                          - Analysing Git stats & counting files... time: 31.459755904s
+2022/06/01 21:39:21 --> Project 30 - seq2seq                          - Found 3 .py files (991 lines) and 0 .ipynb files (0 lines) time: 31.556746722s
+2022/06/01 21:39:21 --> Project 30 - seq2seq                          - Running pylint... time: 31.556797651s
+2022/06/01 21:39:21 --> Project 25 - Done! Results: time: 32.064133936s
+  Name: Adversarial_Video_Generation
+  CommitHash: 458cef18dca1b5d13bee10f5ae39b85d602698f3
+  Number of commits: 42
+  Number of contributors: 1
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 11 - 2108
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 2
+  Pylint messages per path: map[Adversarial_Video_Generation/Code/tfutils.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 2, map[missing-mask-tensorflow:2]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:39:21 --> Completed: 19/100 projects, 2 had errors time: 32.064342911s
+2022/06/01 21:39:21 --> Project 31 - deepvoice3_pytorch               - Already cloned! time: 32.064410939s
+2022/06/01 21:39:21 --> Project 31 - deepvoice3_pytorch               - Found a setup.py file! time: 32.06447383s
+2022/06/01 21:39:21 --> Project 31 - deepvoice3_pytorch               - Starting analysis... time: 32.064488123s
+2022/06/01 21:39:21 --> Project 31 - deepvoice3_pytorch               - Analysing Git stats & counting files... time: 32.064498262s
+2022/06/01 21:39:21 --> Project 28 - Done! Results: time: 32.159740716s
+  Name: words2map
+  CommitHash: 25705a7d655853ab254e4f4218186eb65b58d3f1
+  Number of commits: 108
+  Number of contributors: 4
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 1 - 305
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:39:21 --> Completed: 20/100 projects, 2 had errors time: 32.159859679s
+2022/06/01 21:39:21 --> Project 32 - D-GEX                            - Already cloned! time: 32.159914861s
+2022/06/01 21:39:21 --> Project 32 - D-GEX                            - Starting analysis... time: 32.159970449s
+2022/06/01 21:39:21 --> Project 32 - D-GEX                            - Analysing Git stats & counting files... time: 32.159982434s
+2022/06/01 21:39:21 --> Project 31 - deepvoice3_pytorch               - Found 44 .py files (7952 lines) and 0 .ipynb files (0 lines) time: 32.177625355s
+2022/06/01 21:39:21 --> Project 31 - deepvoice3_pytorch               - Running pylint... time: 32.177658804s
+2022/06/01 21:39:21 --> Project 32 - D-GEX                            - Found 18 .py files (1606 lines) and 0 .ipynb files (0 lines) time: 32.245031149s
+2022/06/01 21:39:21 --> Project 32 - D-GEX                            - Running pylint... time: 32.245066387s
+2022/06/01 21:39:22 --> Project 3 - Done! Results: time: 33.298394135s
+  Name: chatbot-rnn
+  CommitHash: 82cbb710beaf15da11b60e03f00bdbfd521df754
+  Number of commits: 19
+  Number of contributors: 2
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 5 - 1246
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 4
+  Pylint messages per path: map[chatbot-rnn/chatbot.py:2 chatbot-rnn/train.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 4, map[randomness-control-numpy:2 randomness-control-tensorflow:2]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:39:22 --> Completed: 21/100 projects, 2 had errors time: 33.298568618s
+2022/06/01 21:39:22 --> Project 33 - Wordbatch                        - Already cloned! time: 33.298626493s
+2022/06/01 21:39:22 --> Project 33 - Wordbatch                        - Found a setup.py file! time: 33.298687327s
+2022/06/01 21:39:22 --> Project 33 - Wordbatch                        - Starting analysis... time: 33.298702091s
+2022/06/01 21:39:22 --> Project 33 - Wordbatch                        - Analysing Git stats & counting files... time: 33.298711746s
+2022/06/01 21:39:22 --> Project 33 - Wordbatch                        - Found 25 .py files (2329 lines) and 0 .ipynb files (0 lines) time: 33.400537085s
+2022/06/01 21:39:22 --> Project 33 - Wordbatch                        - Running pylint... time: 33.40058125s
+2022/06/01 21:39:23 --> Project 30 - Done! Results: time: 34.099848246s
+  Name: seq2seq
+  CommitHash: 24ff08f5c46262b818020922ea7b861dde282d3c
+  Number of commits: 43
+  Number of contributors: 3
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 3 - 991
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:39:23 --> Completed: 22/100 projects, 2 had errors time: 34.100038418s
+2022/06/01 21:39:23 --> Project 34 - django-anymail                   - Already cloned! time: 34.100104658s
+2022/06/01 21:39:23 --> Project 34 - django-anymail                   - Found a setup.py file! time: 34.100162778s
+2022/06/01 21:39:23 --> Project 34 - django-anymail                   - Starting analysis... time: 34.100178155s
+2022/06/01 21:39:23 --> Project 34 - django-anymail                   - Analysing Git stats & counting files... time: 34.100188103s
+2022/06/01 21:39:23 --> Project 34 - django-anymail                   - Found 96 .py files (23767 lines) and 0 .ipynb files (0 lines) time: 34.242341012s
+2022/06/01 21:39:23 --> Project 34 - django-anymail                   - Running pylint... time: 34.242378328s
+2022/06/01 21:39:25 --> Project 16 - Done! Results: time: 36.111974274s
+  Name: scalable_agent
+  CommitHash: 6c0c8a701990fab9053fb338ede9c915c18fa2b1
+  Number of commits: 24
+  Number of contributors: 4
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 9 - 2779
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 7
+  Pylint messages per path: map[scalable_agent/dynamic_batching_test.py:1 scalable_agent/experiment.py:2 scalable_agent/py_process_test.py:2 scalable_agent/vtrace_test.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 7, map[randomness-control-numpy:3 randomness-control-tensorflow:4]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:39:25 --> Completed: 23/100 projects, 2 had errors time: 36.112183418s
+2022/06/01 21:39:25 --> Project 35 - enet-keras                       - Already cloned! time: 36.112238368s
+2022/06/01 21:39:25 --> Project 35 - enet-keras                       - requirements.txt file found in repo! time: 36.112265433s
+2022/06/01 21:39:25 --> Project 35 - enet-keras                       - Starting analysis... time: 36.112286431s
+2022/06/01 21:39:25 --> Project 35 - enet-keras                       - Analysing Git stats & counting files... time: 36.112295681s
+2022/06/01 21:39:25 --> Project 35 - enet-keras                       - Found 37 .py files (4191 lines) and 0 .ipynb files (0 lines) time: 36.218884307s
+2022/06/01 21:39:25 --> Project 35 - enet-keras                       - Running pylint... time: 36.218920961s
+2022/06/01 21:39:39 --> Project 32 - Done! Results: time: 50.341057909s
+  Name: D-GEX
+  CommitHash: 384b2e705f34d91f66644f24043d271b6579bf9a
+  Number of commits: 44
+  Number of contributors: 2
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 18 - 1606
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 1
+  Pylint messages per path: map[D-GEX/kmeans.py:1]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 1, map[randomness-control-numpy:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:39:39 --> Completed: 24/100 projects, 2 had errors time: 50.341260858s
+2022/06/01 21:39:39 --> Project 36 - Caffe-Python-Tutorial            - Already cloned! time: 50.341351179s
+2022/06/01 21:39:39 --> Project 36 - Caffe-Python-Tutorial            - Starting analysis... time: 50.341440996s
+2022/06/01 21:39:39 --> Project 36 - Caffe-Python-Tutorial            - Analysing Git stats & counting files... time: 50.341452781s
+2022/06/01 21:39:39 --> Project 36 - Caffe-Python-Tutorial            - Found 8 .py files (1189 lines) and 0 .ipynb files (0 lines) time: 50.442560484s
+2022/06/01 21:39:39 --> Project 36 - Caffe-Python-Tutorial            - Running pylint... time: 50.442598556s
+2022/06/01 21:39:42 --> Project 29 - Done! Results: time: 52.669383325s
+  Name: hyperface
+  CommitHash: 0690aceee301fd4d17eba6d94a489eb8b425d47b
+  Number of commits: 36
+  Number of contributors: 1
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 21 - 2716
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:39:42 --> Completed: 25/100 projects, 2 had errors time: 52.669595702s
+2022/06/01 21:39:42 --> Project 37 - sequence_gan                     - Already cloned! time: 52.669662628s
+2022/06/01 21:39:42 --> Project 37 - sequence_gan                     - Starting analysis... time: 52.669729685s
+2022/06/01 21:39:42 --> Project 37 - sequence_gan                     - Analysing Git stats & counting files... time: 52.669743151s
+2022/06/01 21:39:42 --> Project 37 - sequence_gan                     - Found 4 .py files (618 lines) and 0 .ipynb files (0 lines) time: 52.766244023s
+2022/06/01 21:39:42 --> Project 37 - sequence_gan                     - Running pylint... time: 52.766291501s
+2022/06/01 21:39:47 --> Project 37 - Done! Results: time: 57.888368712s
+  Name: sequence_gan
+  CommitHash: 6f0feffb0b0439563886d025a11bc747c961d962
+  Number of commits: 16
+  Number of contributors: 6
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 4 - 618
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 5
+  Pylint messages per path: map[sequence_gan/book_demo.py:1 sequence_gan/model.py:3 sequence_gan/simple_demo.py:1]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 5, map[missing-mask-tensorflow:3 randomness-control-tensorflow:2]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:39:47 --> Completed: 26/100 projects, 2 had errors time: 57.888633582s
+2022/06/01 21:39:47 --> Project 38 - qlearning4k                      - Already cloned! time: 57.888699841s
+2022/06/01 21:39:47 --> Project 38 - qlearning4k                      - Found a setup.py file! time: 57.888771619s
+2022/06/01 21:39:47 --> Project 38 - qlearning4k                      - Starting analysis... time: 57.888784799s
+2022/06/01 21:39:47 --> Project 38 - qlearning4k                      - Analysing Git stats & counting files... time: 57.888793622s
+2022/06/01 21:39:47 --> Project 38 - qlearning4k                      - Found 10 .py files (563 lines) and 0 .ipynb files (0 lines) time: 57.9869297s
+2022/06/01 21:39:47 --> Project 38 - qlearning4k                      - Running pylint... time: 57.986973938s
+2022/06/01 21:39:48 --> Project 36 - Done! Results: time: 59.118249764s
+  Name: Caffe-Python-Tutorial
+  CommitHash: 5e5b98a878395e7f795ecab176c1919a3208ecd8
+  Number of commits: 2
+  Number of contributors: 1
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 8 - 1189
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+2022/06/01 21:39:48 --> Completed: 27/100 projects, 2 had errors time: 59.118445279s
+2022/06/01 21:39:48 --> Project 39 - text-classification-cnn-rnn      - Already cloned! time: 59.11851587s
+2022/06/01 21:39:48 --> Project 39 - text-classification-cnn-rnn      - requirements.txt file found in repo! time: 59.118551648s
+2022/06/01 21:39:48 --> Project 39 - text-classification-cnn-rnn      - Starting analysis... time: 59.118563313s
+2022/06/01 21:39:48 --> Project 39 - text-classification-cnn-rnn      - Analysing Git stats & counting files... time: 59.118572852s
+2022/06/01 21:39:48 --> Project 39 - text-classification-cnn-rnn      - Found 9 .py files (801 lines) and 0 .ipynb files (0 lines) time: 59.212458943s
+2022/06/01 21:39:48 --> Project 39 - text-classification-cnn-rnn      - Running pylint... time: 59.212496627s
+2022/06/01 21:39:58 --> Project 8 - Done! Results: time: 1m8.867698735s
+  Name: loss-landscape
+  CommitHash: 64ef4d57f8dabe79b57a637819c44e48eda98f33
+  Number of commits: 57
+  Number of contributors: 7
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 23 - 3262
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 21
+  Pylint messages per path: map[loss-landscape/cifar10/dataloader.py:2 loss-landscape/cifar10/main.py:4 loss-landscape/dataloader.py:6 loss-landscape/plot_hessian_eigen.py:3 loss-landscape/plot_surface.py:3 loss-landscape/plot_trajectory.py:3]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 21, map[deterministic-pytorch:5 gradient-clear-pytorch:1 randomness-control-dataloader-pytorch:5 randomness-control-numpy:5 randomness-control-pytorch:5]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:39:58 --> Completed: 28/100 projects, 2 had errors time: 1m8.867931094s
+2022/06/01 21:39:58 --> Project 40 - WaterNet                         - Already cloned! time: 1m8.868009712s
+2022/06/01 21:39:58 --> Project 40 - WaterNet                         - requirements.txt file found in repo! time: 1m8.868042909s
+2022/06/01 21:39:58 --> Project 40 - WaterNet                         - Starting analysis... time: 1m8.868062267s
+2022/06/01 21:39:58 --> Project 40 - WaterNet                         - Analysing Git stats & counting files... time: 1m8.868072368s
+2022/06/01 21:39:58 --> Project 40 - WaterNet                         - Found 8 .py files (984 lines) and 0 .ipynb files (0 lines) time: 1m8.968262459s
+2022/06/01 21:39:58 --> Project 40 - WaterNet                         - Running pylint... time: 1m8.968302982s
+2022/06/01 21:39:58 --> Project 38 - Done! Results: time: 1m9.466441188s
+  Name: qlearning4k
+  CommitHash: 8d7e54e97c00e0e066567adf8246e94e125b35ae
+  Number of commits: 96
+  Number of contributors: 7
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 10 - 563
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 2
+  Pylint messages per path: map[qlearning4k/examples/test_snake.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 2, map[hyperparameters-pytorch:1 hyperparameters-tensorflow:1]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:39:58 --> Completed: 29/100 projects, 2 had errors time: 1m9.466650945s
+2022/06/01 21:39:58 --> Project 41 - char-rnn-cn                      - Already cloned! time: 1m9.466706533s
+2022/06/01 21:39:58 --> Project 41 - char-rnn-cn                      - Starting analysis... time: 1m9.467584493s
+2022/06/01 21:39:58 --> Project 41 - char-rnn-cn                      - Analysing Git stats & counting files... time: 1m9.467609826s
+2022/06/01 21:39:58 --> Project 41 - char-rnn-cn                      - Found 2 .py files (362 lines) and 0 .ipynb files (0 lines) time: 1m9.548891146s
+2022/06/01 21:39:58 --> Project 41 - char-rnn-cn                      - Running pylint... time: 1m9.548926644s
+2022/06/01 21:40:02 --> Project 39 - Done! Results: time: 1m12.833430052s
+  Name: text-classification-cnn-rnn
+  CommitHash: 90dd55cccacac663e87445ed356bf59307864168
+  Number of commits: 59
+  Number of contributors: 4
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 9 - 801
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 5
+  Pylint messages per path: map[text-classification-cnn-rnn/predict.py:1 text-classification-cnn-rnn/run_cnn.py:2 text-classification-cnn-rnn/run_rnn.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 5, map[randomness-control-numpy:2 randomness-control-tensorflow:3]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:40:02 --> Completed: 30/100 projects, 2 had errors time: 1m12.833671755s
+2022/06/01 21:40:02 --> Project 42 - hdDeepLearningStudy              - Already cloned! time: 1m12.833733293s
+2022/06/01 21:40:02 --> Project 42 - hdDeepLearningStudy              - Starting analysis... time: 1m12.834300218s
+2022/06/01 21:40:02 --> Project 42 - hdDeepLearningStudy              - Analysing Git stats & counting files... time: 1m12.83432258s
+2022/06/01 21:40:02 --> Project 42 - hdDeepLearningStudy              - Found 2 .py files (355 lines) and 2 .ipynb files (123 lines) time: 1m12.959409132s
+2022/06/01 21:40:02 --> Project 42 - hdDeepLearningStudy              - Running pylint... time: 1m12.959447004s
+2022/06/01 21:40:04 --> Project 41 - Done! Results: time: 1m14.810356277s
+  Name: char-rnn-cn
+  CommitHash: 7ea987ccce46b2b2b712c751e3059b8dd287b272
+  Number of commits: 16
+  Number of contributors: 4
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 2 - 362
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 3
+  Pylint messages per path: map[char-rnn-cn/generate_text.py:2 char-rnn-cn/train_text.py:1]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 3, map[randomness-control-numpy:1 randomness-control-tensorflow:2]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:40:04 --> Completed: 31/100 projects, 2 had errors time: 1m14.810496254s
+2022/06/01 21:40:04 --> Project 43 - coursera-ml-py                   - Already cloned! time: 1m14.810562029s
+2022/06/01 21:40:04 --> Project 43 - coursera-ml-py                   - Starting analysis... time: 1m14.810888881s
+2022/06/01 21:40:04 --> Project 43 - coursera-ml-py                   - Analysing Git stats & counting files... time: 1m14.810911831s
+2022/06/01 21:40:04 --> Project 43 - coursera-ml-py                   - Found 71 .py files (3280 lines) and 0 .ipynb files (0 lines) time: 1m14.92546588s
+2022/06/01 21:40:04 --> Project 43 - coursera-ml-py                   - Running pylint... time: 1m14.92551223s
+2022/06/01 21:40:05 --> Project 42 - Done! Results: time: 1m15.70022126s
+  Name: hdDeepLearningStudy
+  CommitHash: 36d6908b5bf878b3e30be16cdca90f01b071ab9f
+  Number of commits: 323
+  Number of contributors: 4
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 2 - 355
+  Jupyter Notebook files and total lines of code: 2 - 123
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:40:05 --> Completed: 32/100 projects, 2 had errors time: 1m15.700404521s
+2022/06/01 21:40:05 --> Project 44 - Artificial-Intelligence-Deep-Lea - Already cloned! time: 1m15.700466691s
+2022/06/01 21:40:05 --> Project 44 - Artificial-Intelligence-Deep-Lea - Starting analysis... time: 1m15.701089387s
+2022/06/01 21:40:05 --> Project 44 - Artificial-Intelligence-Deep-Lea - Analysing Git stats & counting files... time: 1m15.70111412s
+2022/06/01 21:40:10 --> Project 5 - Done! Results: time: 1m20.645408685s
+  Name: open-solution-data-science-bowl-2018
+  CommitHash: f5ab0b0d0aaece94688122ea402c943edaf71ffd
+  Number of commits: 121
+  Number of contributors: 9
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 33 - 6236
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 14
+  Pylint messages per path: map[open-solution-data-science-bowl-2018/src/loaders.py:4 open-solution-data-science-bowl-2018/src/pipeline_manager.py:6 open-solution-data-science-bowl-2018/src/steppy/pytorch/loaders.py:2 open-solution-data-science-bowl-2018/src/utils.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 11, map[column-selection-pandas:4 datatype-pandas:4 hyperparameters-pytorch:3]
+    warning: 3, map[randomness-control-dataloader-pytorch:3]
+    error: 0, map[]
+    fatal: 0, map[]
+2022/06/01 21:40:10 --> Completed: 33/100 projects, 2 had errors time: 1m20.645550319s
+2022/06/01 21:40:10 --> Project 45 - t3f                              - Already cloned! time: 1m20.645610088s
+2022/06/01 21:40:10 --> Project 45 - t3f                              - Found a setup.py file! time: 1m20.645663081s
+2022/06/01 21:40:10 --> Project 45 - t3f                              - Starting analysis... time: 1m20.645675911s
+2022/06/01 21:40:10 --> Project 45 - t3f                              - Analysing Git stats & counting files... time: 1m20.645684311s
+2022/06/01 21:40:10 --> Project 45 - t3f                              - Found 36 .py files (8864 lines) and 5 .ipynb files (417 lines) time: 1m20.798019298s
+2022/06/01 21:40:10 --> Project 45 - t3f                              - Running pylint... time: 1m20.798067561s
+2022/06/01 21:40:10 --> Project 35 - Done! Results: time: 1m21.225667745s
+  Name: enet-keras
+  CommitHash: 95ce39474b4b95521b64d176dfb7455d57716fde
+  Number of commits: 100
+  Number of contributors: 4
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 37 - 4191
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 3
+  Pylint messages per path: map[enet-keras/src/models/from_torch.py:3]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 3, map[deterministic-pytorch:1 randomness-control-numpy:1 randomness-control-pytorch:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:40:10 --> Completed: 34/100 projects, 2 had errors time: 1m21.225853147s
+2022/06/01 21:40:10 --> Project 46 - deepstock                        - Already cloned! time: 1m21.225924435s
+2022/06/01 21:40:10 --> Project 46 - deepstock                        - Starting analysis... time: 1m21.226561112s
+2022/06/01 21:40:10 --> Project 46 - deepstock                        - Analysing Git stats & counting files... time: 1m21.226578985s
+2022/06/01 21:40:10 --> Project 46 - deepstock                        - Found 6 .py files (713 lines) and 0 .ipynb files (0 lines) time: 1m21.348573436s
+2022/06/01 21:40:10 --> Project 46 - deepstock                        - Running pylint... time: 1m21.348622989s
+2022/06/01 21:40:11 --> Project 40 - Done! Results: time: 1m21.677058214s
+  Name: WaterNet
+  CommitHash: 5f30e796b03519b1d79be2ac1f148b873bf9e877
+  Number of commits: 55
+  Number of contributors: 2
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 8 - 984
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:40:11 --> Completed: 35/100 projects, 2 had errors time: 1m21.677253429s
+2022/06/01 21:40:11 --> Project 47 - DeepHeart                        - Already cloned! time: 1m21.677319006s
+2022/06/01 21:40:11 --> Project 47 - DeepHeart                        - requirements.txt file found in repo! time: 1m21.677344406s
+2022/06/01 21:40:11 --> Project 47 - DeepHeart                        - Starting analysis... time: 1m21.677358541s
+2022/06/01 21:40:11 --> Project 47 - DeepHeart                        - Analysing Git stats & counting files... time: 1m21.677367987s
+2022/06/01 21:40:11 --> Project 47 - DeepHeart                        - Found 4 .py files (521 lines) and 0 .ipynb files (0 lines) time: 1m21.777497921s
+2022/06/01 21:40:11 --> Project 47 - DeepHeart                        - Running pylint... time: 1m21.7775382s
+2022/06/01 21:40:14 --> Project 47 - Done! Results: time: 1m25.440496869s
+  Name: DeepHeart
+  CommitHash: fbe67af7db39a0854176c6a0acebf79a4a1b4808
+  Number of commits: 11
+  Number of contributors: 1
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 4 - 521
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:40:14 --> Completed: 36/100 projects, 2 had errors time: 1m25.440632577s
+2022/06/01 21:40:14 --> Project 48 - cnn-rtlsdr                       - Already cloned! time: 1m25.440701643s
+2022/06/01 21:40:14 --> Project 48 - cnn-rtlsdr                       - requirements.txt file found in repo! time: 1m25.440729675s
+2022/06/01 21:40:14 --> Project 48 - cnn-rtlsdr                       - Starting analysis... time: 1m25.440741657s
+2022/06/01 21:40:14 --> Project 48 - cnn-rtlsdr                       - Analysing Git stats & counting files... time: 1m25.440751881s
+2022/06/01 21:40:14 --> Project 48 - cnn-rtlsdr                       - Found 6 .py files (821 lines) and 0 .ipynb files (0 lines) time: 1m25.551525791s
+2022/06/01 21:40:14 --> Project 48 - cnn-rtlsdr                       - Running pylint... time: 1m25.551565888s
+2022/06/01 21:40:16 --> Project 33 - Done! Results: time: 1m27.535640221s
+  Name: Wordbatch
+  CommitHash: 82c1cbec04f1848b4efe58f4a05d2c650721114c
+  Number of commits: 96
+  Number of contributors: 6
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 25 - 2329
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 3
+  Pylint messages per path: map[Wordbatch/scripts/classify_airline_sentiment.py:2 Wordbatch/setup.py:1]
+  Number of Pylint messages: 
+    convention: 1, map[import-numpy:1]
+    refactor: 1, map[datatype-pandas:1]
+    warning: 1, map[randomness-control-numpy:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:40:16 --> Completed: 37/100 projects, 2 had errors time: 1m27.535808565s
+2022/06/01 21:40:16 --> Project 49 - Deep-Learning-21-Examples        - Already cloned! time: 1m27.535864122s
+2022/06/01 21:40:16 --> Project 49 - Deep-Learning-21-Examples        - Starting analysis... time: 1m27.536278514s
+2022/06/01 21:40:16 --> Project 49 - Deep-Learning-21-Examples        - Analysing Git stats & counting files... time: 1m27.536297902s
+2022/06/01 21:40:17 --> Project 49 - Deep-Learning-21-Examples        - Found 515 .py files (98138 lines) and 5 .ipynb files (1301 lines) time: 1m28.032075644s
+2022/06/01 21:40:17 --> Project 49 - Deep-Learning-21-Examples        - Running pylint... time: 1m28.03210451s
+2022/06/01 21:40:18 --> Project 46 - Done! Results: time: 1m29.088642898s
+  Name: deepstock
+  CommitHash: 57bc386914b0c7ea837528ae7c3d180001279da8
+  Number of commits: 9
+  Number of contributors: 2
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 6 - 713
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:40:18 --> Completed: 38/100 projects, 2 had errors time: 1m29.088740733s
+2022/06/01 21:40:18 --> Project 50 - tensorflow_transfer_cifar10      - Already cloned! time: 1m29.088800129s
+2022/06/01 21:40:18 --> Project 50 - tensorflow_transfer_cifar10      - Starting analysis... time: 1m29.088859787s
+2022/06/01 21:40:18 --> Project 50 - tensorflow_transfer_cifar10      - Analysing Git stats & counting files... time: 1m29.088870754s
+2022/06/01 21:40:18 --> Project 50 - tensorflow_transfer_cifar10      - Found 4 .py files (493 lines) and 0 .ipynb files (0 lines) time: 1m29.179020216s
+2022/06/01 21:40:18 --> Project 50 - tensorflow_transfer_cifar10      - Running pylint... time: 1m29.179060011s
+2022/06/01 21:40:21 --> Project 34 - Done! Results: time: 1m31.612542837s
+  Name: django-anymail
+  CommitHash: 6a2e30ba8ff5d100c7a68c30387140e83eec4fa4
+  Number of commits: 777
+  Number of contributors: 50
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 96 - 23767
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:40:21 --> Completed: 39/100 projects, 2 had errors time: 1m31.615635387s
+2022/06/01 21:40:21 --> Project 51 - StocksProject                    - Already cloned! time: 1m31.615705788s
+2022/06/01 21:40:21 --> Project 51 - StocksProject                    - Starting analysis... time: 1m31.616095564s
+2022/06/01 21:40:21 --> Project 51 - StocksProject                    - Analysing Git stats & counting files... time: 1m31.616116212s
+2022/06/01 21:40:21 --> Project 51 - StocksProject                    - Found 54 .py files (2858 lines) and 1 .ipynb files (0 lines) time: 1m31.820794965s
+2022/06/01 21:40:21 --> Project 51 - StocksProject                    - Running pylint... time: 1m31.820842758s
+2022/06/01 21:40:22 --> Project 50 - Done! Results: time: 1m33.208922355s
+  Name: tensorflow_transfer_cifar10
+  CommitHash: 7509d24cd98f515a19b51bdbce9b7fb40c34b2e6
+  Number of commits: 4
+  Number of contributors: 1
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 4 - 493
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:40:22 --> Completed: 40/100 projects, 2 had errors time: 1m33.209057254s
+2022/06/01 21:40:22 --> Project 52 - pydlt                            - Already cloned! time: 1m33.209106807s
+2022/06/01 21:40:22 --> Project 52 - pydlt                            - Found a setup.py file! time: 1m33.209513974s
+2022/06/01 21:40:22 --> Project 52 - pydlt                            - Starting analysis... time: 1m33.209533674s
+2022/06/01 21:40:22 --> Project 52 - pydlt                            - Analysing Git stats & counting files... time: 1m33.209547179s
+2022/06/01 21:40:22 --> Project 52 - pydlt                            - Found 45 .py files (4521 lines) and 0 .ipynb files (0 lines) time: 1m33.317278172s
+2022/06/01 21:40:22 --> Project 52 - pydlt                            - Running pylint... time: 1m33.317323144s
+2022/06/01 21:40:26 --> Project 48 - Done! Results: time: 1m36.668655931s
+  Name: cnn-rtlsdr
+  CommitHash: 75ff7d33c84cd156745c42d98b472c71ba49059b
+  Number of commits: 67
+  Number of contributors: 2
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 6 - 821
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:40:26 --> Completed: 41/100 projects, 2 had errors time: 1m36.668782203s
+2022/06/01 21:40:26 --> Project 53 - SpikeFlow                        - Already cloned! time: 1m36.668843688s
+2022/06/01 21:40:26 --> Project 53 - SpikeFlow                        - Starting analysis... time: 1m36.674422237s
+2022/06/01 21:40:26 --> Project 53 - SpikeFlow                        - Analysing Git stats & counting files... time: 1m36.674460014s
+2022/06/01 21:40:26 --> Project 53 - SpikeFlow                        - Found 9 .py files (1356 lines) and 0 .ipynb files (0 lines) time: 1m36.804553192s
+2022/06/01 21:40:26 --> Project 53 - SpikeFlow                        - Running pylint... time: 1m36.804587457s
+2022/06/01 21:40:28 --> Project 14 - Done! Results: time: 1m39.509907302s
+  Name: skorch
+  CommitHash: fe71e3d55a4ae5f5f94ef7bdfc00fca3b3fd267f
+  Number of commits: 985
+  Number of contributors: 50
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 61 - 25146
+  Jupyter Notebook files and total lines of code: 9 - 1627
+  Total messages: 34
+  Pylint messages per path: map[skorch/examples/benchmarks/freezing.py:1 skorch/examples/benchmarks/history.py:3 skorch/examples/benchmarks/mnist.py:9 skorch/examples/cli/train.py:1 skorch/skorch/classifier.py:1 skorch/skorch/dataset.py:1 skorch/skorch/tests/callbacks/test_lr_scheduler.py:2 skorch/skorch/tests/conftest.py:1 skorch/skorch/tests/test_dataset.py:1 skorch/skorch/tests/test_net.py:11 skorch/skorch/tests/test_probabilistic.py:2 skorch/skorch/utils.py:1]
+  Number of Pylint messages: 
+    convention: 2, map[import-pandas:1 import-sklearn:1]
+    refactor: 2, map[hyperparameters-pytorch:2]
+    warning: 30, map[dataframe-conversion-pandas:3 deterministic-pytorch:4 forward-pytorch:13 missing-mask-pytorch:3 randomness-control-dataloader-pytorch:3 randomness-control-numpy:2 randomness-control-pytorch:1 randomness-control-scikitlearn:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:40:28 --> Completed: 42/100 projects, 2 had errors time: 1m39.510038835s
+2022/06/01 21:40:28 --> Project 54 - yolo-tf                          - Already cloned! time: 1m39.51009852s
+2022/06/01 21:40:28 --> Project 54 - yolo-tf                          - Starting analysis... time: 1m39.51019848s
+2022/06/01 21:40:28 --> Project 54 - yolo-tf                          - Analysing Git stats & counting files... time: 1m39.510210268s
+2022/06/01 21:40:29 --> Project 54 - yolo-tf                          - Found 22 .py files (1972 lines) and 0 .ipynb files (0 lines) time: 1m39.618478854s
+2022/06/01 21:40:29 --> Project 54 - yolo-tf                          - Running pylint... time: 1m39.618517898s
+2022/06/01 21:40:31 --> Project 44 - Artificial-Intelligence-Deep-Lea - Found 1540 .py files (320504 lines) and 789 .ipynb files (107709 lines) time: 1m41.750205863s
+2022/06/01 21:40:31 --> Project 44 - Artificial-Intelligence-Deep-Lea - Running pylint... time: 1m41.750238452s
+2022/06/01 21:40:34 --> Project 53 - Done! Results: time: 1m44.756905792s
+  Name: SpikeFlow
+  CommitHash: ffff4f5c479da717d542e36c568169f248c71461
+  Number of commits: 10
+  Number of contributors: 1
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 9 - 1356
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 3
+  Pylint messages per path: map[SpikeFlow/tf/convert_to_tfrecords.py:2 SpikeFlow/tf/ocr_model.py:1]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 3, map[randomness-control-numpy:1 randomness-control-tensorflow:2]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:40:34 --> Completed: 43/100 projects, 2 had errors time: 1m44.757103481s
+2022/06/01 21:40:34 --> Project 55 - MTCNN-Tensorflow                 - Already cloned! time: 1m44.757166897s
+2022/06/01 21:40:34 --> Project 55 - MTCNN-Tensorflow                 - Starting analysis... time: 1m44.757583446s
+2022/06/01 21:40:34 --> Project 55 - MTCNN-Tensorflow                 - Analysing Git stats & counting files... time: 1m44.757607189s
+2022/06/01 21:40:34 --> Project 55 - MTCNN-Tensorflow                 - Found 38 .py files (4527 lines) and 1 .ipynb files (98 lines) time: 1m44.898603799s
+2022/06/01 21:40:34 --> Project 55 - MTCNN-Tensorflow                 - Running pylint... time: 1m44.898665855s
+2022/06/01 21:40:53 --> Project 54 - Done! Results: time: 2m3.854615531s
+  Name: yolo-tf
+  CommitHash: eae65c8071fe5069f5e3bb1e26f19a761b1b68bc
+  Number of commits: 108
+  Number of contributors: 1
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 22 - 1972
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 17
+  Pylint messages per path: map[yolo-tf/cache.py:2 yolo-tf/demo_data_augmentation.py:2 yolo-tf/demo_detect.py:2 yolo-tf/detect.py:2 yolo-tf/detect_camera.py:2 yolo-tf/model/yolo2/__init__.py:1 yolo-tf/model/yolo2/function.py:2 yolo-tf/parse_darknet_yolo2.py:3 yolo-tf/train.py:1]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 3, map[datatype-pandas:3]
+    warning: 14, map[randomness-control-numpy:6 randomness-control-tensorflow:8]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:40:53 --> Completed: 44/100 projects, 2 had errors time: 2m3.854862483s
+2022/06/01 21:40:53 --> Project 56 - ML-in-Action-Code-and-Note       - Already cloned! time: 2m3.854931563s
+2022/06/01 21:40:53 --> Project 56 - ML-in-Action-Code-and-Note       - Starting analysis... time: 2m3.855625015s
+2022/06/01 21:40:53 --> Project 56 - ML-in-Action-Code-and-Note       - Analysing Git stats & counting files... time: 2m3.855650914s
+2022/06/01 21:40:53 --> Project 56 - ML-in-Action-Code-and-Note       - Found 25 .py files (22461 lines) and 0 .ipynb files (0 lines) time: 2m4.081682551s
+2022/06/01 21:40:53 --> Project 56 - ML-in-Action-Code-and-Note       - Running pylint... time: 2m4.08172003s
+2022/06/01 21:40:56 --> Project 51 - Done! Results: time: 2m6.6828752s
+  Name: StocksProject
+  CommitHash: ee62f2dbe562fcd19f14dd6e20569c073398c565
+  Number of commits: 16
+  Number of contributors: 2
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 54 - 2858
+  Jupyter Notebook files and total lines of code: 1 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:40:56 --> Completed: 45/100 projects, 2 had errors time: 2m6.683109616s
+2022/06/01 21:40:56 --> Project 57 - visual-analogy-tensorflow        - Already cloned! time: 2m6.683173615s
+2022/06/01 21:40:56 --> Project 57 - visual-analogy-tensorflow        - Starting analysis... time: 2m6.683243219s
+2022/06/01 21:40:56 --> Project 57 - visual-analogy-tensorflow        - Analysing Git stats & counting files... time: 2m6.683256221s
+2022/06/01 21:40:56 --> Project 57 - visual-analogy-tensorflow        - Found 8 .py files (694 lines) and 0 .ipynb files (0 lines) time: 2m6.801252625s
+2022/06/01 21:40:56 --> Project 57 - visual-analogy-tensorflow        - Running pylint... time: 2m6.801296346s
+2022/06/01 21:41:00 --> Project 31 - Done! Results: time: 2m11.257196686s
+  Name: deepvoice3_pytorch
+  CommitHash: a5c24624bad314db5a5dcb0ea320fc3623a94f15
+  Number of commits: 219
+  Number of contributors: 15
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 44 - 7952
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 10
+  Pylint messages per path: map[deepvoice3_pytorch/synthesis.py:3 deepvoice3_pytorch/tests/test_deepvoice3.py:2 deepvoice3_pytorch/train.py:5]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 10, map[deterministic-pytorch:2 missing-mask-pytorch:2 mode-toggling-pytorch:2 randomness-control-numpy:2 randomness-control-pytorch:2]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:41:00 --> Completed: 46/100 projects, 2 had errors time: 2m11.257417646s
+2022/06/01 21:41:00 --> Project 58 - own_data_cnn_implementation_kera - Already cloned! time: 2m11.257482911s
+2022/06/01 21:41:00 --> Project 58 - own_data_cnn_implementation_kera - Starting analysis... time: 2m11.257906693s
+2022/06/01 21:41:00 --> Project 58 - own_data_cnn_implementation_kera - Analysing Git stats & counting files... time: 2m11.257927804s
+2022/06/01 21:41:00 --> Project 58 - own_data_cnn_implementation_kera - Found 2 .py files (831 lines) and 0 .ipynb files (0 lines) time: 2m11.383626877s
+2022/06/01 21:41:00 --> Project 58 - own_data_cnn_implementation_kera - Running pylint... time: 2m11.383677251s
+2022/06/01 21:41:04 --> Project 58 - Done! Results: time: 2m15.218569577s
+  Name: own_data_cnn_implementation_keras
+  CommitHash: a7ba8603dd8544d20168e182c096276044b49b32
+  Number of commits: 19
+  Number of contributors: 1
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 2 - 831
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 2
+  Pylint messages per path: map[own_data_cnn_implementation_keras/custom_data_cnn.py:1 own_data_cnn_implementation_keras/updated_custom_data_cnn.py:1]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 2, map[inplace-numpy:2]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:41:04 --> Completed: 47/100 projects, 2 had errors time: 2m15.218758819s
+2022/06/01 21:41:04 --> Project 59 - sparkit-learn                    - Already cloned! time: 2m15.218860564s
+2022/06/01 21:41:04 --> Project 59 - sparkit-learn                    - requirements.txt file found in repo! time: 2m15.218890277s
+2022/06/01 21:41:04 --> Project 59 - sparkit-learn                    - Starting analysis... time: 2m15.218904643s
+2022/06/01 21:41:04 --> Project 59 - sparkit-learn                    - Analysing Git stats & counting files... time: 2m15.21891509s
+2022/06/01 21:41:04 --> Project 59 - sparkit-learn                    - Found 62 .py files (6419 lines) and 0 .ipynb files (0 lines) time: 2m15.346949757s
+2022/06/01 21:41:04 --> Project 59 - sparkit-learn                    - Running pylint... time: 2m15.346988867s
+2022/06/01 21:41:08 --> Project 57 - Done! Results: time: 2m18.674147445s
+  Name: visual-analogy-tensorflow
+  CommitHash: 25829caf483b41c577f07386cd425819298f16a9
+  Number of commits: 46
+  Number of contributors: 1
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 8 - 694
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 1
+  Pylint messages per path: map[visual-analogy-tensorflow/main.py:1]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 1, map[randomness-control-tensorflow:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:41:08 --> Completed: 48/100 projects, 2 had errors time: 2m18.674374249s
+2022/06/01 21:41:08 --> Project 60 - Mozi                             - Already cloned! time: 2m18.674442489s
+2022/06/01 21:41:08 --> Project 60 - Mozi                             - Found a setup.py file! time: 2m18.674503498s
+2022/06/01 21:41:08 --> Project 60 - Mozi                             - Starting analysis... time: 2m18.674515621s
+2022/06/01 21:41:08 --> Project 60 - Mozi                             - Analysing Git stats & counting files... time: 2m18.674524303s
+2022/06/01 21:41:08 --> Project 60 - Mozi                             - Found 49 .py files (4956 lines) and 0 .ipynb files (0 lines) time: 2m18.806170581s
+2022/06/01 21:41:08 --> Project 60 - Mozi                             - Running pylint... time: 2m18.806221975s
+2022/06/01 21:41:16 --> Project 55 - Done! Results: time: 2m27.47079236s
+  Name: MTCNN-Tensorflow
+  CommitHash: 3b3934d38f8d34287cc933a581537a1acfd0bb60
+  Number of commits: 25
+  Number of contributors: 6
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 38 - 4527
+  Jupyter Notebook files and total lines of code: 1 - 98
+  Total messages: 8
+  Pylint messages per path: map[MTCNN-Tensorflow/prepare_data/gen_ONet_tfrecords.py:1 MTCNN-Tensorflow/prepare_data/gen_PNet_tfrecords.py:1 MTCNN-Tensorflow/prepare_data/gen_RNet_tfrecords.py:1 MTCNN-Tensorflow/prepare_data/gen_landmark_aug_24.py:2 MTCNN-Tensorflow/prepare_data/read_tfrecord_v2.py:2 MTCNN-Tensorflow/train_models/mtcnn_model.py:1]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 8, map[missing-mask-tensorflow:1 randomness-control-numpy:2 randomness-control-tensorflow:5]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:41:16 --> Completed: 49/100 projects, 2 had errors time: 2m27.471007597s
+2022/06/01 21:41:16 --> Project 61 - PySimpleGUI                      - Already cloned! time: 2m27.471079091s
+2022/06/01 21:41:16 --> Project 61 - PySimpleGUI                      - Found a setup.py file! time: 2m27.471147672s
+2022/06/01 21:41:16 --> Project 61 - PySimpleGUI                      - Starting analysis... time: 2m27.47116121s
+2022/06/01 21:41:16 --> Project 61 - PySimpleGUI                      - Analysing Git stats & counting files... time: 2m27.471172502s
+2022/06/01 21:41:17 --> Project 61 - PySimpleGUI                      - Found 468 .py files (107378 lines) and 0 .ipynb files (0 lines) time: 2m28.090065087s
+2022/06/01 21:41:17 --> Project 61 - PySimpleGUI                      - Running pylint... time: 2m28.090106488s
+2022/06/01 21:41:17 --> Project 45 - Done! Results: time: 2m28.430088051s
+  Name: t3f
+  CommitHash: 8096b3883867087206f44e32a99d8ab19255dc25
+  Number of commits: 1118
+  Number of contributors: 12
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 36 - 8864
+  Jupyter Notebook files and total lines of code: 5 - 417
+  Total messages: 27
+  Pylint messages per path: map[t3f/t3f/approximate_test.py:2 t3f/t3f/autodiff_test.py:2 t3f/t3f/batch_ops_test.py:2 t3f/t3f/decompositions_test.py:2 t3f/t3f/initializers_test.py:2 t3f/t3f/kronecker_test.py:2 t3f/t3f/nn_test.py:2 t3f/t3f/ops_test.py:2 t3f/t3f/riemannian_test.py:2 t3f/t3f/shapes_test.py:1 t3f/t3f/tensor_train_batch_test.py:2 t3f/t3f/tensor_train_test.py:2 t3f/t3f/utils_test.py:2 t3f/t3f/variables_test.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 27, map[randomness-control-numpy:13 randomness-control-tensorflow:14]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:41:17 --> Completed: 50/100 projects, 2 had errors time: 2m28.430318783s
+2022/06/01 21:41:17 --> Project 62 - spark-knn-recommender            - Already cloned! time: 2m28.430397219s
+2022/06/01 21:41:17 --> Project 62 - spark-knn-recommender            - Found a setup.py file! time: 2m28.430460746s
+2022/06/01 21:41:17 --> Project 62 - spark-knn-recommender            - Starting analysis... time: 2m28.430486416s
+2022/06/01 21:41:17 --> Project 62 - spark-knn-recommender            - Analysing Git stats & counting files... time: 2m28.430496998s
+2022/06/01 21:41:17 --> Project 62 - spark-knn-recommender            - Found 10 .py files (639 lines) and 0 .ipynb files (0 lines) time: 2m28.534531283s
+2022/06/01 21:41:17 --> Project 62 - spark-knn-recommender            - Running pylint... time: 2m28.534570602s
+2022/06/01 21:41:18 --> Project 20 - Done! Results: time: 2m28.630497224s
+  Name: milk
+  CommitHash: abc2a28b526c199414d42c0a26092938968c3caf
+  Number of commits: 687
+  Number of contributors: 12
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 108 - 8887
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 16
+  Pylint messages per path: map[milk/milk/active/eimpact.py:1 milk/milk/active/uncertainty.py:1 milk/milk/supervised/svm.py:2 milk/milk/tests/test_measures.py:1 milk/milk/tests/test_normalise.py:1 milk/milk/tests/test_svm.py:1 milk/milk/tests/test_svm_sigmoidal.py:2 milk/milk/unsupervised/affinity.py:1 milk/milk/unsupervised/kmeans.py:1 milk/milk/unsupervised/parzen.py:2 milk/milk/unsupervised/pdist.py:3]
+  Number of Pylint messages: 
+    convention: 8, map[import-numpy:8]
+    refactor: 0, map[]
+    warning: 8, map[inplace-numpy:8]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:41:18 --> Completed: 51/100 projects, 2 had errors time: 2m28.630703212s
+2022/06/01 21:41:18 --> Project 63 - instacart-basket-prediction      - Already cloned! time: 2m28.630773199s
+2022/06/01 21:41:18 --> Project 63 - instacart-basket-prediction      - requirements.txt file found in repo! time: 2m28.630810504s
+2022/06/01 21:41:18 --> Project 63 - instacart-basket-prediction      - Starting analysis... time: 2m28.630826249s
+2022/06/01 21:41:18 --> Project 63 - instacart-basket-prediction      - Analysing Git stats & counting files... time: 2m28.630836275s
+2022/06/01 21:41:18 --> Project 63 - instacart-basket-prediction      - Found 26 .py files (3547 lines) and 0 .ipynb files (0 lines) time: 2m28.729676377s
+2022/06/01 21:41:18 --> Project 63 - instacart-basket-prediction      - Running pylint... time: 2m28.729711564s
+2022/06/01 21:41:25 --> Project 62 - Done! Results: time: 2m36.343065388s
+  Name: spark-knn-recommender
+  CommitHash: 5ce96bb9bcea22ed8a859bac9988726da78fc1aa
+  Number of commits: 120
+  Number of contributors: 3
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 10 - 639
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:41:25 --> Completed: 52/100 projects, 2 had errors time: 2m36.343267767s
+2022/06/01 21:41:25 --> Project 64 - FirstContactWithTensorFlow       - Already cloned! time: 2m36.343339066s
+2022/06/01 21:41:25 --> Project 64 - FirstContactWithTensorFlow       - Starting analysis... time: 2m36.343406587s
+2022/06/01 21:41:25 --> Project 64 - FirstContactWithTensorFlow       - Analysing Git stats & counting files... time: 2m36.343421125s
+2022/06/01 21:41:25 --> Project 64 - FirstContactWithTensorFlow       - Found 11 .py files (784 lines) and 0 .ipynb files (0 lines) time: 2m36.448963329s
+2022/06/01 21:41:25 --> Project 64 - FirstContactWithTensorFlow       - Running pylint... time: 2m36.44900976s
+2022/06/01 21:41:31 --> Project 63 - Done! Results: time: 2m42.135728823s
+  Name: instacart-basket-prediction
+  CommitHash: f45fc284b4e8c9858784ed186d7a22e5e78237fb
+  Number of commits: 10
+  Number of contributors: 1
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 26 - 3547
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 26
+  Pylint messages per path: map[instacart-basket-prediction/models/blend/gbm_blend.py:1 instacart-basket-prediction/models/blend/prepare_blend_data.py:6 instacart-basket-prediction/models/blend/submit.py:1 instacart-basket-prediction/models/nnmf/prepare_nnmf_data.py:2 instacart-basket-prediction/models/tf_utils.py:4 instacart-basket-prediction/preprocessing/create_user_data.py:12]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 13, map[column-selection-pandas:3 datatype-pandas:9 merge-parameter-pandas:1]
+    warning: 13, map[dataframe-conversion-pandas:8 missing-mask-tensorflow:4 randomness-control-scikitlearn:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:41:31 --> Completed: 53/100 projects, 2 had errors time: 2m42.135909085s
+2022/06/01 21:41:31 --> Project 65 - nnet-ts                          - Already cloned! time: 2m42.135977039s
+2022/06/01 21:41:31 --> Project 65 - nnet-ts                          - Found a setup.py file! time: 2m42.136037085s
+2022/06/01 21:41:31 --> Project 65 - nnet-ts                          - Starting analysis... time: 2m42.136052825s
+2022/06/01 21:41:31 --> Project 65 - nnet-ts                          - Analysing Git stats & counting files... time: 2m42.1360629s
+2022/06/01 21:41:31 --> Project 65 - nnet-ts                          - Found 4 .py files (101 lines) and 0 .ipynb files (0 lines) time: 2m42.230545892s
+2022/06/01 21:41:31 --> Project 65 - nnet-ts                          - Running pylint... time: 2m42.230607127s
+2022/06/01 21:41:36 --> Project 64 - Done! Results: time: 2m47.549325086s
+  Name: FirstContactWithTensorFlow
+  CommitHash: 03e143c1af88a1271ea085d2141970cddbc0142c
+  Number of commits: 68
+  Number of contributors: 1
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 11 - 784
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 1
+  Pylint messages per path: map[FirstContactWithTensorFlow/input_data.py:1]
+  Number of Pylint messages: 
+    convention: 1, map[import-numpy:1]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:41:36 --> Completed: 54/100 projects, 2 had errors time: 2m47.549579877s
+2022/06/01 21:41:36 --> Project 66 - ImageSimilarityUsingCntk         - Already cloned! time: 2m47.549655631s
+2022/06/01 21:41:36 --> Project 66 - ImageSimilarityUsingCntk         - Starting analysis... time: 2m47.549735455s
+2022/06/01 21:41:36 --> Project 66 - ImageSimilarityUsingCntk         - Analysing Git stats & counting files... time: 2m47.549751313s
+2022/06/01 21:41:37 --> Project 66 - ImageSimilarityUsingCntk         - Found 11 .py files (1408 lines) and 0 .ipynb files (0 lines) time: 2m47.715696315s
+2022/06/01 21:41:37 --> Project 66 - ImageSimilarityUsingCntk         - Running pylint... time: 2m47.715756957s
+2022/06/01 21:41:41 --> Project 56 - ML-in-Action-Code-and-Note       - Analysis Error: error parsing Pylint output: invalid character '/' looking for beginning of value
+2022/06/01 21:41:41 --> Completed: 55/100 projects, 3 had errors time: 2m52.150857551s
+2022/06/01 21:41:41 --> Project 67 - vehicle-detection                - Already cloned! time: 2m52.150922655s
+2022/06/01 21:41:41 --> Project 67 - vehicle-detection                - Starting analysis... time: 2m52.150990596s
+2022/06/01 21:41:41 --> Project 67 - vehicle-detection                - Analysing Git stats & counting files... time: 2m52.151002473s
+2022/06/01 21:41:41 --> Project 67 - vehicle-detection                - Found 6 .py files (1651 lines) and 0 .ipynb files (0 lines) time: 2m52.261885212s
+2022/06/01 21:41:41 --> Project 67 - vehicle-detection                - Running pylint... time: 2m52.26193502s
+2022/06/01 21:41:41 --> Project 65 - Done! Results: time: 2m52.438317767s
+  Name: nnet-ts
+  CommitHash: 3b907490e66d5318024a245682e8e577a6da6bab
+  Number of commits: 15
+  Number of contributors: 4
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 4 - 101
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:41:41 --> Completed: 56/100 projects, 3 had errors time: 2m52.438525149s
+2022/06/01 21:41:41 --> Project 68 - alpha_zero_othello               - Already cloned! time: 2m52.438584417s
+2022/06/01 21:41:41 --> Project 68 - alpha_zero_othello               - requirements.txt file found in repo! time: 2m52.438612414s
+2022/06/01 21:41:41 --> Project 68 - alpha_zero_othello               - Starting analysis... time: 2m52.438624133s
+2022/06/01 21:41:41 --> Project 68 - alpha_zero_othello               - Analysing Git stats & counting files... time: 2m52.438633789s
+2022/06/01 21:41:41 --> Project 68 - alpha_zero_othello               - Found 19 .py files (1352 lines) and 0 .ipynb files (0 lines) time: 2m52.540542085s
+2022/06/01 21:41:41 --> Project 68 - alpha_zero_othello               - Running pylint... time: 2m52.540582462s
+2022/06/01 21:41:45 --> Project 66 - Done! Results: time: 2m55.60141887s
+  Name: ImageSimilarityUsingCntk
+  CommitHash: 613ffc72296ee24e64f42f88fe43ab6ace96182d
+  Number of commits: 17
+  Number of contributors: 4
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 11 - 1408
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:41:45 --> Completed: 57/100 projects, 3 had errors time: 2m55.601644831s
+2022/06/01 21:41:45 --> Project 69 - deblur-gan                       - Already cloned! time: 2m55.601709111s
+2022/06/01 21:41:45 --> Project 69 - deblur-gan                       - Found a setup.py file! time: 2m55.601769871s
+2022/06/01 21:41:45 --> Project 69 - deblur-gan                       - Starting analysis... time: 2m55.601782581s
+2022/06/01 21:41:45 --> Project 69 - deblur-gan                       - Analysing Git stats & counting files... time: 2m55.601791333s
+2022/06/01 21:41:45 --> Project 69 - deblur-gan                       - Found 11 .py files (631 lines) and 0 .ipynb files (0 lines) time: 2m55.70420735s
+2022/06/01 21:41:45 --> Project 69 - deblur-gan                       - Running pylint... time: 2m55.70424816s
+2022/06/01 21:41:50 --> Project 67 - Done! Results: time: 3m1.38875056s
+  Name: vehicle-detection
+  CommitHash: 8b92c6971c1c70276d3a01b4616699595a4516d2
+  Number of commits: 26
+  Number of contributors: 2
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 6 - 1651
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:41:50 --> Completed: 58/100 projects, 3 had errors time: 3m1.388893685s
+2022/06/01 21:41:50 --> Project 70 - blitznet                         - Already cloned! time: 3m1.388966944s
+2022/06/01 21:41:50 --> Project 70 - blitznet                         - Starting analysis... time: 3m1.389053784s
+2022/06/01 21:41:50 --> Project 70 - blitznet                         - Analysing Git stats & counting files... time: 3m1.389067671s
+2022/06/01 21:41:50 --> Project 70 - blitznet                         - Found 25 .py files (4061 lines) and 0 .ipynb files (0 lines) time: 3m1.525688652s
+2022/06/01 21:41:50 --> Project 70 - blitznet                         - Running pylint... time: 3m1.52574495s
+2022/06/01 21:41:53 --> Project 52 - Done! Results: time: 3m3.999012109s
+  Name: pydlt
+  CommitHash: b018f75b68af29645d0a5dae10b6d7255e53f867
+  Number of commits: 158
+  Number of contributors: 1
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 45 - 4521
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 4
+  Pylint messages per path: map[pydlt/dlt/config/dataset.py:2 pydlt/dlt/train/basetrainer.py:1 pydlt/dlt/viz/csvplot.py:1]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 1, map[datatype-pandas:1]
+    warning: 3, map[mode-toggling-pytorch:1 randomness-control-dataloader-pytorch:2]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:41:53 --> Completed: 59/100 projects, 3 had errors time: 3m3.999267942s
+2022/06/01 21:41:53 --> Project 71 - innvestigate                     - Already cloned! time: 3m3.999335151s
+2022/06/01 21:41:53 --> Project 71 - innvestigate                     - Starting analysis... time: 3m3.999407909s
+2022/06/01 21:41:53 --> Project 71 - innvestigate                     - Analysing Git stats & counting files... time: 3m3.999421686s
+2022/06/01 21:41:53 --> Project 71 - innvestigate                     - Found 65 .py files (12212 lines) and 8 .ipynb files (1661 lines) time: 3m4.546761537s
+2022/06/01 21:41:53 --> Project 71 - innvestigate                     - Running pylint... time: 3m4.546799934s
+2022/06/01 21:41:57 --> Project 43 - Done! Results: time: 3m8.230716426s
+  Name: coursera-ml-py
+  CommitHash: 2c651f8cdb3a93f4b317cd48b83b500be26baf71
+  Number of commits: 13
+  Number of contributors: 1
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 71 - 3280
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:41:57 --> Completed: 60/100 projects, 3 had errors time: 3m8.230931833s
+2022/06/01 21:41:57 --> Project 72 - DeepQA                           - Already cloned! time: 3m8.231021162s
+2022/06/01 21:41:57 --> Project 72 - DeepQA                           - requirements.txt file found in repo! time: 3m8.231054879s
+2022/06/01 21:41:57 --> Project 72 - DeepQA                           - Starting analysis... time: 3m8.231072144s
+2022/06/01 21:41:57 --> Project 72 - DeepQA                           - Analysing Git stats & counting files... time: 3m8.231082944s
+2022/06/01 21:41:57 --> Project 72 - DeepQA                           - Found 30 .py files (2596 lines) and 0 .ipynb files (0 lines) time: 3m8.362686418s
+2022/06/01 21:41:57 --> Project 72 - DeepQA                           - Running pylint... time: 3m8.36272995s
+2022/06/01 21:41:59 --> Project 68 - Done! Results: time: 3m10.009215052s
+  Name: alpha_zero_othello
+  CommitHash: f342820bdbc9d9a7d8e99fcd3803af2527294fde
+  Number of commits: 91
+  Number of contributors: 2
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 19 - 1352
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 1
+  Pylint messages per path: map[alpha_zero_othello/lib/util.py:1]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 1, map[datatype-pandas:1]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:41:59 --> Completed: 61/100 projects, 3 had errors time: 3m10.009530931s
+2022/06/01 21:41:59 --> Project 73 - ramp                             - Already cloned! time: 3m10.009597908s
+2022/06/01 21:41:59 --> Project 73 - ramp                             - requirements.txt file found in repo! time: 3m10.009626436s
+2022/06/01 21:41:59 --> Project 73 - ramp                             - Starting analysis... time: 3m10.009672285s
+2022/06/01 21:41:59 --> Project 73 - ramp                             - Analysing Git stats & counting files... time: 3m10.009687004s
+2022/06/01 21:41:59 --> Project 73 - ramp                             - Found 42 .py files (6055 lines) and 0 .ipynb files (0 lines) time: 3m10.124525415s
+2022/06/01 21:41:59 --> Project 73 - ramp                             - Running pylint... time: 3m10.124567278s
+2022/06/01 21:42:08 --> Project 60 - Done! Results: time: 3m19.546755014s
+  Name: Mozi
+  CommitHash: 7f2eccbe3169c10d231e07edf8bc650039fa4eb2
+  Number of commits: 297
+  Number of contributors: 7
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 49 - 4956
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 4
+  Pylint messages per path: map[Mozi/example/mnist_dae.py:1 Mozi/mozi/datasets/iterator.py:1 Mozi/mozi/utils/image.py:1 Mozi/mozi/utils/mnist_utils.py:1]
+  Number of Pylint messages: 
+    convention: 3, map[import-numpy:3]
+    refactor: 0, map[]
+    warning: 1, map[randomness-control-numpy:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:42:08 --> Completed: 62/100 projects, 3 had errors time: 3m19.546954421s
+2022/06/01 21:42:08 --> Project 74 - tensorflow-onnx                  - Already cloned! time: 3m19.547016184s
+2022/06/01 21:42:08 --> Project 74 - tensorflow-onnx                  - Found a setup.py file! time: 3m19.54708689s
+2022/06/01 21:42:08 --> Project 74 - tensorflow-onnx                  - Starting analysis... time: 3m19.547110737s
+2022/06/01 21:42:08 --> Project 74 - tensorflow-onnx                  - Analysing Git stats & counting files... time: 3m19.547120475s
+2022/06/01 21:42:09 --> Project 74 - tensorflow-onnx                  - Found 409 .py files (79299 lines) and 8 .ipynb files (808 lines) time: 3m20.308121683s
+2022/06/01 21:42:09 --> Project 74 - tensorflow-onnx                  - Running pylint... time: 3m20.308158285s
+2022/06/01 21:42:12 --> Project 70 - Done! Results: time: 3m23.484753101s
+  Name: blitznet
+  CommitHash: a54028d07c7bf75e5fcce285109d64c76f0d1cf5
+  Number of commits: 26
+  Number of contributors: 5
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 25 - 4061
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 15
+  Pylint messages per path: map[blitznet/benchmark.py:2 blitznet/datasets.py:2 blitznet/demo.py:2 blitznet/interface/main.py:2 blitznet/test.py:2 blitznet/training.py:2 blitznet/utils_tf.py:3]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 15, map[missing-mask-tensorflow:3 randomness-control-numpy:6 randomness-control-tensorflow:6]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:42:12 --> Completed: 63/100 projects, 3 had errors time: 3m23.484975485s
+2022/06/01 21:42:12 --> Project 75 - zhusuan                          - Already cloned! time: 3m23.485047398s
+2022/06/01 21:42:12 --> Project 75 - zhusuan                          - requirements.txt file found in repo! time: 3m23.485083744s
+2022/06/01 21:42:12 --> Project 75 - zhusuan                          - Starting analysis... time: 3m23.485097774s
+2022/06/01 21:42:12 --> Project 75 - zhusuan                          - Analysing Git stats & counting files... time: 3m23.485107084s
+2022/06/01 21:42:13 --> Project 75 - zhusuan                          - Found 92 .py files (18359 lines) and 0 .ipynb files (0 lines) time: 3m23.632424743s
+2022/06/01 21:42:13 --> Project 75 - zhusuan                          - Running pylint... time: 3m23.632470043s
+2022/06/01 21:42:14 --> Project 69 - Done! Results: time: 3m25.085596279s
+  Name: deblur-gan
+  CommitHash: 8b4b15d36124c4bc7208a97a7e65026206dcf7d6
+  Number of commits: 42
+  Number of contributors: 8
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 11 - 631
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 1
+  Pylint messages per path: map[deblur-gan/deblurgan/layer_utils.py:1]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 1, map[randomness-control-tensorflow:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:42:14 --> Completed: 64/100 projects, 3 had errors time: 3m25.085802881s
+2022/06/01 21:42:14 --> Project 76 - scipy_2015_sklearn_tutorial      - Already cloned! time: 3m25.085864798s
+2022/06/01 21:42:14 --> Project 76 - scipy_2015_sklearn_tutorial      - requirements.txt file found in repo! time: 3m25.085904064s
+2022/06/01 21:42:14 --> Project 76 - scipy_2015_sklearn_tutorial      - Starting analysis... time: 3m25.085918558s
+2022/06/01 21:42:14 --> Project 76 - scipy_2015_sklearn_tutorial      - Analysing Git stats & counting files... time: 3m25.085928271s
+2022/06/01 21:42:14 --> Project 76 - scipy_2015_sklearn_tutorial      - Found 21 .py files (946 lines) and 25 .ipynb files (1248 lines) time: 3m25.288881581s
+2022/06/01 21:42:14 --> Project 76 - scipy_2015_sklearn_tutorial      - Running pylint... time: 3m25.28891723s
+2022/06/01 21:42:25 --> Project 72 - Done! Results: time: 3m35.694736359s
+  Name: DeepQA
+  CommitHash: 888bb14ebb925e7c3a3e0b0b5e89a087f42b7f56
+  Number of commits: 183
+  Number of contributors: 15
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 30 - 2596
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+2022/06/01 21:42:25 --> Completed: 65/100 projects, 3 had errors time: 3m35.695420918s
+2022/06/01 21:42:25 --> Project 77 - DeepSpell                        - Already cloned! time: 3m35.695509454s
+2022/06/01 21:42:25 --> Project 77 - DeepSpell                        - Starting analysis... time: 3m35.695589859s
+2022/06/01 21:42:25 --> Project 77 - DeepSpell                        - Analysing Git stats & counting files... time: 3m35.695603132s
+2022/06/01 21:42:25 --> Project 77 - DeepSpell                        - Found 1 .py files (585 lines) and 0 .ipynb files (0 lines) time: 3m35.803784413s
+2022/06/01 21:42:25 --> Project 77 - DeepSpell                        - Running pylint... time: 3m35.803832384s
+2022/06/01 21:42:31 --> Project 77 - Done! Results: time: 3m42.420535092s
+  Name: DeepSpell
+  CommitHash: 26f595ec748f18e4420f2dba36047f812305169c
+  Number of commits: 10
+  Number of contributors: 2
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 1 - 585
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:42:31 --> Completed: 66/100 projects, 3 had errors time: 3m42.420677755s
+2022/06/01 21:42:31 --> Project 78 - fast-neural-style-tensorflow     - Already cloned! time: 3m42.420749657s
+2022/06/01 21:42:31 --> Project 78 - fast-neural-style-tensorflow     - Starting analysis... time: 3m42.421346866s
+2022/06/01 21:42:31 --> Project 78 - fast-neural-style-tensorflow     - Analysing Git stats & counting files... time: 3m42.421373192s
+2022/06/01 21:42:32 --> Project 78 - fast-neural-style-tensorflow     - Found 41 .py files (8110 lines) and 0 .ipynb files (0 lines) time: 3m42.581851224s
+2022/06/01 21:42:32 --> Project 78 - fast-neural-style-tensorflow     - Running pylint... time: 3m42.581905624s
+2022/06/01 21:42:32 --> Project 23 - Done! Results: time: 3m42.621312591s
+  Name: tensorflow_end2end_speech_recognition
+  CommitHash: 65b9728089d5e92b25b92384a67419d970399a64
+  Number of commits: 216
+  Number of contributors: 5
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 207 - 33335
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 59
+  Pylint messages per path: map[tensorflow_end2end_speech_recognition/examples/csj/evaluation/eval_ctc.py:1 tensorflow_end2end_speech_recognition/examples/csj/fine_tuning/finetune_ctc_dialog.py:1 tensorflow_end2end_speech_recognition/examples/csj/training/train_attention.py:1 tensorflow_end2end_speech_recognition/examples/csj/training/train_ctc.py:1 tensorflow_end2end_speech_recognition/examples/csj/training/train_multitask_ctc.py:1 tensorflow_end2end_speech_recognition/examples/csj/visualization/decode_ctc.py:1 tensorflow_end2end_speech_recognition/examples/csj/visualization/plot_ctc_posterior.py:1 tensorflow_end2end_speech_recognition/examples/erato/evaluation/eval_attention.py:1 tensorflow_end2end_speech_recognition/examples/erato/evaluation/eval_ctc.py:1 tensorflow_end2end_speech_recognition/examples/erato/training/train_attention.py:1 tensorflow_end2end_speech_recognition/examples/erato/training/train_ctc.py:1 tensorflow_end2end_speech_recognition/examples/erato/visualization/decode_attention.py:1 tensorflow_end2end_speech_recognition/examples/erato/visualization/decode_ctc.py:1 tensorflow_end2end_speech_recognition/examples/erato/visualization/plot_ctc_posterior.py:1 tensorflow_end2end_speech_recognition/examples/librispeech/evaluation/eval_ctc.py:1 tensorflow_end2end_speech_recognition/examples/librispeech/evaluation/eval_ctc_temp.py:1 tensorflow_end2end_speech_recognition/examples/librispeech/evaluation/eval_multitask_ctc.py:1 tensorflow_end2end_speech_recognition/examples/librispeech/evaluation/eval_student.py:1 tensorflow_end2end_speech_recognition/examples/librispeech/evaluation/save_ctc_prob.py:2 tensorflow_end2end_speech_recognition/examples/librispeech/training/train_ctc.py:1 tensorflow_end2end_speech_recognition/examples/librispeech/training/train_ctc_temp.py:1 tensorflow_end2end_speech_recognition/examples/librispeech/training/train_multitask_ctc.py:1 tensorflow_end2end_speech_recognition/examples/librispeech/training/train_student_cnn_xe.py:1 tensorflow_end2end_speech_recognition/examples/svc/evaluation/restore/restore_ctc.py:1 tensorflow_end2end_speech_recognition/examples/svc/evaluation/restore/restore_ff.py:1 tensorflow_end2end_speech_recognition/examples/svc/evaluation/restore/visualize_ctc.py:1 tensorflow_end2end_speech_recognition/examples/svc/training/train_attention.py:1 tensorflow_end2end_speech_recognition/examples/svc/training/train_ctc.py:1 tensorflow_end2end_speech_recognition/examples/timit/evaluation/eval_attention.py:1 tensorflow_end2end_speech_recognition/examples/timit/evaluation/eval_ctc.py:1 tensorflow_end2end_speech_recognition/examples/timit/evaluation/eval_multitask_ctc.py:1 tensorflow_end2end_speech_recognition/examples/timit/training/train_attention.py:1 tensorflow_end2end_speech_recognition/examples/timit/training/train_ctc.py:1 tensorflow_end2end_speech_recognition/examples/timit/training/train_joint_ctc_attention.py:1 tensorflow_end2end_speech_recognition/examples/timit/training/train_multitask_ctc.py:1 tensorflow_end2end_speech_recognition/examples/timit/visualization/decode_attention.py:1 tensorflow_end2end_speech_recognition/examples/timit/visualization/decode_ctc.py:1 tensorflow_end2end_speech_recognition/examples/timit/visualization/decode_multitask_ctc.py:1 tensorflow_end2end_speech_recognition/examples/timit/visualization/plot_attention_weights.py:2 tensorflow_end2end_speech_recognition/examples/timit/visualization/plot_ctc_prob.py:2 tensorflow_end2end_speech_recognition/examples/timit/visualization/plot_multitask_ctc_prob.py:2 tensorflow_end2end_speech_recognition/experiments/librispeech/evaluation/save_ctc_prob.py:2 tensorflow_end2end_speech_recognition/experiments/librispeech/visualization/plot_ctc_prob.py:2 tensorflow_end2end_speech_recognition/models/recurrent/tests/test_tf_qrnn_forward.py:2 tensorflow_end2end_speech_recognition/models/recurrent/tests/test_tf_qrnn_work.py:2 tensorflow_end2end_speech_recognition/models/test/test_attention.py:1 tensorflow_end2end_speech_recognition/models/test/test_ctc.py:1 tensorflow_end2end_speech_recognition/models/test/test_ctc_decoder.py:1 tensorflow_end2end_speech_recognition/models/test/test_encoder.py:1 tensorflow_end2end_speech_recognition/models/test/test_joint_ctc_attention.py:1 tensorflow_end2end_speech_recognition/models/test/test_multitask_ctc.py:1]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 59, map[randomness-control-numpy:8 randomness-control-tensorflow:51]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:42:32 --> Completed: 67/100 projects, 3 had errors time: 3m42.62170558s
+2022/06/01 21:42:32 --> Project 79 - 3D-convolutional-speaker-recogni - Already cloned! time: 3m42.621769223s
+2022/06/01 21:42:32 --> Project 79 - 3D-convolutional-speaker-recogni - Starting analysis... time: 3m42.621843856s
+2022/06/01 21:42:32 --> Project 79 - 3D-convolutional-speaker-recogni - Analysing Git stats & counting files... time: 3m42.621858526s
+2022/06/01 21:42:32 --> Project 79 - 3D-convolutional-speaker-recogni - Found 30 .py files (3034 lines) and 0 .ipynb files (0 lines) time: 3m42.746866596s
+2022/06/01 21:42:32 --> Project 79 - 3D-convolutional-speaker-recogni - Running pylint... time: 3m42.746906853s
+2022/06/01 21:42:35 --> Project 76 - Done! Results: time: 3m45.755292037s
+  Name: scipy_2015_sklearn_tutorial
+  CommitHash: be0a35724b9f0f0b92ea6c325ad5137176585b1c
+  Number of commits: 175
+  Number of contributors: 6
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 21 - 946
+  Jupyter Notebook files and total lines of code: 25 - 1248
+  Total messages: 9
+  Pylint messages per path: map[scipy_2015_sklearn_tutorial/notebooks/figures/plot_interactive_forest.py:1 scipy_2015_sklearn_tutorial/notebooks/figures/plot_interactive_tree.py:1 scipy_2015_sklearn_tutorial/notebooks/figures/plot_kneighbors_regularization.py:1 scipy_2015_sklearn_tutorial/notebooks/figures/plot_linear_svc_regularization.py:2 scipy_2015_sklearn_tutorial/notebooks/figures/plot_rbf_svm_parameters.py:4]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 4, map[hyperparameters-scikitlearn:4]
+    warning: 5, map[randomness-control-numpy:1 scaler-missing-scikitlearn:4]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:42:35 --> Completed: 68/100 projects, 3 had errors time: 3m45.755488394s
+2022/06/01 21:42:35 --> Project 80 - chainer-chemistry                - Already cloned! time: 3m45.755555347s
+2022/06/01 21:42:35 --> Project 80 - chainer-chemistry                - Found a setup.py file! time: 3m45.755628884s
+2022/06/01 21:42:35 --> Project 80 - chainer-chemistry                - Starting analysis... time: 3m45.755649515s
+2022/06/01 21:42:35 --> Project 80 - chainer-chemistry                - Analysing Git stats & counting files... time: 3m45.75566044s
+2022/06/01 21:42:35 --> Project 80 - chainer-chemistry                - Found 306 .py files (30535 lines) and 2 .ipynb files (239 lines) time: 3m46.056770378s
+2022/06/01 21:42:35 --> Project 80 - chainer-chemistry                - Running pylint... time: 3m46.056809479s
+2022/06/01 21:42:35 --> Project 59 - Done! Results: time: 3m46.33389482s
+  Name: sparkit-learn
+  CommitHash: 0498502107c1f7dcf33cda0cdb6f5ba4b42524b7
+  Number of commits: 293
+  Number of contributors: 15
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 62 - 6419
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 4
+  Pylint messages per path: map[sparkit-learn/splearn/cross_validation.py:2 sparkit-learn/splearn/ensemble/__init__.py:1 sparkit-learn/splearn/ensemble/tests/__init__.py:1]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 2, map[hyperparameters-scikitlearn:2]
+    warning: 2, map[randomness-control-scikitlearn:2]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:42:35 --> Completed: 69/100 projects, 3 had errors time: 3m46.334152201s
+2022/06/01 21:42:35 --> Project 81 - simple-neural-network            - Already cloned! time: 3m46.334217921s
+2022/06/01 21:42:35 --> Project 81 - simple-neural-network            - Starting analysis... time: 3m46.334296852s
+2022/06/01 21:42:35 --> Project 81 - simple-neural-network            - Analysing Git stats & counting files... time: 3m46.334312445s
+2022/06/01 21:42:35 --> Project 81 - simple-neural-network            - Found 2 .py files (83 lines) and 0 .ipynb files (0 lines) time: 3m46.423908015s
+2022/06/01 21:42:35 --> Project 81 - simple-neural-network            - Running pylint... time: 3m46.423961363s
+2022/06/01 21:42:38 --> Project 81 - Done! Results: time: 3m49.087094142s
+  Name: simple-neural-network
+  CommitHash: 944e77e139d29e570d2cca71c82ffd2fd02e4989
+  Number of commits: 9
+  Number of contributors: 2
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 2 - 83
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:42:38 --> Completed: 70/100 projects, 3 had errors time: 3m49.087324185s
+2022/06/01 21:42:38 --> Project 82 - keras-applications               - Already cloned! time: 3m49.087390122s
+2022/06/01 21:42:38 --> Project 82 - keras-applications               - Found a setup.py file! time: 3m49.087452099s
+2022/06/01 21:42:38 --> Project 82 - keras-applications               - Starting analysis... time: 3m49.087466915s
+2022/06/01 21:42:38 --> Project 82 - keras-applications               - Analysing Git stats & counting files... time: 3m49.087477513s
+2022/06/01 21:42:38 --> Project 82 - keras-applications               - Found 21 .py files (6674 lines) and 0 .ipynb files (0 lines) time: 3m49.193190192s
+2022/06/01 21:42:38 --> Project 82 - keras-applications               - Running pylint... time: 3m49.193229692s
+2022/06/01 21:42:47 --> Project 82 - Done! Results: time: 3m58.161702468s
+  Name: keras-applications
+  CommitHash: 06fbeb0f16e1304f239b2296578d1c50b15a983a
+  Number of commits: 92
+  Number of contributors: 15
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 21 - 6674
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:42:47 --> Completed: 71/100 projects, 3 had errors time: 3m58.161896031s
+2022/06/01 21:42:47 --> Project 83 - kfac                             - Already cloned! time: 3m58.161982571s
+2022/06/01 21:42:47 --> Project 83 - kfac                             - Found a setup.py file! time: 3m58.162054866s
+2022/06/01 21:42:47 --> Project 83 - kfac                             - Starting analysis... time: 3m58.162071347s
+2022/06/01 21:42:47 --> Project 83 - kfac                             - Analysing Git stats & counting files... time: 3m58.162083013s
+2022/06/01 21:42:47 --> Project 83 - kfac                             - Found 52 .py files (23198 lines) and 2 .ipynb files (822 lines) time: 3m58.303449129s
+2022/06/01 21:42:47 --> Project 83 - kfac                             - Running pylint... time: 3m58.303489896s
+2022/06/01 21:42:54 --> Project 71 - Done! Results: time: 4m5.262766096s
+  Name: innvestigate
+  CommitHash: db8a58e6a6d54d1a25618fe653954166782e891c
+  Number of commits: 943
+  Number of contributors: 23
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 65 - 12212
+  Jupyter Notebook files and total lines of code: 8 - 1661
+  Total messages: 1
+  Pylint messages per path: map[innvestigate/src/innvestigate/tools/perturbate.py:1]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 1, map[inplace-numpy:1]
+    error: 0, map[]
+    fatal: 0, map[]
+2022/06/01 21:42:54 --> Completed: 72/100 projects, 3 had errors time: 4m5.263014402s
+2022/06/01 21:42:54 --> Project 84 - deepgaze                         - Already cloned! time: 4m5.263094113s
+2022/06/01 21:42:54 --> Project 84 - deepgaze                         - Found a setup.py file! time: 4m5.26315757s
+2022/06/01 21:42:54 --> Project 84 - deepgaze                         - Starting analysis... time: 4m5.263174872s
+2022/06/01 21:42:54 --> Project 84 - deepgaze                         - Analysing Git stats & counting files... time: 4m5.263185764s
+2022/06/01 21:42:54 --> Project 84 - deepgaze                         - Found 55 .py files (8194 lines) and 0 .ipynb files (0 lines) time: 4m5.43091616s
+2022/06/01 21:42:54 --> Project 84 - deepgaze                         - Running pylint... time: 4m5.430953568s
+2022/06/01 21:43:05 --> Project 73 - Done! Results: time: 4m16.280446005s
+  Name: ramp
+  CommitHash: 8618ce673e49b95f40c9659319c3cb72281dacac
+  Number of commits: 181
+  Number of contributors: 7
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 42 - 6055
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 7
+  Pylint messages per path: map[ramp/examples/classify_insults.py:2 ramp/ramp/store.py:1 ramp/ramp/tests/test_estimators.py:1 ramp/ramp/tests/test_features.py:1 ramp/ramp/tests/test_reporter.py:1 ramp/ramp/tests/test_shortcuts.py:1]
+  Number of Pylint messages: 
+    convention: 3, map[import-pandas:3]
+    refactor: 1, map[datatype-pandas:1]
+    warning: 3, map[randomness-control-numpy:3]
+    error: 0, map[]
+    fatal: 0, map[]
+2022/06/01 21:43:05 --> Completed: 73/100 projects, 3 had errors time: 4m16.280646783s
+2022/06/01 21:43:05 --> Project 85 - nupic.studio                     - Already cloned! time: 4m16.280728556s
+2022/06/01 21:43:05 --> Project 85 - nupic.studio                     - Found a setup.py file! time: 4m16.280788201s
+2022/06/01 21:43:05 --> Project 85 - nupic.studio                     - Starting analysis... time: 4m16.28082435s
+2022/06/01 21:43:05 --> Project 85 - nupic.studio                     - Analysing Git stats & counting files... time: 4m16.280837424s
+2022/06/01 21:43:05 --> Project 85 - nupic.studio                     - Found 33 .py files (7222 lines) and 0 .ipynb files (0 lines) time: 4m16.395241588s
+2022/06/01 21:43:05 --> Project 85 - nupic.studio                     - Running pylint... time: 4m16.395279561s
+2022/06/01 21:43:15 --> Project 78 - Done! Results: time: 4m26.342105227s
+  Name: fast-neural-style-tensorflow
+  CommitHash: eeaa47d359e5c589a4cc6ccbf8c0450ccc657d2d
+  Number of commits: 23
+  Number of contributors: 5
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 41 - 8110
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 20
+  Pylint messages per path: map[fast-neural-style-tensorflow/eval.py:1 fast-neural-style-tensorflow/export.py:1 fast-neural-style-tensorflow/nets/alexnet_test.py:1 fast-neural-style-tensorflow/nets/inception_resnet_v2_test.py:1 fast-neural-style-tensorflow/nets/inception_v1_test.py:2 fast-neural-style-tensorflow/nets/inception_v2_test.py:2 fast-neural-style-tensorflow/nets/inception_v3_test.py:2 fast-neural-style-tensorflow/nets/inception_v4_test.py:1 fast-neural-style-tensorflow/nets/nets_factory_test.py:1 fast-neural-style-tensorflow/nets/overfeat_test.py:1 fast-neural-style-tensorflow/nets/resnet_v1_test.py:2 fast-neural-style-tensorflow/nets/resnet_v2_test.py:2 fast-neural-style-tensorflow/nets/vgg_test.py:1 fast-neural-style-tensorflow/train.py:1 fast-neural-style-tensorflow/utils.py:1]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 20, map[randomness-control-numpy:5 randomness-control-tensorflow:15]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:43:15 --> Completed: 74/100 projects, 3 had errors time: 4m26.342358654s
+2022/06/01 21:43:15 --> Project 86 - lexpredict-lexnlp                - Already cloned! time: 4m26.342430818s
+2022/06/01 21:43:15 --> Project 86 - lexpredict-lexnlp                - Found a setup.py file! time: 4m26.342495968s
+2022/06/01 21:43:15 --> Project 86 - lexpredict-lexnlp                - Starting analysis... time: 4m26.342518618s
+2022/06/01 21:43:15 --> Project 86 - lexpredict-lexnlp                - Analysing Git stats & counting files... time: 4m26.342528266s
+2022/06/01 21:43:16 --> Project 86 - lexpredict-lexnlp                - Found 321 .py files (29395 lines) and 0 .ipynb files (0 lines) time: 4m26.585210129s
+2022/06/01 21:43:16 --> Project 86 - lexpredict-lexnlp                - Running pylint... time: 4m26.585254342s
+2022/06/01 21:43:18 --> Project 83 - Done! Results: time: 4m29.540970665s
+  Name: kfac
+  CommitHash: ddad6375bbdebfae809bccfd3a5c3db073128764
+  Number of commits: 127
+  Number of contributors: 9
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 52 - 23198
+  Jupyter Notebook files and total lines of code: 2 - 822
+  Total messages: 27
+  Pylint messages per path: map[kfac/kfac/examples/autoencoder_mnist.py:1 kfac/kfac/examples/autoencoder_mnist_tpu_estimator.py:1 kfac/kfac/examples/autoencoder_mnist_tpu_strategy.py:1 kfac/kfac/examples/classifier_mnist.py:1 kfac/kfac/examples/classifier_mnist_tpu_estimator.py:1 kfac/kfac/examples/rnn_mnist.py:1 kfac/kfac/python/kernel_tests/data_reader_test.py:1 kfac/kfac/python/kernel_tests/estimator_test.py:2 kfac/kfac/python/kernel_tests/graph_search_test.py:1 kfac/kfac/python/kernel_tests/keras_callbacks_test.py:2 kfac/kfac/python/kernel_tests/keras_optimizers_test.py:2 kfac/kfac/python/kernel_tests/keras_saving_utils_test.py:2 kfac/kfac/python/kernel_tests/keras_utils_test.py:2 kfac/kfac/python/kernel_tests/layer_collection_test.py:1 kfac/kfac/python/kernel_tests/loss_functions_test.py:2 kfac/kfac/python/kernel_tests/op_queue_test.py:1 kfac/kfac/python/kernel_tests/optimizer_test.py:2 kfac/kfac/python/kernel_tests/periodic_inv_cov_update_kfac_opt_test.py:1 kfac/kfac/python/kernel_tests/utils_test.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 27, map[randomness-control-numpy:8 randomness-control-tensorflow:19]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:43:18 --> Completed: 75/100 projects, 3 had errors time: 4m29.54119068s
+2022/06/01 21:43:18 --> Project 87 - tdigest                          - Already cloned! time: 4m29.541250716s
+2022/06/01 21:43:18 --> Project 87 - tdigest                          - requirements.txt file found in repo! time: 4m29.541431639s
+2022/06/01 21:43:18 --> Project 87 - tdigest                          - Starting analysis... time: 4m29.541461642s
+2022/06/01 21:43:18 --> Project 87 - tdigest                          - Analysing Git stats & counting files... time: 4m29.541472895s
+2022/06/01 21:43:19 --> Project 87 - tdigest                          - Found 6 .py files (695 lines) and 0 .ipynb files (0 lines) time: 4m29.65249823s
+2022/06/01 21:43:19 --> Project 87 - tdigest                          - Running pylint... time: 4m29.652545172s
+2022/06/01 21:43:25 --> Project 87 - Done! Results: time: 4m35.805224644s
+  Name: tdigest
+  CommitHash: bf90fb1b4ac74d558a5335d7f5e203f5d33cad2d
+  Number of commits: 119
+  Number of contributors: 15
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 6 - 695
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:43:25 --> Completed: 76/100 projects, 3 had errors time: 4m35.805457426s
+2022/06/01 21:43:25 --> Project 88 - RFCN-tensorflow                  - Already cloned! time: 4m35.805540519s
+2022/06/01 21:43:25 --> Project 88 - RFCN-tensorflow                  - Starting analysis... time: 4m35.805975518s
+2022/06/01 21:43:25 --> Project 88 - RFCN-tensorflow                  - Analysing Git stats & counting files... time: 4m35.805996307s
+2022/06/01 21:43:25 --> Project 88 - RFCN-tensorflow                  - Found 38 .py files (3876 lines) and 0 .ipynb files (0 lines) time: 4m35.9223306s
+2022/06/01 21:43:25 --> Project 88 - RFCN-tensorflow                  - Running pylint... time: 4m35.922375174s
+2022/06/01 21:43:26 --> Project 79 - Done! Results: time: 4m36.903827171s
+  Name: 3D-convolutional-speaker-recognition
+  CommitHash: 56896408cb802d5d9fb03e2eb407077ac660b6b1
+  Number of commits: 89
+  Number of contributors: 2
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 30 - 3034
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 15
+  Pylint messages per path: map[3D-convolutional-speaker-recognition/code/1-development/nets/nets_factory_test.py:1 3D-convolutional-speaker-recognition/code/1-development/train_softmax.py:2 3D-convolutional-speaker-recognition/code/2-enrollment/enrollment.py:2 3D-convolutional-speaker-recognition/code/2-enrollment/nets/nets_factory_test.py:1 3D-convolutional-speaker-recognition/code/3-evaluation/evaluation.py:2 3D-convolutional-speaker-recognition/code/3-evaluation/nets/nets_factory_test.py:1 3D-convolutional-speaker-recognition/code/4-ROC_PR_curve/PlotHIST.py:2 3D-convolutional-speaker-recognition/code/4-ROC_PR_curve/PlotPR.py:2 3D-convolutional-speaker-recognition/code/4-ROC_PR_curve/PlotROC.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 15, map[randomness-control-numpy:6 randomness-control-tensorflow:9]
+    error: 0, map[]
+    fatal: 0, map[]
+2022/06/01 21:43:26 --> Completed: 77/100 projects, 3 had errors time: 4m36.905223952s
+2022/06/01 21:43:26 --> Project 89 - NALU                             - Cloning... time: 4m36.905292711s
+2022/06/01 21:43:27 --> Project 89 - NALU                             - Setup Error: failed to clone Git repo: exit code 128 - Cloning into 'projects/NALU'...
+remote: Repository not found.
+fatal: repository 'https://github.com/kgrm/NALU/' not found
+
+2022/06/01 21:43:27 --> Completed: 78/100 projects, 4 had errors time: 4m38.472638256s
+2022/06/01 21:43:27 --> Project 90 - uTensor                          - Already cloned! time: 4m38.472704609s
+2022/06/01 21:43:27 --> Project 90 - uTensor                          - Starting analysis... time: 4m38.473101044s
+2022/06/01 21:43:27 --> Project 90 - uTensor                          - Analysing Git stats & counting files... time: 4m38.473119495s
+2022/06/01 21:43:28 --> Project 90 - uTensor                          - Found 21 .py files (2382 lines) and 0 .ipynb files (0 lines) time: 4m38.643270668s
+2022/06/01 21:43:28 --> Project 90 - uTensor                          - Running pylint... time: 4m38.643312536s
+2022/06/01 21:43:32 --> Project 75 - Done! Results: time: 4m43.090964467s
+  Name: zhusuan
+  CommitHash: 4386b2a12ae4f4ed8e694e504e51d7dcdfd6f22a
+  Number of commits: 439
+  Number of contributors: 29
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 92 - 18359
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 76
+  Pylint messages per path: map[zhusuan/examples/bayesian_neural_nets/bnn_sgmcmc.py:3 zhusuan/examples/bayesian_neural_nets/bnn_vi.py:2 zhusuan/examples/bayesian_neural_nets/variational_dropout.py:2 zhusuan/examples/gaussian_process/svgp.py:3 zhusuan/examples/generative_adversarial_nets/dcgan.py:1 zhusuan/examples/generative_adversarial_nets/wasserstein_gan.py:1 zhusuan/examples/normalizing_flows/vae_nf.py:1 zhusuan/examples/probabilistic_matrix_factorization/pmf_hmc.py:1 zhusuan/examples/semi_supervised_vae/vae_ssl.py:2 zhusuan/examples/semi_supervised_vae/vae_ssl_adaptive_is.py:1 zhusuan/examples/sigmoid_belief_nets/sbn_adaptive_is.py:1 zhusuan/examples/sigmoid_belief_nets/sbn_vimco.py:1 zhusuan/examples/topic_models/lntm_mcem.py:3 zhusuan/examples/toy_examples/gaussian.py:2 zhusuan/examples/toy_examples/mixture_sgnht.py:3 zhusuan/examples/toy_examples/toy2d_intractable.py:2 zhusuan/examples/variational_autoencoders/bernoulli_latent_vae.py:2 zhusuan/examples/variational_autoencoders/iwae.py:1 zhusuan/examples/variational_autoencoders/vae.py:2 zhusuan/examples/variational_autoencoders/vae_conv.py:1 zhusuan/tests/framework/test_utils.py:1 zhusuan/tests/test_transform.py:2 zhusuan/tests/variational/utils.py:1 zhusuan/zhusuan/distributions/multivariate.py:13 zhusuan/zhusuan/distributions/univariate.py:17 zhusuan/zhusuan/legacy/distributions/special.py:1 zhusuan/zhusuan/transform.py:4 zhusuan/zhusuan/utils.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 76, map[missing-mask-tensorflow:48 randomness-control-numpy:8 randomness-control-tensorflow:20]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:43:32 --> Completed: 79/100 projects, 4 had errors time: 4m43.09125375s
+2022/06/01 21:43:32 --> Project 91 - pyspark-cassandra                - Already cloned! time: 4m43.091318814s
+2022/06/01 21:43:32 --> Project 91 - pyspark-cassandra                - Starting analysis... time: 4m43.091402622s
+2022/06/01 21:43:32 --> Project 91 - pyspark-cassandra                - Analysing Git stats & counting files... time: 4m43.091416749s
+2022/06/01 21:43:32 --> Project 91 - pyspark-cassandra                - Found 10 .py files (1798 lines) and 0 .ipynb files (0 lines) time: 4m43.226840016s
+2022/06/01 21:43:32 --> Project 91 - pyspark-cassandra                - Running pylint... time: 4m43.226882485s
+2022/06/01 21:43:54 --> Project 88 - Done! Results: time: 5m4.79820126s
+  Name: RFCN-tensorflow
+  CommitHash: 948f5fc79cfcb542ada593bb2ea4b86bb08d5e5c
+  Number of commits: 29
+  Number of contributors: 2
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 38 - 3876
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 2
+  Pylint messages per path: map[RFCN-tensorflow/BoxEngine/Loss.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 2, map[missing-mask-tensorflow:2]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:43:54 --> Completed: 80/100 projects, 4 had errors time: 5m4.798415497s
+2022/06/01 21:43:54 --> Project 92 - nn-iterated-projections          - Already cloned! time: 5m4.798471859s
+2022/06/01 21:43:54 --> Project 92 - nn-iterated-projections          - Starting analysis... time: 5m4.798536027s
+2022/06/01 21:43:54 --> Project 92 - nn-iterated-projections          - Analysing Git stats & counting files... time: 5m4.798548829s
+2022/06/01 21:43:54 --> Project 91 - Done! Results: time: 5m4.892894493s
+  Name: pyspark-cassandra
+  CommitHash: 99ad13d1e41afa6caa34bd64acd23496ae2dde44
+  Number of commits: 261
+  Number of contributors: 8
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 10 - 1798
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:43:54 --> Completed: 81/100 projects, 4 had errors time: 5m4.893078279s
+2022/06/01 21:43:54 --> Project 93 - datastories-semeval2017-task4    - Already cloned! time: 5m4.893134589s
+2022/06/01 21:43:54 --> Project 93 - datastories-semeval2017-task4    - requirements.txt file found in repo! time: 5m4.893160279s
+2022/06/01 21:43:54 --> Project 93 - datastories-semeval2017-task4    - Starting analysis... time: 5m4.893169791s
+2022/06/01 21:43:54 --> Project 93 - datastories-semeval2017-task4    - Analysing Git stats & counting files... time: 5m4.893177589s
+2022/06/01 21:43:54 --> Project 92 - nn-iterated-projections          - Found 2 .py files (1052 lines) and 0 .ipynb files (0 lines) time: 5m4.971198371s
+2022/06/01 21:43:54 --> Project 92 - nn-iterated-projections          - Running pylint... time: 5m4.971241887s
+2022/06/01 21:43:54 --> Project 93 - datastories-semeval2017-task4    - Found 18 .py files (1492 lines) and 0 .ipynb files (0 lines) time: 5m5.02547595s
+2022/06/01 21:43:54 --> Project 93 - datastories-semeval2017-task4    - Running pylint... time: 5m5.025516046s
+2022/06/01 21:43:55 --> Project 85 - Done! Results: time: 5m6.508435425s
+  Name: nupic.studio
+  CommitHash: 8ac65e6784038995b6535be510aabd5406cc8aa8
+  Number of commits: 72
+  Number of contributors: 6
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 33 - 7222
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 2
+  Pylint messages per path: map[nupic.studio/nupic_studio/htm/node_region.py:1 nupic.studio/nupic_studio/htm/node_sensor.py:1]
+  Number of Pylint messages: 
+    convention: 2, map[import-numpy:2]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:43:55 --> Completed: 82/100 projects, 4 had errors time: 5m6.50862212s
+2022/06/01 21:43:55 --> Project 94 - deeplearning4nlp-tutorial        - Already cloned! time: 5m6.508684912s
+2022/06/01 21:43:55 --> Project 94 - deeplearning4nlp-tutorial        - Starting analysis... time: 5m6.508745835s
+2022/06/01 21:43:55 --> Project 94 - deeplearning4nlp-tutorial        - Analysing Git stats & counting files... time: 5m6.508758758s
+2022/06/01 21:43:56 --> Project 94 - deeplearning4nlp-tutorial        - Found 56 .py files (8230 lines) and 16 .ipynb files (1658 lines) time: 5m6.666983545s
+2022/06/01 21:43:56 --> Project 94 - deeplearning4nlp-tutorial        - Running pylint... time: 5m6.667023868s
+2022/06/01 21:43:57 --> Project 90 - Done! Results: time: 5m7.989388028s
+  Name: uTensor
+  CommitHash: d486d0be89ee98762d4e84b7614a30902413fdb5
+  Number of commits: 1026
+  Number of contributors: 19
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 21 - 2382
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 14
+  Pylint messages per path: map[uTensor/python/test_scripts/gen_arg_min_max.py:2 uTensor/python/test_scripts/gen_fc.py:2 uTensor/python/test_scripts/gen_qconv2d.py:2 uTensor/python/test_scripts/gen_qlogistic.py:2 uTensor/python/test_scripts/gen_qsoftmax.py:2 uTensor/python/test_scripts/gen_qtanh.py:2 uTensor/python/test_scripts/gen_reshape.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 14, map[randomness-control-numpy:7 randomness-control-tensorflow:7]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:43:57 --> Completed: 83/100 projects, 4 had errors time: 5m7.989602186s
+2022/06/01 21:43:57 --> Project 95 - painters                         - Already cloned! time: 5m7.989662341s
+2022/06/01 21:43:57 --> Project 95 - painters                         - requirements.txt file found in repo! time: 5m7.989687888s
+2022/06/01 21:43:57 --> Project 95 - painters                         - Starting analysis... time: 5m7.989707443s
+2022/06/01 21:43:57 --> Project 95 - painters                         - Analysing Git stats & counting files... time: 5m7.98971693s
+2022/06/01 21:43:57 --> Project 95 - painters                         - Found 8 .py files (1030 lines) and 0 .ipynb files (0 lines) time: 5m8.089264579s
+2022/06/01 21:43:57 --> Project 95 - painters                         - Running pylint... time: 5m8.089315844s
+2022/06/01 21:43:58 --> Project 92 - Done! Results: time: 5m8.796891934s
+  Name: nn-iterated-projections
+  CommitHash: 5049fd1bd29ba2dbc6b79d581011df2fae8ed7f8
+  Number of commits: 30
+  Number of contributors: 2
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 2 - 1052
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 0
+  Pylint messages per path: map[]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:43:58 --> Completed: 84/100 projects, 4 had errors time: 5m8.797073965s
+2022/06/01 21:43:58 --> Project 96 - Attention-Gated-Networks         - Already cloned! time: 5m8.797132491s
+2022/06/01 21:43:58 --> Project 96 - Attention-Gated-Networks         - Found a setup.py file! time: 5m8.797196536s
+2022/06/01 21:43:58 --> Project 96 - Attention-Gated-Networks         - Starting analysis... time: 5m8.797211494s
+2022/06/01 21:43:58 --> Project 96 - Attention-Gated-Networks         - Analysing Git stats & counting files... time: 5m8.797221681s
+2022/06/01 21:43:58 --> Project 96 - Attention-Gated-Networks         - Found 49 .py files (6441 lines) and 0 .ipynb files (0 lines) time: 5m8.927407842s
+2022/06/01 21:43:58 --> Project 96 - Attention-Gated-Networks         - Running pylint... time: 5m8.927445488s
+2022/06/01 21:44:12 --> Project 84 - Done! Results: time: 5m23.055238481s
+  Name: deepgaze
+  CommitHash: fddc129da9692d7a2002d0df5baf142eae3b722b
+  Number of commits: 232
+  Number of contributors: 12
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 55 - 8194
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 19
+  Pylint messages per path: map[deepgaze/deepgaze/face_detection.py:1 deepgaze/deepgaze/face_landmark_detection.py:1 deepgaze/deepgaze/haar_cascade.py:1 deepgaze/examples/ex_cnn_cascade_training_face_detection/12net_calibration_training.py:2 deepgaze/examples/ex_cnn_cascade_training_face_detection/12net_detection_training.py:2 deepgaze/examples/ex_cnn_cascade_training_face_detection/24net_calibration_training.py:2 deepgaze/examples/ex_cnn_cascade_training_face_detection/24net_detection_training.py:2 deepgaze/examples/ex_cnn_cascade_training_face_detection/48net_calibration_training.py:2 deepgaze/examples/ex_cnn_cascade_training_face_detection/48net_detection_training.py:2 deepgaze/examples/ex_dlib_pnp_head_pose_estimation_video.py:1 deepgaze/examples/ex_dnn_head_pose_estimation_training/ex_aflw_parser.py:1 deepgaze/examples/ex_pnp_head_pose_estimation_video.py:1 deepgaze/examples/ex_pnp_head_pose_estimation_webcam.py:1]
+  Number of Pylint messages: 
+    convention: 7, map[import-numpy:7]
+    refactor: 0, map[]
+    warning: 12, map[randomness-control-numpy:6 randomness-control-tensorflow:6]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:44:12 --> Completed: 85/100 projects, 4 had errors time: 5m23.055481316s
+2022/06/01 21:44:12 --> Project 97 - easy-tf-log                      - Already cloned! time: 5m23.055546929s
+2022/06/01 21:44:12 --> Project 97 - easy-tf-log                      - Found a setup.py file! time: 5m23.055617629s
+2022/06/01 21:44:12 --> Project 97 - easy-tf-log                      - Starting analysis... time: 5m23.055651244s
+2022/06/01 21:44:12 --> Project 97 - easy-tf-log                      - Analysing Git stats & counting files... time: 5m23.055663564s
+2022/06/01 21:44:12 --> Project 97 - easy-tf-log                      - Found 4 .py files (366 lines) and 0 .ipynb files (0 lines) time: 5m23.169571313s
+2022/06/01 21:44:12 --> Project 97 - easy-tf-log                      - Running pylint... time: 5m23.169625124s
+2022/06/01 21:44:15 --> Project 93 - Done! Results: time: 5m26.504078887s
+  Name: datastories-semeval2017-task4
+  CommitHash: faeee5fd1c2cf38e32179a4676dff53ae01adfa8
+  Number of commits: 18
+  Number of contributors: 2
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 18 - 1492
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 12
+  Pylint messages per path: map[datastories-semeval2017-task4/embeddings/WordVectorsManager.py:1 datastories-semeval2017-task4/models/baseline_nbow.py:1 datastories-semeval2017-task4/models/nn_task_message.py:1 datastories-semeval2017-task4/models/nn_task_target.py:1 datastories-semeval2017-task4/modules/CustomPreProcessor.py:1 datastories-semeval2017-task4/modules/EmbeddingsExtractor.py:1 datastories-semeval2017-task4/modules/NBOWVectorizer.py:1 datastories-semeval2017-task4/utilities/data_loader.py:1 datastories-semeval2017-task4/utilities/generic.py:1 datastories-semeval2017-task4/utilities/sklearn.py:3]
+  Number of Pylint messages: 
+    convention: 10, map[import-numpy:10]
+    refactor: 2, map[hyperparameters-scikitlearn:2]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+2022/06/01 21:44:15 --> Completed: 86/100 projects, 4 had errors time: 5m26.504278276s
+2022/06/01 21:44:15 --> Project 98 - deep-learning-from-scratch-2     - Already cloned! time: 5m26.50435047s
+2022/06/01 21:44:15 --> Project 98 - deep-learning-from-scratch-2     - Starting analysis... time: 5m26.504416218s
+2022/06/01 21:44:15 --> Project 98 - deep-learning-from-scratch-2     - Analysing Git stats & counting files... time: 5m26.504427642s
+2022/06/01 21:44:16 --> Project 98 - deep-learning-from-scratch-2     - Found 55 .py files (3703 lines) and 0 .ipynb files (0 lines) time: 5m26.623767306s
+2022/06/01 21:44:16 --> Project 98 - deep-learning-from-scratch-2     - Running pylint... time: 5m26.623809927s
+2022/06/01 21:44:17 --> Project 95 - Done! Results: time: 5m28.455315572s
+  Name: painters
+  CommitHash: b8d2b3518c16a4d3e6fb3cdd825566f6eeaf5fda
+  Number of commits: 17
+  Number of contributors: 4
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 8 - 1030
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 2
+  Pylint messages per path: map[painters/painters/data_dirs_organizer.py:1 painters/painters/validation.py:1]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 2, map[randomness-control-numpy:2]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:44:17 --> Completed: 87/100 projects, 4 had errors time: 5m28.455450388s
+2022/06/01 21:44:17 --> Project 99 - moonlight                        - Already cloned! time: 5m28.455509341s
+2022/06/01 21:44:17 --> Project 99 - moonlight                        - requirements.txt file found in repo! time: 5m28.455543577s
+2022/06/01 21:44:17 --> Project 99 - moonlight                        - Starting analysis... time: 5m28.455556598s
+2022/06/01 21:44:17 --> Project 99 - moonlight                        - Analysing Git stats & counting files... time: 5m28.455567559s
+2022/06/01 21:44:18 --> Project 99 - moonlight                        - Found 113 .py files (12702 lines) and 0 .ipynb files (0 lines) time: 5m28.617451161s
+2022/06/01 21:44:18 --> Project 99 - moonlight                        - Running pylint... time: 5m28.617501202s
+2022/06/01 21:44:26 --> Project 97 - Done! Results: time: 5m36.835986052s
+  Name: easy-tf-log
+  CommitHash: efee1d42a1ec56dd9f7abe2e5025bb0a499ffb96
+  Number of commits: 50
+  Number of contributors: 3
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 4 - 366
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 2
+  Pylint messages per path: map[easy-tf-log/tests.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 2, map[randomness-control-numpy:1 randomness-control-tensorflow:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:44:26 --> Completed: 88/100 projects, 4 had errors time: 5m36.836278175s
+2022/06/01 21:44:26 --> Project 100 - CRNN_Tensorflow                  - Already cloned! time: 5m36.836335337s
+2022/06/01 21:44:26 --> Project 100 - CRNN_Tensorflow                  - requirements.txt file found in repo! time: 5m36.836373238s
+2022/06/01 21:44:26 --> Project 100 - CRNN_Tensorflow                  - Starting analysis... time: 5m36.836397203s
+2022/06/01 21:44:26 --> Project 100 - CRNN_Tensorflow                  - Analysing Git stats & counting files... time: 5m36.836408325s
+2022/06/01 21:44:26 --> Project 100 - CRNN_Tensorflow                  - Found 22 .py files (3811 lines) and 0 .ipynb files (0 lines) time: 5m36.962447451s
+2022/06/01 21:44:26 --> Project 100 - CRNN_Tensorflow                  - Running pylint... time: 5m36.962488995s
+2022/06/01 21:44:38 --> Project 94 - Done! Results: time: 5m49.125652971s
+  Name: deeplearning4nlp-tutorial
+  CommitHash: 2a36ecc39f13b683752483546441468fd7d734b3
+  Number of commits: 157
+  Number of contributors: 5
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 56 - 8230
+  Jupyter Notebook files and total lines of code: 16 - 1658
+  Total messages: 1
+  Pylint messages per path: map[deeplearning4nlp-tutorial/2016-11_Seminar/Session 2 - Sentence CNN/code/Kim_CNN/conv_net_classes.py:1]
+  Number of Pylint messages: 
+    convention: 1, map[import-numpy:1]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:44:38 --> Completed: 89/100 projects, 4 had errors time: 5m49.125879476s
+2022/06/01 21:44:39 --> Project 100 - Done! Results: time: 5m50.417372989s
+  Name: CRNN_Tensorflow
+  CommitHash: a25e365cb49bf9de7ab83bc38c5b2acc0ea07474
+  Number of commits: 276
+  Number of contributors: 12
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 22 - 3811
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 10
+  Pylint messages per path: map[CRNN_Tensorflow/tfserve/export_saved_model.py:2 CRNN_Tensorflow/tools/evaluate_shadownet.py:2 CRNN_Tensorflow/tools/recongnize_chinese_pdf.py:2 CRNN_Tensorflow/tools/test_shadownet.py:2 CRNN_Tensorflow/tools/train_shadownet.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 10, map[randomness-control-numpy:5 randomness-control-tensorflow:5]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:44:39 --> Completed: 90/100 projects, 4 had errors time: 5m50.417517357s
+2022/06/01 21:45:28 --> Project 98 - Done! Results: time: 6m38.889243128s
+  Name: deep-learning-from-scratch-2
+  CommitHash: 484c6e0b45435b1240d3c51f20b6e8357e096fdd
+  Number of commits: 71
+  Number of contributors: 7
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 55 - 3703
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 3
+  Pylint messages per path: map[deep-learning-from-scratch-2/common/trainer.py:1 deep-learning-from-scratch-2/common/util.py:1 deep-learning-from-scratch-2/dataset/sequence.py:1]
+  Number of Pylint messages: 
+    convention: 3, map[import-numpy:3]
+    refactor: 0, map[]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:45:28 --> Completed: 91/100 projects, 4 had errors time: 6m38.889471549s
+2022/06/01 21:45:38 --> Project 99 - Done! Results: time: 6m49.274107835s
+  Name: moonlight
+  CommitHash: b34e8a0106a7d877e4831555be8972a5254f5d96
+  Number of commits: 139
+  Number of contributors: 9
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 113 - 12702
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 48
+  Pylint messages per path: map[moonlight/moonlight/evaluation/evaluator.py:1 moonlight/moonlight/evaluation/evaluator_endtoend_test.py:1 moonlight/moonlight/glyphs/convolutional_test.py:2 moonlight/moonlight/glyphs/knn_test.py:1 moonlight/moonlight/glyphs/neural_test.py:2 moonlight/moonlight/glyphs/saved_classifier_test.py:2 moonlight/moonlight/models/base/batches_test.py:2 moonlight/moonlight/models/base/glyph_patches_test.py:2 moonlight/moonlight/models/base/hyperparameters_test.py:2 moonlight/moonlight/models/base/label_weights_test.py:1 moonlight/moonlight/models/glyphs_dnn/train.py:1 moonlight/moonlight/omr.py:1 moonlight/moonlight/staves/detectors_test.py:2 moonlight/moonlight/staves/removal_test.py:2 moonlight/moonlight/staves/staffline_distance_test.py:1 moonlight/moonlight/staves/staffline_extractor_test.py:2 moonlight/moonlight/structure/components_test.py:1 moonlight/moonlight/structure/structure_test.py:2 moonlight/moonlight/structure/verticals_test.py:2 moonlight/moonlight/tools/export_kmeans_centroids.py:1 moonlight/moonlight/tools/export_kmeans_centroids_test.py:1 moonlight/moonlight/training/clustering/kmeans_labeler.py:2 moonlight/moonlight/training/clustering/staffline_patches_dofn_test.py:1 moonlight/moonlight/training/clustering/staffline_patches_kmeans_pipeline.py:1 moonlight/moonlight/training/generation/generation_test.py:1 moonlight/moonlight/training/generation/vexflow_generator_pipeline.py:1 moonlight/moonlight/util/functional_ops_test.py:1 moonlight/moonlight/util/patches_test.py:1 moonlight/moonlight/util/run_length_test.py:1 moonlight/moonlight/util/segments_test.py:2 moonlight/moonlight/vision/hough_test.py:2 moonlight/moonlight/vision/images_test.py:1 moonlight/moonlight/vision/morphology_test.py:2]
+  Number of Pylint messages: 
+    convention: 0, map[]
+    refactor: 0, map[]
+    warning: 48, map[randomness-control-numpy:15 randomness-control-tensorflow:33]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:45:38 --> Completed: 92/100 projects, 4 had errors time: 6m49.274400245s
+2022/06/01 21:46:22 --> Project 49 - Done! Results: time: 7m33.266773826s
+  Name: Deep-Learning-21-Examples
+  CommitHash: 15c2d9edccad090cd67b033f24a43c544e5cba3e
+  Number of commits: 14
+  Number of contributors: 2
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 515 - 98138
+  Jupyter Notebook files and total lines of code: 5 - 1301
+  Total messages: 279
+  Pylint messages per path: map[Deep-Learning-21-Examples/chapter_1/convolutional.py:1 Deep-Learning-21-Examples/chapter_1/softmax_regression.py:1 Deep-Learning-21-Examples/chapter_10/delete_broken_img.py:1 Deep-Learning-21-Examples/chapter_10/pix2pix-tensorflow/pix2pix.py:3 Deep-Learning-21-Examples/chapter_11/build_data.py:1 Deep-Learning-21-Examples/chapter_11/export_graph.py:1 Deep-Learning-21-Examples/chapter_11/inference.py:1 Deep-Learning-21-Examples/chapter_11/ops.py:1 Deep-Learning-21-Examples/chapter_11/reader.py:1 Deep-Learning-21-Examples/chapter_11/train.py:1 Deep-Learning-21-Examples/chapter_12/sample.py:1 Deep-Learning-21-Examples/chapter_12/train.py:1 Deep-Learning-21-Examples/chapter_15/train_array.py:2 Deep-Learning-21-Examples/chapter_15/train_csv.py:2 Deep-Learning-21-Examples/chapter_15/train_lstm.py:2 Deep-Learning-21-Examples/chapter_15/train_lstm_multivariate.py:3 Deep-Learning-21-Examples/chapter_16/nmt/inference_test.py:2 Deep-Learning-21-Examples/chapter_16/nmt/model_test.py:2 Deep-Learning-21-Examples/chapter_16/nmt/nmt.py:2 Deep-Learning-21-Examples/chapter_16/nmt/utils/evaluation_utils_test.py:1 Deep-Learning-21-Examples/chapter_16/nmt/utils/iterator_utils_test.py:1 Deep-Learning-21-Examples/chapter_16/nmt/utils/misc_utils_test.py:1 Deep-Learning-21-Examples/chapter_16/nmt/utils/vocab_utils_test.py:1 Deep-Learning-21-Examples/chapter_17/im2txt/data/build_mscoco_data.py:2 Deep-Learning-21-Examples/chapter_17/im2txt/inference_utils/caption_generator_test.py:2 Deep-Learning-21-Examples/chapter_17/im2txt/ops/image_embedding_test.py:1 Deep-Learning-21-Examples/chapter_17/im2txt/run_inference.py:1 Deep-Learning-21-Examples/chapter_17/im2txt/show_and_tell_model_test.py:2 Deep-Learning-21-Examples/chapter_17/im2txt/train.py:1 Deep-Learning-21-Examples/chapter_2/cifar10_eval.py:2 Deep-Learning-21-Examples/chapter_2/cifar10_extract.py:1 Deep-Learning-21-Examples/chapter_2/cifar10_input_test.py:1 Deep-Learning-21-Examples/chapter_2/cifar10_multi_gpu_train.py:2 Deep-Learning-21-Examples/chapter_2/cifar10_train.py:1 Deep-Learning-21-Examples/chapter_20/main.py:1 Deep-Learning-21-Examples/chapter_21/cartpole_pg.py:1 Deep-Learning-21-Examples/chapter_3/classify_image_inception_v3.py:2 Deep-Learning-21-Examples/chapter_3/slim/deployment/model_deploy_test.py:2 Deep-Learning-21-Examples/chapter_3/slim/download_and_convert_data.py:1 Deep-Learning-21-Examples/chapter_3/slim/eval_image_classifier.py:1 Deep-Learning-21-Examples/chapter_3/slim/export_inference_graph.py:1 Deep-Learning-21-Examples/chapter_3/slim/export_inference_graph_test.py:1 Deep-Learning-21-Examples/chapter_3/slim/nets/alexnet_test.py:1 Deep-Learning-21-Examples/chapter_3/slim/nets/inception_resnet_v2_test.py:1 Deep-Learning-21-Examples/chapter_3/slim/nets/inception_v1_test.py:2 Deep-Learning-21-Examples/chapter_3/slim/nets/inception_v2_test.py:2 Deep-Learning-21-Examples/chapter_3/slim/nets/inception_v3_test.py:2 Deep-Learning-21-Examples/chapter_3/slim/nets/inception_v4_test.py:1 Deep-Learning-21-Examples/chapter_3/slim/nets/nets_factory_test.py:1 Deep-Learning-21-Examples/chapter_3/slim/nets/overfeat_test.py:1 Deep-Learning-21-Examples/chapter_3/slim/nets/resnet_v1_test.py:2 Deep-Learning-21-Examples/chapter_3/slim/nets/resnet_v2_test.py:2 Deep-Learning-21-Examples/chapter_3/slim/nets/vgg_test.py:1 Deep-Learning-21-Examples/chapter_3/slim/train_image_classifier.py:1 Deep-Learning-21-Examples/chapter_4/gen_deepdream.py:2 Deep-Learning-21-Examples/chapter_4/gen_lapnorm.py:2 Deep-Learning-21-Examples/chapter_4/gen_multiscale.py:2 Deep-Learning-21-Examples/chapter_5/research/object_detection/anchor_generators/grid_anchor_generator_test.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/anchor_generators/multiple_grid_anchor_generator_test.py:2 Deep-Learning-21-Examples/chapter_5/research/object_detection/box_coders/faster_rcnn_box_coder.py:2 Deep-Learning-21-Examples/chapter_5/research/object_detection/box_coders/faster_rcnn_box_coder_test.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/box_coders/keypoint_box_coder.py:2 Deep-Learning-21-Examples/chapter_5/research/object_detection/box_coders/keypoint_box_coder_test.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/box_coders/mean_stddev_box_coder_test.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/box_coders/square_box_coder.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/box_coders/square_box_coder_test.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/builders/anchor_generator_builder_test.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/builders/box_coder_builder_test.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/builders/box_predictor_builder_test.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/builders/hyperparams_builder_test.py:2 Deep-Learning-21-Examples/chapter_5/research/object_detection/builders/image_resizer_builder_test.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/builders/input_reader_builder_test.py:2 Deep-Learning-21-Examples/chapter_5/research/object_detection/builders/losses_builder_test.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/builders/matcher_builder_test.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/builders/model_builder_test.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/builders/optimizer_builder_test.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/builders/post_processing_builder_test.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/builders/preprocessor_builder_test.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/builders/region_similarity_calculator_builder_test.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/core/balanced_positive_negative_sampler_test.py:2 Deep-Learning-21-Examples/chapter_5/research/object_detection/core/batcher_test.py:2 Deep-Learning-21-Examples/chapter_5/research/object_detection/core/box_coder_test.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/core/box_list_ops_test.py:2 Deep-Learning-21-Examples/chapter_5/research/object_detection/core/box_list_test.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/core/box_predictor_test.py:2 Deep-Learning-21-Examples/chapter_5/research/object_detection/core/keypoint_ops_test.py:2 Deep-Learning-21-Examples/chapter_5/research/object_detection/core/losses_test.py:2 Deep-Learning-21-Examples/chapter_5/research/object_detection/core/matcher_test.py:2 Deep-Learning-21-Examples/chapter_5/research/object_detection/core/minibatch_sampler_test.py:2 Deep-Learning-21-Examples/chapter_5/research/object_detection/core/post_processing_test.py:2 Deep-Learning-21-Examples/chapter_5/research/object_detection/core/prefetcher_test.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/core/preprocessor_test.py:2 Deep-Learning-21-Examples/chapter_5/research/object_detection/core/region_similarity_calculator_test.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/core/target_assigner_test.py:2 Deep-Learning-21-Examples/chapter_5/research/object_detection/create_pascal_tf_record.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/create_pascal_tf_record_test.py:2 Deep-Learning-21-Examples/chapter_5/research/object_detection/create_pet_tf_record.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/data_decoders/tf_example_decoder_test.py:2 Deep-Learning-21-Examples/chapter_5/research/object_detection/eval.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/export_inference_graph.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/exporter_test.py:2 Deep-Learning-21-Examples/chapter_5/research/object_detection/matchers/argmax_matcher_test.py:2 Deep-Learning-21-Examples/chapter_5/research/object_detection/matchers/bipartite_matcher_test.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/meta_architectures/faster_rcnn_meta_arch_test.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/meta_architectures/faster_rcnn_meta_arch_test_lib.py:2 Deep-Learning-21-Examples/chapter_5/research/object_detection/meta_architectures/rfcn_meta_arch_test.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/meta_architectures/ssd_meta_arch_test.py:2 Deep-Learning-21-Examples/chapter_5/research/object_detection/models/faster_rcnn_inception_resnet_v2_feature_extractor_test.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/models/faster_rcnn_resnet_v1_feature_extractor_test.py:2 Deep-Learning-21-Examples/chapter_5/research/object_detection/models/feature_map_generators_test.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/models/ssd_inception_v2_feature_extractor_test.py:2 Deep-Learning-21-Examples/chapter_5/research/object_detection/models/ssd_mobilenet_v1_feature_extractor_test.py:2 Deep-Learning-21-Examples/chapter_5/research/object_detection/train.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/trainer_test.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/utils/category_util_test.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/utils/dataset_util_test.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/utils/label_map_util_test.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/utils/learning_schedules_test.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/utils/metrics_test.py:2 Deep-Learning-21-Examples/chapter_5/research/object_detection/utils/np_box_list_ops_test.py:2 Deep-Learning-21-Examples/chapter_5/research/object_detection/utils/np_box_list_test.py:2 Deep-Learning-21-Examples/chapter_5/research/object_detection/utils/np_box_ops_test.py:2 Deep-Learning-21-Examples/chapter_5/research/object_detection/utils/object_detection_evaluation_test.py:2 Deep-Learning-21-Examples/chapter_5/research/object_detection/utils/ops_test.py:2 Deep-Learning-21-Examples/chapter_5/research/object_detection/utils/per_image_evaluation_test.py:2 Deep-Learning-21-Examples/chapter_5/research/object_detection/utils/shape_utils_test.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/utils/static_shape_test.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/utils/test_utils_test.py:2 Deep-Learning-21-Examples/chapter_5/research/object_detection/utils/variables_helper_test.py:1 Deep-Learning-21-Examples/chapter_5/research/object_detection/utils/visualization_utils_test.py:2 Deep-Learning-21-Examples/chapter_5/research/slim/datasets/build_imagenet_data.py:2 Deep-Learning-21-Examples/chapter_5/research/slim/deployment/model_deploy_test.py:2 Deep-Learning-21-Examples/chapter_5/research/slim/download_and_convert_data.py:1 Deep-Learning-21-Examples/chapter_5/research/slim/eval_image_classifier.py:1 Deep-Learning-21-Examples/chapter_5/research/slim/export_inference_graph.py:1 Deep-Learning-21-Examples/chapter_5/research/slim/export_inference_graph_test.py:1 Deep-Learning-21-Examples/chapter_5/research/slim/nets/alexnet_test.py:1 Deep-Learning-21-Examples/chapter_5/research/slim/nets/inception_resnet_v2_test.py:1 Deep-Learning-21-Examples/chapter_5/research/slim/nets/inception_v1_test.py:2 Deep-Learning-21-Examples/chapter_5/research/slim/nets/inception_v2_test.py:2 Deep-Learning-21-Examples/chapter_5/research/slim/nets/inception_v3_test.py:2 Deep-Learning-21-Examples/chapter_5/research/slim/nets/inception_v4_test.py:1 Deep-Learning-21-Examples/chapter_5/research/slim/nets/nets_factory_test.py:1 Deep-Learning-21-Examples/chapter_5/research/slim/nets/overfeat_test.py:1 Deep-Learning-21-Examples/chapter_5/research/slim/nets/resnet_v1_test.py:2 Deep-Learning-21-Examples/chapter_5/research/slim/nets/resnet_v2_test.py:2 Deep-Learning-21-Examples/chapter_5/research/slim/nets/vgg_test.py:1 Deep-Learning-21-Examples/chapter_5/research/slim/train_image_classifier.py:1 Deep-Learning-21-Examples/chapter_6/src/align/align_dataset_mtcnn.py:2 Deep-Learning-21-Examples/chapter_6/src/calculate_filtering_metrics.py:2 Deep-Learning-21-Examples/chapter_6/src/classifier.py:3 Deep-Learning-21-Examples/chapter_6/src/compare.py:2 Deep-Learning-21-Examples/chapter_6/src/facenet.py:2 Deep-Learning-21-Examples/chapter_6/src/freeze_graph.py:1 Deep-Learning-21-Examples/chapter_6/src/train_softmax.py:1 Deep-Learning-21-Examples/chapter_6/src/train_tripletloss.py:1 Deep-Learning-21-Examples/chapter_6/src/validate_on_lfw.py:2 Deep-Learning-21-Examples/chapter_6/test/batch_norm_test.py:2 Deep-Learning-21-Examples/chapter_6/test/center_loss_test.py:2 Deep-Learning-21-Examples/chapter_6/test/decov_loss_test.py:2 Deep-Learning-21-Examples/chapter_6/test/restore_test.py:2 Deep-Learning-21-Examples/chapter_6/test/triplet_loss_test.py:2 Deep-Learning-21-Examples/chapter_6/tmp/batch_represent.py:2 Deep-Learning-21-Examples/chapter_6/tmp/deepdream.py:2 Deep-Learning-21-Examples/chapter_6/tmp/mnist_center_loss.py:2 Deep-Learning-21-Examples/chapter_6/tmp/mnist_noise_labels.py:3 Deep-Learning-21-Examples/chapter_6/tmp/test_invariance_on_lfw.py:2 Deep-Learning-21-Examples/chapter_6/tmp/visualize.py:1 Deep-Learning-21-Examples/chapter_6/tmp/visualize_vggface.py:2 Deep-Learning-21-Examples/chapter_7/eval.py:1 Deep-Learning-21-Examples/chapter_7/export.py:1 Deep-Learning-21-Examples/chapter_7/nets/alexnet_test.py:1 Deep-Learning-21-Examples/chapter_7/nets/inception_resnet_v2_test.py:1 Deep-Learning-21-Examples/chapter_7/nets/inception_v1_test.py:2 Deep-Learning-21-Examples/chapter_7/nets/inception_v2_test.py:2 Deep-Learning-21-Examples/chapter_7/nets/inception_v3_test.py:2 Deep-Learning-21-Examples/chapter_7/nets/inception_v4_test.py:1 Deep-Learning-21-Examples/chapter_7/nets/nets_factory_test.py:1 Deep-Learning-21-Examples/chapter_7/nets/overfeat_test.py:1 Deep-Learning-21-Examples/chapter_7/nets/resnet_v1_test.py:2 Deep-Learning-21-Examples/chapter_7/nets/resnet_v2_test.py:2 Deep-Learning-21-Examples/chapter_7/nets/vgg_test.py:1 Deep-Learning-21-Examples/chapter_7/train.py:1 Deep-Learning-21-Examples/chapter_7/utils.py:1 Deep-Learning-21-Examples/chapter_8/main.py:2 Deep-Learning-21-Examples/chapter_9/pix2pix.py:3]
+  Number of Pylint messages: 
+    convention: 1, map[import-numpy:1]
+    refactor: 1, map[hyperparameters-scikitlearn:1]
+    warning: 277, map[missing-mask-tensorflow:15 randomness-control-numpy:83 randomness-control-scikitlearn:2 randomness-control-tensorflow:177]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:46:22 --> Completed: 93/100 projects, 4 had errors time: 7m33.267627867s
+2022/06/01 21:47:01 --> Project 96 - Done! Results: time: 8m12.497803583s
+  Name: Attention-Gated-Networks
+  CommitHash: eee4881fdc31920efd873773e0b744df8dacbfb6
+  Number of commits: 23
+  Number of contributors: 3
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 49 - 6441
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 25
+  Pylint messages per path: map[Attention-Gated-Networks/models/base_model.py:1 Attention-Gated-Networks/models/feedforward_classifier.py:1 Attention-Gated-Networks/models/feedforward_seg_model.py:1 Attention-Gated-Networks/models/layers/grid_attention_layer.py:2 Attention-Gated-Networks/models/layers/loss.py:2 Attention-Gated-Networks/models/layers/nonlocal_layer.py:2 Attention-Gated-Networks/test_classification.py:2 Attention-Gated-Networks/train_classifaction.py:3 Attention-Gated-Networks/train_segmentation.py:4 Attention-Gated-Networks/validation.py:1 Attention-Gated-Networks/visualise_att_maps_epoch.py:2 Attention-Gated-Networks/visualise_attention.py:2 Attention-Gated-Networks/visualise_fmaps.py:2]
+  Number of Pylint messages: 
+    convention: 5, map[import-numpy:5]
+    refactor: 0, map[]
+    warning: 20, map[deterministic-pytorch:3 forward-pytorch:2 randomness-control-dataloader-pytorch:12 randomness-control-pytorch:3]
+    error: 0, map[]
+    fatal: 0, map[]
+2022/06/01 21:47:01 --> Completed: 94/100 projects, 4 had errors time: 8m12.498055499s
+2022/06/01 21:47:36 --> Project 80 - Done! Results: time: 8m46.940581979s
+  Name: chainer-chemistry
+  CommitHash: efe323aa21f63a815130d673781e7cca1ccb72d2
+  Number of commits: 1591
+  Number of contributors: 33
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 306 - 30535
+  Jupyter Notebook files and total lines of code: 2 - 239
+  Total messages: 191
+  Pylint messages per path: map[chainer-chemistry/chainer_chemistry/dataset/converters/cgcnn_converter.py:1 chainer-chemistry/chainer_chemistry/dataset/graph_dataset/base_graph_data.py:1 chainer-chemistry/chainer_chemistry/dataset/graph_dataset/base_graph_dataset.py:1 chainer-chemistry/chainer_chemistry/dataset/graph_dataset/feature_converters.py:1 chainer-chemistry/chainer_chemistry/dataset/indexer.py:1 chainer-chemistry/chainer_chemistry/dataset/networkx_preprocessors/base_networkx.py:1 chainer-chemistry/chainer_chemistry/dataset/networkx_preprocessors/reddit_coo.py:1 chainer-chemistry/chainer_chemistry/dataset/parsers/csv_file_parser.py:5 chainer-chemistry/chainer_chemistry/dataset/parsers/data_frame_parser.py:1 chainer-chemistry/chainer_chemistry/dataset/parsers/sdf_file_parser.py:1 chainer-chemistry/chainer_chemistry/dataset/parsers/smiles_parser.py:1 chainer-chemistry/chainer_chemistry/dataset/preprocessors/cgcnn_preprocessor.py:1 chainer-chemistry/chainer_chemistry/dataset/preprocessors/common.py:1 chainer-chemistry/chainer_chemistry/dataset/preprocessors/ecfp_preprocessor.py:1 chainer-chemistry/chainer_chemistry/dataset/preprocessors/ggnn_preprocessor.py:1 chainer-chemistry/chainer_chemistry/dataset/preprocessors/gin_preprocessor.py:1 chainer-chemistry/chainer_chemistry/dataset/preprocessors/megnet_preprocessor.py:1 chainer-chemistry/chainer_chemistry/dataset/preprocessors/rsgcn_preprocessor.py:1 chainer-chemistry/chainer_chemistry/dataset/preprocessors/schnet_preprocessor.py:1 chainer-chemistry/chainer_chemistry/dataset/preprocessors/weavenet_preprocessor.py:1 chainer-chemistry/chainer_chemistry/dataset/splitters/deepchem_scaffold_splitter.py:1 chainer-chemistry/chainer_chemistry/dataset/splitters/random_splitter.py:1 chainer-chemistry/chainer_chemistry/dataset/splitters/scaffold_splitter.py:1 chainer-chemistry/chainer_chemistry/dataset/splitters/stratified_splitter.py:2 chainer-chemistry/chainer_chemistry/dataset/splitters/time_splitter.py:1 chainer-chemistry/chainer_chemistry/dataset/utils.py:1 chainer-chemistry/chainer_chemistry/datasets/citation_network/citation.py:1 chainer-chemistry/chainer_chemistry/datasets/molnet/molnet.py:7 chainer-chemistry/chainer_chemistry/datasets/molnet/pdbbind_time.py:4 chainer-chemistry/chainer_chemistry/datasets/numpy_tuple_dataset.py:1 chainer-chemistry/chainer_chemistry/datasets/qm9.py:2 chainer-chemistry/chainer_chemistry/datasets/reddit/reddit.py:1 chainer-chemistry/chainer_chemistry/datasets/tox21.py:1 chainer-chemistry/chainer_chemistry/datasets/zinc.py:4 chainer-chemistry/chainer_chemistry/functions/loss/mean_absolute_error.py:1 chainer-chemistry/chainer_chemistry/functions/loss/mean_squared_error.py:1 chainer-chemistry/chainer_chemistry/iterators/balanced_serial_iterator.py:1 chainer-chemistry/chainer_chemistry/iterators/index_iterator.py:1 chainer-chemistry/chainer_chemistry/links/connection/graph_mlp.py:1 chainer-chemistry/chainer_chemistry/links/readout/scatter_ggnn_readout.py:1 chainer-chemistry/chainer_chemistry/links/readout/set2set.py:1 chainer-chemistry/chainer_chemistry/links/scaler/flow_scaler.py:1 chainer-chemistry/chainer_chemistry/links/scaler/max_abs_scaler.py:1 chainer-chemistry/chainer_chemistry/links/scaler/min_max_scaler.py:1 chainer-chemistry/chainer_chemistry/links/scaler/standard_scaler.py:1 chainer-chemistry/chainer_chemistry/links/update/nfp_update.py:1 chainer-chemistry/chainer_chemistry/models/prediction/base.py:1 chainer-chemistry/chainer_chemistry/models/prediction/classifier.py:1 chainer-chemistry/chainer_chemistry/models/prediction/graph_conv_predictor.py:1 chainer-chemistry/chainer_chemistry/models/prediction/regressor.py:1 chainer-chemistry/chainer_chemistry/saliency/calculator/base_calculator.py:1 chainer-chemistry/chainer_chemistry/saliency/calculator/integrated_gradients_calculator.py:1 chainer-chemistry/chainer_chemistry/saliency/visualizer/image_visualizer.py:1 chainer-chemistry/chainer_chemistry/saliency/visualizer/mol_visualizer.py:1 chainer-chemistry/chainer_chemistry/saliency/visualizer/table_visualizer.py:1 chainer-chemistry/chainer_chemistry/saliency/visualizer/visualizer_utils.py:1 chainer-chemistry/chainer_chemistry/training/extensions/batch_evaluator.py:1 chainer-chemistry/chainer_chemistry/training/extensions/prc_auc_evaluator.py:1 chainer-chemistry/chainer_chemistry/training/extensions/roc_auc_evaluator.py:1 chainer-chemistry/chainer_chemistry/utils/json_utils.py:1 chainer-chemistry/chainer_chemistry/utils/permutation.py:1 chainer-chemistry/examples/molnet/train_molnet.py:1 chainer-chemistry/examples/molnet_wle/train_molnet_wle.py:1 chainer-chemistry/examples/network_graph/train_network_graph.py:1 chainer-chemistry/examples/own_dataset/predict_own_dataset.py:1 chainer-chemistry/examples/own_dataset/train_own_dataset.py:1 chainer-chemistry/examples/qm9/predict_qm9.py:2 chainer-chemistry/examples/qm9/train_qm9.py:1 chainer-chemistry/examples/tox21/data.py:1 chainer-chemistry/examples/tox21/predict_tox21_with_classifier.py:1 chainer-chemistry/tests/dataset_tests/parsers_tests/test_csv_file_parser.py:2 chainer-chemistry/tests/dataset_tests/parsers_tests/test_data_frame_parser.py:2 chainer-chemistry/tests/dataset_tests/parsers_tests/test_sdf_file_parser.py:1 chainer-chemistry/tests/dataset_tests/parsers_tests/test_smiles_parser.py:1 chainer-chemistry/tests/dataset_tests/preprocessor_tests/test_common.py:1 chainer-chemistry/tests/dataset_tests/preprocessors_tests/test_atomic_number_preprocessor.py:1 chainer-chemistry/tests/dataset_tests/preprocessors_tests/test_gat_preprocessor.py:1 chainer-chemistry/tests/dataset_tests/preprocessors_tests/test_ggnn_preprocessor.py:1 chainer-chemistry/tests/dataset_tests/preprocessors_tests/test_nfp_preprocessor.py:1 chainer-chemistry/tests/dataset_tests/preprocessors_tests/test_relgcn_preprocessor.py:1 chainer-chemistry/tests/dataset_tests/preprocessors_tests/test_rsgcn_preprocessor.py:1 chainer-chemistry/tests/dataset_tests/preprocessors_tests/test_schnet_preprocessor.py:1 chainer-chemistry/tests/dataset_tests/preprocessors_tests/test_weavenet_preprocessor.py:1 chainer-chemistry/tests/dataset_tests/splitters_tests/test_deepchem_scaffold_splitter.py:2 chainer-chemistry/tests/dataset_tests/splitters_tests/test_random_splitter.py:1 chainer-chemistry/tests/dataset_tests/splitters_tests/test_scaffold_splitter.py:2 chainer-chemistry/tests/dataset_tests/splitters_tests/test_stratified_splitter.py:1 chainer-chemistry/tests/dataset_tests/splitters_tests/test_time_splitter.py:1 chainer-chemistry/tests/dataset_tests/test_converters.py:1 chainer-chemistry/tests/dataset_tests/test_numpy_tuple_feature_indexer.py:1 chainer-chemistry/tests/datasets_tests/molnet_tests/test_molnet.py:2 chainer-chemistry/tests/datasets_tests/test_numpy_tuple_dataset.py:1 chainer-chemistry/tests/datasets_tests/test_qm9.py:1 chainer-chemistry/tests/datasets_tests/test_tox21.py:1 chainer-chemistry/tests/datasets_tests/test_zinc.py:1 chainer-chemistry/tests/functions_tests/activation/test_megnet_softplus.py:1 chainer-chemistry/tests/functions_tests/activation/test_shifted_softplus.py:1 chainer-chemistry/tests/functions_tests/activation/test_softmax.py:1 chainer-chemistry/tests/functions_tests/evaluation/test_r2_score.py:1 chainer-chemistry/tests/functions_tests/loss/test_mean_absolute_error.py:1 chainer-chemistry/tests/functions_tests/loss/test_mean_squared_error.py:1 chainer-chemistry/tests/iterators_tests/test_balanced_serial_iterator.py:1 chainer-chemistry/tests/iterators_tests/test_index_iterator.py:1 chainer-chemistry/tests/link_hooks_tests/test_variable_monitor_link_hook.py:1 chainer-chemistry/tests/links_tests/array_tests/test_shape_transformer_to_2d.py:1 chainer-chemistry/tests/links_tests/connection_tests/test_embed_atom_id.py:1 chainer-chemistry/tests/links_tests/connection_tests/test_graph_linear.py:1 chainer-chemistry/tests/links_tests/connection_tests/test_graph_mlp.py:1 chainer-chemistry/tests/links_tests/readout_tests/test_cgcnn_readout.py:1 chainer-chemistry/tests/links_tests/readout_tests/test_general_readout.py:1 chainer-chemistry/tests/links_tests/readout_tests/test_ggnn_readout.py:1 chainer-chemistry/tests/links_tests/readout_tests/test_megnet_readout.py:1 chainer-chemistry/tests/links_tests/readout_tests/test_mpnn_readout.py:1 chainer-chemistry/tests/links_tests/readout_tests/test_nfp_readout.py:1 chainer-chemistry/tests/links_tests/readout_tests/test_schnet_readout.py:1 chainer-chemistry/tests/links_tests/readout_tests/test_set2set.py:1 chainer-chemistry/tests/links_tests/scaler_tests/test_flow_scaler.py:1 chainer-chemistry/tests/links_tests/scaler_tests/test_max_abs_scaler.py:1 chainer-chemistry/tests/links_tests/scaler_tests/test_min_max_scaler.py:1 chainer-chemistry/tests/links_tests/scaler_tests/test_standard_scaler.py:1 chainer-chemistry/tests/links_tests/update_tests/test_cgcnn_update.py:1 chainer-chemistry/tests/links_tests/update_tests/test_ggnn_update.py:1 chainer-chemistry/tests/links_tests/update_tests/test_gin_update.py:1 chainer-chemistry/tests/links_tests/update_tests/test_gnn_film_update.py:1 chainer-chemistry/tests/links_tests/update_tests/test_megnet_update.py:1 chainer-chemistry/tests/links_tests/update_tests/test_mpnn_update.py:1 chainer-chemistry/tests/links_tests/update_tests/test_nfp_update.py:1 chainer-chemistry/tests/links_tests/update_tests/test_relgat_update.py:1 chainer-chemistry/tests/links_tests/update_tests/test_relgcn_update.py:1 chainer-chemistry/tests/links_tests/update_tests/test_rsgcn_update.py:1 chainer-chemistry/tests/links_tests/update_tests/test_schnet_update.py:1 chainer-chemistry/tests/models_tests/gwm_tests/test_gwm.py:1 chainer-chemistry/tests/models_tests/gwm_tests/test_gwm_graph_conv_model.py:1 chainer-chemistry/tests/models_tests/prediction_tests/test_base.py:1 chainer-chemistry/tests/models_tests/prediction_tests/test_classifier.py:1 chainer-chemistry/tests/models_tests/prediction_tests/test_graph_conv_predictor.py:1 chainer-chemistry/tests/models_tests/prediction_tests/test_regressor.py:1 chainer-chemistry/tests/models_tests/test_cgcnn.py:1 chainer-chemistry/tests/models_tests/test_ggnn.py:1 chainer-chemistry/tests/models_tests/test_gin.py:1 chainer-chemistry/tests/models_tests/test_gnn_film.py:1 chainer-chemistry/tests/models_tests/test_megnet.py:1 chainer-chemistry/tests/models_tests/test_mlp.py:1 chainer-chemistry/tests/models_tests/test_mpnn.py:1 chainer-chemistry/tests/models_tests/test_nfp.py:1 chainer-chemistry/tests/models_tests/test_relgat.py:1 chainer-chemistry/tests/models_tests/test_relgcn.py:1 chainer-chemistry/tests/models_tests/test_rsgcn.py:1 chainer-chemistry/tests/models_tests/test_schnet.py:1 chainer-chemistry/tests/models_tests/test_weavenet.py:1 chainer-chemistry/tests/saliency_tests/calculator_tests/test_base_calculator.py:1 chainer-chemistry/tests/saliency_tests/calculator_tests/test_calculator_utils.py:1 chainer-chemistry/tests/saliency_tests/calculator_tests/test_gradient_calculator.py:1 chainer-chemistry/tests/saliency_tests/calculator_tests/test_integrated_gradient_calculator.py:1 chainer-chemistry/tests/saliency_tests/calculator_tests/test_occlusion_calculator.py:1 chainer-chemistry/tests/saliency_tests/visualizer_tests/test_image_visualizer.py:1 chainer-chemistry/tests/saliency_tests/visualizer_tests/test_mol_visualizer.py:1 chainer-chemistry/tests/saliency_tests/visualizer_tests/test_table_visualizer.py:1 chainer-chemistry/tests/saliency_tests/visualizer_tests/test_visualizer_utils.py:1 chainer-chemistry/tests/training_tests/extensions_tests/test_prc_auc_evaluator.py:1 chainer-chemistry/tests/training_tests/extensions_tests/test_r2_score_evaluator.py:1 chainer-chemistry/tests/training_tests/extensions_tests/test_roc_auc_evaluator.py:1 chainer-chemistry/tests/utils_tests/test_extend.py:1 chainer-chemistry/tests/utils_tests/test_json_utils.py:1 chainer-chemistry/tests/utils_tests/test_permutation.py:1 chainer-chemistry/tests/utils_tests/test_sparse_utils.py:1 chainer-chemistry/tests/utils_tests/test_train_utils.py:1]
+  Number of Pylint messages: 
+    convention: 177, map[import-numpy:164 import-pandas:13]
+    refactor: 13, map[column-selection-pandas:4 datatype-pandas:9]
+    warning: 1, map[dataframe-conversion-pandas:1]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:47:36 --> Completed: 95/100 projects, 4 had errors time: 8m46.941131663s
+2022/06/01 21:47:58 --> Project 74 - Done! Results: time: 9m9.395464165s
+  Name: tensorflow-onnx
+  CommitHash: a64af2e2d74ff562ecb8b557655fa42b97f6e412
+  Number of commits: 2676
+  Number of contributors: 82
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 409 - 79299
+  Jupyter Notebook files and total lines of code: 8 - 808
+  Total messages: 96
+  Pylint messages per path: map[tensorflow-onnx/examples/benchmark_tfmodel_ort.py:1 tensorflow-onnx/tests/huggingface.py:2 tensorflow-onnx/tests/keras2onnx_applications/nightly_build/test_craft.py:2 tensorflow-onnx/tests/keras2onnx_applications/nightly_build/test_deeplab_v3.py:2 tensorflow-onnx/tests/keras2onnx_applications/nightly_build/test_music_generation.py:2 tensorflow-onnx/tests/keras2onnx_applications/nightly_build/test_ocr.py:2 tensorflow-onnx/tests/keras2onnx_applications/nightly_build/test_open_face.py:2 tensorflow-onnx/tests/keras2onnx_applications/nightly_build/test_segnet_2.py:2 tensorflow-onnx/tests/keras2onnx_applications/nightly_build/test_semantic_segmentation.py:2 tensorflow-onnx/tests/keras2onnx_applications/nightly_build/test_super_resolution.py:2 tensorflow-onnx/tests/keras2onnx_applications/nightly_build/test_transformers.py:2 tensorflow-onnx/tests/keras2onnx_applications/yolov3/yolov3.py:2 tensorflow-onnx/tests/keras2onnx_unit_tests/mock_keras2onnx/proto/__init__.py:1 tensorflow-onnx/tests/keras2onnx_unit_tests/mock_keras2onnx/proto/tfcompat.py:1 tensorflow-onnx/tests/keras2onnx_unit_tests/test_layers.py:1 tensorflow-onnx/tests/run_pretrained_models.py:1 tensorflow-onnx/tests/test_api.py:2 tensorflow-onnx/tests/test_backend.py:2 tensorflow-onnx/tests/test_cond.py:2 tensorflow-onnx/tests/test_const_fold.py:1 tensorflow-onnx/tests/test_cudnn.py:2 tensorflow-onnx/tests/test_cudnn_compatible_gru.py:2 tensorflow-onnx/tests/test_custom_rnncell.py:2 tensorflow-onnx/tests/test_gru.py:2 tensorflow-onnx/tests/test_grublock.py:2 tensorflow-onnx/tests/test_internals.py:2 tensorflow-onnx/tests/test_loops.py:2 tensorflow-onnx/tests/test_lstm.py:2 tensorflow-onnx/tests/test_lstmblock.py:2 tensorflow-onnx/tests/test_seq2seq.py:2 tensorflow-onnx/tests/test_stacked_lstm.py:2 tensorflow-onnx/tests/test_string_ops.py:2 tensorflow-onnx/tests/test_tf_shape_inference.py:2 tensorflow-onnx/tests/tfhub/_tools.py:1 tensorflow-onnx/tests/tfhub/tfhub_albert_en_xlarge.py:1 tensorflow-onnx/tests/tfhub/tfhub_bert_en_wwm_uncased.py:1 tensorflow-onnx/tests/tfhub/tfhub_blazeposedetector.py:1 tensorflow-onnx/tests/tfhub/tfhub_enformer.py:3 tensorflow-onnx/tests/tfhub/tfhub_esrgan.py:1 tensorflow-onnx/tests/tfhub/tfhub_humpback_whale.py:3 tensorflow-onnx/tests/tfhub/tfhub_inception_v3.py:1 tensorflow-onnx/tests/tfhub/tfhub_lambert_en_uncased_L-24_H-1024_A-16.py:1 tensorflow-onnx/tests/tfhub/tfhub_mobile_food_segmenter_V1.py:1 tensorflow-onnx/tests/tfhub/tfhub_mobilebert_en_uncased.py:1 tensorflow-onnx/tests/tfhub/tfhub_mobilenet_v3_large_075_224.py:1 tensorflow-onnx/tests/tfhub/tfhub_mobilenet_v3_small_075_224.py:1 tensorflow-onnx/tests/tfhub/tfhub_nasnet_large.py:1 tensorflow-onnx/tests/tfhub/tfhub_resnet_v1_101.py:1 tensorflow-onnx/tests/tfhub/tfhub_resnet_v1_101_keras.py:1 tensorflow-onnx/tests/tfhub/tfhub_resnet_v2_101.py:1 tensorflow-onnx/tests/tfhub/tfhub_resnet_v2_101_classification.py:1 tensorflow-onnx/tests/tfhub/tfhub_resnet_v2_152.py:1 tensorflow-onnx/tests/tfhub/tfhub_spam_detection.py:1 tensorflow-onnx/tests/tfhub/tfhub_talkheads_ggelu_bert_en_large.py:1 tensorflow-onnx/tests/tfhub/tfhub_thunder.py:1 tensorflow-onnx/tests/tfhub/tfhub_yamnet_coral.py:1 tensorflow-onnx/tests/tfhub/tfhub_yamnet_tf.py:1 tensorflow-onnx/tests/tfhub/tfhub_yamnet_tflite.py:1 tensorflow-onnx/tf2onnx/convert.py:1 tensorflow-onnx/tools/graphtool.py:1 tensorflow-onnx/tools/profile_conversion_time.py:1 tensorflow-onnx/tools/save_pretrained_model.py:2 tensorflow-onnx/tools/tf_graph_tool.py:1 tensorflow-onnx/tools/tfgraph.py:1]
+  Number of Pylint messages: 
+    convention: 29, map[import-numpy:26 import-tensorflow:3]
+    refactor: 0, map[]
+    warning: 67, map[randomness-control-numpy:30 randomness-control-tensorflow:37]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:47:58 --> Completed: 96/100 projects, 4 had errors time: 9m9.39574322s
+2022/06/01 21:48:02 --> Project 86 - Done! Results: time: 9m13.540640139s
+  Name: lexpredict-lexnlp
+  CommitHash: ffde6deb0d022a02baaaf66382a25bd6575d42f4
+  Number of commits: 141
+  Number of contributors: 9
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 321 - 29395
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 52
+  Pylint messages per path: map[lexpredict-lexnlp/lexnlp/extract/common/entities/entity_banlist.py:2 lexpredict-lexnlp/lexnlp/extract/common/ocr_rating/lang_vector_distribution_builder.py:1 lexpredict-lexnlp/lexnlp/extract/common/ocr_rating/ocr_rating_calculator.py:2 lexpredict-lexnlp/lexnlp/extract/common/tests/test_universal_courts_parser.py:3 lexpredict-lexnlp/lexnlp/extract/common/universal_court_parser.py:1 lexpredict-lexnlp/lexnlp/extract/de/tests/test_geoentities.py:2 lexpredict-lexnlp/lexnlp/extract/de/tests/test_laws.py:6 lexpredict-lexnlp/lexnlp/extract/en/tests/test_courts.py:5 lexpredict-lexnlp/lexnlp/extract/es/regulations.py:1 lexpredict-lexnlp/lexnlp/extract/ml/classifier/spacy_token_sequence_model.py:1 lexpredict-lexnlp/lexnlp/extract/ml/classifier/token_sequence_model.py:1 lexpredict-lexnlp/lexnlp/extract/ml/detector/artifact_detector.py:4 lexpredict-lexnlp/lexnlp/extract/ml/detector/sample_processor.py:3 lexpredict-lexnlp/lexnlp/extract/ml/en/definitions/definition_phrase_detector.py:2 lexpredict-lexnlp/lexnlp/extract/ml/en/definitions/definition_term_detector.py:2 lexpredict-lexnlp/lexnlp/extract/ml/en/definitions/layered_definition_detector.py:1 lexpredict-lexnlp/lexnlp/nlp/en/segments/pages.py:1 lexpredict-lexnlp/lexnlp/nlp/en/segments/paragraphs.py:1 lexpredict-lexnlp/lexnlp/nlp/en/segments/sections.py:1 lexpredict-lexnlp/lexnlp/nlp/en/segments/titles.py:4 lexpredict-lexnlp/lexnlp/nlp/train/en/train_section_segmanizer.py:1 lexpredict-lexnlp/lexnlp/utils/tests/test_parse_df.py:2 lexpredict-lexnlp/lexnlp/utils/unicode/unicode_lookup.py:5]
+  Number of Pylint messages: 
+    convention: 23, map[import-numpy:8 import-pandas:15]
+    refactor: 29, map[column-selection-pandas:12 datatype-pandas:14 unnecessary-iteration-pandas:3]
+    warning: 0, map[]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:48:02 --> Completed: 97/100 projects, 4 had errors time: 9m13.540831622s
+2022/06/01 21:49:51 --> Project 26 - Done! Results: time: 11m2.493761755s
+  Name: nnabla
+  CommitHash: 3693d126b0452e22a1e279bcf27a09e0c6153412
+  Number of commits: 3062
+  Number of contributors: 91
+  Has requirements.txt: false
+  Pure Python files and total lines of code: 752 - 154422
+  Jupyter Notebook files and total lines of code: 13 - 2639
+  Total messages: 16
+  Pylint messages per path: map[nnabla/python/src/nnabla/parameter.py:1 nnabla/python/src/nnabla/utils/cli/profile.py:1 nnabla/python/src/nnabla/utils/create_cache.py:1 nnabla/python/src/nnabla/utils/data_iterator.py:1 nnabla/python/src/nnabla/utils/data_source.py:1 nnabla/python/src/nnabla/utils/data_source_implements.py:1 nnabla/python/src/nnabla/utils/data_source_loader.py:1 nnabla/python/src/nnabla/utils/get_file_handle.py:1 nnabla/python/src/nnabla/utils/load.py:1 nnabla/python/src/nnabla/utils/save.py:1 nnabla/python/test/core/helper.py:1 nnabla/python/test/core/legacy_load.py:1 nnabla/python/test/function/test_istft.py:1 nnabla/python/test/nbla_test_utils.py:1 nnabla/python/test/utils/conftest.py:1 nnabla/python/test/utils/conversion/test_nnp_to_nnp_with_version.py:1]
+  Number of Pylint messages: 
+    convention: 14, map[import-numpy:14]
+    refactor: 0, map[]
+    warning: 2, map[forward-pytorch:1 inplace-numpy:1]
+    error: 0, map[]
+    fatal: 0, map[]
+2022/06/01 21:49:51 --> Completed: 98/100 projects, 4 had errors time: 11m2.493907667s
+2022/06/01 21:57:10 --> Project 44 - Artificial-Intelligence-Deep-Lea - Analysis Error: error parsing Pylint output: invalid character 'E' looking for beginning of value
+2022/06/01 21:57:10 --> Completed: 99/100 projects, 5 had errors time: 18m20.996807865s
+2022/06/01 21:58:08 --> Project 61 - Done! Results: time: 19m18.889165704s
+  Name: PySimpleGUI
+  CommitHash: 00397d411f3421ee6348fb2b950394c9118fbeda
+  Number of commits: 6029
+  Number of contributors: 18
+  Has requirements.txt: true
+  Pure Python files and total lines of code: 468 - 107378
+  Jupyter Notebook files and total lines of code: 0 - 0
+  Total messages: 4
+  Pylint messages per path: map[PySimpleGUI/DemoPrograms/Demo_Conways_Game_of_Life.py:1 PySimpleGUI/DemoPrograms/Demo_Table_Pandas.py:3]
+  Number of Pylint messages: 
+    convention: 1, map[import-numpy:1]
+    refactor: 1, map[datatype-pandas:1]
+    warning: 2, map[dataframe-conversion-pandas:2]
+    error: 0, map[]
+    fatal: 0, map[]
+
+
+2022/06/01 21:58:08 --> Completed: 100/100 projects, 5 had errors time: 19m18.88925489s
+2022/06/01 21:58:08 --> Finished analysis of all projects! Collecting all results... time: 19m18.889280231s
+2022/06/01 21:58:08 --> YAML results saved to ./results/results-2022-06-01.21:38.CEST.yml time: 19m18.941325135s
+2022/06/01 21:58:08 --> CSV results saved to ./results/results-2022-06-01.21:38.CEST.csv time: 19m18.943675903s
+2022/06/01 21:58:08 Done! time: 19m18.943688379s
+Process 69162 has exited with status 0
+dlv dap (69136) exited with code: 0
