@@ -1,0 +1,1875 @@
+projects:
+
+# ----- reproducedpapers.org -----
+
+# Student project, no requirements.txt file (will be generated correctly as is).
+- url: https://github.com/Pluriscient/sma2c-ipd.git
+  skip: true # RecursionError
+
+# Student project, no requirements.txt file (will be generated correctly as is).
+- url: https://github.com/nsirons/DL-unet.git
+
+# Student project, requirements.txt without versions
+- url: https://github.com/sigtot/pix2pix-model
+
+# Student project, requirements.txt with version ranges.
+# No idea wtf these guys did in their repo, but the '.git' folder in the cloned repo is 2.1 GB :facepalm:
+# The Git history of their repo also contains the history of pytorch-CycleGAN-and-pix2pix, indicating that this was used as their starting point. Kind of like a 'hidden fork'.
+- url: https://github.com/PieterBijl/Group28
+
+# Student project, just a blatant fork of pix2pix
+- url: https://github.com/parvanitis15/pytorch-CycleGAN-and-pix2pix
+
+# ----- paperswithcode.com -----
+
+# Had a requirements.txt in the repo, but that did not contain versions,
+# and it was also missing panopticapi and seaborn
+- url: https://github.com/fundamentalvision/Deformable-DETR.git
+  skip: true # RecursionError
+  requirements.txt: |
+    pycocotools==2.0.2
+    tqdm==4.32.1
+    cython==0.29.21
+    scipy==1.5.4
+    seaborn==0.11.0
+    git+https://github.com/cocodataset/panopticapi.git#egg=panopticapi
+
+# Had a requirements.txt in the repo, but it contained a mistake. Mistake was fixed: https://github.com/yandex-research/navigan/issues/1#issuecomment-742654478
+# Was also missing scipy and scikit_learn
+# Still has many import-errors due to Pylint somehow not recognising that these imports
+# are actually imports from local files. Some assume that the repo root is on the PYTHONPATH (e.g. `import torch_tools`), 
+# others use the . as a prefix to indicate that the import is local, e.g. `import .utils`
+# yet neither of the two actually work.
+- url: https://github.com/yandex-research/navigan.git
+  requirements.txt: |
+    torchvision==0.5.0
+    numpy==1.18.1
+    torch==1.4.0
+    matplotlib==3.0.3
+    tqdm==4.32.1
+    Pillow==7.0.0
+    tensorboardX==2.0
+    lpips==0.1.3
+    moviepy==1.0.3
+    scipy==1.5.4
+    scikit_learn==0.23.2
+
+# Requirements generated, but was missing detectron2, which needs to be installed _after_ installing the rest of the requirements.
+- url: https://github.com/yanwei-li/PanopticFCN.git
+  requirements.txt: |
+    torch==1.7.1
+    numpy==1.19.4
+    fvcore==0.1.2.post20201204
+  extraRequirements:
+  - git+https://github.com/facebookresearch/detectron2.git@v0.3#egg=detectron2
+
+# This is a repo and implementation from Nvidia, has no requirements.txt, 
+# but does have a Dockerfile that specifies some requirements as separate RUN commands
+# (that's a bad practice, and it was also missing scikit_learn)
+# as well as being based on an Nvidia Tensorflow container, so already has TF1 package 
+- url: https://github.com/NVlabs/stylegan2-ada.git
+  requirements.txt: |
+    scipy==1.3.3
+    requests==2.22.0
+    Pillow==6.2.1
+    h5py==2.9.0
+    imageio==2.9.0
+    imageio-ffmpeg==0.4.2
+    tqdm==4.49.0
+    tensorflow==1.15
+    scikit_learn==0.23.2
+
+# Has a requirements.txt with explicitly defined requirements. Nice!
+- url: https://github.com/PeterL1n/BackgroundMattingV2.git
+
+# From: https://paperswithcode.com/paper/training-data-efficient-image-transformers#code 789 stars
+# Proper and simple requirements.txt, made by Facebook Research.
+- url: https://github.com/facebookresearch/deit.git
+
+# From: https://paperswithcode.com/paper/yolactedge-real-time-instance-segmentation-on#code
+# No requirements.txt, does have INSTALL.md in repo with explicit and not simple instructions, hardly specifying versions (latest as of 29 dec. 2020)
+- url: https://github.com/haotian-liu/yolact_edge.git
+  requiremens.txt: |
+    torch==1.6.0
+    torchvision==0.8.2
+    opencv-python==4.4.0.46
+    Pillow==8.0.1
+    matplotlib==3.3.3
+    GitPython==3.1.11
+    termcolor==1.1.0
+    tensorboard==2.4.0
+  extraRequirements:
+  - git+https://github.com/haotian-liu/cocoapi.git#"egg=pycocotools&subdirectory=PythonAPI"
+
+# From: https://paperswithcode.com/paper/voice-separation-with-an-unknown-number-of#code
+# Has a requirements.txt with some requirements that need to be installed in advance. Luckily it's fine to install them afterwards too.
+- url: https://github.com/facebookresearch/svoice.git
+  extraRequirements:
+  - torch==1.6.0
+  - torchvision==0.7.0
+
+# From: https://paperswithcode.com/paper/diverse-temporal-aggregation-and-depthwise#code
+# Has a setup.py and even has a `linter.sh` script for running the isort, flake and black linters, along with a setup.cfg for the linting config.
+- url: https://github.com/youngwanLEE/VoV3D
+  requirements.txt: |
+    yacs>=0.1.6
+    pyyaml>=5.1
+    av
+    matplotlib
+    termcolor>=1.1
+    simplejson
+    tqdm
+    psutil
+    matplotlib
+    opencv-python
+    pandas
+    torchvision>=0.4.2
+    scikit-learn
+    tensorboard
+  extraRequirements:
+  - git+https://github.com/facebookresearch/detectron2.git@v0.3#egg=detectron2
+
+# From: https://paperswithcode.com/paper/mastering-atari-go-chess-and-shogi-by#code
+- url: https://github.com/werner-duvaud/muzero-general.git
+
+# From: https://paperswithcode.com/paper/swa-object-detection#code
+# Has a pretty interesting setup.py with well-split requirements, but for some reason the setup.py does some of its own requirements.txt parsing.
+- url: https://github.com/hyz-xmaster/swa_object_detection.git
+  # override setup.py with the requirements.txt in the repo
+  requirements: requirements/../requirements.txt
+
+# From: https://paperswithcode.com/paper/self-attention-generative-adversarial#code
+- url: https://github.com/brain-research/self-attention-gan.git
+  requirements.txt: |
+    numpy==1.19.4
+    scipy==1.5.4
+    sympy==1.7.1
+    tensorflow==2.4.0
+- url: https://github.com/jantic/DeOldify.git
+- url: https://github.com/shaoanlu/faceswap-GAN
+
+
+# --- Deepmind Research ---
+
+# This is a monorepo with many projects inside it.
+# Also, some of these projects don't have a requirements.txt, but do have a setup.py
+- url: https://github.com/deepmind/deepmind-research.git
+  projects:
+    # only Jupyter Notebooks:
+    # - folder: affordances_theory
+    # - folder: causal_reasoning
+    # - folder: ensemble_loss_landscape
+    # - folder: functional_regularisation_for_continual_learning
+    # - folder: graph_matching_networks # actually has a requirements.txt!!
+    # - folder: himo
+    # - folder: memo
+    # - folder: ode_gan
+    # - folder: PrediNet
+    # - folder: visr
+
+    # Has requirements.txt in repo, import-errors are caused by local imports
+    - folder: alphafold_casp13
+
+    # Has a requirements.txt in repo, but does not specify explicitly versions
+    # Was also missing optax
+    - folder: byol
+      requirements.txt: |
+        dm-acme==0.2.0
+        dm-haiku==0.0.3
+        dm-tree==0.1.5
+        jax==0.2.7
+        jaxlib==0.1.57
+        numpy==1.19.4
+        tensorflow==2.4.0
+        tensorflow_datasets==4.1.0
+        optax==0.0.2
+
+    # Has a setup.py in the repo, doesn't contain any versions though
+    - folder: catch_carry
+    
+    # Has a requirements.txt where 1 package is not explicitly versioned
+    - folder: cs_gan
+
+    # Has a requirements.txt with a couple dependency versions specified as ranges
+    - folder: curl
+
+    # Has a requirements.txt probably generated with `pip freeze`
+    - folder: gated_linear_networks
+
+    # Has a setup.py in the repo, doesn't contain any versions though
+    - folder: geomancer
+
+    # Has a requirements.txt probably generated with `pip freeze`
+    - folder: glassy_dynamics
+
+    # Has a setup.py, specifies explicit versions of most, but not all dependencies
+    - folder: hierarchical_probabilistic_unet
+
+    # Has a requirements.txt, specifies explicit versions of some, but not all dependencies 
+    - folder: iodine
+
+    # Has a requirements.txt, specifies explicit versions of some, but not all dependencies
+    - folder: learning_to_simulate
+
+    # Has a requirements.txt, specifies explicit versions of only a few of its dependencies
+    - folder: mmv
+
+    # Has a requirements.txt, specifies explicit versions of most, but not all dependencies
+    - folder: option_keyboard
+
+    # Has a requirements.txt, specifies explicit versions of some, but not all dependencies
+    - folder: physics_planning_games
+
+    # Has a setup.py, specifies explicit versions of some, but not all dependencies
+    - folder: polygen
+
+    # Has a requirements.txt probably generated with `pip freeze`
+    # Why the heck did this use the nightly packages of Tensorflow instead of the stable packages?
+    - folder: rl_unplugged
+      requirements.txt: |
+        absl-py==0.9.0
+        astunparse==1.6.3
+        atari-py==0.2.6
+        cachetools==4.1.1
+        certifi==2020.6.20
+        chardet==3.0.4
+        cloudpickle==1.3.0
+        decorator==4.4.2
+        dm-acme==0.1.7
+        dm-control==0.0.319497192
+        dm-env==1.2
+        dm-reverb-nightly==0.1.0.dev20200616
+        dm-sonnet==2.0.0
+        dm-tree==0.1.5
+        dopamine-rl==3.1.2
+        future==0.18.2
+        gast==0.3.3
+        gin-config==0.3.0
+        glfw==1.11.2
+        google-auth==1.18.0
+        google-auth-oauthlib==0.4.1
+        google-pasta==0.2.0
+        grpcio==1.30.0
+        gym==0.17.2
+        h5py==2.10.0
+        idna==2.10
+        Keras-Preprocessing==1.1.2
+        lxml==4.5.1
+        Markdown==3.2.2
+        numpy==1.19.0
+        oauthlib==3.1.0
+        opencv-python==4.3.0.36
+        opt-einsum==3.2.1
+        Pillow==7.2.0
+        portpicker==1.3.1
+        protobuf==3.12.2
+        pyasn1==0.4.8
+        pyasn1-modules==0.2.8
+        pyglet==1.5.0
+        PyOpenGL==3.1.5
+        pyparsing==2.4.7
+        requests==2.24.0
+        requests-oauthlib==1.3.0
+        rsa==4.6
+        scipy==1.4.1
+        six==1.15.0
+        tabulate==0.8.7
+        tensorboard==2.3.0
+        tensorboard-plugin-wit==1.7.0
+        termcolor==1.1.0
+        tensorflow==2.3.0
+        tensorflow-probability==0.11.1
+        tensorflow-estimator==2.4.0
+        trfl==1.1.0
+        urllib3==1.25.9
+        Werkzeug==1.0.1
+        wrapt==1.12.1
+
+    # Has a requirements.txt that specifies all dependencies explicitly. Nice!
+    - folder: scratchgan
+
+    # Has a requirements.txt that is definitely the result of `pip freeze`, as it even contains youtube-dl :facepalm:
+    # Probably wasn't using a virtualenv either as it contains quite some dependencies from the OS, e.g. apparmor, python-apt, python-debian, ufw
+    - folder: side_effects_penalties
+      requirements.txt: |
+        absl-py==0.10.0
+        attrs==19.3.0
+        bcrypt==3.1.7
+        beautifulsoup4==4.9.1
+        blinker==1.4
+        certifi==2020.4.5.1
+        chardet==3.0.4
+        cloudpickle==1.6.0
+        cryptography==2.8
+        decorator==4.4.2
+        distro==1.5.0
+        dm-tree==0.1.5
+        entrypoints==0.3
+        enum34==1.1.10
+        evdev==1.3.0
+        extras==1.0.0
+        fasteners==0.14.1
+        fixtures==3.0.0
+        future==0.18.2
+        gast==0.4.0
+        gbulb==0.6.1
+        html5lib==1.0.1
+        httplib2==0.18.1
+        idna==2.9
+        iniparse==0.4
+        jeepney==0.4.3
+        linecache2==1.0.0
+        lockfile==0.12.2
+        lxml==4.5.0
+        lz4==3.0.2
+        monotonic==1.5
+        mox3==1.0.0
+        networkx==1.8.1
+        numpy==1.18.4
+        oauthlib==3.1.0
+        olefile==0.46
+        pandas==1.1.3
+        paramiko==2.6.0
+        pbr==5.4.5
+        pexpect==4.6.0
+        Pillow==7.2.0
+        protobuf==3.11.3
+        psutil==5.6.7
+        pycairo==1.16.2
+        pycrypto==2.6.1
+        pycurl==7.43.0.2
+        Pygments==2.3.1
+        pyinotify==0.9.6
+        PyJWT==1.7.1
+        PyNaCl==1.4.0
+        pyOpenSSL==19.1.0
+        pyparsing==2.4.7
+        python-augeas==0.5.0
+        python-dateutil==2.8.1
+        python-mimeparse==1.6.0
+        python-xlib==0.27
+        pytz==2020.1
+        pyxattr==0.6.1
+        pyxdg==0.26
+        PyYAML==5.3.1
+        rekey==1
+        requests==2.23.0
+        scour==0.37
+        SecretStorage==3.1.2
+        setproctitle==1.1.10
+        six==1.15.0
+        sonnet==0.1.6
+        soupsieve==2.0.1
+        tensorflow-probability==0.11.1
+        testtools==2.3.0
+        tinycss==0.4
+        tinycss2==1.0.2
+        traceback2==1.4.0
+        unittest2==1.1.0
+        urllib3==1.25.9
+        webencodings==0.5.1
+
+    # Has a requirements.txt that specifies all dependencies explicitly, might be a neater `pip freeze`
+    - folder: sketchy
+
+    # Has a requirements.txt that specifies all dependencies explicitly, might be a neater `pip freeze`
+    - folder: transporter
+
+    # Has a requirements.txt, specifies explicit versions of some, but not all dependencies
+    - folder: tvt
+
+    # Has a requirements.txt with explicit versions, but there's also some additional instructions in the ReadMe.
+    - folder: unrestricted_advx
+
+    # Has a requirements.txt with minimal versions, including a tensorflow>=1.14, which will thus probably install 2.x and produce errors
+    - folder: unsupervised_adversarial_training
+
+# Another DeepMind related project, also used as requirement for some of the projects in the DeepMind monorepo.
+# Uses a setup.py instead of a requirements.txt
+- url: https://github.com/deepmind/optax.git
+
+# Another DeepMind related project, also used as requirement for some of the projects in the DeepMind monorepo.
+# Uses a setup.py instead of a requirements.txt
+- url: https://github.com/deepmind/multi_object_datasets.git
+
+
+# ----- Kaggle -----
+
+# Since Kaggle currently only shows projects with Jupyter Notebooks in them instead of projects with
+# actual source code, the projects here were sourced from: 
+# - https://awesomeopensource.com/projects/kaggle - Shows the top 100 or so Kaggle-related projects.
+# - http://ndres.me/kaggle-past-solutions/ - Sortable and searchable compilation of solutions to past Kaggle competitions (source: https://github.com/EliotAndres/kaggle-past-solutions)
+# Even then, not all competition solutions actually have their source code openly available.
+
+# 1st place solution for Kaggle Web Traffic Time Series Forecasting. 3 years old, latest commit 2 years ago.
+# Contains a requirements.txt without explicit versions
+- url: https://github.com/Arturus/kaggle-web-traffic.git
+  skip: true # RecursionError
+
+# Some Chinese project (I can't read Chinese...). 6.7k stars on GitHub
+# Contains code for GitHub pages documentation website too and some Python code to manage parts of that. src/script.py actually puts JS code with raw HTML in it in a Python variable :facepalm:
+- url: https://github.com/apachecn/Interview.git
+
+# 622 stars on GitHub, very recent, dec. 2020. Specifies explicit versions of most dependencies in a requirements.txt
+- url: https://github.com/chandrikadeb7/Face-Mask-Detection.git
+  skip: true # RecursionError
+
+# Participated in Classify Kaggle San Francisco Crime Description. 3-4 years old, 568 stars, no requirements.txt
+- url: https://github.com/jiegzhan/multi-class-text-classification-cnn-rnn.git
+  skip: true # RecursionError
+
+# 1st place solution for Kaggle iMaterialist (Fashion) 2019 at FGVC6. 1.5 years old, 445 stars, no requirements.txt, 
+# but does have a Dockerfile based on PyTorch 1.1.0 which also `pip install`s many requirements without specifying their versions.
+# Custom requirements added, this is the best I could make out of what was defined in the Dockerfile.
+- url: https://github.com/amirassov/kaggle-imaterialist.git
+  skip: true # RecursionError
+  requirements.txt: |
+    Cython==0.29.6
+    numpy==1.19.4
+    pandas==1.1.5
+    PyYAML
+    cycler
+    dill
+    h5py
+    imgaug
+    matplotlib==3.3.3
+    mmcv==0.2.5
+    opencv_contrib_python==4.4.0.46
+    Pillow==8.0.1
+    scikit-image
+    scikit-learn
+    scipy
+    setuptools
+    six==1.15.0
+    tqdm==4.54.1
+    ipython
+    ipdb
+    albumentations==0.5.2
+    click
+    jpeg4py==0.1.4
+    addict
+    colorama
+    torch==1.1.0
+    torchvision
+    iterative-stratification
+    pycocotools==2.0.0
+
+# 1st place solution for Kaggle Understanding Clouds from Satellite Images Challenge. Dec. 2019, 174 stars
+# has a proper requirements.txt
+- url: https://github.com/pudae/kaggle-understanding-clouds.git
+
+# 3rd place solution for Kaggle Understanding Clouds from Satellite Images Challenge. Dec. 2019, 25 stars
+# has a seemingly pip frozen requirements.txt from which I had to manually remove multiple packages.
+# Still this is a fuckton of packages, maybe this person never used a virtualenv...
+- url: https://github.com/naivelamb/kaggle-cloud-organization.git
+  requirements.txt: |
+    alabaster==0.7.12
+    albumentations==0.3.0
+    atomicwrites==1.3.0
+    attrs==19.1.0
+    Babel==2.6.0
+    backcall==0.1.0
+    backports.os==0.1.1
+    backports.shutil-get-terminal-size==1.0.0
+    beautifulsoup4==4.7.1
+    bitarray==0.8.3
+    bkcharts==0.2
+    bleach==3.1.0
+    bokeh==1.0.4
+    boto==2.49.0
+    Bottleneck==1.2.1
+    certifi==2019.9.11
+    cffi==1.12.2
+    chardet==3.0.4
+    Click==7.0
+    cloudpickle==0.8.0
+    clyent==1.2.1
+    colorama==0.4.
+    contextlib2==0.5.5
+    cryptography==2.6.1
+    cycler==0.10.0
+    Cython==0.29.6
+    cytoolz==0.9.0.1
+    dask==1.1.4
+    decorator==4.4.0
+    defusedxml==0.5.0
+    distributed==1.26.0
+    docutils==0.14
+    efficientnet-pytorch==0.4.0
+    entrypoints==0.3
+    et-xmlfile==1.0.1
+    fastcache==1.0.2
+    filelock==3.0.10
+    future==0.17.1
+    gevent==1.4.0
+    glob2==0.6
+    gmpy2==2.0.8
+    greenlet==0.4.15
+    h5py==2.9.0
+    heapdict==1.0.0
+    html5lib==1.0.1
+    idna==2.8
+    ImageHash==4.0
+    imageio==2.5.0
+    imagesize==1.1.0
+    imgaug==0.2.6
+    importlib-metadata==0.0.0
+    isort==4.3.16
+    iterative-stratification==0.1.6
+    itsdangerous==1.1.0
+    jdcal==1.4
+    jedi==0.13.3
+    jeepney==0.4
+    Jinja2==2.10
+    jsonschema==3.0.1
+    kaggle==1.5.4
+    keyring==18.0.0
+    kiwisolver==1.0.1
+    lazy-object-proxy==1.3.1
+    libarchive-c==2.8
+    lightgbm==2.2.1
+    llvmlite==0.28.0
+    locket==0.2.0
+    lxml==4.3.2
+    MarkupSafe==1.1.1
+    matplotlib==3.0.3
+    mccabe==0.6.1
+    mistune==0.8.4
+    more-itertools==6.0.0
+    mpmath==1.1.0
+    msgpack==0.6.1
+    multipledispatch==0.6.0
+    munch==2.3.2
+    nbconvert==5.4.1
+    nbformat==4.4.0
+    networkx==2.2
+    nltk==3.4
+    nose==1.3.7
+    notebook==5.7.8
+    numba==0.43.1
+    numexpr==2.6.9
+    numpy==1.16.2
+    numpydoc==0.8.0
+    olefile==0.46
+    opencv-python==4.1.0.25
+    opencv-python-headless==4.1.0.25
+    openpyxl==2.6.1
+    packaging==19.0
+    pandas==0.24.2
+    pandocfilters==1.4.2
+    parso==0.3.4
+    partd==0.3.10
+    path.py==11.5.0
+    pathlib2==2.3.3
+    patsy==0.5.1
+    pep8==1.7.1
+    pexpect==4.6.0
+    pickleshare==0.7.5
+    Pillow==5.4.1
+    pkginfo==1.5.0.1
+    pluggy==0.9.0
+    ply==3.11
+    pretrainedmodels==0.7.4
+    prompt-toolkit==2.0.9
+    protobuf==3.9.2
+    psutil==5.6.1
+    ptyprocess==0.6.0
+    py==1.8.0
+    pyarrow==0.12.1
+    pycodestyle==2.5.0
+    pycosat==0.6.3
+    pycparser==2.19
+    pycrypto==2.6.1
+    pycurl==7.43.0.2
+    pydicom==1.3.0
+    pyflakes==2.1.1
+    Pygments==2.3.1
+    pyOpenSSL==19.0.0
+    pyparsing==2.3.1
+    pyrsistent==0.14.11
+    PySocks==1.6.8
+    pytest==4.3.1
+    pytest-arraydiff==0.3
+    pytest-astropy==0.5.0
+    pytest-doctestplus==0.3.0
+    pytest-openfiles==0.3.2
+    pytest-remotedata==0.3.1
+    python-dateutil==2.8.0
+    python-slugify==3.0.2
+    pytz==2018.9
+    PyWavelets==1.0.2
+    PyYAML==5.1
+    pyzmq==18.0.0
+    qtconsole==4.4.3
+    requests==2.21.0
+    rope==0.12.0
+    ruamel-yaml==0.15.46
+    scikit-image==0.14.2
+    scikit-learn==0.20.3
+    scipy==1.2.1
+    seaborn==0.9.0
+    SecretStorage==3.1.1
+    segmentation-models-pytorch==0.0.3
+    Send2Trash==1.5.0
+    simplegeneric==0.8.1
+    singledispatch==3.4.0.3
+    six==1.12.0
+    snowballstemmer==1.2.1
+    sortedcollections==1.1.2
+    sortedcontainers==2.1.0
+    soupsieve==1.8
+    Sphinx==1.8.5
+    sphinxcontrib-websupport==1.1.0
+    statsmodels==0.9.0
+    sympy==1.3
+    tables==3.5.1
+    tblib==1.3.2
+    tensorboardX==1.8
+    terminado==0.8.1
+    testpath==0.4.2
+    text-unidecode==1.2
+    toolz==0.9.0
+    torch==1.1.0
+    torchvision==0.3.0
+    tornado==6.0.2
+    tqdm==4.31.1
+    traitlets==4.3.2
+    unicodecsv==0.14.1
+    urllib3==1.24.1
+    wcwidth==0.1.7
+    webencodings==0.5.1
+    Werkzeug==0.14.1
+    widgetsnbextension==3.4.2
+    wrapt==1.11.1
+    wurlitzer==1.0.2
+    xlrd==1.2.0
+    XlsxWriter==1.1.5
+    xlwt==1.3.0
+    zict==0.1.4
+    zipp==0.3.3
+  extraRequirements:
+  - git+https://github.com/NVIDIA/apex#egg=apex
+
+# 19th place solution for Kaggle Understanding Clouds from Satellite Images Challenge. Dec. 2019, 30 stars
+# No requirements.txt file to be found
+- url: https://github.com/bamps53/kaggle-cloud-2019.git
+  skip: true # RecursionError
+
+# 34th place solution for Kaggle Understanding Clouds from Satellite Images Challenge. Dec. 2019, 13 stars
+# Has a setup.py, but in its requirements array it says to use conda with the environment.yml file.
+- url: https://github.com/khornlund/understanding-cloud-organization.git
+
+# 1st place solution for Kaggle RSNA2019 Intracranial Hemorrhage Detection Challenge. Nov. 2019, 303 stars.
+# Has a requirements.txt, has explicit versions for most of the requirements.txt
+- url: https://github.com/SeuTao/RSNA2019_Intracranial-Hemorrhage-Detection
+
+# 2nd place solution for Kaggle RSNA2019 Intracranial Hemorrhage Detection Challenge. Nov. 2019, 105 stars.
+# No requirements.txt, but does have a Dockerfile hidden and with wrong filename that specifies some requirements.
+- url: https://github.com/darraghdog/rsna.git
+  skip: true # Probably written in an earlier Python 3 version where `async` was not yet a language keyword yet.
+
+# 3rd place solution for Kaggle RSNA2019 Intracranial Hemorrhage Detection Challenge. Nov. 2019, 51 stars.
+# Has requirements.txt, no explicit versions
+- url: https://github.com/okotaku/kaggle_rsna2019_3rd_solution.git
+
+# 5th place solution for Kaggle RSNA2019 Intracranial Hemorrhage Detection Challenge. Nov. 2019, 39 stars.
+# Has requirements.txt, but doesn't use it anywhere. Has a Makefile that runs a Docker container that needs to be built from a separate Dockerfile (which, you guessed it, doesn't use the requirements.txt)
+- url: https://github.com/ngxbac/Kaggle-RSNA.git
+  requirements.txt: |
+    addict==2.2.1
+    albumentations==0.3.3
+    argh==0.26.2
+    backcall==0.1.0
+    beautifulsoup4==4.7.1
+    catalyst==19.10
+    certifi==2019.3.9
+    cffi==1.12.3
+    chardet==3.0.4
+    click==7.0
+    cnn-finetune==0.6.0
+    configparser==4.0.2
+    crc32c==1.7
+    cryptography==2.6.1
+    cycler==0.10.0
+    cython==0.29.13
+    decorator==4.4.0
+    filelock==3.0.10
+    gitdb2==2.0.6
+    gitpython==3.0.3
+    glob2==0.6
+    gql==0.1.0
+    graphql-core==2.2.1
+    idna==2.8
+    imagecorruptions==1.0.0
+    imageio==2.5.0
+    imgaug==0.2.6
+    iterative-stratification==0.1.6
+    jedi==0.13.3
+    jinja2==2.10.1
+    joblib==0.14.0
+    kiwisolver==1.1.0
+    libarchive-c==2.8
+    lz4==2.2.1
+    markupsafe==1.1.1
+    matplotlib==3.1.1
+    mmcv==0.2.13
+    munch==2.3.2
+    networkx==2.3
+    numpy==1.17.2
+    nvidia-ml-py3==7.352.0
+    olefile==0.46
+    opencv-python==4.1.1.26
+    pandas==0.25.1
+    parso==0.4.0
+    pathtools==0.1.2
+    pexpect==4.7.0
+    pickleshare==0.7.5
+    pillow==6.0.0
+    pip==19.1
+    pkginfo==1.5.0.1
+    plotly==4.1.1
+    pretrainedmodels==0.7.4
+    promise==2.2.1
+    prompt-toolkit==2.0.9
+    protobuf==3.10.0
+    psutil==5.6.2
+    ptyprocess==0.6.0
+    pyarrow==0.14.1
+    pycocotools==2.0.0
+    pycosat==0.6.3
+    pycparser==2.19
+    pydicom==1.3.0
+    pygments==2.3.1
+    pyopenssl==19.0.0
+    pyparsing==2.4.2
+    pysocks==1.6.8
+    python-dateutil==2.8.0
+    pytz==2019.1
+    pywavelets==1.0.3
+    pyyaml==5.1
+    requests==2.21.0
+    retrying==1.3.3
+    ruamel-yaml==0.15.46
+    rx==1.6.1
+    safitty==1.2.5
+    scikit-image==0.15.0
+    scikit-learn==0.21.3
+    scipy==1.3.1
+    seaborn==0.9.0
+    segmentation-models-pytorch==0.0.3
+    sentry-sdk==0.12.3
+    setuptools==41.0.1
+    shortuuid==0.5.0
+    simpleitk==1.2.2
+    six==1.12.0
+    smmap2==2.0.5
+    soupsieve==1.8
+    subprocess32==3.5.4
+    tensorboardx==1.8
+    terminaltables==3.1.0
+    timm==0.1.14
+    torch==1.1.0
+    torchvision==0.4.0
+    tqdm==4.31.1
+    traitlets==4.3.2
+    urllib3==1.24.2
+    wandb==0.8.12
+    watchdog==0.9.0
+    wcwidth==0.1.7
+  extraRequirements:
+  - git+https://github.com/NVIDIA/apex#egg=apex
+
+# 11th place solution for Kaggle RSNA2019 Intracranial Hemorrhage Detection Challenge. Nov. 2019, 155 stars.
+# Has a requirements.txt in the repo, but apex isn't pip installable, and sklearn is replaced by scikit-learn and pydicom 1.4.0.dev0 was replaced for 1.4.2
+- url: https://github.com/appian42/kaggle-rsna-intracranial-hemorrhage.git
+  requirements.txt: |
+    albumentations==0.3.3
+    catboost==0.12.2
+    efficientnet-pytorch==0.5.1
+    kaggle==1.5.6
+    lightgbm==2.2.2
+    matplotlib==3.0.2
+    numpy==1.15.4
+    opencv-python==4.1.1.26
+    pandas==0.23.4
+    Pillow==6.2.0
+    pretrainedmodels==0.7.4
+    pydicom==1.4.2
+    scikit-image==0.14.1
+    scikit-learn==0.21.3
+    scipy==1.3.1
+    torch==1.1.0
+    torchvision==0.3.0
+    tqdm==4.28.1
+    xgboost==0.80
+  extraRequirements:
+  - git+https://github.com/NVIDIA/apex#egg=apex
+
+# 19th place solution for Kaggle Lyft 3D Object Detection challenge. Dec. 2018. 19 stars
+# Literally just a fork of the existing second.pytorch made to work for the challenge.
+# No requirements.txt, but ReadMe specifies some requirements without versions.
+- url: https://github.com/pyaf/second.pytorch.git
+  skip: true # RecursionError
+  requirements.txt: |
+    numpy==1.19.4
+    opencv_contrib_python==4.4.0.46
+    alfred==0.2
+    apex==0.9.10dev
+    fire==0.3.1
+    Flask==1.1.2
+    flask_cors==3.0.9
+    loguru==0.5.3
+    lyft_dataset_sdk==0.0.8
+    matplotlib==3.3.3
+    numba==0.52.0
+    open3d==0.11.2
+    pandas==1.1.5
+    protobuf==3.14.0
+    psutil==5.8.0
+    PyOpenGL==3.1.5
+    PyQt5==5.15.2
+    pyqtgraph==0.11.1
+    pyquaternion==0.9.9
+    scikit_learn==0.24.0
+    scipy==1.5.4
+    seaborn==0.11.1
+    Shapely==1.7.1
+    scikit-image==0.18.1
+    tensorboardX==2.1
+    torch==1.7.1
+    torchvision==0.8.2
+    tqdm==4.54.1
+
+
+# 55th place solution for Kaggle Severstal: Steel Defect Detection challenge. Oct. 2019, 145 stars
+# Has a setup.py, but in its requirements array it says to use conda with the environment.yml file.
+- url: https://github.com/khornlund/severstal-steel-defect-detection.git
+
+# 1st place solution for Kaggle Kuzushiji Recognition challenge. Oct. 2019, 71 stars.
+# Has a (probably pip frozen) requirements.txt but readme also says mmdetection needs to be added.
+# fvcore 0.1 didn't exist and torchvision 0.4.0a0+6b959ee was probably installed directly from the Git repo or something,
+# Had some unnecessary requirements in there too.
+- url: https://github.com/tascj/kaggle-kuzushiji-recognition.git
+  requirements.txt: |
+    addict==2.2.1
+    albumentations==0.3.3
+    attrs==19.1.0
+    backcall==0.1.0
+    bleach==3.1.4
+    certifi==2019.9.11
+    cffi==1.12.3
+    chardet==3.0.4
+    cycler==0.10.0
+    Cython==0.29.13
+    decorator==4.4.0
+    defusedxml==0.6.0
+    entrypoints==0.3
+    fvcore==0.1.2.post20201218
+    idna==2.8
+    imagecorruptions==1.0.0
+    imageio==2.5.0
+    imgaug==0.2.6
+    jedi==0.15.1
+    Jinja2==2.10.1
+    joblib==0.13.2
+    jsonschema==3.0.2
+    kaggle==1.5.6
+    kiwisolver==1.1.0
+    lightgbm==2.2.3
+    MarkupSafe==1.1.1
+    matplotlib==3.1.1
+    mistune==0.8.4
+    mmcv==0.2.13
+    nbconvert==5.6.0
+    nbformat==4.4.0
+    networkx==2.3
+    notebook==6.0.1
+    numpy==1.17.2
+    olefile==0.46
+    opencv-python==4.1.1.26
+    pandas==0.25.1
+    pandocfilters==1.4.2
+    parso==0.5.1
+    pexpect==4.7.0
+    pickleshare==0.7.5
+    Pillow==6.2.2
+    portalocker==1.5.1
+    prompt-toolkit==2.0.9
+    ptyprocess==0.6.0
+    pycocotools==2.0.0
+    pycparser==2.19
+    Pygments==2.4.2
+    pyparsing==2.4.2
+    pyrsistent==0.15.4
+    python-dateutil==2.8.0
+    python-slugify==3.0.4
+    pytz==2019.2
+    PyWavelets==1.0.3
+    PyYAML==5.1.2
+    pyzmq==18.1.0
+    qtconsole==4.5.5
+    requests==2.22.0
+    scikit-image==0.15.0
+    scikit-learn==0.21.3
+    scipy==1.3.1
+    Send2Trash==1.5.0
+    Shapely==1.6.4.post2
+    six==1.12.0
+    termcolor==1.1.0
+    terminado==0.8.2
+    terminaltables==3.1.0
+    testpath==0.4.2
+    text-unidecode==1.3
+    torch==1.2.0
+    torchvision==0.4.2
+    tornado==6.0.3
+    tqdm==4.36.1
+    traitlets==4.3.2
+    urllib3==1.24.3
+    wcwidth==0.1.7
+    webencodings==0.5.1
+    widgetsnbextension==3.5.1
+    yacs==0.1.6
+
+# 2nd place solution for Kaggle Kuzushiji Recognition challenge. Oct. 2019, 73 stars.
+# Has both a requirements.txt and a setup.py.
+- url: https://github.com/lopuhin/kaggle-kuzushiji-2019.git
+
+# 3rd place solution for Kaggle Kuzushiji Recognition challenge. Oct. 2019, 20 stars.
+# Has a well-defined requirements.txt, but the import-errors on this project show that 
+# it is actually missing some dependencies including matplotlib, pycocotools, yacs and apex.
+- url: https://github.com/knjcode/kaggle-kuzushiji-recognition-2019.git
+
+# 9th place solution for Kaggle Kuzushiji Recognition challenge. Oct. 2019, 14 stars.
+# No requirements.txt, generated requirements.txt complained about skimage --> scikit-image
+- url: https://github.com/mv-lab/kuzushiji-recognition.git
+  requirements.txt: |
+    numpy==1.19.4
+    opencv_contrib_python==4.4.0.46
+    albumentations==0.5.2
+    fastai==2.1.10
+    matplotlib==3.3.3
+    pandas==1.1.5
+    Pillow==8.0.1
+    pretrainedmodels==0.7.4
+    scikit_learn==0.24.0
+    scipy==1.5.4
+    scikit-image==0.18.1
+    torch==1.7.1
+    tqdm==4.54.1
+
+# 1st place solution for the Kaggle Recursion Cellular Image Classification. Oct. 2019, 116 stars.
+# Has no requirements.txt, but does contain a Dockerfile.
+- url: https://github.com/maciej-sypetkowski/kaggle-rcic-1st.git
+
+# 3rd place solution for the Kaggle Recursion Cellular Image Classification. Oct. 2019, 19 stars
+# Has no requirements.txt, but does specify its exact requirements in the ReadMe.
+# Literally all they had to do was put it in a requirements.txt. Turns out they had some mistakes in the requirements too.
+- url: https://github.com/SeuTao/CellSignal-Cell-Image-Analysis.git
+  requirements.txt: |
+    imgaug==0.2.8
+    opencv-python==3.4.2.17
+    scipy==1.1.0
+    scikit-image==0.14.0
+    scikit-learn==0.19.2
+    torch==1.0.1
+    torchvision==0.2.2
+    
+# 4th place solution for the Kaggle Recursion Cellular Image Classification. Oct. 2019, 33 stars.
+# Has a requirements.txt that has unnecessary requirements in it, e.g. conda, and uses apex.
+- url: https://github.com/ngxbac/Kaggle-Recursion-Cellular.git
+  requirements.txt: |
+    albumentations==0.3.0
+    asn1crypto==0.24.0
+    backcall==0.1.0
+    beautifulsoup4==4.7.1
+    catalyst==19.6.5
+    certifi==2019.3.9
+    cffi==1.12.3
+    chardet==3.0.4
+    Click==7.0
+    cloudpickle==1.2.2
+    cnn-finetune==0.5.3
+    crc32c==1.7
+    cryptography==2.6.1
+    cycler==0.10.0
+    decorator==4.4.0
+    filelock==3.0.10
+    future==0.17.1
+    glob2==0.6
+    gym==0.14.0
+    idna==2.8
+    imageio==2.5.0
+    imgaug==0.2.6
+    jedi==0.13.3
+    Jinja2==2.10.1
+    joblib==0.14.0
+    jsonpatch==1.24
+    jsonpointer==2.0
+    kiwisolver==1.1.0
+    libarchive-c==2.8
+    lz4==2.2.1
+    MarkupSafe==1.1.1
+    matplotlib==3.1.1
+    mock==3.0.5
+    munch==2.3.2
+    networkx==2.3
+    numpy==1.17.2
+    olefile==0.46
+    opencv-python==4.1.1.26
+    opencv-python-headless==4.1.1.26
+    pandas==0.25.1
+    parso==0.4.0
+    pexpect==4.7.0
+    pickleshare==0.7.5
+    Pillow==6.0.0
+    pkginfo==1.5.0.1
+    plotly==4.1.1
+    pretrainedmodels==0.7.4
+    prompt-toolkit==2.0.9
+    protobuf==3.10.0
+    psutil==5.6.2
+    ptyprocess==0.6.0
+    pyarrow==0.14.1
+    pycosat==0.6.3
+    pycparser==2.19
+    pyglet==1.3.2
+    Pygments==2.3.1
+    pymongo==3.9.0
+    pyOpenSSL==19.0.0
+    pyparsing==2.4.2
+    PySocks==1.6.8
+    python-dateutil==2.8.0
+    pytz==2019.1
+    PyWavelets==1.0.3
+    PyYAML==5.1
+    pyzmq==18.1.0
+    redis==3.3.8
+    requests==2.21.0
+    retrying==1.3.3
+    ruamel-yaml==0.15.46
+    safitty==1.2.5
+    scikit-image==0.15.0
+    scikit-learn==0.21.3
+    scipy==1.3.1
+    seaborn==0.9.0
+    six==1.12.0
+    soupsieve==1.8
+    tensorboardX==1.8
+    timm==0.1.14
+    torch==1.1.0
+    torchfile==0.1.0
+    torchnet==0.0.4
+    torchvision==0.2.2
+    tornado==6.0.3
+    tqdm==4.31.1
+    traitlets==4.3.2
+    urllib3==1.24.2
+    visdom==0.1.8.9
+    wcwidth==0.1.7
+    websocket-client==0.56.0
+  extraRequirements:
+  - git+https://github.com/NVIDIA/apex#egg=apex
+
+# 1st place solution for RSNA STR Pulmonary Embolism Detection. Nov 2020, 34 stars.
+# Has no requirements.txt, but does specify some requirements in the ReadMe.
+- url: https://github.com/GuanshuoXu/RSNA-STR-Pulmonary-Embolism-Detection.git
+  requirements.txt: |
+    torch==1.3.1
+    torchvision==0.4.2
+    pydicom==2.0.0
+    pandas==1.0.3
+    numpy==1.17.2
+    gdcm==1.1 
+    huggingface==0.0.1
+    transformers==2.11.0
+    imgaug==0.4.0
+  extraRequirements:
+  - git+https://github.com/NVIDIA/apex#egg=apex
+
+# 2nd place solution for RSNA STR Pulmonary Embolism Detection. Nov 2020, 12 stars.
+# Has a requirements.txt that was probably pip frozen
+- url: https://github.com/i-pan/kaggle-rsna-pe.git
+  requirements.txt: |
+    absl-py==0.10.0
+    addict==2.2.1
+    albumentations==0.4.5
+    arrow==0.15.5
+    boto3==1.12.39
+    botocore==1.15.39
+    cachetools==4.1.1
+    certifi==2020.4.5.1
+    cffi==1.14.0
+    chardet==3.0.4
+    click==7.1.1
+    cloudpickle==1.3.0
+    cycler==0.10.0
+    Cython==0.29.17
+    cytoolz==0.10.1
+    dask==2.13.0
+    decorator==4.4.2
+    decord==0.3.9
+    dicom2nifti==2.2.10
+    docutils==0.15.2
+    dominate==2.5.1
+    fastremap==1.10.2
+    ffmpeg==1.4
+    ffprobe==0.5
+    filelock==3.0.12
+    fill-voids==2.0.0
+    future==0.18.2
+    gdown==3.12.2
+    google-auth==1.20.1
+    google-auth-oauthlib==0.4.1
+    grpcio==1.31.0
+    idna==2.9
+    image-classifiers==0.2.2
+    imagecodecs==2020.2.18
+    imageio==2.8.0
+    imageio-ffmpeg==0.4.2
+    imgaug==0.2.6
+    importlib-metadata==1.7.0
+    iterative-stratification==0.1.6
+    jmespath==0.9.5
+    joblib==0.14.1
+    jsonpatch==1.25
+    jsonpointer==2.0
+    kaggle==1.5.6
+    kiwisolver==1.1.0
+    llvmlite==0.32.0
+    lxml==4.5.0
+    Markdown==3.2.2
+    matplotlib==3.1.3
+    mdai==0.5.0
+    mmcv==1.0.4
+    mmcv-full==1.0.4
+    munch==2.5.0
+    networkx==2.4
+    nibabel==3.1.0
+    numba==0.49.0
+    numpy==1.18.4
+    oauthlib==3.1.0
+    olefile==0.46
+    omegaconf==2.0.0
+    opencv-python==4.2.0.34
+    opencv-python-headless==4.2.0.34
+    openslide-python==1.1.2
+    packaging==20.3
+    pandas==1.0.3
+    Pillow==7.0.0
+    PIMS==0.5
+    pretrainedmodels==0.7.4
+    protobuf==3.13.0
+    pyarrow==0.16.0
+    pyasn1==0.4.8
+    pyasn1-modules==0.2.8
+    pycocotools==2.0.0
+    pycparser==2.20
+    pydicom==1.4.2
+    PyExecJS==1.5.1
+    pyparsing==2.4.6
+    PySocks==1.7.1
+    python-dateutil==2.8.1
+    python-slugify==4.0.0
+    pytorch-lightning==0.10.0
+    pytz==2019.3
+    PyWavelets==1.1.1
+    PyYAML==5.3.1
+    pyzmq==19.0.1
+    regex==2020.4.4
+    requests==2.23.0
+    requests-oauthlib==1.3.0
+    retrying==1.3.3
+    rsa==4.6
+    s3transfer==0.3.3
+    sacremoses==0.0.38
+    scikit-image==0.16.2
+    scikit-learn==0.22.1
+    scikit-video==1.1.11
+    scipy==1.4.1
+    sentencepiece==0.1.85
+    SimpleITK==1.2.4
+    six==1.14.0
+    slicerator==1.0.0
+    tensorboard==2.2.0
+    tensorboard-plugin-wit==1.7.0
+    terminaltables==3.1.0
+    text-unidecode==1.3
+    tifffile==2020.2.16
+    timm==0.2.1
+    tokenizers==0.9.2
+    toolz==0.10.0
+    torch==1.6.0
+    torchfile==0.1.0
+    torchvision==0.7.0
+    tornado==6.0.4
+    tqdm==4.44.1
+    transformers==3.4.0
+    translators==4.4.3
+    typeguard==2.9.1
+    typing-extensions==3.7.4.3
+    urllib3==1.24.3
+    visdom==0.1.8.9
+    vtk==9.0.1
+    websocket-client==0.57.0
+    Werkzeug==1.0.1
+    yapf==0.30.0
+    zipp==3.1.0
+
+# 10th place solution for RSNA STR Pulmonary Embolism Detection. Nov 2020, 7 stars.
+# Has a requirements.txt that looks nicely groomed, but it actually contained some mistakes (sklearn and warmup_scheduler don't exist, apex is extra requirement).
+- url: https://github.com/OrKatz7/RSNA-Pulmonary-Embolism-Detection.git
+  requirements.txt: |
+    joblib==0.14.1
+    efficientnet_pytorch==0.6.3
+    torch==1.6.0
+    tqdm==4.46.1
+    pandas==0.25.3
+    torchvision==0.7.0
+    scikit_image==0.16.2
+    vtk==9.0.1
+    scipy==1.1.0
+    numpy==1.17.0
+    opencv_contrib_python==4.2.0.34
+    matplotlib==3.1.1
+    monai==0.3.0
+    albumentations==0.4.6
+    pretrainedmodels==0.7.4
+    pydicom==2.0.0
+    gdcm==1.0
+    Pillow==8.0.1
+    scikit_learn==0.23.2
+  extraRequirements:
+  - git+https://github.com/NVIDIA/apex#egg=apex
+
+# 1st place solution for Mechanisms of Action (MoA) Prediction Dec 2020, 36 stars.
+# Has a hand-groomed requirements.txt, which looks nice and simple, but contains mistakes
+- url: https://github.com/guitarmind/kaggle_moa_winner_hungry_for_gold.git
+  requirements.txt: |
+    iterative-stratification==0.1.6
+    geffnet
+    git+https://github.com/zhanghang1989/ResNeSt
+    optuna
+    pytorch-lightning==1.0.2
+    git+https://github.com/dreamquark-ai/tabnet.git
+    umap-learn==0.4.6
+    torch-optimizer==0.0.1a17
+    pytorch-ranger==0.1.1
+
+# 3rd place solution for Mechanisms of Action (MoA) Prediction Dec 2020, 4 stars.
+# Has a requirements.txt with plain English text in it and then manually the following requirements, but wrongly formatted for a requirements.txt file :facepalm:
+- url: https://github.com/jxzly/3rd-kaggle-moa-2020-solution
+  requirements.txt: |
+    pandas==0.25.3
+    numpy==1.17.0
+    tqdm==4.46.1
+    scikit-learn==0.23.1
+    torch==1.5.0
+    iterative-stratification==0.1.6
+
+# 3rd place solution for Kaggle Lyft Motion Prediction for Autonomous Vehicles. Dec 2020, 26 stars.
+- url: https://github.com/asanakoy/kaggle-lyft-motion-prediction-av
+  requirements.txt: |
+    absl-py==0.10.0
+    adamp==0.3.0
+    alabaster==0.7.12
+    antlr4-python3-runtime==4.8
+    appdirs==1.4.4
+    argon2-cffi==20.1.0
+    asciitree==0.3.3
+    async-generator==1.10
+    attrs==20.2.0
+    Babel==2.8.0
+    backcall==0.2.0
+    black==19.10b0
+    bleach==3.1.5
+    cachetools==4.1.1
+    catalyst==20.11
+    certifi==2020.6.20
+    cffi==1.14.2
+    cfgv==3.2.0
+    chardet==3.0.4
+    click==7.1.2
+    colorama==0.4.3
+    commonmark==0.9.1
+    coverage==5.2.1
+    cryptography==3.1
+    cycler==0.10.0
+    dataclasses==0.6
+    decorator==4.4.2
+    defusedxml==0.6.0
+    deprecation==2.1.0
+    distlib==0.3.1
+    docutils==0.16
+    entrypoints==0.3
+    fasteners==0.15
+    filelock==3.0.12
+    flake8==3.8.3
+    future==0.18.2
+    gitdb==4.0.5
+    GitPython==3.1.11
+    google-auth==1.21.1
+    google-auth-oauthlib==0.4.1
+    grpcio==1.31.0
+    hydra-core==1.0.4
+    identify==1.5.0
+    idna==2.10
+    imageio==2.9.0
+    imagesize==1.2.0
+    importlib-resources==3.3.0
+    ipykernel==5.3.4
+    ipython==7.18.1
+    ipython-genutils==0.2.0
+    ipywidgets==7.5.1
+    isort==5.0.4
+    jedi==0.17.2
+    jeepney==0.4.3
+    Jinja2==2.11.2
+    joblib==0.17.0
+    jsonschema==3.2.0
+    jupyter-client==6.1.7
+    jupyter-core==4.6.3
+    jupyterlab-pygments==0.1.1
+    kaggle==1.5.8
+    keyring==21.4.0
+    kiwisolver==1.2.0
+    kornia==0.4.1
+    l5kit==1.1.0
+    lightgbm==3.0.0
+    llvmlite==0.34.0
+    lz4==3.1.0
+    Markdown==3.2.2
+    MarkupSafe==1.1.1
+    matplotlib==3.3.1
+    mccabe==0.6.1
+    mistune==0.8.4
+    monotonic==1.5
+    more-itertools==8.5.0
+    mypy==0.782
+    mypy-extensions==0.4.3
+    nbclient==0.5.0
+    nbconvert==6.0.1
+    nbformat==5.0.7
+    nest-asyncio==1.4.0
+    nodeenv==1.5.0
+    notebook==6.1.4
+    numba==0.51.2
+    numcodecs==0.7.2
+    numexpr==2.7.1
+    numpy==1.19.1
+    oauthlib==3.1.0
+    omegaconf==2.0.5
+    opencv-contrib-python-headless==4.4.0.42
+    opencv-python==4.4.0.46
+    packaging==20.4
+    pandas==1.1.2
+    pandocfilters==1.4.2
+    parso==0.7.1
+    pathspec==0.8.0
+    pexpect==4.8.0
+    pickleshare==0.7.5
+    Pillow==7.2.0
+    pkginfo==1.5.0.1
+    plotly==4.12.0
+    pluggy==0.13.1
+    pre-commit==2.5.1
+    prometheus-client==0.8.0
+    prompt-toolkit==3.0.7
+    protobuf==3.12.2
+    PTable==0.9.2
+    ptyprocess==0.6.0
+    py==1.9.0
+    pyasn1==0.4.8
+    pyasn1-modules==0.2.8
+    pycodestyle==2.6.0
+    pycparser==2.20
+    pyflakes==2.2.0
+    Pygments==2.6.1
+    pykalman==0.9.5
+    pymap3d==2.4.1
+    pyparsing==2.4.7
+    PyQt5==5.15.1
+    PyQt5-sip==12.8.1
+    PyQt5-stubs==5.14.2.2
+    pyrsistent==0.16.0
+    pytest==5.4.3
+    pytest-cov==2.10.0
+    python-dateutil==2.8.1
+    pytorch-model-summary==0.1.2
+    pytz==2020.1
+    PyYAML==5.3.1
+    pyzmq==19.0.2
+    readme-renderer==26.0
+    recommonmark==0.6.0
+    regex==2020.7.14
+    requests==2.24.0
+    requests-oauthlib==1.3.0
+    requests-toolbelt==0.9.1
+    retrying==1.3.3
+    rfc3986==1.4.0
+    rsa==4.6
+    scikit-learn==0.23.2
+    scipy==1.5.2
+    SecretStorage==3.1.2
+    Send2Trash==1.5.0
+    six==1.15.0
+    smmap==3.0.4
+    snowballstemmer==2.0.0
+    Sphinx==3.1.1
+    sphinx-rtd-theme==0.5.0
+    sphinxcontrib-applehelp==1.0.2
+    sphinxcontrib-devhelp==1.0.2
+    sphinxcontrib-htmlhelp==1.0.3
+    sphinxcontrib-jsmath==1.0.1
+    sphinxcontrib-qthelp==1.0.3
+    sphinxcontrib-serializinghtml==1.1.4
+    tables==3.6.1
+    tensorboard==2.3.0
+    tensorboard-plugin-wit==1.7.0
+    tensorboardX==2.1
+    terminado==0.8.3
+    testpath==0.4.4
+    threadpoolctl==2.1.0
+    timm==0.2.1
+    toml==0.10.1
+    torch
+    torchaudio==0.7.0
+    torchsummary==1.5.1
+    torchvision==0.8.1
+    tornado==6.0.4
+    tqdm==4.48.2
+    traitlets==5.0.4
+    transforms3d==0.3.1
+    twine==3.2.0
+    typed-ast==1.4.1
+    typing-extensions==3.7.4.3
+    urllib3==1.25.10
+    virtualenv==20.0.31
+    wcwidth==0.2.5
+    webencodings==0.5.1
+    Werkzeug==1.0.1
+    widgetsnbextension==3.5.1
+    zarr==2.4.0
+  extraRequirements:
+  - git+https://github.com/NVIDIA/apex#egg=apex
+
+# Solution for Kaggle Lyft Motion Prediction for Autonomous Vehicles. Dec 2020, 2 stars.
+# Made use of a tip posted on forum to properly format code: https://www.kaggle.com/c/lyft-motion-prediction-autonomous-vehicles/discussion/199506
+# Actually has a CI pipeline and looks like it has well-formatted requirements.txt!
+- url: https://github.com/Fkaneko/kaggle-lyft-motion-pred.git
+
+# 4th place solution for Kaggle Lyft Motion Prediction for Autonomous Vehicles. Dec 2020, 2 stars.
+# pip freeze is bae, apparently...
+- url: https://github.com/pfnet-research/kaggle-lyft-motion-prediction-4th-place-solution.git
+  requirements.txt: |
+    albumentations==0.4.3
+    alembic==1.4.3
+    argon2-cffi==20.1.0
+    asciitree==0.3.3
+    async-generator==1.10
+    attrs==20.2.0
+    backcall==0.2.0
+    bleach==3.2.1
+    catboost==0.24.1
+    category-encoders==2.2.2
+    certifi==2020.6.20
+    cffi==1.14.3
+    chardet==3.0.4
+    cliff==3.4.0
+    cloudpickle==1.3.0
+    cmaes==0.6.1
+    cmd2==1.3.10
+    colorama==0.4.3
+    colorlog==4.2.1
+    cupy-cuda101==7.0.0
+    cycler==0.10.0
+    decorator==4.4.2
+    defusedxml==0.6.0
+    efficientnet-pytorch==0.7.0
+    entrypoints==0.3
+    fasteners==0.15
+    fastrlock==0.5
+    future==0.18.2
+    graphviz==0.14.1
+    idna==2.10
+    imageio==2.9.0
+    imgaug==0.2.6
+    ipykernel==5.3.4
+    ipython==7.18.1
+    ipython-genutils==0.2.0
+    ipywidgets==7.5.1
+    jedi==0.17.2
+    Jinja2==2.11.2
+    joblib==0.14.1
+    json5==0.9.5
+    jsonschema==3.2.0
+    jupyter==1.0.0
+    jupyter-client==6.1.7
+    jupyter-console==6.2.0
+    jupyter-core==4.6.3
+    jupyterlab==2.2.8
+    jupyterlab-pygments==0.1.2
+    jupyterlab-server==1.2.0
+    kiwisolver==1.2.0
+    l5kit==1.1.0
+    lightgbm==3.0.0
+    llvmlite==0.35.0
+    Mako==1.1.3
+    MarkupSafe==1.1.1
+    matplotlib==3.2.0
+    mistune==0.8.4
+    monotonic==1.5
+    mpi4py==3.0.3
+    munch==2.5.0
+    nbclient==0.5.0
+    nbconvert==6.0.6
+    nbformat==5.0.7
+    nest-asyncio==1.4.1
+    networkx==2.4
+    nose==1.3.7
+    notebook==6.1.4
+    numba==0.52.0
+    numcodecs==0.7.2
+    numpy==1.18.1
+    opencv-contrib-python-headless==4.4.0.44
+    opencv-python==4.2.0.32
+    opencv-python-headless==4.4.0.44
+    optuna==1.3.0
+    packaging==20.4
+    pandas==1.0.2
+    pandocfilters==1.4.2
+    parso==0.7.1
+    patsy==0.5.1
+    pbr==5.5.0
+    pexpect==4.8.0
+    pickleshare==0.7.5
+    Pillow==7.1.2
+    plotly==4.10.0
+    pretrainedmodels==0.7.4
+    prettytable==0.7.2
+    prometheus-client==0.8.0
+    prompt-toolkit==3.0.7
+    protobuf==3.13.0
+    PTable==0.9.2
+    ptyprocess==0.6.0
+    pycparser==2.20
+    Pygments==2.7.1
+    pymap3d==2.4.3
+    pyparsing==2.4.7
+    pyperclip==1.8.0
+    pyrsistent==0.17.3
+    python-dateutil==2.8.1
+    python-editor==1.0.4
+    pytorch-ignite==0.4.1
+    pytorch-pfn-extras==0.3.1
+    pytz==2020.1
+    PyWavelets==1.1.1
+    PyYAML==5.3.1
+    pyzmq==19.0.2
+    qtconsole==4.7.7
+    QtPy==1.9.0
+    requests==2.24.0
+    resnest==0.0.6b20200912
+    retrying==1.3.3
+    scikit-image==0.16.2
+    scikit-learn==0.22.2.post1
+    scipy==1.4.1
+    seaborn==0.9.0
+    segmentation-models-pytorch==0.1.0
+    Send2Trash==1.5.0
+    Shapely==1.7.1
+    six==1.15.0
+    SQLAlchemy==1.3.19
+    statsmodels==0.12.0
+    stevedore==3.2.2
+    terminado==0.9.1
+    testpath==0.4.4
+    timm==0.3.1
+    toml==0.10.0
+    torch==1.6.0
+    torchvision==0.7.0
+    tornado==6.0.4
+    tqdm==4.45.0
+    traitlets==5.0.4
+    transforms3d==0.3.1
+    urllib3==1.25.10
+    wcwidth==0.2.5
+    webencodings==0.5.1
+    widgetsnbextension==3.5.1
+    xgboost==1.2.0
+    zarr==2.4.0
+
+# Solution for Kaggle Lyft Motion Prediction for Autonomous Vehicles. Dec 2020, 8 stars.
+# Code structure looks decent, but has no requirements.txt
+- url: https://github.com/ciararogerson/Kaggle_Lyft.git
+
+# 1st place solution for Kaggle Landmark Recognition 2020 competition. Oct 2020. 143 stars
+# Has a short requirements.txt.
+- url: https://github.com/psinger/kaggle-landmark-recognition-2020-1st-place.git
+
+# 2nd place solution for Kaggle Landmark Recognition 2020 competition. Oct 2020. 66 stars
+# Has a cleaned requirements.txt that is not compatible with pip because it contained single '=' characters.
+# Had a 'cleaned' requirements.txt with Apex, some unresolvable versions and single '=' characters... 
+# pandas 0.23.1 was also taking 15 minutes to compile and exited with a gcc error, so I upgraded it to 0.24.2.
+- url: https://github.com/bestfitting/instance_level_recognition.git
+  requirements.txt: |
+    tqdm==4.15.0
+    numpy==1.19.1
+    pandas==0.24.2
+    scipy==1.5.0
+    torch==1.6.0
+    torchvision==0.7.0
+    mlcrate==0.2.0
+    scikit-image==0.15.0
+    scikit-learn==0.23.1
+    pydegensac==0.1.2
+    faiss-cpu==1.6.5
+
+# 3rd place solution for Kaggle Landmark Recognition 2020 competition. Oct 2020. 42 stars
+# Relatively clean requirements.txt, but needed some fixes because of non-existing versions.
+- url: https://github.com/haqishen/Google-Landmark-Recognition-2020-3rd-Place-Solution.git
+  requirements.txt: |
+    albumentations==0.4.6
+    geffnet==0.9.8
+    torch==1.6.0
+    resnest==0.0.6b20201012
+    pandas==0.24.2
+    torchvision==0.7.0
+    tqdm==4.31.1
+    opencv_python==4.4.0.44
+    numpy==1.18.5
+    scikit_learn==0.23.2
+  extraRequirements:
+  - git+https://github.com/NVIDIA/apex#egg=apex
+
+# 22nd place solution for Kaggle Landmark Recognition 2020 competition. Oct 2020. 3 stars
+# Non-standard folder structure, but has good requirements and even has CI.
+- url: https://github.com/hav4ik/google-landmarks-2020.git
+  projects:
+    - folder: python
+
+# 1st place solution for Kaggle SIIM-ISIC Melanoma Classification competition. Aug 2020. 88 stars.
+- url: https://github.com/haqishen/SIIM-ISIC-Melanoma-Classification-1st-Place-Solution
+  requirements.txt: |
+    torch==1.5.1
+    albumentations==0.4.6
+    resnest==0.0.6b20200823
+    geffnet==0.9.8
+    numpy==1.18.1
+    pandas==0.24.2
+    opencv_python==4.4.0.42
+    pretrainedmodels==0.7.4
+    tqdm==4.31.1
+    Pillow==7.2.0
+    scikit_learn==0.23.2
+    kaggle==1.5.6
+    -e git+https://github.com/ildoonet/pytorch-gradual-warmup-lr.git#egg=pytorch-gradual-warmup-lr
+  extraRequirements:
+  - git+https://github.com/NVIDIA/apex#egg=apex
+
+# 2nd place solution for Kaggle Global Wheat Detection competition. Aug. 2020. 50 stars.
+# Has a pip frozen requirements.txt.
+- url: https://github.com/liaopeiyuan/TransferDet
+  requirements.txt: |
+    absl-py==0.9.0
+    adabound==0.0.5
+    addict==2.2.1
+    aiohttp==3.5.4
+    albumentations==0.4.5
+    apipkg==1.5
+    appdirs==1.4.4
+    autograd==1.3
+    autopep8==1.5
+    Babel==2.8.0
+    backcall==0.1.0
+    bbaug==0.4.2
+    beautifulsoup4==4.9.0
+    bleach==3.1.4
+    blessings==1.7
+    blis==0.4.1
+    cachetools==4.1.1
+    catalogue==1.0.0
+    certifi==2020.4.5.1
+    cffi==1.11.5
+    chardet==3.0.4
+    click==7.1.2
+    cloudpickle==1.3.0
+    cmake==3.17.2
+    colorama==0.4.3
+    colorful==0.5.4
+    configparser==5.0.0
+    coverage==5.1
+    cssselect==1.1.0
+    cycler==0.10.0
+    cymem==2.0.3
+    Cython==0.29.19
+    decorator==4.4.2
+    distlib==0.3.0
+    docker-pycreds==0.4.0
+    docutils==0.16
+    ensemble-boxes==1.0.1
+    entrypoints==0.3
+    execnet==1.7.1
+    fasteners==0.15
+    feedfinder2==0.0.4
+    feedparser==5.2.1
+    ffmpeg==1.4
+    filelock==3.0.12
+    flake8==3.7.9
+    future==0.18.2
+    gast==0.3.3
+    gitdb==4.0.5
+    GitPython==3.1.3
+    glfw==1.12.0
+    h5py==2.10.0
+    hiredis==1.1.0
+    idna==2.9
+    imageio==2.8.0
+    imagesize==1.2.0
+    imgaug==0.4.0
+    importlib-metadata==1.5.0
+    imutils==0.5.3
+    ipdb==0.13.2
+    isodate==0.6.0
+    isort==4.3.21
+    jedi==0.16.0
+    jieba3k==0.35.1
+    Jinja2==2.11.1
+    joblib==0.14.1
+    jsonschema==3.2.0
+    kaggle==1.5.6
+    Keras-Preprocessing==1.1.2
+    kiwisolver==1.1.0
+    lazy-object-proxy==1.4.3
+    llvmlite==0.31.0
+    lmdb==0.98
+    lxml==4.5.0
+    Markdown==3.2.2
+    MarkupSafe==1.1.1
+    matplotlib==3.2.0
+    mccabe==0.6.1
+    mistune==0.8.4
+    monotonic==1.5
+    more-itertools==8.3.0
+    msgpack==1.0.0
+    multidict==4.7.6
+    murmurhash==1.0.2
+    netron==4.6.8
+    networkx==2.4
+    newspaper3k==0.2.8
+    nltk==3.4.5
+    notebook==6.1.5
+    numba==0.48.0
+    numpy==1.18.1
+    oauthlib==3.1.0
+    olefile==0.46
+    omegaconf==2.0.0
+    opencv-python==4.2.0.34
+    ordered-set==3.1
+    packaging==20.3
+    pandas==1.0.3
+    pandocfilters==1.4.2
+    parso==0.6.2
+    pathtools==0.1.2
+    pexpect==4.8.0
+    pickleshare==0.7.5
+    Pillow==7.1.0
+    plac==1.1.3
+    plotly==4.9.0
+    pluggy==0.13.1
+    plyfile==0.7.1
+    preshed==3.0.2
+    prometheus-client==0.7.1
+    promise==2.3
+    prompt-toolkit==3.0.5
+    psutil==5.7.0
+    ptyprocess==0.6.0
+    py==1.8.1
+    py-spy==0.3.3
+    pyaml==20.4.0
+    pyarrow==1.0.1
+    pyasn1==0.4.8
+    pyasn1-modules==0.2.8
+    pybind11==2.5.0
+    wai.pycocotools==12.0
+    pycodestyle==2.5.0
+    pycparser==2.20
+    pyflakes==2.1.1
+    pyglet==1.5.0
+    pyparsing==2.4.6
+    redis==3.4.1
+    scikit-image==0.16.2
+    scikit-learn==0.21.1
+    scikit-optimize==0.7.4
+    scipy==1.4.1
+    seaborn==0.10.1
+    Send2Trash==1.5.0
+    sentry-sdk==0.17.0
+    Shapely==1.7.0
+    shortuuid==1.0.1
+    six==1.14.0
+    slidingwindow==0.0.14
+    srsly==1.0.2
+    subprocess32==3.5.4
+    taichi==0.6.7
+    tensorboard==2.2.2
+    tensorboard-plugin-wit==1.7.0
+    tensorboardX==2.0
+    tensorflow-addons==0.10.0
+    tensorflow-estimator==2.2.0
+    tensorflow-gpu==2.2.1
+    terminaltables==3.1.0
+    testpath==0.4.4
+    text-unidecode==1.3
+    textblob==0.15.3
+    textstat==0.6.0
+    timm==0.1.30
+    toml==0.10.1
+    torch==1.4.0
+    torchvision==0.5.0
+    tornado==6.0.2
+    tox==3.15.1
+    tqdm==4.45.0
+    urllib3==1.24.3
+    yapf==0.30.0
+    yarl==1.4.2
+    zipp==2.2.0
+
+# 2nd place solution in Kaggle ALASKA2 Image Steganalysis competition. July 2020, 13 stars
+# Has a hand-groomed requirements.txt, some have explicit versions, most do not.
+- url: https://github.com/BloodAxe/Kaggle-2020-Alaska2
+  requirements.txt: |
+    Cython
+    tqdm
+    torch
+    torchvision
+    torch-optimizer==0.0.1a12
+    pytorch-ranger==0.1.1
+    git+https://github.com/dwgoon/jpegio
+    catalyst==19.12.3
+    albumentations==0.4.5
+    timm==0.1.26
+    catboost
+    scikit-optimize
+    opencv_contrib_python==4.4.0.46
+    horovod==0.19.1
+    tensorflow==1.14.0
+    oct2py
+    pytorch_toolbelt
+    # Does not install without CUDA support:
+    # inplace-abn
+
+# Only Jupyter Notebooks:
+# - url: https://github.com/baosenguo/Kaggle-MoA-2nd-Place-Solution
+# - url: https://github.com/Masdevallia/3rd-place-kaggle-siim-isic-melanoma-classification
+
+# ----- Future (currently unsupported) -----
+
+# This repo uses Conda for dependency management, so we'll need to support that too.
+# - url: https://github.com/adamian98/pulse.git
+# - url: https://github.com/kazumitsusakurai/lish-moa
+
+# This repo uses Poetry for depedency management, that's already much better than a requiremens.txt and the like!!
+# ... except we don't support using Poetry for requirements yet.
+# - url: https://github.com/e-mon/lish-moa.git
+
