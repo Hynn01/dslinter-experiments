@@ -19,10 +19,10 @@ hyperparameters-scikitlearn & 431 & 431 & 100%
 hyperparameters-tensorflow & 16 & 10 & 60%
 hyperparameters-pytorch & 19 & 10 & 53%
 memory-release-tensorflow & 0 & 0 & 100%
-deterministic-pytorch & 295 & 295 & 100%
-randomness-control-numpy & 668 & 601 & 90%
+deterministic-pytorch & 295 & 280 & 95%
+randomness-control-numpy & 668 & 568 & 85%
 randomness-control-scikitlearn & 99 & 99 & 100%
-randomness-control-tensorflow & 142 & 114 & 80%
+randomness-control-tensorflow & 142 & 121 & 85%
 randomness-control-pytorch & 258 & 181 & 70%
 randomness-control-dataloader-pytorch & 511 & 511 & 100%
 missing-mask-tensorflow & 7 & 6 & 86%

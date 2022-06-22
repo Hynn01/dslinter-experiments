@@ -20,11 +20,11 @@ R5506,hyperparameters-scikitlearn,392,420,812,90.5,9,11,20,1.5,832,10/10,10/10
 R5507,hyperparameters-tensorflow,19,16,35,3.9,1,0,1,0.1,36,6/10,0/0
 R5508,hyperparameters-pytorch,4,7,11,1.2,6,12,18,1.4,29,7/7,2/10
 W5506,memory-release-tensorflow,0,0,0,0.0,0,0,0,0.0,0,0/0,0/0
-W5507,deterministic-pytorch,51,66,117,13.0,15,229,244,18.5,361,3/3,10/10
-W5508,randomness-control-numpy,523,499,1022,113.9,248,169,417,31.7,1439,2/2,9/10
+W5507,deterministic-pytorch,51,66,117,13.0,15,229,244,18.5,361,9/10,10/10
+W5508,randomness-control-numpy,523,499,1022,113.9,248,169,417,31.7,1439,8/10,9/10
 W5509,randomness-control-scikitlearn,106,91,197,22.0,6,8,14,1.1,211,10/10,8/8
-W5510,randomness-control-tensorflow,83,100,183,20.4,443,42,485,36.9,668,0/0,8/10
-W5511,randomness-control-pytorch,32,51,83,9.3,12,207,219,16.6,302,0/0,7/10
+W5510,randomness-control-tensorflow,83,100,183,20.4,443,42,485,36.9,668,9/10,8/10
+W5511,randomness-control-pytorch,32,51,83,9.3,12,207,219,16.6,302,7/10,7/10
 W5512,randomness-control-dataloader-pytorch,86,83,169,18.8,25,428,453,34.4,622,10/10,10/10
 W5513,missing-mask-tensorflow,1,0,1,0.1,84,7,91,6.9,92,0/0,6/7
 W5514,missing-mask-pytorch,3,0,3,0.3,5,49,54,4.1,57,0/0,10/10
